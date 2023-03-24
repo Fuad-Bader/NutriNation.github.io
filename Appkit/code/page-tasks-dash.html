@@ -1,0 +1,327 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>AppKit Mobile</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+
+<body class="theme-light">
+
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+
+<div id="page">
+
+    <div class="header header-fixed header-logo-center header-auto-show">
+        <a href="index.html" class="header-title">Welcome</a>
+        <a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-chevron-left"></i></a>
+        <a href="#" data-menu="menu-main" class="header-icon header-icon-4"><i class="fas fa-bars"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-dark"><i class="fas fa-sun"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-light"><i class="fas fa-moon"></i></a>
+    </div>
+
+    <div id="footer-bar" class="footer-bar-6">
+        <a href="index-components.html"><i class="fa fa-layer-group"></i><span>Features</span></a>
+        <a href="index-pages.html" class="active-nav"><i class="fa fa-file"></i><span>Pages</span></a>
+        <a href="index.html" class="circle-nav"><i class="fa fa-home"></i><span>Welcome</span></a>
+        <a href="index-projects.html"><i class="fa fa-camera"></i><span>Projects</span></a>
+        <a href="#" data-menu="menu-main"><i class="fa fa-bars"></i><span>Menu</span></a>
+    </div>
+
+	<div class="page-title page-title-fixed">
+		<h1>AppKit</h1>
+		<a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-share"><i class="fa fa-share-alt"></i></a>
+		<a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-light" data-toggle-theme><i class="fa fa-moon"></i></a>
+		<a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-dark" data-toggle-theme><i class="fa fa-lightbulb color-yellow-dark"></i></a>
+		<a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-main"><i class="fa fa-bars"></i></a>
+	</div>
+	<div class="page-title-clear"></div>
+
+    <div class="page-content">
+
+		<div class="content mt-0">
+			<div class="row mb-0">
+				<div class="col-6 pe-2">
+					<div class="card card-style gradient-blue m-0" data-card-height="130">
+						<div class="card-top p-3">
+							<img src="images/avatars/5s.png" width="30" class="rounded-xl bg-white border border-gray-light float-end">
+						</div>
+						<div class="card-bottom p-3">
+							<h4 class="color-white font-14 opacity-50 mb-0">Today</h4>
+							<h1 class="color-white mb-n1">14 Tasks</h1>
+						</div>
+					</div>
+				</div>
+				<div class="col-6 ps-2">
+					<div class="card card-style gradient-green mx-0 m-0" data-card-height="130">
+						<div class="card-top p-3">
+							<img src="images/avatars/1s.png" class="rounded-xl border border-gray-light float-end bg-white ms-n3" width="30">
+							<img src="images/avatars/3s.png" class="rounded-xl border border-gray-light float-end bg-white ms-n3" width="30">
+							<img src="images/avatars/5s.png" class="rounded-xl border border-gray-light float-end bg-white ms-n3" width="30">
+						</div>
+						<div class="card-bottom p-3">
+							<h4 class="color-white font-14 opacity-50 mb-0">Assigned</h4>
+							<h1 class="color-white mb-n1">5 Tasks</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<a href="#" class="card card-style gradient-red mb-3">
+			<div class="content my-3">
+				<div class="d-flex">
+					<div class="align-self-center">
+						<i class="fa fa-exclamation-triangle color-white fa-2x pe-3"></i>
+					</div>
+					<div class="align-self-center">
+						<h4 class="mb-n2 color-white font-16">Setup Meeting with Jack</h4>
+						<p class="mb-0 color-white opacity-70">
+							This task is overdue by 2 Days
+						</p>
+					</div>
+				</div>
+			</div>
+		</a>
+
+		<a href="#" class="card card-style mb-3">
+			<div class="content mb-3 mt-3">
+				<div class="d-flex">
+					<div class="align-self-center">
+						<i class="fa fa-plus-circle color-green-dark font-32 pe-3 pt-1"></i>
+					</div>
+					<div class="align-self-center">
+						<h4 class="mb-0 font-16">Added to Project</h4>
+						<p class="mb-0 line-height-s">
+							You've been added to <strong class="color-theme">AppKit</strong>.
+						</p>
+					</div>
+				</div>
+
+				<div class="divider mb-2 mt-3"></div>
+				<div class="d-flex">
+					<div>
+						<h5 class="font-12 font-500 pt-2 mb-0"><i class="fa fa-user font-12 color-blue-dark pe-1"></i> Admin</h5>
+					</div>
+					<div class="ms-auto">
+						<h5 class="font-12 font-500 pt-2 mb-0"><i class="fa fa-users font-12 color-red-dark pe-1"></i> 8 Members</h5>
+					</div>
+					<div class="ms-auto">
+						<h5 class="font-12 font-500 pt-2 mb-0"><i class="fa fa-check-circle font-12 color-green-dark pe-1"></i> 15 Tasks</h5>
+					</div>
+				</div>
+			</div>
+		</a>
+
+
+
+		<div class="content mb-0">
+			<div class="d-flex">
+				<div class="align-self-center">
+					<h1 class="mb-0 font-15">Assigned to You</h1>
+				</div>
+				<div class="ms-auto align-self-center">
+					<a href="#" class="float-end font-12 font-400">See All</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="card card-style">
+			<a href="#" class="content my-3">
+				<div class="d-flex">
+					<div>
+						<img src="images/pictures/5s.jpg" width="35" class="rounded-sm me-2">
+					</div>
+					<div class="ps-1">
+						<h6 class="font-600 font-12 opacity-50 mb-0">Appkit Mobile</h6>
+						<h5 class="mb-1">Add Task Management Pack</h5>
+					</div>
+					<div class="ms-auto align-self-center text-center">
+						<h6 class="font-500 font-12 opacity-50 mb-0">Tasks</h6>
+						<h5 class="mb-1 color-green-dark">4/5</h5>
+					</div>
+				</div>
+			</a>
+			<div class="divider mb-0 mt-n2"></div>
+			<a href="#" class="content my-3">
+				<div class="d-flex">
+					<div>
+						<img src="images/pictures/6s.jpg" width="35" class="rounded-sm me-2">
+					</div>
+					<div class="ps-1">
+						<h6 class="font-600 font-12 opacity-50 mb-0">Sticky Mobile</h6>
+						<h5 class="mb-1">Create Social Media Pack</h5>
+					</div>
+					<div class="ms-auto align-self-center text-center">
+						<h6 class="font-500 font-12 opacity-50 mb-0">Tasks</h6>
+						<h5 class="mb-1 color-yellow-dark">1/5</h5>
+					</div>
+				</div>
+			</a>
+			<div class="divider mb-0 mt-n2"></div>
+			<a href="#" class="content my-3">
+				<div class="d-flex">
+					<div>
+						<img src="images/pictures/7s.jpg" width="35" class="rounded-sm me-2">
+					</div>
+					<div class="ps-1">
+						<h6 class="font-600 font-12 opacity-50 mb-0">DuoDrawer Mobile</h6>
+						<h5 class="mb-1">Redesign Fresh Components</h5>
+					</div>
+					<div class="ms-auto align-self-center text-center">
+						<h6 class="font-500 font-12 opacity-50 mb-0">Tasks</h6>
+						<h5 class="mb-1 color-red-dark">0/5</h5>
+					</div>
+				</div>
+			</a>
+			<div class="divider mb-0 mt-n2"></div>
+			<a href="#" class="content my-3">
+				<div class="d-flex">
+					<div>
+						<img src="images/pictures/8s.jpg" width="35" class="rounded-sm me-2">
+					</div>
+					<div class="ps-1">
+						<h6 class="font-600 font-12 opacity-50 mb-0">DuoDrawer Mobile</h6>
+						<h5 class="mb-1">Create Education Pages Pack</h5>
+					</div>
+					<div class="ms-auto align-self-center">
+						<h5 class="color-green-dark font-18 pe-1"><i class="fa fa-check-circle"></i></h5>
+					</div>
+				</div>
+			</a>
+		</div>
+
+
+        <div class="content mt-n2 mb-0">
+            <div class="d-flex">
+                <div class="align-self-center">
+                    <h1 class="mb-0 font-15">To do List</h1>
+                </div>
+                <div class="ms-auto align-self-center">
+                    <a href="#" class="float-end font-12 font-400">See All</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="splide double-slider visible-slider slider-no-arrows slider-no-dots" id="double-slider-1" data-splide='{"interval":"50000", "perPage":2}'>
+            <div class="splide__track">
+                <div class="splide__list">
+                    <div class="splide__slide">
+						<a href="#" class="card card-style me-0 mb-0" data-card-height="160">
+							<div class="card-top px-2 mx-1 pt-1">
+								<div class="d-flex">
+									<div><span class="color-theme opacity-40 font-600 font-11">Appkit PWA</span></div>
+									<div class="ms-auto"><span class="color-theme opacity-40 font-500 font-11"><i class="fa fa-check-circle color-green-dark"></i> 3</span></div>
+								</div>
+							</div>
+							<div class="card-center px-2 mx-1">
+								<h4 class="pb-3 font-700">Project and <br> Task Pack</h4>
+							</div>
+							<div class="card-bottom px-2 mx-1 pb-2">
+								<div class="d-flex">
+									<div>
+										<span class="d-block pe-2 font-10 font-400 color-theme opacity-50">Priority</span>
+										<span class="d-block pe-2 font-12 mt-n3 pt-1 color-red-light font-600">Urgent</span>
+									</div>
+									<div class="ms-auto text-end">
+										<span class="d-block font-10 font-400 color-theme opacity-50">Due Date</span>
+										<span class="d-block font-12 mt-n3 pt-1 color-theme font-600">2 Days</span>
+									</div>
+								</div>
+							</div>
+						</a>
+                    </div>
+					<div class="splide__slide">
+						<a href="#" class="card card-style me-0 mb-0" data-card-height="160">
+							<div class="card-top px-2 mx-1 pt-1">
+								<div class="d-flex">
+									<div><span class="color-theme opacity-40 font-600 font-11">Azures PWA</span></div>
+									<div class="ms-auto"><span class="color-theme opacity-40 font-500 font-11"><i class="fa fa-check-circle color-green-dark"></i> 5</span></div>
+								</div>
+							</div>
+							<div class="card-center px-2 mx-1">
+								<h4 class="pb-3 font-700">Pack for <br>Education</h4>
+							</div>
+							<div class="card-bottom px-2 mx-1 pb-2">
+								<div class="d-flex">
+									<div>
+										<span class="d-block pe-2 font-10 font-400 color-theme opacity-50">Priority</span>
+										<span class="d-block pe-2 font-12 mt-n3 pt-1 color-blue-dark font-600">Medium</span>
+									</div>
+									<div class="ms-auto text-end">
+										<span class="d-block font-10 font-400 color-theme opacity-50">Due Date</span>
+										<span class="d-block font-12 mt-n3 pt-1 color-theme font-600">4 Days</span>
+									</div>
+								</div>
+							</div>
+						</a>
+                    </div>
+					<div class="splide__slide">
+						<a href="#" class="card card-style me-0 mb-0" data-card-height="160">
+							<div class="card-top px-2 mx-1 pt-1">
+								<div class="d-flex">
+									<div><span class="color-theme opacity-40 font-600 font-11">Sticky PWA</span></div>
+									<div class="ms-auto"><span class="color-theme opacity-40 font-500 font-11"><i class="fa fa-check-circle color-green-dark"></i> 5</span></div>
+								</div>
+							</div>
+							<div class="card-center px-2 mx-1">
+								<h4 class="pb-3 font-700">Develop <br> Social Pack</h4>
+							</div>
+							<div class="card-bottom px-2 mx-1 pb-2">
+								<div class="d-flex">
+									<div>
+										<span class="d-block pe-2 font-10 font-400 color-theme opacity-50">Priority</span>
+										<span class="d-block pe-2 font-12 mt-n3 pt-1 color-green-dark font-600">Normal</span>
+									</div>
+									<div class="ms-auto text-end">
+										<span class="d-block font-10 font-400 color-theme opacity-50">Due Date</span>
+										<span class="d-block font-12 mt-n3 pt-1 color-theme font-600">4 Days</span>
+									</div>
+								</div>
+							</div>
+						</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-4" data-menu-load="menu-footer.html"></div>
+    </div>
+    <!-- Page content ends here-->
+
+    <!-- Added to Bookmarks Menu-->
+    <div id="menu-heart"
+         class="menu menu-box-modal rounded-m"
+         data-menu-hide="1000"
+         data-menu-width="250"
+         data-menu-height="170">
+
+        <h1 class="text-center mt-3 pt-2">
+            <i class="fa fa-heart color-red-dark fa-3x scale-icon"></i>
+        </h1>
+        <h3 class="text-center pt-2">Saved to Favorites</h3>
+    </div>
+
+    <!-- Main Menu-->
+    <div id="menu-main" class="menu menu-box-left rounded-0" data-menu-load="menu-main.html" data-menu-width="280" data-menu-active="nav-pages"></div>
+
+    <!-- Share Menu-->
+    <div id="menu-share" class="menu menu-box-bottom rounded-m" data-menu-load="menu-share.html" data-menu-height="370"></div>
+
+    <!-- Colors Menu-->
+    <div id="menu-colors" class="menu menu-box-bottom rounded-m" data-menu-load="menu-colors.html" data-menu-height="480"></div>
+
+
+</div>
+
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>

@@ -1,0 +1,175 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>AppKit Mobile</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">    
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+    
+<body class="theme-light">
+    
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+    
+<div id="page">
+    
+    <div class="header header-fixed header-logo-center header-auto-show">
+        <a href="index.html" class="header-title">Schedule</a>
+        <a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-chevron-left"></i></a>
+        <a href="#" data-menu="menu-main" class="header-icon header-icon-4"><i class="fas fa-bars"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-dark"><i class="fas fa-sun"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-light"><i class="fas fa-moon"></i></a>
+    </div>
+
+    <div id="footer-bar" class="footer-bar-6">
+        <a href="index-components.html"><i class="fa fa-layer-group"></i><span>Features</span></a>
+        <a href="index-pages.html" class="active-nav"><i class="fa fa-file"></i><span>Pages</span></a>
+        <a href="index.html" class="circle-nav"><i class="fa fa-home"></i><span>Welcome</span></a>
+        <a href="index-projects.html"><i class="fa fa-camera"></i><span>Projects</span></a>
+        <a href="#" data-menu="menu-main"><i class="fa fa-bars"></i><span>Menu</span></a>
+    </div>
+    
+    <div class="page-title page-title-fixed">
+        <h1 class="font-22">Schedule</h1>
+        <a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-share"><i class="fa fa-share-alt"></i></a>
+        <a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-light" data-toggle-theme><i class="fa fa-moon"></i></a>
+        <a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-dark" data-toggle-theme><i class="fa fa-lightbulb color-yellow-dark"></i></a>
+        <a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-main"><i class="fa fa-bars"></i></a>
+    </div>
+    <div class="page-title-clear"></div>
+        
+    <div class="page-content">
+        
+		<div class="card card-style">
+			<div class="cal-header">
+				<h4 class="cal-title text-start text-uppercase font-800 color-theme font-15">August <span id="copyright-year" class="float-end"></span></h4>
+			</div>
+			<div class="clearfix"></div>
+			<div class="cal-days border border-top border-light-light border-bottom-0 border-start-0 border-end-0 bg-theme opacity-80 pt-2 pb-2">
+				<a href="#" class="color-theme opacity-70 font-300 font-10 mt-n2 mb-n2">SUN</a>
+				<a href="#" class="color-theme opacity-70 font-300 font-10 mt-n2 mb-n2">MON</a>
+				<a href="#" class="color-theme opacity-70 font-300 font-10 mt-n2 mb-n2">TUE</a>
+				<a href="#" class="color-theme opacity-70 font-300 font-10 mt-n2 mb-n2">WED</a>
+				<a href="#" class="color-theme opacity-70 font-300 font-10 mt-n2 mb-n2">THU</a>
+				<a href="#" class="color-theme opacity-70 font-300 font-10 mt-n2 mb-n2">FRI</a>
+				<a href="#" class="color-theme opacity-70 font-300 font-10 mt-n2 mb-n2">SAT</a>
+				<div class="clearfix"></div>
+			</div>
+			<div class="divider mb-1"></div>
+			<div class="cal-dates cal-dates-border">
+				<a href="#" class="cal-disabled">25</a>
+				<a href="#" class="cal-disabled">26</a>
+				<a href="#" class="cal-disabled">27</a>
+				<a href="#" class="cal-disabled">28</a>
+				<a href="#" class="cal-disabled">29</a>
+				<a href="#" class="cal-disabled">30</a>
+				<a href="#" data-menu="menu-reserved">1<i class="fa fa-circle color-red-dark position-absolute font-8 end-0 top-0 pt-1 opacity-30 pe-1"></i></a>
+				<a href="#" data-menu="menu-reserved">2<i class="fa fa-circle color-red-dark position-absolute font-8 end-0 top-0 pt-1 opacity-30 pe-1"></i></a>
+				<a href="#" data-menu="menu-reserved">3<i class="fa fa-circle color-red-dark position-absolute font-8 end-0 top-0 pt-1 opacity-30 pe-1"></i></a>
+				<a href="#" data-menu="menu-reserved">4<i class="fa fa-circle color-red-dark position-absolute font-8 end-0 top-0 pt-1 opacity-30 pe-1"></i></a>
+				<a href="#" data-menu="menu-reserved">5<i class="fa fa-circle color-red-dark position-absolute font-8 end-0 top-0 pt-1 opacity-30 pe-1"></i></a>
+				<a href="#" data-menu="menu-reserved">6<i class="fa fa-circle color-red-dark position-absolute font-8 end-0 top-0 pt-1 opacity-30 pe-1"></i></a>
+				<a href="#" data-menu="menu-reserved">7<i class="fa fa-circle color-red-dark position-absolute font-8 end-0 top-0 pt-1 opacity-30 pe-1"></i></a>
+				<a href="#" data-menu="menu-reserved">8<i class="fa fa-circle color-red-dark position-absolute font-8 end-0 top-0 pt-1 opacity-30 pe-1"></i></a>
+				<a href="#" data-menu="menu-reserved">9<i class="fa fa-circle color-red-dark position-absolute font-8 end-0 top-0 pt-1 opacity-30 pe-1"></i></a>
+				<a href="#" data-menu="menu-reserved">10<i class="fa fa-circle color-red-dark position-absolute font-8 end-0 top-0 pt-1 opacity-30 pe-1"></i></a>
+				<a href="#" data-menu="menu-reserved">11<i class="fa fa-circle color-red-dark position-absolute font-8 end-0 top-0 pt-1 opacity-30 pe-1"></i></a>
+				<a href="#" data-menu="menu-reserved" class="cal-selected"><i class="fa fa-square color-highlight"></i><span>12</span></a>
+				<a href="#" data-menu="menu-reserved">13<i class="fa fa-circle color-red-dark position-absolute font-8 end-0 top-0 pt-1 opacity-30 pe-1"></i></a>
+				<a href="#" data-menu="menu-reserved">14<i class="fa fa-circle color-red-dark position-absolute font-8 end-0 top-0 pt-1 opacity-30 pe-1"></i></a>
+				<a href="#" data-menu="menu-reserved">15<i class="fa fa-circle color-red-dark position-absolute font-8 end-0 top-0 pt-1 opacity-30 pe-1"></i></a>
+				<a href="#" data-menu="menu-reserved">16<i class="fa fa-circle color-red-dark position-absolute font-8 end-0 top-0 pt-1 opacity-30 pe-1"></i></a>
+				<a href="#" data-menu="menu-available">17<i class="fa fa-circle color-green-dark position-absolute font-8 end-0 top-0 pt-1 opacity-30 pe-1"></i></a>
+				<a href="#" data-menu="menu-available">18<i class="fa fa-circle color-green-dark position-absolute font-8 end-0 top-0 pt-1 opacity-30 pe-1"></i></a>
+				<a href="#" data-menu="menu-available">19<i class="fa fa-circle color-green-dark position-absolute font-8 end-0 top-0 pt-1 opacity-30 pe-1"></i></a>
+				<a href="#" data-menu="menu-available">20<i class="fa fa-circle color-green-dark position-absolute font-8 end-0 top-0 pt-1 opacity-30 pe-1"></i></a>
+				<a href="#" data-menu="menu-available">21<i class="fa fa-circle color-green-dark position-absolute font-8 end-0 top-0 pt-1 opacity-30 pe-1"></i></a>
+				<a href="#" data-menu="menu-available">22<i class="fa fa-circle color-green-dark position-absolute font-8 end-0 top-0 pt-1 opacity-30 pe-1"></i></a>
+				<a href="#" data-menu="menu-reserved">23<i class="fa fa-circle color-red-dark position-absolute font-8 end-0 top-0 pt-1 opacity-30 pe-1"></i></a>
+				<a href="#" data-menu="menu-reserved">24<i class="fa fa-circle color-red-dark position-absolute font-8 end-0 top-0 pt-1 opacity-30 pe-1"></i></a>
+				<a href="#" data-menu="menu-available">25<i class="fa fa-circle color-green-dark position-absolute font-8 end-0 top-0 pt-1 opacity-30 pe-1"></i></a>
+				<a href="#" data-menu="menu-available">26<i class="fa fa-circle color-green-dark position-absolute font-8 end-0 top-0 pt-1 opacity-30 pe-1"></i></a>
+				<a href="#" data-menu="menu-available">27<i class="fa fa-circle color-green-dark position-absolute font-8 end-0 top-0 pt-1 opacity-30 pe-1"></i></a>
+				<a href="#" data-menu="menu-available">28<i class="fa fa-circle color-green-dark position-absolute font-8 end-0 top-0 pt-1 opacity-30 pe-1"></i></a>
+				<a href="#" data-menu="menu-reserved">29<i class="fa fa-circle color-red-dark position-absolute font-8 end-0 top-0 pt-1 opacity-30 pe-1"></i></a>
+				<a href="#" data-menu="menu-reserved">30<i class="fa fa-circle color-red-dark position-absolute font-8 end-0 top-0 pt-1 opacity-30 pe-1"></i></a>
+				<a href="#" data-menu="menu-reserved">31<i class="fa fa-circle color-green-dark position-absolute font-8 end-0 top-0 pt-1 opacity-30 pe-1"></i></a>
+				<a href="#" class="cal-disabled">1</a>
+				<a href="#" class="cal-disabled">2</a>
+				<a href="#" class="cal-disabled">3</a>
+				<a href="#" class="cal-disabled">4</a>
+				<a href="#" class="cal-disabled">5</a>
+				<div class="clearfix"></div>
+			</div>
+		</div> 
+
+        <div data-menu-load="menu-footer.html"></div>
+    </div>
+    <!-- Page content ends here-->
+    
+	<div id="menu-reserved" class="menu menu-box-bottom rounded-m">
+		<div class="menu-title">
+			<h1 class="font-20">Date Unavailable</h1>
+			<a href="#" class="close-menu mt-n2">
+				<i class="fa fa-times font-16"></i>
+			</a>
+		</div>
+		<div class="content mt-0 pb-3">
+			<p class="mb-n2">
+				The date you've selected is not available. Please choose another date or call us now to book a photoshoot for you.
+			</p>
+			<a href="#" class="close-menu btn btn-m text-uppercase font-700 btn-full gradient-red border-0 rounded-sm mt-4 mb-4">Call me for Booking</a>
+		</div>
+	</div>    
+	
+	<div id="menu-available" class="menu menu-box-bottom rounded-m bg-white">
+		<div class="menu-title">
+			<h1 class="font-20">Date Available</h1>
+			<a href="#" class="close-menu mt-n2">
+				<i class="fa fa-times font-16"></i>
+			</a>
+		</div>
+		<div class="content pb-3">
+			<div class="input-style has-borders input-style-always-active has-icon validate-field mb-4">
+				<i class="fa fa-user"></i>
+				<input type="name" class="form-control validate-name" id="form1" placeholder="Name">
+				<label for="form1" class="color-blue-dark">John Doe</label>
+				<i class="fa fa-times disabled invalid color-red-dark"></i>
+				<i class="fa fa-check disabled valid color-green-dark"></i>
+				<em>(required)</em>
+			</div>
+			<div class="input-style has-borders input-style-always-active has-icon validate-field mb-4">
+				<i class="fa fa-phone"></i>
+				<input type="tel" class="form-control validate-tel" id="form1" placeholder="1 234 567 8069">
+				<label for="form1" class="color-blue-dark">Phone</label>
+				<i class="fa fa-times disabled invalid color-red-dark"></i>
+				<i class="fa fa-check disabled valid color-green-dark"></i>
+				<em>(required)</em>
+			</div>
+			<p class="font-10 mb-n1">We'll call you to confirm your date and confirm your booking.</p>
+			<a href="#" class="close-menu btn btn-m text-uppercase font-700 btn-full gradient-green border-0 rounded-sm mt-4 mb-4">Schedule my Booking</a>
+		</div>
+	</div>
+    
+    <!-- Main Menu-->
+    <div id="menu-main" class="menu menu-box-left rounded-0" data-menu-load="menu-main.html" data-menu-width="280" data-menu-active="nav-pages"></div>
+    
+    <!-- Share Menu-->
+    <div id="menu-share" class="menu menu-box-bottom rounded-m" data-menu-load="menu-share.html" data-menu-height="370"></div>  
+    
+    <!-- Colors Menu-->
+    <div id="menu-colors" class="menu menu-box-bottom rounded-m" data-menu-load="menu-colors.html" data-menu-height="480"></div> 
+     
+    
+</div>
+
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>

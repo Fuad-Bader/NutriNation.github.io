@@ -1,0 +1,45 @@
+
+body{font-size:15px; background-color:#FFF!important;}
+.chapters{background-color:rgba(0,0,0,0.05);}
+.chapters .list-group li{margin-bottom:-1px; list-style: none;}
+.chapters .list-group a{
+    line-height:18px; 
+    border:none;
+}
+
+#chaps{margin-left:-25px; margin-right:-1px!important;}
+#chaps li{
+    font-size:15px;
+    font-weight:600;
+    color:#000;
+}
+.list-in li{font-size:13px!important; font-weight:400!important;}
+
+.chapters .list-group .list-group-item:not(.active){background-color: transparent;}
+.chapters{
+    overflow:auto;
+    position:fixed;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    width:300px;
+    float:left;
+}
+.documentation{
+    margin-left:370px;
+    width:calc(100% - 430px);
+    float:left;
+}
+.toolbar{display:none;}
+.chapter{margin-bottom:200px}
+
+h1, h2, h3, h4, h5, h6{font-weight:700;}
+h1{font-size:40px; font-weight:800;}
+h2{font-size:32px;}
+h3{font-size:28px;}
+h4{font-size:24px;}
+h5{font-size:22px; font-weight:700}
+h6{font-size:18px;}
+p{font-size:15px; line-height:24px;}
+
+strong{color:#1f1f1f; font-weight:500}

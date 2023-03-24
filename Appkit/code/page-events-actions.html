@@ -1,0 +1,472 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>AppKit Mobile</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+
+<body class="theme-light">
+
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+
+<div id="page">
+
+    <div class="header header-fixed header-logo-center header-auto-show">
+        <a href="index.html" class="header-title">Interests</a>
+        <a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-chevron-left"></i></a>
+        <a href="#" data-menu="menu-main" class="header-icon header-icon-4"><i class="fas fa-bars"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-dark"><i class="fas fa-sun"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-light"><i class="fas fa-moon"></i></a>
+    </div>
+
+    <div id="footer-bar" class="footer-bar-6">
+        <a href="index-components.html"><i class="fa fa-layer-group"></i><span>Features</span></a>
+        <a href="index-pages.html" class="active-nav"><i class="fa fa-file"></i><span>Pages</span></a>
+        <a href="index.html" class="circle-nav"><i class="fa fa-home"></i><span>Welcome</span></a>
+        <a href="index-projects.html"><i class="fa fa-camera"></i><span>Projects</span></a>
+        <a href="#" data-menu="menu-main"><i class="fa fa-bars"></i><span>Menu</span></a>
+    </div>
+
+    <div class="page-title page-title-fixed">
+        <h1>Events</h1>
+        <a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-share"><i class="fa fa-share-alt"></i></a>
+        <a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-light" data-toggle-theme><i class="fa fa-moon"></i></a>
+        <a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-dark" data-toggle-theme><i class="fa fa-lightbulb color-yellow-dark"></i></a>
+        <a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-main"><i class="fa fa-bars"></i></a>
+    </div>
+    <div class="page-title-clear"></div>
+
+    <div class="page-content">
+
+        <div class="card card-style">
+            <div class="content">
+                <p>
+                    These actions can be added to any element on your event pages, to help you provide a better experience for your users.
+                </p>
+            </div>
+        </div>
+        <div class="card card-style">
+            <div class="content my-0">
+                <div class="list-group list-custom-small">
+                    <a href="#" data-menu="menu-event-card-1"><i class="fa fa-square color-blue-dark"></i><span>Event Card 1</span><i class="fa fa-angle-right"></i></a>
+                    <a href="#" data-menu="menu-event-card-2"><i class="fa fa-square color-yellow-dark"></i><span>Event Card 2</span><i class="fa fa-angle-right"></i></a>
+                    <a href="#" data-menu="menu-event-card-3"><i class="fa fa-square color-orange-dark"></i><span>Event Card 3</span><i class="fa fa-angle-right"></i></a>
+                    <a href="#" data-menu="menu-join-event"><i class="fa fa-check-circle color-green-dark"></i><span>Event RSVP</span><i class="fa fa-angle-right"></i></a>
+                    <a href="#" data-menu="menu-event-confirm"><i class="fa fa-check color-teal-dark"></i><span>Event Confirm</span><i class="fa fa-angle-right"></i></a>
+                    <a href="#" data-menu="menu-event-create"><i class="fa fa-edit color-magenta-dark"></i><span>Event Create</span><i class="fa fa-angle-right"></i></a>
+                    <a href="#" data-menu="menu-event-send"><i class="fa fa-arrow-up color-green-dark"></i><span>Event Send Invite</span><i class="fa fa-angle-right"></i></a>
+                    <a href="#" data-menu="menu-event-interests"><i class="fa fa-paw color-brown-dark"></i><span>Event Interests</span><i class="fa fa-angle-right"></i></a>
+                    <a href="#" data-menu="menu-event-accepted"><i class="fa fa-thumbs-up color-green-dark"></i><span>Invite Accepted</span><i class="fa fa-angle-right"></i></a>
+                    <a href="#" data-menu="menu-event-declined"><i class="fa fa-thumbs-down color-red-dark"></i><span>Invite Rejected</span><i class="fa fa-angle-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div data-menu-load="menu-footer.html"></div>
+    </div>
+    <!-- Page content ends here-->
+
+    <div id="menu-join-event" class="menu menu-box-bottom rounded-m" data-menu-height="460">
+        <div class="menu-title"><h1>Join Event</h1><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
+        <div class="content mb-0 mt-3">
+            <div class="card card-style mx-0 bg-14 mb-0" data-card-height="150"></div>
+            <div>
+                <span class="color-highlight font-300 d-block text-uppercase font-10 pt-3">28 August 2025 - 09:00 AM</span>
+                <strong class="color-theme font-20 d-block mt-n2 mb-n2">International Typography Event</strong>
+                <span class="font-11 color-theme opacity-30 d-block pb-2 pt-2"><i class="fa fa-map-marker pe-2"></i>Area 51, Nevada</span>
+
+                <img src="images/avatars/1s.png" class="float-start border border-white bg-yellow-light rounded-circle me-n2" width="25">
+                <img src="images/avatars/4s.png" class="float-start border border-white bg-mint-dark rounded-circle me-n2" width="25">
+                <img src="images/avatars/5s.png" class="float-start border border-white bg-highlight rounded-circle me-n2" width="25">
+                <img src="images/avatars/1s.png" class="float-start border border-white bg-yellow-light rounded-circle me-n2" width="25">
+                <img src="images/avatars/4s.png" class="float-start border border-white bg-mint-dark rounded-circle me-n2" width="25">
+                <img src="images/avatars/5s.png" class="float-start border border-white bg-highlight rounded-circle me-n2" width="25">
+                <span href="#" class="float-start ps-4 font-10 color-theme opacity-30">+135 others going</span>
+                <div class="clearfix"></div>
+            </div>
+            <div class="divider mt-3 mb-2"></div>
+            <div class="content mb-0 mx-0">
+                <div class="row mb-0">
+                    <div class="col-6">
+                        <a href="#" class="btn btn-full rounded-sm btn-m gradient-green border-0 text-uppercase font-700">Accept</a>
+                    </div>
+                    <div class="col-6">
+                        <a href="#" class="btn btn-full rounded-sm btn-m gradient-red border-0 text-uppercase font-700">Reject</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="menu-event-card-1" class="menu menu-box-bottom rounded-m" data-menu-height="300">
+        <a href="#" class="card card-style bg-14 m-0 rounded-0" data-card-height="320">
+            <div class="card-top mt-4 mx-3">
+                <img src="images/avatars/1s.png" class="float-start border border-white bg-yellow-light rounded-circle me-n3" width="35">
+                <img src="images/avatars/2s.png" class="float-start border border-white bg-blue-dark rounded-circle me-n3" width="35">
+                <img src="images/avatars/4s.png" class="float-start border border-white bg-mint-dark rounded-circle me-n3" width="35">
+                <img src="images/avatars/5s.png" class="float-start border border-white bg-highlight rounded-circle me-n3" width="35">
+                <span href="#" class="float-start color-white pt-1 ps-4 font-12">+135 others</span>
+            </div>
+            <div class="card-top m-3">
+                <div class="bg-white color-black float-end rounded-sm px-3 pt-1 pb-2 text-center shadow-xl">
+                    <strong class="d-block font-11">AUG</strong>
+                    <strong class="d-block font-22 mt-n2">27</strong>
+                </div>
+            </div>
+            <div class="card-bottom mb-2 px-3 pb-5">
+                <h1 class="color-white font-24">Typography Day</h1>
+                <p class="mb-0 line-height-s color-white opacity-50">
+                    Join the event that celebrates what we see on our screen each day. The beauty of letters.
+                </p>
+                <span class="btn btn-full btn-m btn-border rounded-m text-uppercase font-700 color-white border-white mt-4">Join Event</span>
+            </div>
+            <div class="card-overlay bg-black opacity-70 rounded-0"></div>
+        </a>
+    </div>
+
+    <div id="menu-event-card-2" class="menu menu-box-bottom rounded-m" data-menu-height="330">
+        <div class="card card-stylemx-0 bg-1" data-card-height="310">
+            <div class="card-bottom mb-5 pb-5 px-3">
+                <h1 class="color-white mb-4 pb-2 font-20 line-height-m">Appkit is the best Mobile PWA and iOS Design on ThemeForest</h1>
+            </div>
+            <div class="card-bottom bg-white px-3 py-2 pb-3">
+                <div class="d-flex">
+                    <div class="me-auto">
+                        <p class="font-10 mb-2"><i class="fa fa-calendar pe-2"></i>21 Oct</p>
+                    </div>
+                    <div class="m-auto">
+                        <p class="font-10 mb-2"><i class="fa fa-clock pe-2"></i>09:30 PM</p>
+                    </div>
+                    <div class="ms-auto">
+                        <p class="font-10 mb-2"><i class="fa fa-map-marker pe-2"></i>San Francisco</p>
+                    </div>
+                </div>
+                <div class="divider mb-3"></div>
+                <img src="images/pictures/1s.jpg" class="float-start border border-white rounded-circle me-n3" width="35">
+                <img src="images/pictures/2s.jpg" class="float-start border border-white rounded-circle me-n3" width="35">
+                <img src="images/pictures/6s.jpg" class="float-start border border-white rounded-circle me-n3" width="35">
+                <img src="images/pictures/5s.jpg" class="float-start border border-white rounded-circle me-n3" width="35">
+                <span href="#" class="float-start color-theme pt-1 ps-4 font-12">+2.53k</span>
+                <a href="#" class="btn btn-s float-end bg-green-dark rounded-sm font-500">JOIN</a>
+            </div>
+            <div class="card-overlay bg-black opacity-50"></div>
+        </div>
+    </div>
+
+    <div id="menu-event-card-3" class="menu menu-box-bottom menu-box-detached" data-menu-height="320">
+        <a href="#" class="pb-3 d-block">
+            <div class="card card-style mx-0 bg-18 rounded-0 mb-0" data-card-height="150"></div>
+            <div class="px-3">
+                <span class="color-highlight font-300 d-block text-uppercase font-10">28 August 2025 - 09:00 AM</span>
+                <strong class="color-theme font-20 d-block mt-n2 mb-n2">Paintball at the Park</strong>
+                <span class="font-11 color-theme opacity-30 d-block pb-2 pt-2"><i class="fa fa-map-marker pe-2"></i>Area 51, Nevada</span>
+                <div class="divider mt-2 mb-2"></div>
+                <div class="float-start">
+                    <a href="#" class="btn btn-s float-end bg-green-dark rounded-sm font-500 mt-n4">JOIN </a>
+                </div>
+                <div class="float-end">
+                    <img src="images/avatars/1s.png" class="float-start border border-white bg-yellow-light rounded-circle me-n2" width="25">
+                    <img src="images/avatars/4s.png" class="float-start border border-white bg-mint-dark rounded-circle me-n2" width="25">
+                    <img src="images/avatars/5s.png" class="float-start border border-white bg-highlight rounded-circle me-n2" width="25">
+                    <span href="#" class="float-start ps-4 font-10 color-theme opacity-30">+135 others going</span>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </a>
+    </div>
+
+    <div id="menu-event-confirm" class="menu menu-box-bottom rounded-m" data-menu-height="360">
+        <div class="content">
+            <div class="input-style has-borders has-icon validate-field mb-4">
+                <i class="fa fa-user"></i>
+                <input type="text" class="form-control validate-text" id="form4" placeholder="Name">
+                <i class="fa fa-times disabled invalid color-red-dark"></i>
+                <i class="fa fa-check disabled valid color-green-dark"></i>
+                <em>(required)</em>
+            </div>
+            <div class="input-style has-borders has-icon validate-field mb-4">
+                <i class="fa fa-at"></i>
+                <input type="email" class="form-control validate-email" id="form41" placeholder="Email">
+                <i class="fa fa-times disabled invalid color-red-dark"></i>
+                <i class="fa fa-check disabled valid color-green-dark"></i>
+                <em>(required)</em>
+            </div>
+            <div class="input-style has-borders has-icon validate-field mb-4">
+                <i class="fa fa-phone"></i>
+                <input type="tel" class="form-control validate-tel" id="form42" placeholder="Phone">
+                <i class="fa fa-times disabled invalid color-red-dark"></i>
+                <i class="fa fa-check disabled valid color-green-dark"></i>
+                <em>(required)</em>
+            </div>
+            <div class="form-check icon-check">
+                <input class="form-check-input" type="checkbox" value="" id="check2" checked>
+                <label class="form-check-label" for="check2">I accept the Event Terms and Conditions</label>
+                <i class="icon-check-1 fa fa-circle color-gray-dark font-16"></i>
+                <i class="icon-check-2 fa fa-check-circle font-16 color-blue-dark"></i>
+            </div>
+            <a href="#" class="btn btn-m rounded-sm text-uppercase font-700 gradient-blue border-0 btn-full mt-4">Join Event</a>
+        </div>
+    </div>
+
+    <div id="menu-event-send" class="menu menu-box-bottom rounded-m" data-menu-height="180">
+        <div class="content">
+            <div class="input-style has-borders no-icon validate-field mb-4">
+                <input type="email" class="form-control validate-email" id="form4123" placeholder="Enter Friend's Email Address">
+                <i class="fa fa-times disabled invalid color-red-dark"></i>
+                <i class="fa fa-check disabled valid color-green-dark"></i>
+                <em>(required)</em>
+            </div>
+            <a href="#" class="btn btn-full btn-l rounded-sm mt-4 gradient-green border-0 text-uppercase font-700">Send Invite</a>
+        </div>
+    </div>
+
+    <div id="menu-event-create" class="menu menu-box-bottom rounded-m" data-menu-height="380">
+        <div class="content">
+            <div class="row mb-0">
+                <div class="col-6">
+                    <div class="input-style has-borders no-icon validate-field mb-4">
+                        <input type="text" class="form-control validate-text" id="form4" placeholder="Event Title">
+                        <i class="fa fa-times disabled invalid color-red-dark"></i>
+                        <i class="fa fa-check disabled valid color-green-dark"></i>
+                        <em>(required)</em>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="input-style has-borders no-icon mb-4">
+                        <select id="form5">
+                            <option value="default" disabled selected>Total Participants</option>
+                            <option value="1a">1 - 10</option>
+                            <option value="2s">10 - 20</option>
+                            <option value="3s">20 - 30</option>
+                            <option value="4s">30 - 50</option>
+                            <option value="5s">50 - 100</option>
+                        </select>
+                        <span><i class="fa fa-chevron-down ms-n4 mt-2"></i></span>
+                        <i class="fa fa-check disabled valid color-green-dark"></i>
+                        <i class="fa fa-check disabled invalid color-red-dark"></i>
+                        <em></em>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="input-style has-borders no-icon mb-4">
+                        <select id="form51">
+                            <option value="default" disabled selected>Month</option>
+                            <option value="Jan">January</option>
+                            <option value="Feb">February</option>
+                            <option value="Mar">March</option>
+                            <option value="Apr">April</option>
+                            <option value="May">May</option>
+                            <option value="Jun">June</option>
+                            <option value="Jul">July</option>
+                            <option value="Aug">August</option>
+                            <option value="Sep">September</option>
+                            <option value="Oct">October</option>
+                            <option value="Nov">November</option>
+                            <option value="Dec">December</option>
+                        </select>
+                        <i class="fa fa-check disabled valid color-green-dark"></i>
+                        <i class="fa fa-check disabled invalid color-red-dark"></i>
+                        <em></em>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="input-style has-borders no-icon mb-4">
+                        <select id="form5">
+                            <option value="default" disabled selected>Day</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                        </select>
+                        <i class="fa fa-check disabled valid color-green-dark"></i>
+                        <i class="fa fa-check disabled invalid color-red-dark"></i>
+                        <em></em>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="input-style has-borders no-icon validate-field mb-4">
+                        <input type="email" class="form-control validate-email" id="form41" placeholder="Email">
+                        <i class="fa fa-times disabled invalid color-red-dark"></i>
+                        <i class="fa fa-check disabled valid color-green-dark"></i>
+                        <em>(required)</em>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="input-style has-borders no-icon validate-field mb-4">
+                        <input type="tel" class="form-control validate-tel" id="form42" placeholder="Phone">
+                        <i class="fa fa-times disabled invalid color-red-dark"></i>
+                        <i class="fa fa-check disabled valid color-green-dark"></i>
+                        <em>(required)</em>
+                    </div>
+                </div>
+            </div>
+            <div class="input-style has-borders no-icon mb-4">
+                <textarea id="form7" placeholder="Describe your Event" class="bg-transparent"></textarea>
+                <em class="mt-n3">(required)</em>
+            </div>
+            <a href="#" class="btn btn-m rounded-sm text-uppercase font-700 gradient-blue border-0 btn-full mt-3">Create Event</a>
+        </div>
+    </div>
+
+    <div id="menu-event-interests" class="menu menu-box-bottom rounded-m">
+        <div class="content pb-3">
+            <div class="form-check interest-check">
+                  <input class="form-check-input" type="checkbox" value="" id="check1">
+                  <label class="form-check-label rounded-m" for="check1">Tech</label>
+                  <i class="fa fa-check-circle color-white font-18"></i>
+                  <i class="fa fa-mobile-alt font-17 color-red-dark"></i>
+            </div>
+            <div class="form-check interest-check">
+                  <input class="form-check-input" type="checkbox" value="" id="check1a">
+                  <label class="form-check-label rounded-m" for="check1a">Pets</label>
+                  <i class="fa fa-check-circle color-white font-18"></i>
+                  <i class="fa fa-paw font-17 color-brown-dark"></i>
+            </div>
+            <div class="form-check interest-check">
+                  <input class="form-check-input" type="checkbox" value="" id="check3" checked>
+                  <label class="form-check-label rounded-m" for="check3">Food</label>
+                  <i class="fa fa-check-circle color-white font-18"></i>
+                  <i class="fa fa-utensils font-17 color-gray-dark"></i>
+            </div>
+            <div class="form-check interest-check">
+                  <input class="form-check-input" type="checkbox" value="" id="check4" checked>
+                  <label class="form-check-label rounded-m" for="check4">Biking</label>
+                  <i class="fa fa-check-circle color-white font-18"></i>
+                  <i class="fa fa-bicycle font-17 color-blue-dark"></i>
+            </div>
+            <div class="form-check interest-check">
+                  <input class="form-check-input" type="checkbox" value="" id="check5">
+                  <label class="form-check-label rounded-m" for="check5">Sport</label>
+                  <i class="fa fa-check-circle color-white font-18"></i>
+                  <i class="fa fa-basketball-ball color-brown-dark font-17"></i>
+            </div>
+            <div class="form-check interest-check">
+                  <input class="form-check-input" type="checkbox" value="" id="check6">
+                  <label class="form-check-label rounded-m" for="check6">Fun</label>
+                  <i class="fa fa-check-circle color-white font-18"></i>
+                  <i class="far fa-smile font-17 color-yellow-dark"></i>
+            </div>
+            <a href="#" class="btn btn-l text-uppercase font-700 gradient-green border-0 btn-full mt-2 mb-4 rounded-sm shadow-xxl">Save Interests</a>
+        </div>
+
+    </div>
+
+    <div id="menu-event-accepted" class="menu menu-box-bottom rounded-m" data-menu-height="420">
+        <div class="content">
+            <div class="text-center">
+                <i class="fa fa-check-circle color-green-dark fa-5x scale-box px-3 py-2"></i>
+                <h1 class="pt-2 mb-0">Event Invite Accepted</h1>
+                <p class="boxed-text-xl mb-3">You've accepted the invitation to the event.</p>
+                <div class="row mb-3">
+                    <div class="col-6">
+                        <img src="images/avatars/5s.png" class="float-start border border-white bg-highlight rounded-circle me-n2" width="25">
+                        <span href="#" class="float-start ps-4 font-10 color-theme opacity-30">Hosted by Enabled</span>
+                    </div>
+                    <div class="col-6">
+                        <img src="images/avatars/1s.png" class="float-start border border-white bg-yellow-light rounded-circle me-n2" width="25">
+                        <img src="images/avatars/4s.png" class="float-start border border-white bg-mint-dark rounded-circle me-n2" width="25">
+                        <img src="images/avatars/5s.png" class="float-start border border-white bg-highlight rounded-circle me-n2" width="25">
+                        <img src="images/avatars/1s.png" class="float-start border border-white bg-yellow-light rounded-circle me-n2" width="25">
+                        <span href="#" class="float-start ps-4 font-10 color-theme opacity-30">+135 others</span>
+                    </div>
+                </div>
+                <div class="divider mb-3"></div>
+                <div class="d-flex text-center">
+                    <div class="m-auto">
+                        <i class="fa fa-calendar color-blue-dark font-18"></i>
+                        <br>
+                        <h5>28 August</h5>
+                    </div>
+                    <div class="m-auto">
+                        <i class="fa fa-clock color-brown-dark font-18"></i>
+                        <br>
+                        <h5>09:00 AM</h5>
+                    </div>
+                    <div class="m-auto">
+                        <i class="fa fa-map-pin color-red-dark font-18"></i>
+                        <br>
+                        <h5>Palo Alto, CA</h5>
+                    </div>
+                </div>
+                <div class="divider mt-2"></div>
+                <a href="#" class="btn btn-m rounded-sm btn-full text-uppercase font-700 gradient-green border-0">Awesome</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="menu-event-declined" class="menu menu-box-bottom rounded-m" data-menu-height="330">
+        <div class="content mt-3">
+            <div class="text-center">
+                <i class="fa fa-frown color-red-dark fa-5x px-3 py-2"></i>
+                <h1 class="pt-2 mb-0">Event Invite Declined</h1>
+                <p class="boxed-text-xl mb-3">We're sorry you don't want to join us.</p>
+                <div class="row mb-3">
+                    <div class="col-6">
+                        <img src="images/avatars/5s.png" class="float-start border border-white bg-highlight rounded-circle me-n2" width="25">
+                        <span href="#" class="float-start ps-4 font-10 color-theme opacity-30">Hosted by Enabled</span>
+                    </div>
+                    <div class="col-6">
+                        <img src="images/avatars/1s.png" class="float-start border border-white bg-yellow-light rounded-circle me-n2" width="25">
+                        <img src="images/avatars/4s.png" class="float-start border border-white bg-mint-dark rounded-circle me-n2" width="25">
+                        <img src="images/avatars/5s.png" class="float-start border border-white bg-highlight rounded-circle me-n2" width="25">
+                        <img src="images/avatars/1s.png" class="float-start border border-white bg-yellow-light rounded-circle me-n2" width="25">
+                        <span href="#" class="float-start ps-4 font-10 color-theme opacity-30">+135 others</span>
+                    </div>
+                </div>
+                <div class="divider mb-4"></div>
+                <a href="#" class="btn btn-m rounded-sm btn-full text-uppercase font-700 gradient-red border-0 close-menu">Close</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Menu-->
+    <div id="menu-main" class="menu menu-box-left rounded-0" data-menu-load="menu-main.html" data-menu-width="280" data-menu-active="nav-pages"></div>
+
+    <!-- Share Menu-->
+    <div id="menu-share" class="menu menu-box-bottom rounded-m" data-menu-load="menu-share.html" data-menu-height="370"></div>
+
+    <!-- Colors Menu-->
+    <div id="menu-colors" class="menu menu-box-bottom rounded-m" data-menu-load="menu-colors.html" data-menu-height="480"></div>
+
+
+</div>
+
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>

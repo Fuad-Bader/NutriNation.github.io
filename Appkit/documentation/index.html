@@ -1,0 +1,874 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>AppKit Mobile - Documentation</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/shCoreDefault.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i|Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i,900,900i&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+
+<body >
+
+<div id="navbar"></div>
+
+<div class="row">
+    <div class="chapters">
+        <div class="ml-4 mt-5">
+            <h1 class="font-35 font-800 mb-n1">AppKit Mobile</h1>
+            <p class="font-13">Mobile Website Template and PWA</p>
+
+            <div class="divider"></div>
+
+            <ul id="chaps" class="list-group mr-3">
+                <li><a class="list-group-item list-group-item-action  font-11 mb-n2 mt-4 text-success text-uppercase font-900" href="#">General</a></li>
+                <li><a class="list-group-item list-group-item-action" id="this-active"  href="#cap1">Introduction</a></li>
+                <li><a class="list-group-item list-group-item-action" href="#cap2">Main Structure</a></li>
+                <li><a class="list-group-item list-group-item-action" href="#cap3">Secondary Classes | Utility</a></li>
+                <li><a class="list-group-item list-group-item-action" href="#cap4">Color Highlights & Backgrounds</a></li>
+                <li><a class="list-group-item list-group-item-action" href="#cap5">Menu - Actions & Modals</a></li>
+                <li><a class="list-group-item list-group-item-action" href="#cap6a">Menus External - IMPORTANT</a></li>
+                <li><a class="list-group-item list-group-item-action" href="#cap6">PWA</a></li>
+                <li><a class="list-group-item list-group-item-action" href="#cap7">Components & Pages</a></li>
+                <li><a class="list-group-item list-group-item-action" href="z_faq.html">Frequent Questions</a></li>
+                <li><a class="list-group-item list-group-item-action  font-11 mb-n2 mt-4 text-success text-uppercase font-900" href="#">Chapters</a></li>
+                <li><a class="list-group-item list-group-item-action" href="https://support.we-themes.com">Contact Support</a></li>
+            </ul>
+
+        </div>
+    </div>
+    <div class="documentation" data-offset="50">
+
+        <div class="chapter container" id="cap1">
+            <div class="pt-4"></div>
+            <div class="pt-4"></div>
+            <h1>Welcome</h1>
+            <p class="text-primary mt-n2">
+                Thank you for purchasing AppKit Mobile
+            </p>
+            <p>
+                In this documentation, we'll be covering absolutely every
+                aspect of our item, to help you achieve the perfect Mobile Website, PWA or Hybrid App. Our newest generation
+                of frameworks released/updated after February 2021 are powered by Bootstrap 5, without jQuery Dependencies.
+                All Bootstrap omponents will be fully compatible with our products, and also, our own custom built elements that will be super easy for you to use and understand.
+                <br><br>
+                Remember. If you get stuck, we're always here to help, but this documentation will most likely cover absolutely any question you may have.
+                We've written this documentation to suit both <strong>developer</strong> and <strong>less experienced</strong> users. <br><br>
+                Our goal is to give you the best possible experience, so don't be afraid to ask if you get stuck along the road.<br>
+            </p>
+            <div class="alert alert-info mt-5" role="alert">
+                Please take the time to read at least this main documentation.
+                After you understand this part, everything will be just copy and paste and super easy to understand and use.  We've done our best to keep the code as classic as possible for developers and as
+                simple to understand for users with less experience.
+            </div>
+
+            <h4 class="text-danger mt-5 pt-5">Documentation Logic</h4>
+            <p>
+                Our entire system is created with components, as the quantity of elements needed to create this by hard coding them is simply not the optimal solution.
+                In order to perfectly understand our product, we strongly recommend you read the documentation in the following order.
+            </p>
+                <ol>
+                    <li>Structure Documentation (currently Viewing)</li>
+                    <li>Component Documentation (<a href="z_components.html">Found Here</a>)
+                    <li>Pages Documentation (<a href="z_pages.html">Found Here</a>)
+                    <li>FAQ Documentation (<a href="z_faq.html">Found Here</a>)
+                </ol>
+            <p>
+                By understanding the core structure and utility classes and then the components, you will be a master of our file incredibly fast! <br>
+                Components will make creating new pages easy and incredibly fast, offering you an unprecedented level of flexibility when it comes to adding your own ideas into our product.
+            </p>
+
+        </div>
+
+        <div class="divider mt-n5"></div>
+
+        <!-- Main Structure-->
+        <div class="chapter container" id="cap2">
+            <div class="pt-4"></div>
+            <div class="pt-4"></div>
+            <h1>Main Structure</h1>
+            <p class="text-primary mt-n2">
+                The _starter.html page explained, and the basic page structures.
+            </p>
+            <p class="mb-5">
+                The basic structure of our products is represented in the _starter.html. Here you can populate it with components or page elements, Bootstrap features as you need to, but, we need to make sure you understand it to avoid errors.
+            </p>
+
+            <!-- Basic Diagram-->
+            <div class="mb-3 pb-3">
+                <h5>Page Structure</h5>
+
+                <div id="highlighterMainDiv_219654" class="syntaxhighlighter html">
+                    <table border="0" cellpadding="0" cellspacing="0">
+                        <tbody>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td class="gutter">
+                                    <div class="line number1 index0 alt2">01</div>
+                                    <div class="line number2 index1 alt1">02</div>
+                                    <div class="line number3 index2 alt2">03</div>
+                                    <div class="line number4 index3 alt1">04</div>
+                                    <div class="line number5 index4 alt2">05</div>
+                                    <div class="line number6 index5 alt1">06</div>
+                                    <div class="line number7 index6 alt2">07</div>
+                                    <div class="line number8 index7 alt1">08</div>
+                                    <div class="line number9 index8 alt2">09</div>
+                                    <div class="line number10 index9 alt1">10</div>
+                                    <div class="line number11 index10 alt2">11</div>
+                                    <div class="line number12 index11 alt1">12</div>
+                                    <div class="line number13 index12 alt2">13</div>
+                                    <div class="line number14 index13 alt1">14</div>
+                                    <div class="line number15 index14 alt2">15</div>
+                                    <div class="line number16 index15 alt1">16</div>
+                                </td>
+                                <td id="codeContainer_219654" class="code">
+                                    <div id="container_219654" class="container">
+                                        <div class="line number1 index0 alt2"><code class="html comments">&lt;!-- Preloader will be added here--&gt;</code></div>
+                                        <div class="line number2 index1 alt1">&nbsp;</div>
+                                        <div class="line number3 index2 alt2"><code class="html plain">&lt;</code><code class="html keyword">div</code> <code class="html color1">id</code><code class="html plain">=</code><code class="html string">"page"</code><code class="html plain">&gt;</code></div>
+                                        <div class="line number4 index3 alt1">&nbsp;</div>
+                                        <div class="line number5 index4 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html comments">&lt;!-- Header Bar will be added here --&gt;</code></div>
+                                        <div class="line number6 index5 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html comments">&lt;!-- Footer Bar will be added here --&gt;</code></div>
+                                        <div class="line number7 index6 alt2">&nbsp;</div>
+                                        <div class="line number8 index7 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">div</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"page-content header-clear-VALUE"</code><code class="html plain">&gt;</code></div>
+                                        <div class="line number9 index8 alt2">&nbsp;</div>
+                                        <div class="line number10 index9 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html comments">&lt;!-- Add your Canvas Elements - meanign - Components and Page Elements Here--&gt;</code></div>
+                                        <div class="line number11 index10 alt2">&nbsp;</div>
+                                        <div class="line number12 index11 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;/</code><code class="html keyword">div</code><code class="html plain">&gt;&nbsp;&nbsp;&nbsp; </code></div>
+                                        <div class="line number13 index12 alt2">&nbsp;</div>
+                                        <div class="line number14 index13 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html comments">&lt;!-- Off Canvas Elements Here --&gt;</code></div>
+                                        <div class="line number15 index14 alt2">&nbsp;</div>
+                                        <div class="line number16 index15 alt1"><code class="html plain">&lt;/</code><code class="html keyword">div</code><code class="html plain">&gt;&nbsp;&nbsp;&nbsp; </code></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p>
+                    This is the main structure of our products. So following this structure is essential to the functioning of the products, especially since we use a lot of off-canvas elements to create a beautiful user experience.<br>
+                    <br>
+                </p>
+
+                <strong>Line 1</strong> - is the <a href="z_components.html#c25">preload component.</a> Only this element will be outside of the div id page.<br>
+                <strong>Line 2</strong> - is the main page wrapper. Keep every element in your page here.<br>
+                <strong>Line 5</strong> - is where we place our <a href="#cap-header">header bar</a>.<br>
+                <strong>Line 6</strong> - is where we place our <a href="#cap-footer">footer bar</a>.<br>
+                <strong>Line 8</strong> - is the page content. Inside this area we will include On Canvas Elements (all elements, with a few exceptions, explained below)<br>
+                <strong>Line 12</strong> - closes the page-content. <br>
+                <strong>Line 14</strong> - is where we house our off-canvas elements (menus, modals, snackbars, more explained below)<br>
+                <strong>Line 16</strong> - closes the div id page, and from this point, please do not add more content<br><br>
+
+                <strong>TIP:</strong> The page-content class will start from the top of the page, so when you're adding content inside it this might be hidden by the header. To solve this just add the class <strong>header-clear / header-clear-small / header-clear-medium / header-clear-large</strong> instead of header-clear-VALUE to the page content depending on your needs.
+
+                <h5 class="font-17 pt-5">What are on-canvas elements?  ( the page-content )</h5>
+                <p>
+                    The canvas is considered the place where you have all the elements you see on the page that don't move only when scrolling.<br>
+                    Everything you see inside the page-content class is considered an on-canvas element.<br>
+                    These elements are visible on the screen, at all times, and don't move except for when you are scrolling.
+                </p>
+                <h5 class="font-17">What are off-canvas elements? ( the area between the page-content and page)</h5>
+                <p>
+                    These elements are defined as elements that appear from the left, right, top or bottom of the screen, coming from outside the visible area of the screen.
+                    <br> These elements are placed <strong>outside the page-content</strong>, and this is very important, since they interact with the page-content. For example, menus can push the page-content and create a dark overlay.
+                    For this reason, the following list of elements must always be placed outside the page-content
+                </p>
+                <ul>
+                    <li>Header Bar</li>
+                    <li>Footer Bar</li>
+                    <li>Action Sheets</li>
+                    <li>Action Modals</li>
+                    <li>Sidebar Menus</li>
+                    <li>Toasts</li>
+                    <li>Snackbars</li>
+                </ul>
+
+                <div class="alert alert-danger font-700" role="alert">
+                    <span><i class="fa fa-exclamation-triangle"></i></span>
+                    <strong class="d-block">
+                        DO NOT put these inside the page-content class. Doing so will result in z-index issues, meaning, they will not show correctly.
+                    </strong>
+                </div>
+
+            </div>
+
+            <!--Body Tag-->
+            <div class="mb-3 pb-3">
+                <h5>Body Tag</h5>
+                <p>
+                    The body tag is used for controling the theme of the page and also the highlight and background color.
+                </p>
+                <div id="highlighterMainDiv_973486" class="syntaxhighlighter html"><div id="toolbarContainer_973486" class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td>&nbsp;</td></tr><tr><td class="gutter"><div class="line number1 index0 alt2">1</div></td><td id="codeContainer_973486" class="code"><div id="container_973486" class="container"><div class="line number1 index0 alt2"><code class="html plain">&lt;</code><code class="html keyword">body</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"theme-light"</code><code class="html plain">&gt;</code></div></div></td></tr><tr><td>&nbsp;</td></tr><tr></tr></tbody></table></div>
+                <p>
+                    The class we use to determine the color theme of our product. Use <strong>theme-dark</strong> for dark mode, <strong>theme-light</strong> for light mode and <strong>detect-theme</strong> to automatically detect your devices
+                    default theme settings. If this is not supported by your device, the page will automatically default to <strong>theme-light</strong>. Most modern devices now support automatic theme detection, and you can check this in component-auto-dark.html
+                </p>
+            </div>
+
+            <!-- Header-->
+            <div id="cap-header" class="mb-3 pb-3">
+                <h5>Header</h5>
+                <p>
+                    Our header is designed to be super easy to use and highly flexible for your  use case. With this being said, the header currently supports a few styles, which we'll explain below, and which can be seen and used inside component-headers.html found in the pack.
+                </p>
+                <div id="highlighterMainDiv_664455" class="syntaxhighlighter html"><div id="toolbarContainer_664455" class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td>&nbsp;</td></tr><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div></td><td id="codeContainer_664455" class="code"><div id="container_664455" class="container"><div class="line number1 index0 alt2"><code class="html plain">&lt;</code><code class="html keyword">div</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"header header-fixed header-logo-left"</code><code class="html plain">&gt;</code></div><div class="line number2 index1 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">a</code> <code class="html color1">href</code><code class="html plain">=</code><code class="html string">"index.html"</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"header-title"</code><code class="html plain">&gt;AppKit Mobile&lt;/</code><code class="html keyword">a</code><code class="html plain">&gt;</code></div><div class="line number3 index2 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">a</code> <code class="html color1">href</code><code class="html plain">=</code><code class="html string">"#"</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"header-icon header-icon-1"</code><code class="html plain">&gt;&lt;</code><code class="html keyword">i</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"fas fa-envelope"</code><code class="html plain">&gt;&lt;/</code><code class="html keyword">i</code><code class="html plain">&gt;&lt;</code><code class="html keyword">span</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"badge bg-green1-dark"</code><code class="html plain">&gt;5&lt;/</code><code class="html keyword">span</code><code class="html plain">&gt;&lt;/</code><code class="html keyword">a</code><code class="html plain">&gt;</code></div><div class="line number4 index3 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">a</code> <code class="html color1">href</code><code class="html plain">=</code><code class="html string">"#"</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"header-icon header-icon-2"</code><code class="html plain">&gt;&lt;</code><code class="html keyword">i</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"fas fa-bars"</code><code class="html plain">&gt;&lt;/</code><code class="html keyword">i</code><code class="html plain">&gt;&lt;/</code><code class="html keyword">a</code><code class="html plain">&gt;</code></div><div class="line number5 index4 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">a</code> <code class="html color1">href</code><code class="html plain">=</code><code class="html string">"#"</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"header-icon header-icon-3"</code><code class="html plain">&gt;&lt;</code><code class="html keyword">i</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"fas fa-heart color-red2-light"</code><code class="html plain">&gt;&lt;/</code><code class="html keyword">i</code><code class="html plain">&gt;&lt;/</code><code class="html keyword">a</code><code class="html plain">&gt;</code></div><div class="line number6 index5 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">a</code> <code class="html color1">href</code><code class="html plain">=</code><code class="html string">"#"</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"header-icon header-icon-4"</code><code class="html plain">&gt;&lt;</code><code class="html keyword">i</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"fas fa-share-alt"</code><code class="html plain">&gt;&lt;/</code><code class="html keyword">i</code><code class="html plain">&gt;&lt;/</code><code class="html keyword">a</code><code class="html plain">&gt;</code></div><div class="line number7 index6 alt2"><code class="html plain">&lt;/</code><code class="html keyword">div</code><code class="html plain">&gt;</code></div></div></td></tr><tr><td>&nbsp;</td></tr><tr></tr></tbody></table></div>
+
+                <p>
+                    Let's explain the header line by line, showcasing what it can do at the same time. <br><br>
+                    <strong c>Line 1</strong> is the main wrapping class. This contains the class header, to define the element, <strong>header-fixed</strong>, which will make the header fixed at the top of the screen and also, a class
+                    which is used to determine the style. You can use any of the following classes. <br><br>
+
+                    <strong class="pl-3">header-logo-left</strong> - Logo Left with 4 icons on the right side<br>
+                    <strong class="pl-3">header-logo-right</strong> - Logo Right with 4 icons on the left side<br>
+                    <strong class="pl-3">header-logo-center</strong> - Logo Center with 2 icons on left and 2 icons on right<br>
+                    <strong class="pl-3">header-logo-app</strong> - 1 icon on the left, logo and  3 icons on the right side.<br><br>
+
+                    <strong>Line 2</strong> is the header logo. This can be an image or a text. You can select this as an image by setting the <strong>header-title</strong> class to <strong>header-logo</strong>.
+                    The image can be found in the main css file by searching for "header-logo" using CTRL+F or CMD+F and replacing the image there with your own. <br><br>
+                    <strong>Lines 3,4,5,6</strong> are the header icons. These are numbered using header-icon-1 to 4 and you can change their position based on this number.
+
+                </p>
+
+
+            </div>
+
+            <!-- Footer-->
+            <div id="cap-footer" class="mb-3">
+                <h5>Footer Bar</h5>
+                <p>
+                    The footer menu is what gave birth to our product. A tone of customers have been asking for us to create a menu that is flexible, easy to use but at the same time offers multiple elegant styles.
+                    To view all the footer bars available, please check the <strong>component-footers.html</strong> page, where you can see live examples and can copy them directly into your pages.
+                </p>
+
+                <div id="highlighterMainDiv_523141" class="syntaxhighlighter java"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td>&nbsp;</td></tr><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div></td><td id="codeContainer_523141" class="code"><div id="container_523141" class="container"><div class="line number1 index0 alt2"><code class="java plain">&lt;div id=</code><code class="java string">"footer-bar"</code> <code class="java keyword">class</code><code class="java plain">=</code><code class="java string">"footer-bar-1"</code><code class="java plain">&gt;</code></div><div class="line number2 index1 alt1"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">&lt;a href=</code><code class="java string">"#"</code><code class="java plain">&gt;&lt;i </code><code class="java keyword">class</code><code class="java plain">=</code><code class="java string">"fa fa-home"</code><code class="java plain">&gt;&lt;/i&gt;&lt;span&gt;Home&lt;/span&gt;&lt;/a&gt;</code></div><div class="line number3 index2 alt2"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">&lt;a href=</code><code class="java string">"#"</code> <code class="java keyword">class</code><code class="java plain">=</code><code class="java string">"active-nav"</code><code class="java plain">&gt;&lt;i </code><code class="java keyword">class</code><code class="java plain">=</code><code class="java string">"fa fa-star"</code><code class="java plain">&gt;&lt;/i&gt;&lt;span&gt;Features&lt;/span&gt;&lt;/a&gt;</code></div><div class="line number4 index3 alt1"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">&lt;a href=</code><code class="java string">"#"</code><code class="java plain">&gt;&lt;i </code><code class="java keyword">class</code><code class="java plain">=</code><code class="java string">"fa fa-heart"</code><code class="java plain">&gt;&lt;/i&gt;&lt;span&gt;Pages&lt;/span&gt;&lt;/a&gt;</code></div><div class="line number5 index4 alt2"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">&lt;a href=</code><code class="java string">"#"</code><code class="java plain">&gt;&lt;i </code><code class="java keyword">class</code><code class="java plain">=</code><code class="java string">"fa fa-search"</code><code class="java plain">&gt;&lt;/i&gt;&lt;span&gt;Search&lt;/span&gt;&lt;/a&gt;</code></div><div class="line number6 index5 alt1"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">&lt;a href=</code><code class="java string">"#"</code><code class="java plain">&gt;&lt;i </code><code class="java keyword">class</code><code class="java plain">=</code><code class="java string">"fa fa-cog"</code><code class="java plain">&gt;&lt;/i&gt;&lt;span&gt;Settings&lt;/span&gt;&lt;/a&gt;</code></div><div class="line number7 index6 alt2"><code class="java plain">&lt;/div&gt;</code></div></div></td></tr><tr><td>&nbsp;</td></tr><tr></tr></tbody></table></div>
+
+                <p>
+                    Our footer menu is not limited to how many items you have in it. It's built using Flexbox so it will automatically calculate and align all items on it's own. However
+                    please note that there are devices out there with small screens, so using more than 5 icons is not recommended.<br>
+                    Inside the footer-bar id, you will have anchors and FontAwesome 5 icons. Replace them as needed. To highlight/activate  page simply add <strong>active-nav</strong> to the footer menu you wish.
+                </p>
+
+            </div>
+
+            <!-- Conclusion-->
+            <div class="mb-3">
+                <h5>Structure Conclusion</h5>
+                <p>
+                    The structure of the page is intended to be as simple as possible using the _starter.html page included, you will find the above elements inside, and you can start placing your content
+                    inside the page-content class right away! Continue with the documentation to learn about the menus and color classes.
+                </p>
+
+            </div>
+        </div>
+
+        <!-- Utility Classes -->
+        <div class="chapter container" id="cap3">
+            <div class="pt-4"></div>
+            <div class="pt-4"></div>
+            <h1>Secondary Classes  - Utility</h1>
+            <p class="text-primary mt-n2">
+                The most important feature, that will allow you to endlessly style our products
+            </p>
+            <p class="mb-3 pb-3">
+                Ultilty classes or, as they are known, secondary classes are re-usable pieces of CSS added to your HTML to ehnance and
+                extended certain features. For example, you may want to re-use a color, so instead of re-writting CSS for each time we want that color, we create a class for it.
+                These are the default Boostrap Classes available with the Boostrap framework - <a href="https://getbootstrap.com/docs/5.0/utilities/spacing/">https://getbootstrap.com/docs/5.0/utilities/spacing/</a><br><br>
+                But, beside these classes, we wanted to give you even more flexibility, while keeping the naming convention typical to Bootstrap, so you don't have to learn any new fancy and complicated codes.
+            </p>
+
+            <h5 class="mt-3 pt-3">Example of Utility Classes</h5>
+            <p>
+                Here is a perfect example where utility classes come super handy.
+            </p>
+            <div id="highlighterMainDiv_649860" class="syntaxhighlighter html"><div id="toolbarContainer_649860" class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td>&nbsp;</td></tr><tr><td class="gutter"><div class="line number1 index0 alt2">1</div></td><td id="codeContainer_649860" class="code"><div id="container_649860" class="container"><div class="line number1 index0 alt2"><code class="html plain">&lt;</code><code class="html keyword">h1</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"font-16 font-800 text-uppercase pt-3 mb-0"</code><code class="html plain">&gt;I'm a heading&lt;/</code><code class="html keyword">h1</code><code class="html plain">&gt;</code></div></div></td></tr><tr><td>&nbsp;</td></tr><tr><td>&nbsp;</td></tr></tbody></table></div>
+            <p>
+                The above h1 has a few classes attached, each one has a different purpose. You can change font sizes, font weight, transform the text and even adjust paddings and margins. These are all utility classes and they are awesome! Let's dive into them.
+            </p>
+
+            <h5 id="cap-spacing" class="mt-4 pt-5">Spacing - Paddings & Margins</h5>
+            <p class="font-12 mt-n1"><i class="fa fa-info-circle text-primary"></i> If you are accustomed to Boostrap 5 Spacing, you can continue directly to <a href="#cap-rounded">this point</a></p>
+
+            <p>
+                There are cases where you need to control the position of an element. A great example is cards where positioning is very important, but
+                in order not to create "rigid" coded cards, we use the Boostrap Spacing properties. <br>
+                <br>
+                These properties allow you to control the margin and padding both left, right top and bottom of any given element on screen. Let's dive in:
+            </p>
+            <strong>Target</strong>
+            <ul>
+                <li><strong>m</strong> - margins</li>
+                <li><strong>p</strong> - paddings</li>
+            </ul>
+            <strong>Placement</strong>
+            <ul>
+                <li><strong>t</strong> - top</li>
+                <li><strong>e</strong> - right / end - used for easier RTL (right to left text) integration</li>
+                <li><strong>b</strong> - bottom</li>
+                <li><strong>s</strong> - left / start used for easier RTL (right to left text) integration</li>
+                <li><strong>x</strong> - both left and right</li>
+                <li><strong>y</strong> - both top and bottom</li>
+            </ul>
+            <strong>Value</strong>
+            <ul>
+                <li><strong>0</strong> - no margin or padding</li>
+                <li><strong>1</strong> - 5px</li>
+                <li><strong>2</strong> - 10px</li>
+                <li><strong>3</strong> - 15px</li>
+                <li><strong>4</strong> - 30px</li>
+                <li><strong>5</strong> - 45px</li>
+            </ul>
+            <p>
+                You can combine the above elements to give your element spacing you require as follows<br><br>
+                <strong>[target][placement]-[value]</strong> <br><br>
+                So, for example, to create a margin bottom of 15 pixels you will use <strong>mb-3</strong>. This combination method applies to all the values above. You can also create negative values for margins, for example if you
+                want to pull an element under another element. Let's say you want a paragraph to go a bit higher under a heading, in that case, simply add <strong>n</strong> to your value (n = negative) and the
+                value there will become a negative value. For example <strong>mt-n2</strong>, will give the element a negative top margin of 10 pixels.<br><br>
+                This is the standard method found and used in <a href="https://getbootstrap.com/docs/5.0/utilities/spacing/">Boostrap's official documentation</a> and offers immense flexibility to element positioning.
+            </p>
+
+            <h5 id="cap-utility" class="mt-3 pt-3">Aligning Text</h5>
+            <p>
+                To align text, simply use the following classes. These are self-explanatory in their names <br><br>
+                <strong>text-center</strong><br>
+                <strong>text-start </strong>left / start used for easier RTL (right to left text) integration<br>
+                <strong>text-end </strong>left / start used for easier RTL (right to left text) integration<br>
+            </p>
+
+            <div class="alert alert-primary font-700" role="alert">
+                <span><i class="fa fa-question"></i></span>
+                <strong class="d-block">
+                    <h6>Why is VALUE-left and VALUE-right now set to VALUE-start and VALUE-end? </h6>
+                    <p class="mb-0">
+                        With the release of Bootstrap 5, the developers over at Bootstrap decided to replace LEFT and RIGHT with START and END.
+                        This was done to more easily integrate RIGHT TO LEFT text languages. This is not a decision made by us, and while we can understand
+                        it maybe confusing at first it is the new Bootstrap5  standard, VALUE-left (ml-5 for example) is now VALUE-end (me-5 for example)
+                    </p>
+                </strong>
+            </div>
+
+
+            <h5 class="mt-3 pt-3">Text Transform</h5>
+            <p>
+                To transform text, simply use the following classes. These are self-explanatory in their names <br><br>
+                <strong>text-uppercase</strong><br>
+                <strong>text-lowercase</strong><br>
+                <strong>text-capitalize</strong><br>
+            </p>
+
+            <h5 id="cap-rounded" class="mt-3 pt-3">Rounded Borders</h5>
+            <p>
+                To create a rounded border using our template, you simply have to use the parameters xs, s, m, sm, l, xl attached at the end of the rounded- class, just like for Bootstrap. The
+                default Bootstrap classses are still working if you wish to use those as well.<br><br>
+                <strong>rounded-0</strong> - removes rounded corners from pre-existing rounded element<br>
+                <strong>rounded-xs</strong><br>
+                <strong>rounded-s</strong><br>
+                <strong>rounded-m</strong><br>
+                <strong>rounded-l</strong><br>
+                <strong>rounded-xl</strong><br>
+            </p>
+
+            <h5 id="cap-shadows" class="mt-3 pt-3">Shadows</h5>
+            <p>
+                Adding different shadows to your elements such as buttons, boxes, images, cards and other elements is done in the same fashion. Simply use the shadow- and the parameters xs, s, sm, m, l, xl at the end
+                <br><br>
+                <strong>shadow-0</strong> - removes shadow from pre-existing shadow element<br>
+                <strong>shadow-xs</strong><br>
+                <strong>shadow-s</strong><br>
+                <strong>shadow-m</strong><br>
+                <strong>shadow-l</strong><br>
+                <strong>shadow-xl</strong><br>
+            </p>
+
+            <h5 id="cap-opacity" class="mt-3 pt-3">Opacity</h5>
+            <p>
+                Opacity is great for controling overlay of cards or for reducing the contrast for text. These are very useful to have throughout the item and will be very useful in Cards.
+                These values are increasing 10-20-30 etc, etc. The higher the number, the more visible it is, the lower the number the more invisible it is.
+                <br><br>
+                <strong>opacity-00</strong><br>
+                <strong>opacity-10</strong><br>
+                <strong>opacity-20</strong><br>
+                <strong>....</strong><br>
+                <strong>opacity-80</strong><br>
+                <strong>opacity-90</strong><br>
+            </p>
+
+            <h5 class="mt-3 pt-3">Font Weights</h5>
+            <p>
+                The font weight system available in bootstrap made it hard for users to easily determine the weight of a font that has for example 9 styles.
+                Our system works on the simple contept that you place the font- followed by the weight of the font you wish to use. Lower is thiner, higher is bolder.
+                <br><br>
+                <strong>font-200</strong><br>
+                <strong>font-300</strong><br>
+                <strong>font-400</strong><br>
+                <strong>font-500</strong><br>
+                <strong>font-600</strong><br>
+                <strong>font-700</strong><br>
+                <strong>font-800</strong><br>
+                <strong>font-900</strong><br>
+            </p>
+
+            <h5 class="mt-4 pt-4">Font Sizes</h5>
+            <p>
+                We created these classes to increase the flexibility of your typography size. Sometimes, the included sizes are just not enough, and adding style="font-size:12px" is a hack
+                and we like to keep our code professional and clean. To avoid this, we created an array of font sizes, from 8 pixels up to 40 pixels. To use them, simply add the font- followed by the font size you wish to use
+                <br><br>
+                <strong>font-8</strong><br>
+                <strong>font-9</strong><br>
+                <strong>font-10</strong><br>
+                <strong>..........</strong><br>
+                <strong>font-40</strong><br>
+            </p>
+
+            <h5 id="cap-bg" class="mt-4 pt-4">Reusable Backgrounds</h5>
+            <p>
+                You may have noticed throughout our code that we use bg-NUMBER for backgrounds. These are demo backgrounds that can be found in the zDemo.scss file or inside style.css/bootstrap.css.
+                These are re-usable background images we use for cards. You can replace these images by searching for them in the CSS and replacing the images with your own
+                <br><br>
+                <strong>bg-1 to bg-30</strong><br>
+            </p>
+
+            <h5 id="cap-bg" class="mt-4 pt-4">Aditional Utilities</h5>
+            <p>
+                We also have some aditional utilities you can use, that we really can't add in any of the above elements. These utilties are either classes or, in case you see data- in front of them, they are attributes.
+                <br><br>
+                <strong>data-toggle-theme-switch</strong> - changes from dark to light or light to dark<br>
+                <strong>border-0</strong> - removes the border from an element, for example, great on List Groups on the last element.<br>
+            </p>
+
+            <div class="alert alert-primary font-15 font-900" role="alert">
+              Please don't forget to check the  Bootstrap Utilities. There are a lot of secondary classes you can use beside ours. We just extended the Bootstrap framework to include all
+                the most usefull extensions. - <a href="https://getbootstrap.com/docs/5.0/utilities/spacing/">Click to View All Utilities https://getbootstrap.com/docs/5.0/utilities/spacing/</a>
+            </div>
+
+
+            <h5 class="mt-4 pt-4">Utilities Conclusions</h5>
+            <p>
+                The idea of creating something flexible was always in our mind, and from our customer feedback it was easy to understand that most users who just want a fast setup
+                 for their PWA don't know and don't want to use CSS. This gives users the option of having a copy paste design with as minimal use of CSS. Everything can be created
+                using classes while writing your HTML, and everything in our product can be enhanced with these elements.
+            </p>
+
+        </div>
+
+        <!-- Colors -->
+        <div class="chapter container" id="cap4">
+            <div class="pt-4"></div>
+            <div class="pt-4"></div>
+            <h1>Color Highlights & Backgrounds</h1>
+            <p class="text-primary mt-n2">
+                The power and ease of colors
+            </p>
+            <p class="mb-3 pb-3">
+                When creating the colors for our products, we always think of flexibility and allowing you to easily create any color scheme you want without stress. Therefore, using SCSS, was the best solution to asure a fast, easy and reliable color scheme, while at the same time making the creation of new color schemes super easy. <br><br>
+                There are 3 simple steps to follow to create a new color scheme using SCSS and, a single step to apply the main highlight to the entire page.
+            </p>
+
+            <h5 class="pt-3">How do I change the bg-highlight and color-highlight globally?</h5>
+            <p>
+                It's as simple as ever. Simply go to the top of your .html file and change the body <strong>data-highlight="highlight-COLOR"</strong> to the color you want. Please read the following step to understand how our products understand and load the correct color scheme. We've included a small guide <a href="index.html#faq0-scheme">via this link</a> to help you understand how to create SCSS colors and SCSS files. It's really simple to use!
+            </p>
+
+            <h5 class="pt-3">What classes do you get?</h5>
+            <p>
+                You can now use your above generated code to<br><br>
+                <strong>color-awesomeBuyer-light</strong> - applies to text and icons, will use hex1 <br>
+                <strong>color-awesomeBuyer-dark</strong> - applies to text and icons, will use hex2 <br><br>
+                <strong>bg-awesomeBuyer-light</strong> - applies to background elements such as card, will use hex1 <br>
+                <strong>bg-awesomeBuyer-dark</strong> - applies to background elements such as card, will use hex2 <br><br>
+                <strong>bg-fade-awesomeBuyer-light</strong> - faded version of the color resulted in above bg-awesomeBuyer-light, great for pastel colors. <br>
+                <strong>bg-fade-awesomeBuyer-dark</strong> - faded version of the color resulted in above bg-awesomeBuyer-dark, great for pastel colors. <br><br>
+                <strong>gradient-awesomeBuyer</strong> - applies to background elements such as card, will use a combination of all 3 hexes, starting with hex1, hex2, hex3 at the end. <br><br>
+                <strong>border-awesomeBuyer</strong> - applies to bordered elements using hex1 <br>
+                <strong>border-fade-awesomeBuyer</strong> - faded version of the color resulted in above border-awesomeBuyer-light, great for pastel colors. <br>
+            </p>
+
+            <h5 id="cap-colors" class="pt-3">What colors are included by default?</h5>
+            In case you want to use these colors in the body tag or highlight tag, you will only need to enter their names as shown below, but if you want to use these colors to change the color
+            of an element or the background of an element, use the <strong>awesomeBuyer</strong> structure explained above, and simply replace <strong>awesomeBuyer</strong> with any color from the list below.
+            <br/><br/>
+            <strong class="font-800 font-18">NOTE:</strong><br/> All the colors in our pack can be found inside <strong>productFolder/scss/productName/_colors.scss</strong> file or inside style.css by searching for example for <strong>bg-ANY_NAME_FROM_LIST_BELOW-dark</strong>
+
+            <div class="row pt-4">
+                <div class="col-4">
+                    <ul>
+                        <li>mint</li>
+                        <li>plum</li>
+                        <li>violet</li>
+                        <li>magenta</li>
+                        <li>red</li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <ul>
+                        <li>green</li>
+                        <li>sky</li>
+                        <li>blue</li>
+                        <li>yellow</li>
+                        <li>teal</li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <ul>
+                        <li>orange</li>
+                        <li>pumpkin</li>
+                        <li>pink</li>
+                        <li>brown</li>
+                        <li>dark</li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+
+            <h5 class="pt-3">Are there any Social Colors Included?</h5>
+            <p>
+                Yes, and you can add more with great ease. You will find just under the colorArray in custom.js the socialColorArray, which includes just one brand name and a color.
+                This will generate <strong>color-BrandName</strong> and <strong>bg-BrandName</strong>. Add more simply by duplicating the code.
+            </p>
+
+            <div class="mb-3 pb-3 pt-5">
+                <h5>How do I turn on Dark Mode? Or change the color highlight or page background?</h5>
+                <p>
+                    The body tag is used for controling the theme of the page and also the highlight and background color.
+                </p>
+                <div id="highlighterMainDiv_973486" class="syntaxhighlighter html"><div id="toolbarContainer_973486" class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td>&nbsp;</td></tr><tr><td class="gutter"><div class="line number1 index0 alt2">1</div></td><td id="codeContainer_973486" class="code"><div id="container_973486" class="container"><div class="line number1 index0 alt2"><code class="html plain">&lt;</code><code class="html keyword">body</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"theme-light"</code><code class="html plain">&gt;</code></div></div></td></tr><tr><td>&nbsp;</td></tr><tr></tr></tbody></table></div>
+                <p>
+                    The class we use to determine the color theme of our product. Use <strong>theme-dark</strong> for dark mode, <strong>theme-light</strong> for light mode and <strong>detect-theme</strong> to automatically detect your devices
+                    default theme settings. If this is not supported by your device, the page will automatically default to <strong>theme-light</strong>. Most modern devices now support automatic theme detection, and you can check this in component-auto-dark.html <br><br>
+                    To change the body background, simply replace "none" in the body tag with any of the colors in the list above.<br>
+                    To change the color of color-highlight / bg-highlight simply replace "red2" with any of the colors from the list above.
+                </p>
+            </div>
+
+            <div class="mb-3 pb-3 pt-3">
+                <h5>What is bg-theme and color-theme?</h5>
+                <p>
+                    Let's say you have a black card where you have a white text. When you go to dark mode, that text will become black and no longer readable. This is where
+                    the class color-theme is great. The color-theme and bg-theme are always the opposite color of the theme you have selected.<br><br>
+                    <strong>theme-dark</strong> - color-theme will be dark and bg-theme will be white<br>
+                    <strong>theme-light</strong> - color-theme will be light and bg-theme will be black<br>
+                </p>
+            </div>
+
+
+        </div>
+
+        <!-- Menus -->
+        <div class="chapter container" id="cap5">
+            <div class="pt-4"></div>
+            <div class="pt-4"></div>
+            <h1>Menus</h1>
+            <p class="text-primary mt-n2">
+                Action Sheets, Modals, Sidebars.
+            </p>
+            <p class="mb-3 pb-3">
+                These menu systems are custom built to include effects and more beautiful interfaces than the default ones included by Bootstrap. They are incredibly well
+                optimized to use full CSS3 and will work flawelessly even on low-end  budget devices.
+            </p>
+            <div class="alert alert-primary" role="alert">
+                The menus shown here are custom built. The modals that Bootstrap offers work perfectly fine with our page, but cannot be combined with our menus.
+                You can still use BootStrap modals as shown <a href="https://getbootstrap.com/docs/5.0/components/modal/"> using their system here > https://getbootstrap.com/docs/5.0/components/modal/</a>
+            </div>
+            <h4 class="pt-5">Menu Placement</h4>
+            The menus must be placed outside the <strong>div class="page-content"</strong> to assure they can go over the content nicely
+            and in case you use effects they can control the page-content without breaking it. The following list of items <strong>must be placed outside the page-content class</strong>
+            <ul class="pt-3">
+                <li>any item with the class="menu..." </li>
+                <li>action sheets</li>
+                <li>action modals</li>
+                <li>sidebars</li>
+                <li>snackbars</li>
+                <li>toasts</li>
+            </ul>
+            <h4 class="pt-5" id="cap-menu-structure">General Menu Structure</h4>
+            <p class="text-primary font-13 mt-n2 mb-2">Individual Examples included after this section</p>
+            First of all, let's take a simple structure, without any menu settings attached. This is the starter of the menu. For simpler to read and follow we
+            made each attribute in the below example on a separate line so we can explain them by number.
+
+            <div id="highlighterMainDiv_830179" class="syntaxhighlighter html">
+                <table border="0" cellpadding="0" cellspacing="0">
+                    <tbody>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="gutter">
+                                <div class="line number1 index0 alt2">1</div>
+                                <div class="line number2 index1 alt1">2</div>
+                                <div class="line number3 index2 alt2">3</div>
+                                <div class="line number4 index3 alt1">4</div>
+                                <div class="line number5 index4 alt2">5</div>
+                                <div class="line number6 index5 alt1">6</div>
+                                <div class="line number7 index6 alt2">7</div>
+                            </td>
+                            <td id="codeContainer_830179" class="code">
+                                <div id="container_830179" class="container">
+                                    <div class="line number1 index0 alt2"><code class="html plain">&lt;</code><code class="html keyword">div</code> <code class="html color1">id</code><code class="html plain">=</code><code class="html string">"MENU_UNIQUE_NAME"</code></div>
+                                    <div class="line number2 index1 alt1"><code class="html color1">class</code><code class="html plain">=</code><code class="html string">"menu MENU_STYLES MENU_BOX_POSITION"</code></div>
+                                    <div class="line number5 index4 alt2"><code class="html color1">data-menu-effect</code><code class="html plain">=</code><code class="html string">"MENU_EFFECT"</code><code class="html plain">&gt;</code></div>
+                                    <div class="line number6 index5 alt1"><code class="html comments">&lt;!-- Place your menu, action sheet, action modal stuff here --&gt;</code></div>
+                                    <div class="line number7 index6 alt2"><code class="html plain">&lt;/</code><code class="html keyword">div</code><code class="html plain">&gt;</code></div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>`</tr>
+                    </tbody>
+                </table>
+            </div>
+            <strong>Line 1</strong> is the menu ID. This must be unique so we can use it to call it from the HTML button we want, or directly from JavaScript
+            <br><strong>Line 2</strong> is where we define what type of menu we want, and also add some style to it. First, add the class menu, this is required, now, you can replace<br>
+            <p class="pl-5 pt-4 mb-0"><strong>MENU_STYLES</strong> - utility classes such as rounded-VALUE or shadow-VALUE to change the shape of the menu. You can even make the menu detach from the sides of the screen, meaning, feel like floating by adding <strong>menu-box-detached</strong> utility class here.</p>
+            <p class="pl-5 mb-0"><strong>MENU_BOX_POSITION</strong> - to control the placement of the menu</p>
+            <p class="pl-5 ml-5 mb-0"><strong>menu-box-left</strong> - to create a sidebar left</p>
+            <p class="pl-5 ml-5 mb-0"><strong>menu-box-left</strong> - to create a sidebar right</p>
+            <p class="pl-5 ml-5 mb-0"><strong>menu-box-bottom</strong> - to create a bottom menu / action sheet</p>
+            <p class="pl-5 ml-5 mb-0"><strong>menu-box-top</strong> - to create a top menu / action sheet</p>
+            <p class="pl-5 ml-5 mb-0"><strong>menu-box-modal</strong> - to create a modal window</p>
+            <br><strong>Line 3</strong> is used only if you are using a menu-box-top, menu-box-bottom or menu-modal. Replace the value with how high you want your menu to be
+            <br><strong>Line 4</strong> is used only if you are using a menu-box-left or menu-box-right. Replace the value with how wide you want your menu to be
+            <br><strong>Line 5</strong> Is the effect you wish your menu to have. This does not apply to menu-box-modal
+            <p class="pl-5 pt-4 mb-0"><strong>MENU_EFFECT</strong> - supports any of the following menu effects</p>
+            <p class="pl-5 ml-5 mb-0"><strong>menu-push</strong> - will push the page-content with the height or width of the menu you selected</p>
+            <p class="pl-5 ml-5 mb-0"><strong>menu-parallax</strong> - will push the page-content 1/10 of the size of the menu, creating a parallax type effect</p>
+            <p class="pl-5 ml-5 mb-0"><strong>deleting line 5</strong> - will come above your page-content</p>
+            <br><strong>Line 6</strong> This is where you place all the content you want to show in your menu
+            <br><strong>Line 7</strong> is where you close the entire menu.<br>
+            <br>Now, let's show some direct examples, for everyone to understand <br>
+
+            <h5 class="pt-5">How do I trigger/show a menu like this?</h5>
+            To trigger the menu, all you have to do is add to the button you want the attribute <strong>data-menu="MENU_UNIQUE_NAME"</strong>. Each menu must have a unique name
+            in Line 1 and that name will be added to the data-menu on the button you want to activate the menu from.
+
+            <h5 class="pt-5">How do I show/hide a menu programatically</h5>
+            In custom.js, inside the init_template() function you can trigger menus by using the following codes.<br><Br>
+            The code must have the menu function, followed by the unique ID of the menu, the action, show or hide and the timeout before the menu shows, expressed in miliseconds.
+            <div id="highlighterMainDiv_633918" class="syntaxhighlighter jscript">
+                <table border="0" cellpadding="0" cellspacing="0">
+                    <tbody>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="gutter">
+                                <div class="line number1 index0 alt2">1</div>
+                                <div class="line number2 index1 alt1">2</div>
+                                <div class="line number3 index2 alt2">3</div>
+                                <div class="line number4 index3 alt1">4</div>
+                            </td>
+                            <td id="codeContainer_633918" class="code">
+                                <div id="container_633918" class="container">
+                                    <div class="line number1 index0 alt2"><code class="jscript comments">//show menu</code></div>
+                                    <div class="line number2 index1 alt1"><code class="jscript plain">menu(</code><code class="jscript string">'your-menu-id'</code><code class="jscript plain">, <code>'show'</code>, 250);</code></div>
+                                    <div class="line number3 index2 alt2"><code class="jscript comments">//hide menu</code></div>
+                                    <div class="line number4 index3 alt1"><code class="jscript plain">menu(</code><code class="jscript string">'your-menu-id'</code><code class="jscript plain">, <code>'hide'</code>, 250);</code></div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <h5 class="pt-3">Can I trigger menus from menus?</h5>
+            <p>
+                Yes! Inside your menu, add a button with the data-menu="your-menu-id" and that menu will be triggered.
+            </p>
+
+            <h5 class="pt-3">How do I close a menu from inside the menu?</h5>
+            <p>
+                Add the class <strong>close-menu</strong> to any button inside your menu. This will trigger it to close.
+            </p>
+
+            <h2 class="pt-5">Examples</h2>
+            <h5 class="pt-3">Bottom Menu</h5>
+            <p class="text-primary font-13 mt-n2 mb-2">Used in Action Sheets, Share Menus, anything that comes from the bottom.</p>
+            <div id="highlighterMainDiv_744647" class="syntaxhighlighter html"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td>&nbsp;</td></tr><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div></td><td id="codeContainer_744647" class="code"><div id="container_744647" class="container"><div class="line number1 index0 alt2"><code class="html plain">&lt;</code><code class="html keyword">div</code> <code class="html color1">id</code><code class="html plain">=</code><code class="html string">"MENU_UNIQUE_NAME"</code></div><div class="line number2 index1 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html color1">class</code><code class="html plain">=</code><code class="html string">"menu menu-box-bottom menu-box-detached rounded-m"</code></div><div class="line number3 index2 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html color1">data-menu-height</code><code class="html plain">=</code><code class="html string">"300"</code></div><div class="line number4 index3 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html color1">data-menu-effect</code><code class="html plain">=</code><code class="html string">"menu-parallax"</code><code class="html plain">&gt;</code></div><div class="line number5 index4 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html comments">&lt;!-- your menu stuff here--&gt;</code></div><div class="line number6 index5 alt1"><code class="html plain">&lt;/</code><code class="html keyword">div</code><code class="html plain">&gt;</code></div></div></td></tr><tr><td>&nbsp;</td></tr><tr><td>&nbsp;</td></tr></tbody></table></div>
+
+            <h5 class="pt-3">Top Menu</h5>
+            <p class="text-primary font-13 mt-n2 mb-2">Used in Action Sheets, Share Menus, anything that comes from the top.</p>
+            <div id="highlighterMainDiv_646986" class="syntaxhighlighter html"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td>&nbsp;</td></tr><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div></td><td id="codeContainer_646986" class="code"><div id="container_646986" class="container"><div class="line number1 index0 alt2"><code class="html plain">&lt;</code><code class="html keyword">div</code> <code class="html color1">id</code><code class="html plain">=</code><code class="html string">"MENU_UNIQUE_NAME"</code></div><div class="line number2 index1 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html color1">class</code><code class="html plain">=</code><code class="html string">"menu menu-box-top menu-box-detached rounded-m"</code></div><div class="line number3 index2 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html color1">data-menu-height</code><code class="html plain">=</code><code class="html string">"300"</code></div><div class="line number4 index3 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html color1">data-menu-effect</code><code class="html plain">=</code><code class="html string">"menu-parallax"</code><code class="html plain">&gt;</code></div><div class="line number5 index4 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html comments">&lt;!-- your menu stuff here--&gt;</code></div><div class="line number6 index5 alt1"><code class="html plain">&lt;/</code><code class="html keyword">div</code><code class="html plain">&gt;</code></div></div></td></tr><tr><td>&nbsp;</td></tr><tr><td>&nbsp;</td></tr></tbody></table></div>
+
+            <h5 class="pt-3">Sidebar Menu Left</h5>
+            <p class="text-primary font-13 mt-n2 mb-2">Used in Sidebar Navigations or Instant Articles.</p>
+            <div id="highlighterMainDiv_441586" class="syntaxhighlighter html"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td>&nbsp;</td></tr><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div></td><td id="codeContainer_441586" class="code"><div id="container_441586" class="container"><div class="line number1 index0 alt2"><code class="html plain">&lt;</code><code class="html keyword">div</code> <code class="html color1">id</code><code class="html plain">=</code><code class="html string">"MENU_UNIQUE_NAME"</code></div><div class="line number2 index1 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html color1">class</code><code class="html plain">=</code><code class="html string">"menu menu-box-left"</code></div><div class="line number3 index2 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html color1">data-menu-width</code><code class="html plain">=</code><code class="html string">"300"</code></div><div class="line number4 index3 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html color1">data-menu-effect</code><code class="html plain">=</code><code class="html string">"menu-parallax"</code><code class="html plain">&gt;</code></div><div class="line number5 index4 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html comments">&lt;!-- your menu stuff here--&gt;</code></div><div class="line number6 index5 alt1"><code class="html plain">&lt;/</code><code class="html keyword">div</code><code class="html plain">&gt;</code></div></div></td></tr><tr><td>&nbsp;</td></tr><tr><td>&nbsp;</td></tr></tbody></table></div>
+
+            <h5 class="pt-3">Sidebar Menu Right</h5>
+            <p class="text-primary font-13 mt-n2 mb-2">Used in Sidebar Navigations or Instant Articles.</p>
+            <div id="highlighterMainDiv_66178" class="syntaxhighlighter html"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td>&nbsp;</td></tr><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div></td><td id="codeContainer_66178" class="code"><div id="container_66178" class="container"><div class="line number1 index0 alt2"><code class="html plain">&lt;</code><code class="html keyword">div</code> <code class="html color1">id</code><code class="html plain">=</code><code class="html string">"MENU_UNIQUE_NAME"</code></div><div class="line number2 index1 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html color1">class</code><code class="html plain">=</code><code class="html string">"menu menu-box-right"</code></div><div class="line number3 index2 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html color1">data-menu-width</code><code class="html plain">=</code><code class="html string">"300"</code></div><div class="line number4 index3 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html color1">data-menu-effect</code><code class="html plain">=</code><code class="html string">"menu-parallax"</code><code class="html plain">&gt;</code></div><div class="line number5 index4 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html comments">&lt;!-- your menu stuff here--&gt;</code></div><div class="line number6 index5 alt1"><code class="html plain">&lt;/</code><code class="html keyword">div</code><code class="html plain">&gt;</code></div></div></td></tr><tr><td>&nbsp;</td></tr><tr><td>&nbsp;</td></tr></tbody></table></div>
+
+            <h2 class="pt-5">Bootstrap Modals & Menus</h2>
+            <p class="text-primary mt-n2">Can I still use Bootstrap default menus?</p>
+            <p>
+                You can still use the Bootstrap system of menus, they will work and can be programatically triggered and activated just
+                like expressed in bootstrap, but please keep the following things in mind
+            </p>
+                <ul class="icon-list">
+                    <li><i class="fa fa-exclamation-triangle text-danger"></i> Place all menu HTML code outside the page-content class</li>
+                    <li><i class="fa fa-exclamation-triangle text-danger"></i> Place your programatic trigger code inside custom.js inside the init_template() function</li>
+                </ul>
+
+        </div>
+
+        <!-- PWA -->
+        <div class="chapter container" id="cap6a">
+            <div class="pt-4"></div>
+            <div class="pt-4"></div>
+            <h1>Main Menu</h1>
+            <p class="text-primary mt-n2">Using the main menu in our products.</p>
+
+            <div class="alert alert-danger" role="alert">
+                Please note. External menus are loaded via JavaScript. This means they require a server enviroument such as AMPPS, XAMP or WAMP to view locally. If you don't have a server enviroument, please use <a href="http://brackets.io/">http://brackets.io/</a>. It's
+                a 100% free code editor which has a "Live Preview" option which will simulate local servers. If you see the menu loaded as white, this is the cause. The above step will fix it. This does not happen on your server, or when using the page
+                as a PWA.
+            </div>
+
+            <p>
+                Considering our products are site templates, editing the entire menu means editing each individual HTML page, which for large pages can be very, very complicated.
+                For that reason, our products use external menus. Making it much easier to edit. You will only have to edit a single HTML file.
+                Let's explain:
+            </p>
+
+            <div id="highlighterMainDiv_409471" class="syntaxhighlighter html"><div id="toolbarContainer_409471" class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td>&nbsp;</td></tr><tr><td class="gutter"><div class="line number1 index0 alt2">01</div><div class="line number2 index1 alt1">02</div><div class="line number3 index2 alt2">03</div><div class="line number4 index3 alt1">04</div><div class="line number5 index4 alt2">05</div><div class="line number6 index5 alt1">06</div><div class="line number7 index6 alt2">07</div><div class="line number8 index7 alt1">08</div><div class="line number9 index8 alt2">09</div><div class="line number10 index9 alt1">10</div></td><td id="codeContainer_409471" class="code"><div id="container_409471" class="container"><div class="line number1 index0 alt2"><code class="html plain">&lt;</code><code class="html keyword">div</code></div><div class="line number2 index1 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;</code><code class="html color1">id</code><code class="html plain">=</code><code class="html string">"menu-main"</code></div><div class="line number3 index2 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;</code><code class="html color1">class</code><code class="html plain">=</code><code class="html string">"menu menu-box-left"</code></div><div class="line number4 index3 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;</code><code class="html color1">data-menu-width</code><code class="html plain">=</code><code class="html string">"280"</code></div><div class="line number5 index4 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;</code><code class="html color1">data-menu-active</code><code class="html plain">=</code><code class="html string">"nav-welcome"</code></div><div class="line number6 index5 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;</code><code class="html color1">data-menu-load</code><code class="html plain">=</code><code class="html string">"menu-main.html"</code><code class="html plain">&gt;</code></div><div class="line number7 index6 alt2">&nbsp;</div><div class="line number8 index7 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;</code><code class="html comments">&lt;!-- (1) --&gt;</code></div><div class="line number9 index8 alt2">&nbsp;</div><div class="line number10 index9 alt1"><code class="html plain">&lt;/</code><code class="html keyword">div</code><code class="html plain">&gt;&nbsp;&nbsp;&nbsp; </code></div></div></td></tr><tr><td>&nbsp;</td></tr><tr><td>&nbsp;</td></tr></tbody></table></div>
+
+            The code above is a single line div, we split into multiple lines to make it easier to view and read.
+            <br>
+            <strong>Line 1</strong> - Opens the div<br>
+            <strong>Line 2</strong> - Is the ID of the menu. This will be targeted by the data-menu="menu-main" button.<br>
+            <strong>Lines 3 and 4</strong> - Are the menu type and settings for it.<br>
+            <strong>Line 5</strong> is the active class we want to use. Inside the menu-main.html you will see each anchor has a unique ID. In the example above, this will set the
+            <strong>id="nav-welcome"</strong> to active. You can use this method on your pages to "select" or "activate" the page you're viewing. Please note this only applies to the menu-main.html and can only be used for a single menu.<br>
+            <strong>Line 6</strong> is the menu you want to load. In our case we're loading <strong>menu-main.html</strong>. This means that once the page loads, the content of <strong>menu-main.html</strong> will be loaded in this div.
+            <strong>Line 8 - BONUS</strong> - if you don't want to use external menus, simply copy and paste the contents of <strong>menu-main.html</strong> or the menu you are loading inside the place of <strong> -- (1) --</strong> and remove line 6. This
+            is how you use the menu from within the same HTML page, and not load it from an external source.
+        </div>
+
+        <!-- PWA -->
+        <div class="chapter container" id="cap6">
+            <div class="pt-4"></div>
+            <div class="pt-4"></div>
+            <h1>PWA</h1>
+            <p class="text-primary mt-n2">Using our Products as Progressive Web Apps</p>
+            <p>
+                A progressive web app basically means you can "Install" the website to your home screen, have an icon and make it
+                look exactly like it's a native application. However, these come with some things that you MUST know.
+            </p>
+            <h4 class="pt-5">Requirements</h4>
+            <p>
+                In order for your website to trigger as a PWA, meaning, show the prompt to install it to your home screen, your page must meet the following criteria.
+            </p>
+                <ul>
+                    <li>Run at least Android 7 ( preferably 8 ) or iOS 12+</li>
+                    <li>Be installed on a SSL site ( meaning, your page must be SSL )</li>
+                    <li>Have the _manifest.json file and _service-work.js in the same folder as the HTML files. </li>
+                </ul>
+
+            <h4 class="pt-5">PWA's for Android and iOS</h4>
+            <p>
+                Android devices have a much better integration for PWA's making them easier to maintain and use. In the case of Android the
+                content is automatically refreshed whenever you open the PWA, always serving you fresh content.
+                <br><br>
+                In the case of iOS, Apple is holding strong to giving PWA's the true power they deserve. Apple only started reading manifest files and
+                accepting service workers with iOS 12, and even then, with small issues. In the case of iOS, the device will hard cache a copy on itself. <br>
+                This causes the problem of your PWA showing old content, but we managed to get over that with a very simple script that will force your iOS device
+                to clear it's cache.
+            </p>
+
+            <h4 class="pt-5">Can't install as PWA? _manifest.json & custom.js settings edits</h4>
+            In case you can't see the PWA boxes although everything is copied to your server, there are 2 edits that must be done. This can happen for some hosts without cause, or may not be needed at all for other hosts.
+            <br><br>
+            In manifest.json set your scope and start url to the destination of your files like so: Replace the addresses from our server with yours following the same structure as presented below.
+            <div id="highlighterMainDiv_180267" class="syntaxhighlighter java"><div id="toolbarContainer_180267" class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td>&nbsp;</td></tr><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div></td><td id="codeContainer_180267" class="code"><div id="container_180267" class="container"><div class="line number1 index0 alt2"><code class="java string">"scope"</code> <code class="java plain">: </code><code class="java string">"<a href="https://www.your-domain.com/yourfolder/">https://www.your-domain.com/yourfolder/</a>"</code><code class="java plain">,</code></div><div class="line number2 index1 alt1"><code class="java string">"display"</code> <code class="java plain">: </code><code class="java string">"fullscreen"</code><code class="java plain">,</code></div><div class="line number3 index2 alt2"><code class="java string">"start_url"</code> <code class="java plain">: </code><code class="java string">"<a href="https://www.your-domain.com/yourfolder/index.html">https://www.your-domain.com/yourfolder/index.html</a>"</code><code class="java plain">,</code></div></div></td></tr><tr></tr><tr></tr></tbody></table></div>
+            In custom.js, at the very top you will find the below shown code.
+            <div id="highlighterMainDiv_542334" class="syntaxhighlighter java"><div id="toolbarContainer_542334" class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td>&nbsp;</td></tr><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div></td><td id="codeContainer_542334" class="code"><div id="container_542334" class="container"><div class="line number1 index0 alt2"><code class="java plain">var pwaScope = </code><code class="java string">"/"</code><code class="java plain">;</code></div><div class="line number2 index1 alt1"><code class="java plain">var pwaLocation = </code><code class="java string">"/_service-worker.js"</code><code class="java plain">;</code></div></div></td></tr><tr><td>&nbsp;</td></tr><tr><td>&nbsp;</td></tr></tbody></table></div>
+            Replace the code above with the full address to your page and service worker, as shown bellow.
+            <div id="highlighterMainDiv_265881" class="syntaxhighlighter java"><div id="toolbarContainer_265881" class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td>&nbsp;</td></tr><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div></td><td id="codeContainer_265881" class="code"><div id="container_265881" class="container"><div class="line number1 index0 alt2"><code class="java plain">var pwaScope = </code><code class="java string">"<a href="https://your-domain.com/your-folder/">https://your-domain.com/your-folder/</a>"</code><code class="java plain">;</code></div><div class="line number2 index1 alt1"><code class="java plain">var pwaLocation = </code><code class="java string">"<a href="https://your-domain.com/your-folder/_service-worker.js">https://your-domain.com/your-folder/_service-worker.js</a>"</code><code class="java plain">;</code></div></div></td></tr><tr><td>&nbsp;</td></tr><tr><td>&nbsp;</td></tr></tbody></table></div>
+
+        </div>
+
+		<h4>Adding Offline Support</h4>
+		<p>
+			Please note that Offline Support works best on latest Operating Systems. Some older Android and iOS operating system can cause issues with these. In order to make your app run offline, you must cache all your assets.
+			<br>
+			To cache all assets, open <strong>_service-worker.js</strong> and where you see the <strong>REQUIRED_FILES</strong> array, add absolutely ALL images, scripts, styles and HTML files your app will use.
+			<br><br>
+			<strong style="font-size:18px; color:#D8334A; font-weight:700;">PLEASE NOTE</strong>
+				<br><br>
+			Check the way we imported the files there and follow the exact examples. If you have any text errors (typo's) or you do not correctly link the item, these will not cache for offline use! Also be sure that you have followed the above steps and that your <strong>pwaScope</strong> and <strong>pwaLocation</strong> in <strong>custom.js</strong> are set and also the <strong>scope</strong> and <strong>start_url</strong> in your <strong>_manifest.json</strong> are also set. Without having these correctly set your PWA will not cache files offline.
+		</p>
+
+		<h5>How can I clear my PWA cache?</h5>
+		<p>
+			To clear the cache once when making a change, just open <strong>_service-worker.js</strong> and change the <strong>APP_VER</strong> number. Increase it with each change. After doing so, closing and re-opening your app will show the new content. Sometimes, 2 or 3 refreshes are needed. (example: Apple devices)
+			<br><br>
+			To always keep your cache clear, simply go to custom.js and set <strong>pwaNoCache = true</strong> at the very top of custom.js. Currently this is set to false. We recommend keeping this value to true while developing and then setting it back to false. It's better to just update the <strong>APP_VER</strong> so you don't make devices download data for no reason when not necessary.
+		</p>
+
+
+        <!-- Components -->
+        <div class="chapter container" id="cap7">
+            <div class="pt-4"></div>
+            <div class="pt-4"></div>
+            <h1>Components & Pages</h1>
+            <p class="text-primary mt-n2">
+                A tone of flexible components and pages await.
+            </p>
+            <p>
+                The components and pages available are so large we have a special page dedicated to them. <br><br>
+                <a href="z_components.html" class="btn btn-m btn-primary font-800 text-uppercase">Components Documentation</a>
+                <a href="z_pages.html" class="btn btn-m btn-primary font-800 text-uppercase ml-5">Pages Documentation</a>
+            </p>
+        </div>
+
+        <!-- Contact Support -->
+        <div class="chapter container" id="cap8">
+            <div class="pt-4"></div>
+            <div class="pt-4"></div>
+            <h1>Got stuck? No worries!</h1>
+            <p class="text-primary mt-n2">Don't worry if you can't figure something out. We are always here to help.</p>
+            <p>
+                In case you have any issues that are not mentioned here, please send us a ticket via our <a href="https://www.enableds.com/contact/">Support Forum</a>. We
+                are always here to help and, unless we're sleeping, we answer all your questions in under 2 hours.<br>
+            </p>
+            <a class="btn btn-m btn-primary text-uppercase font-900" href="https://support.enableds.com">Open Support Ticket</a>
+        </div>
+
+
+        <div style="height:6000px"></div>
+
+
+
+    </div>
+
+</div>
+
+
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+</body>
+
+

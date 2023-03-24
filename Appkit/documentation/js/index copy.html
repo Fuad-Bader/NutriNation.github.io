@@ -1,0 +1,480 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>AppKit Mobile - Documentation</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/shCoreDefault.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i|Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i,900,900i&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">    
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+    
+<body>
+    
+    
+    
+<div class="row">
+    <div class="chapters">
+        <div class="ml-4 mt-5">
+            <h1 class="font-35 font-800 mb-n1">AppKit Mobile</h1>
+            <p class="font-13">Mobile Website Template and PWA</p>
+
+            <div class="divider"></div>
+            
+            <ul id="chaps" class="list-group mr-3">
+                <li><a class="list-group-item list-group-item-action" href="#cap1">Introduction</a></li>
+                <li><a class="list-group-item list-group-item-action" href="#cap2">Structure</a></li>
+                <li><a class="list-group-item list-group-item-action" href="#cap3">Utility</a></li>
+                <li><a class="list-group-item list-group-item-action" href="#cap4">Colors</a></li>
+                <li><a class="list-group-item list-group-item-action" href="#cap5">Menus</a></li>
+                <li><a class="list-group-item list-group-item-action" data-toggle="collapse" href="#c1" aria-expanded="true" aria-controls="c1">Components</a></li>
+                <ul id="c1" class="collapse show list-in pl-4">
+                    <li><a class="list-group-item list-group-item-action" href="#test3">Introduction</a></li>
+                </ul>
+                <li><a class="list-group-item list-group-item-action" href="#test4">Pages</a></li>
+                <li><a class="list-group-item list-group-item-action  font-12 mb-n2 mt-4 text-success text-uppercase font-900" href="#">Developer Notes</a></li>
+                <li><a class="list-group-item list-group-item-action" href="#dev1">Color & BG Highlight</a></li>
+                <li><a class="list-group-item list-group-item-action" href="#dev2">AJAX Page Transitions</a></li>
+                <li><a class="list-group-item list-group-item-action" href="#test5">JavaScript & Integration</a></li>
+            </ul>
+        
+        </div>
+    </div>
+    <div class="documentation" data-spy="scroll" data-target="#chaps" data-offset="50">
+    
+        <div class="chapter container" id="cap1">
+            <div class="pt-4"></div>
+            <div class="pt-4"></div>
+            <h1>Welcome</h1>
+            <p class="text-primary mt-n2">
+                Thank you for purchasing AppKit Mobile
+            </p>
+            <p>
+                In this documentation, we'll be covering absolutely every
+                aspect of our item, to help you achieve the perfect Mobile Website, PWA or Hybrid App. Our newest generation
+                of frameworks released/updated after April 2020 are powered by Bootstrap, so all Bootstrap components will be 
+                fully compatible with our products, and also, our own custom built elements that will be super easy for you to use and understand. 
+                <br><br>
+                Remember. If you get stuck, we're always here to help, but this documentation will most likely cover absolutely any question you may have. 
+                We've written this documentation to suit both <strong>developer</strong> and <strong>less experienced</strong> users. <br><br>
+                Our goal is to give you the best possible experience, so don't be afraid to ask if you get stuck along the road.
+            </p>
+        </div>
+
+        <!-- Main Structure-->
+        <div class="chapter container" id="cap2">
+            <div class="pt-4"></div>
+            <div class="pt-4"></div>
+            <h1>Main Structure</h1>
+            <p class="text-primary mt-n2">
+                The _starter.html page explained, and the basic page structures.
+            </p>
+            <p class="mb-5">
+                The basic structure of Appkit is represented in the _starter.html. Here you can populate it with components or page elements, Bootstrap features as you need to, but, we need to make sure you understand it to avoid errors. 
+            </p>
+            
+            <!-- Basic Diagram-->
+            <div class="mb-3 pb-3">
+                <h5>Page Structure</h5>
+                <p>
+                    For a fast representation of how all your pages should be built, please check the following diagram. <br><br>
+                    body<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;preloader/preloader  <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#page<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;header/header<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/footer-bar/footer-bar<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;page-content<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;all your content goes here <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/page-content<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/#page<br>
+                    /body<br>
+                    <br>
+                    <strong>element</strong> = open element<br>
+                    <strong>/element</strong> = closed element<br>
+                    <strong>tag/tag</strong> = entire element
+                    <br><br>
+
+                    Follow the above stucture when building pages. Only the header, footer, action sheets, modals, snackbars, toasts, and other off-canvas elements must be placed outside the page-content. Everything else goes inside the page-content. 
+                </p>
+            </div>
+            
+            <!--Body Tag-->
+            <div class="mb-3 pb-3">
+                <h5>Body Tag</h5>
+                <p>
+                    The body tag is used for controling the theme of the page and also the highlight and background color. 
+                </p>
+                <div id="highlighterMainDiv_973486" class="syntaxhighlighter html"><div id="toolbarContainer_973486" class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td>&nbsp;</td></tr><tr><td class="gutter"><div class="line number1 index0 alt2">1</div></td><td id="codeContainer_973486" class="code"><div id="container_973486" class="container"><div class="line number1 index0 alt2"><code class="html plain">&lt;</code><code class="html keyword">body</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"theme-light"</code> <code class="html color1">data-background</code><code class="html plain">=</code><code class="html string">"none"</code> <code class="html color1">data-highlight</code><code class="html plain">=</code><code class="html string">"red2"</code><code class="html plain">&gt;</code></div></div></td></tr><tr><td>&nbsp;</td></tr><tr></tr></tbody></table></div>
+                <p>
+                    The class we use to determine the color theme of our product. Use <strong>theme-dark</strong> for dark mode, <strong>theme-light</strong> for light mode and <strong>detect-theme</strong> to automatically detect your devices
+                    default theme settings. If this is not supported by your device, the page will automatically default to <strong>theme-light</strong>. Most modern devices now support automatic theme detection, and you can check this in component-auto-dark.html 
+                    <br><br><a href="#cap-colors">Click to view Available Colors for data-background and data-highlight </a>
+                </p>
+            </div>
+            
+            <!-- Header-->
+            <div class="mb-3 pb-3">
+                <h5>Header</h5>
+                <p>
+                    Our header is designed to be super easy to use and highly flexible for your  use case. With this being said, the header currently supports a few styles, which we'll explain below, and which can be seen and used inside component-headers.html found in the pack.
+                </p>
+                <div id="highlighterMainDiv_664455" class="syntaxhighlighter html"><div id="toolbarContainer_664455" class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td>&nbsp;</td></tr><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div></td><td id="codeContainer_664455" class="code"><div id="container_664455" class="container"><div class="line number1 index0 alt2"><code class="html plain">&lt;</code><code class="html keyword">div</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"header header-fixed header-logo-left"</code><code class="html plain">&gt;</code></div><div class="line number2 index1 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">a</code> <code class="html color1">href</code><code class="html plain">=</code><code class="html string">"index.html"</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"header-title"</code><code class="html plain">&gt;AppKit Mobile&lt;/</code><code class="html keyword">a</code><code class="html plain">&gt;</code></div><div class="line number3 index2 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">a</code> <code class="html color1">href</code><code class="html plain">=</code><code class="html string">"#"</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"header-icon header-icon-1"</code><code class="html plain">&gt;&lt;</code><code class="html keyword">i</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"fas fa-envelope"</code><code class="html plain">&gt;&lt;/</code><code class="html keyword">i</code><code class="html plain">&gt;&lt;</code><code class="html keyword">span</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"badge bg-green1-dark"</code><code class="html plain">&gt;5&lt;/</code><code class="html keyword">span</code><code class="html plain">&gt;&lt;/</code><code class="html keyword">a</code><code class="html plain">&gt;</code></div><div class="line number4 index3 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">a</code> <code class="html color1">href</code><code class="html plain">=</code><code class="html string">"#"</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"header-icon header-icon-2"</code><code class="html plain">&gt;&lt;</code><code class="html keyword">i</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"fas fa-bars"</code><code class="html plain">&gt;&lt;/</code><code class="html keyword">i</code><code class="html plain">&gt;&lt;/</code><code class="html keyword">a</code><code class="html plain">&gt;</code></div><div class="line number5 index4 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">a</code> <code class="html color1">href</code><code class="html plain">=</code><code class="html string">"#"</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"header-icon header-icon-3"</code><code class="html plain">&gt;&lt;</code><code class="html keyword">i</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"fas fa-heart color-red2-light"</code><code class="html plain">&gt;&lt;/</code><code class="html keyword">i</code><code class="html plain">&gt;&lt;/</code><code class="html keyword">a</code><code class="html plain">&gt;</code></div><div class="line number6 index5 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">a</code> <code class="html color1">href</code><code class="html plain">=</code><code class="html string">"#"</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"header-icon header-icon-4"</code><code class="html plain">&gt;&lt;</code><code class="html keyword">i</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"fas fa-share-alt"</code><code class="html plain">&gt;&lt;/</code><code class="html keyword">i</code><code class="html plain">&gt;&lt;/</code><code class="html keyword">a</code><code class="html plain">&gt;</code></div><div class="line number7 index6 alt2"><code class="html plain">&lt;/</code><code class="html keyword">div</code><code class="html plain">&gt;</code></div></div></td></tr><tr><td>&nbsp;</td></tr><tr></tr></tbody></table></div>
+
+                <p>
+                    Let's explain the header line by line, showcasing what it can do at the same time. <br><br>
+                    <strong c>Line 1</strong> is the main wrapping class. This contains the class header, to define the element, <strong>header-fixed</strong>, which will make the header fixed at the top of the screen and also, a class 
+                    which is used to determine the style. You can use any of the following classes. <br><br>
+                    
+                    <strong class="pl-3">header-logo-left</strong> - Logo Left with 4 icons on the right side<br>
+                    <strong class="pl-3">header-logo-right</strong> - Logo Right with 4 icons on the left side<br>
+                    <strong class="pl-3">header-logo-center</strong> - Logo Center with 2 icons on left and 2 icons on right<br>
+                    <strong class="pl-3">header-logo-app</strong> - 1 icon on the left, logo and  3 icons on the right side.<br><br>
+                
+                    <strong>Line 2</strong> is the header logo. This can be an image or a text. You can select this as an image by setting the <strong>header-title</strong> class to <strong>header-logo</strong>. 
+                    The image can be found in the main css file by searching for "header-logo" using CTRL+F or CMD+F and replacing the image there with your own. <br><br>
+                    <strong>Lines 3,4,5,6</strong> are the header icons. These are numbered using header-icon-1 to 4 and you can change their position based on this number. 
+
+                </p>
+                
+                
+            </div>
+                   
+            <!-- Footer-->
+            <div class="mb-3">
+                <h5>Footer Bar</h5>
+                <p>
+                    The footer menu is what gave birth to our product. A tone of customers have been asking for us to create a menu that is flexible, easy to use but at the same time offers multiple elegant styles.
+                    To view all the footer bars available, please check the <strong>component-footers.html</strong> page, where you can see live examples and can copy them directly into your pages.
+                </p>
+                
+                <div id="highlighterMainDiv_523141" class="syntaxhighlighter java"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td>&nbsp;</td></tr><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div></td><td id="codeContainer_523141" class="code"><div id="container_523141" class="container"><div class="line number1 index0 alt2"><code class="java plain">&lt;div id=</code><code class="java string">"footer-bar"</code> <code class="java keyword">class</code><code class="java plain">=</code><code class="java string">"footer-bar-1"</code><code class="java plain">&gt;</code></div><div class="line number2 index1 alt1"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">&lt;a href=</code><code class="java string">"#"</code><code class="java plain">&gt;&lt;i </code><code class="java keyword">class</code><code class="java plain">=</code><code class="java string">"fa fa-home"</code><code class="java plain">&gt;&lt;/i&gt;&lt;span&gt;Home&lt;/span&gt;&lt;/a&gt;</code></div><div class="line number3 index2 alt2"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">&lt;a href=</code><code class="java string">"#"</code> <code class="java keyword">class</code><code class="java plain">=</code><code class="java string">"active-nav"</code><code class="java plain">&gt;&lt;i </code><code class="java keyword">class</code><code class="java plain">=</code><code class="java string">"fa fa-star"</code><code class="java plain">&gt;&lt;/i&gt;&lt;span&gt;Features&lt;/span&gt;&lt;/a&gt;</code></div><div class="line number4 index3 alt1"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">&lt;a href=</code><code class="java string">"#"</code><code class="java plain">&gt;&lt;i </code><code class="java keyword">class</code><code class="java plain">=</code><code class="java string">"fa fa-heart"</code><code class="java plain">&gt;&lt;/i&gt;&lt;span&gt;Pages&lt;/span&gt;&lt;/a&gt;</code></div><div class="line number5 index4 alt2"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">&lt;a href=</code><code class="java string">"#"</code><code class="java plain">&gt;&lt;i </code><code class="java keyword">class</code><code class="java plain">=</code><code class="java string">"fa fa-search"</code><code class="java plain">&gt;&lt;/i&gt;&lt;span&gt;Search&lt;/span&gt;&lt;/a&gt;</code></div><div class="line number6 index5 alt1"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">&lt;a href=</code><code class="java string">"#"</code><code class="java plain">&gt;&lt;i </code><code class="java keyword">class</code><code class="java plain">=</code><code class="java string">"fa fa-cog"</code><code class="java plain">&gt;&lt;/i&gt;&lt;span&gt;Settings&lt;/span&gt;&lt;/a&gt;</code></div><div class="line number7 index6 alt2"><code class="java plain">&lt;/div&gt;</code></div></div></td></tr><tr><td>&nbsp;</td></tr><tr></tr></tbody></table></div>
+
+                <p>
+                    Our footer menu is not limited to how many items you have in it. It's built using Flexbox so it will automatically calculate and align all items on it's own. However
+                    please note that there are devices out there with small screens, so using more than 5 icons is not recommended.<br>
+                    Inside the footer-bar id, you will have anchors and FontAwesome 5 icons. Replace them as needed. To highlight/activate  page simply add <strong>active-nav</strong> to the footer menu you wish.
+                </p>
+                
+            </div>
+                           
+            <!-- Conclusion-->
+            <div class="mb-3">
+                <h5>Structure Conclusion</h5>
+                <p>
+                    The structure of the page is intended to be as simple as possible using the _starter.html page included, you will find the above elements inside, and you can start placing your content 
+                    inside the page-content class right away! Continue with the documentation to learn about the menus and color classes.
+                </p>
+                
+            </div>
+        </div>
+  
+        <!-- Utility Classes -->
+        <div class="chapter container" id="cap3">
+            <div class="pt-4"></div>
+            <div class="pt-4"></div>
+            <h1>Utility Classes</h1>
+            <p class="text-primary mt-n2">
+                Extending the flexibility of AppKit Mobile and Bootstrap
+            </p>
+            <p class="mb-3 pb-3">
+                Ultilty classes or as they are know, secondary classes are re-usable pieces of CSS added to your HTML to ehnance and 
+                extended certain features. For example, you may want to re-use a color, so instead of re-writting CSS for each time we want that color, we create a class for it.
+                These are the default Boostrap Classes available with the Boostrap framework - <a href="https://getbootstrap.com/docs/4.4/utilities">https://getbootstrap.com/docs/4.4/utilities</a><br><br>
+                But, beside these classes, we wanted to give you even more flexibility, while keeping the naming convention typical to Bootstrap, so you don't have to learn any new fancy and complicated codes. 
+            </p>
+            
+            <h5 class="mt-3 pt-3">Example of Utility Classes</h5>
+            <p>
+                Here is a perfect example where utility classes come super handy. 
+            </p>
+            <div id="highlighterMainDiv_649860" class="syntaxhighlighter html"><div id="toolbarContainer_649860" class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td>&nbsp;</td></tr><tr><td class="gutter"><div class="line number1 index0 alt2">1</div></td><td id="codeContainer_649860" class="code"><div id="container_649860" class="container"><div class="line number1 index0 alt2"><code class="html plain">&lt;</code><code class="html keyword">h1</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"font-16 font-800 text-uppercase pt-3 mb-0"</code><code class="html plain">&gt;I'm a heading&lt;/</code><code class="html keyword">h1</code><code class="html plain">&gt;</code></div></div></td></tr><tr><td>&nbsp;</td></tr><tr><td>&nbsp;</td></tr></tbody></table></div>
+            <p>
+                The above h1 has a few classes attached, each one has a different purpose. You can change font sizes, font weight, transform the text and even adjust paddings and margins. These are all utility classes and they are awesome! Let's dive into them. 
+            </p>
+                        
+            <h5 class="mt-3 pt-3">Spacings - Paddings & Margins</h5>
+            <p>
+                You can adjust paddings and margins for elements simply by using the following system. <br><br>
+                [target][position]-[value]<br>
+                <strong>target</strong> - can be either <strong>p</strong> for padding or <strong>m</strong> for margin<br>
+                <strong>position</strong> - can be either <strong>t</strong> for top, <strong>r</strong> for right, <strong>b</strong> for bottom or <strong>l</strong> for left. You can also use <strong>y</strong> for top and bottom or <strong>x</strong> for left and right<br>
+                <strong>value</strong> - can be <strong>0</strong>(0px/0rem) <strong>1</strong> (4px/0.25rem) , <strong>2</strong> (8px/0.5rem) <strong>3</strong> (16px/1rem) , <strong>4</strong> (24px/1.5rem) , <strong>5</strong> (48px/3rem) , if you add <strong>n</strong> in front of any of these numbers the value will become negative, but please keep in mind, only margins can be negative, for paddings this will have no effect.
+            </p>
+
+            <p class="mb-0">
+                An instant example, let's say we want a heading to have a bottom padding of 16px/3rem, we would then use 
+            </p>
+            <div id="highlighterMainDiv_214600" class="syntaxhighlighter html"><div id="toolbarContainer_214600" class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td>&nbsp;</td></tr><tr><td class="gutter"><div class="line number1 index0 alt2">1</div></td><td id="codeContainer_214600" class="code"><div id="container_214600" class="container"><div class="line number1 index0 alt2"><code class="html plain">&lt;</code><code class="html keyword">h1</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"pb-3"</code><code class="html plain">&gt;I am a heading&lt;/</code><code class="html keyword">h1</code><code class="html plain">&gt;</code></div></div></td></tr><tr><td>&nbsp;</td></tr><tr><td>&nbsp;</td></tr></tbody></table></div>
+            <p class="mb-0">
+                Or let's say we want a paragraphy to have a 0 margin bottom.
+            </p>
+            <div id="highlighterMainDiv_421213" class="syntaxhighlighter html"><div id="toolbarContainer_421213" class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td>&nbsp;</td></tr><tr><td class="gutter"><div class="line number1 index0 alt2">1</div></td><td id="codeContainer_421213" class="code"><div id="container_421213" class="container"><div class="line number1 index0 alt2"><code class="html plain">&lt;</code><code class="html keyword">p</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"mb-0"</code><code class="html plain">&gt;I am a heading&lt;/</code><code class="html keyword">p</code><code class="html plain">&gt;</code></div></div></td></tr><tr><td>&nbsp;</td></tr><tr><td>&nbsp;</td></tr></tbody></table></div>
+            <p>
+                These values can be easily combined and used to obtain the perfect spacing you desire for your project. You can read more about this on Bootstrap's Utility - Spacing page by following <a href="https://getbootstrap.com/docs/4.4/utilities/spacing/">this link - https://getbootstrap.com/docs/4.4/utilities/spacing/</a>
+            </p>
+            
+            <h5 class="mt-3 pt-3">Aligning Text</h5>
+            <p>
+                To align text, simply use the following classes. Thees are self-explanatory in their names <br><br>
+                <strong>text-center</strong><br>
+                <strong>text-left</strong><br>
+                <strong>text-right</strong><br>
+            </p>
+            
+            <h5 class="mt-3 pt-3">Text Transform</h5>
+            <p>
+                To align text, simply use the following classes. Thees are self-explanatory in their names <br><br>
+                <strong>text-uppercase</strong><br>
+                <strong>text-lowercase</strong><br>
+                <strong>text-capitalize</strong><br>
+            </p>
+            
+            <h5 class="mt-3 pt-3">Rounded Borders</h5>
+            <p>
+                To create a rounded border using our template, you simply have to use the parameters xs, s, m, sm, l, xl attached at the end of the rounded- class, just like for Bootstrap. The 
+                default Bootstrap classses are still working if you wish to use those as well.<br><br>
+                <strong>rounded-xs</strong><br>
+                <strong>rounded-s</strong><br>
+                <strong>rounded-m</strong><br>
+                <strong>rounded-l</strong><br>
+                <strong>rounded-xl</strong><br>
+            </p>
+
+            <h5 class="mt-3 pt-3">Shadows</h5>
+            <p>
+                Adding different shadows to your elements such as buttons, boxes, images, cards and ohter elements is done in the same fashion. Simply use the shadow- and the parameters xs, s, sm, m, l, xl at the end
+                <br><br>
+                <strong>shadow-xs</strong><br>
+                <strong>shadow-s</strong><br>
+                <strong>shadow-m</strong><br>
+                <strong>shadow-l</strong><br>
+                <strong>shadow-xl</strong><br>
+            </p>
+
+            <h5 class="mt-3 pt-3">Font Weights</h5>
+            <p>
+                The font weight system available in bootstrap made it hard for users to easily determine the weight of a font that has for example 9 styles. 
+                Our system works on the simple contept that you place the font- followed by the weight of the font you wish to use. Lower is thiner, higher is bolder.
+                <br><br>
+                <strong>font-200</strong><br>
+                <strong>font-300</strong><br>
+                <strong>font-400</strong><br>
+                <strong>font-500</strong><br>
+                <strong>font-600</strong><br>
+                <strong>font-700</strong><br>
+                <strong>font-800</strong><br>
+                <strong>font-900</strong><br>
+            </p>
+            
+            <h5 class="mt-4 pt-4">Font Sizes</h5>
+            <p>
+                We created these classes to increase the flexibility of your typography size. Sometimes, the included sizes are just not enough, and adding style="font-size:12px" is a hack
+                and we like to keep our code professional and clean. To avoid this, we created an array of font sizes, from 8 pixels up to 40 pixels. To use them, simply add the font- followed by the font size you wish to use
+                <br><br>
+                <strong>font-8</strong><br>
+                <strong>font-9</strong><br>
+                <strong>font-10</strong><br>
+                <strong>..........</strong><br>
+                <strong>font-40</strong><br>
+            </p> 
+            
+            <div class="alert alert-primary font-15 font-900" role="alert">
+              Please don't forget to check the  Bootstrap Utilities. There are a lot of secondary classes you can use beside ours. We just extended the Bootstrap framework to include all
+                the most usefull extensions. - <a href="https://getbootstrap.com/docs/4.4/utilities">Click to View All Utilities https://getbootstrap.com/docs/4.4/utilities</a>
+            </div>
+
+            
+            <h5 class="mt-4 pt-4">Utilities Conclusions</h5>
+            <p>
+                The idea of creating something flexible was always in our mind, and from our customer feedback it was easy to understand that most users who just want a fast setup
+                 for their PWA don't know and don't want to use CSS. This gives users the option of having a copy paste design with as minimal use of CSS. Everything can be created
+                using classes while writing your HTML, and everything in our product can be enhanced with these elements.
+            </p>
+
+        </div>
+        
+        <!-- Colors -->
+        <div class="chapter container" id="cap4">
+            <div class="pt-4"></div>
+            <div class="pt-4"></div>
+            <h1>Colors</h1>
+            <p class="text-primary mt-n2">
+                The power and ease of colors
+            </p>
+            <p class="mb-3 pb-3">
+                Before upgrading our framework to Bootstrap, our customers loved the fact that our products supported color highlights and backgrounds, a feature that is very limited in Bootstrap. 
+                With adpoting Bootstrap, we also added our color array system to it, to give you the option to create colors, even faster than with SCSS, and apply them on all aspects of your project
+            </p>
+            <h5 class="pt-3">Can I still use Bootstrap?</h5>
+            <p>
+                Of course! Our main colors are integrated in the classic code of bootstrap. If you like using text-primary or bg-primary or other Bootstrap color systems, you can
+                still do that, but we also added something we're sure you absolutely love.
+            </p>
+            <h5 class="pt-3">What does it do?</h5>
+            <p>
+                Our system will automatically generate colors based on the hex (#000000) colors you insert. With this being said, you will obtain colors for text, backgrounds, 
+                borders, faded effects and gradients, all by adding 3 colors and saving the file. It really is that simple.
+            </p>
+            <h5 class="pt-3">Where do I add my color codes?</h5>
+            <p>
+                Open custom.js. At the very top of the code you will see <strong>var colorArray</strong> and a large list of colors. Don't be scared by this if you've never worked with it before,
+                in fact, it's the easiest thing ever. 
+            </p>
+            <div id="highlighterMainDiv_645518" class="syntaxhighlighter jscript"><div id="toolbarContainer_645518" class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td>&nbsp;</td></tr><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div></td><td id="codeContainer_645518" class="code"><div id="container_645518" class="container"><div class="line number1 index0 alt2"><code class="jscript keyword">var</code> <code class="jscript plain">colorsArray = [</code></div><div class="line number2 index1 alt1"><code class="jscript spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="jscript plain">[</code><code class="jscript string">"red1"</code><code class="jscript plain">,</code><code class="jscript string">"#D8334A"</code><code class="jscript plain">,</code><code class="jscript string">"#BF263C"</code><code class="jscript plain">,</code><code class="jscript string">"#9d0f23"</code><code class="jscript plain">], </code></div><div class="line number3 index2 alt2"><code class="jscript spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="jscript plain">[</code><code class="jscript string">"red2"</code><code class="jscript plain">,</code><code class="jscript string">"#ED5565"</code><code class="jscript plain">,</code><code class="jscript string">"#DA4453"</code><code class="jscript plain">,</code><code class="jscript string">"#a71222"</code><code class="jscript plain">]</code></div><div class="line number4 index3 alt1"><code class="jscript plain">];</code></div></div></td></tr><tr><td>&nbsp;</td></tr><tr><td>&nbsp;</td></tr></tbody></table></div>
+
+            <p>The above code is a simplied version of the color array. Let's create your first color. To start with, duplicate line 2 of the code</p>
+
+            <div id="highlighterMainDiv_466747" class="syntaxhighlighter jscript"><div id="toolbarContainer_466747" class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td>&nbsp;</td></tr><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div></td><td id="codeContainer_466747" class="code"><div id="container_466747" class="container"><div class="line number1 index0 alt2"><code class="jscript keyword">var</code> <code class="jscript plain">colorsArray = [</code></div><div class="line number2 index1 alt1"><code class="jscript spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="jscript plain">[</code><code class="jscript string">"red1"</code><code class="jscript plain">,</code><code class="jscript string">"#D8334A"</code><code class="jscript plain">,</code><code class="jscript string">"#BF263C"</code><code class="jscript plain">,</code><code class="jscript string">"#9d0f23"</code><code class="jscript plain">], </code></div><div class="line number3 index2 alt2"><code class="jscript spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="jscript plain">[</code><code class="jscript string">"awesomeBuyer"</code><code class="jscript plain">,</code><code class="jscript string">"#hex1"</code><code class="jscript plain">,</code><code class="jscript string">"#hex2"</code><code class="jscript plain">,</code><code class="jscript string">"#hex3"</code><code class="jscript plain">], </code></div><div class="line number4 index3 alt1"><code class="jscript spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="jscript plain">[</code><code class="jscript string">"red2"</code><code class="jscript plain">,</code><code class="jscript string">"#ED5565"</code><code class="jscript plain">,</code><code class="jscript string">"#DA4453"</code><code class="jscript plain">,</code><code class="jscript string">"#a71222"</code><code class="jscript plain">]</code></div><div class="line number5 index4 alt2"><code class="jscript plain">];</code></div></div></td></tr><tr><td>&nbsp;</td></tr><tr><td>&nbsp;</td></tr></tbody></table></div>
+
+            <p>
+                Now that you duplicated that line and created the <strong>awesomeBuyer</strong> value, replace all you have to do is replace hex1, hex2 and hex3 with your colors<br>
+                <br><strong>hex1</strong> - is the light version of your desired color
+                <br><strong>hex2</strong> - is the darker version of your desired color
+                <br><strong>hex3</strong> - is the gradient version of your desired color, usually, this should be the darkest value<br><br>
+                Our code will automatically match them to generate classes for these for borders, gradients and more. Now that you've done this, you'll save custom.js, and you can start using your new classes.
+            </p>
+            <h5 class="pt-3">What classes do you get?</h5>
+            <p>
+                You can now use your above generated code to<br><br>
+                <strong>color-awesomeBuyer-light</strong> - applies to text and icons, will use hex1 <br>
+                <strong>color-awesomeBuyer-dark</strong> - applies to text and icons, will use hex2 <br><br>
+                <strong>bg-awesomeBuyer-light</strong> - applies to background elements such as card, will use hex1 <br>
+                <strong>bg-awesomeBuyer-dark</strong> - applies to background elements such as card, will use hex2 <br><br>
+                <strong>bg-fade-awesomeBuyer-light</strong> - faded version of the color resulted in above bg-awesomeBuyer-light, great for pastel colors. <br>
+                <strong>bg-fade-awesomeBuyer-dark</strong> - faded version of the color resulted in above bg-awesomeBuyer-dark, great for pastel colors. <br><br>
+                <strong>bg-gradient-awesomeBuyer</strong> - applies to background elements such as card, will use a combination of all 3 hexes, starting with hex1, hex2, hex3 at the end. <br><br>
+                <strong>border-awesomeBuyer-light</strong> - applies to bordered elements using hex1 <br>
+                <strong>border-awesomeBuyer-dark</strong> - applies to bordered elements using hex2 <br><br>
+                <strong>border-fade-awesomeBuyer-light</strong> - faded version of the color resulted in above border-awesomeBuyer-light, great for pastel colors. <br>
+                <strong>border-fade-awesomeBuyer-dark</strong> - faded version of the color resulted in above border-awesomeBuyer-dark, great for pastel colors. <br><br>
+            </p>
+            <h5 class="pt-3">Why are these not added using CSS?</h5>
+            <p>
+                We did multiple performance tests on this system, and discovered that the CSS for the amount of colors we use to give our items the color pallete you 
+                love would weigh in excess of 50-80kb, which for a CSS file is just too too much, but, when adding these via an Object Array, the JavaScript code is only 5kb heavier. 
+                <br>
+                <br>
+                These colors get injected in the page at the end of the body the moment the page starts, without affecting performance since they are generated as an object, but, offering the huge
+                and vast amount of colors to give your page the personallity it needs. 
+            </p>
+            <h5 id="cap-colors" class="pt-3">What colors are included by default?</h5>
+            In case you want to use these colors in the body tag or highlight tag, you will only need to enter their names as shown below, but if you want to use these colors to change the color 
+            of an element or the background of an element, use the <strong>awesomeBuyer</strong> structure explained above, and simply replace <strong>awesomeBuyer</strong> with any color from the list below.            
+            
+            <div class="row pt-4">
+                <div class="col-4">
+                    <ul>
+                        <li>mint</li>
+                        <li>plum</li>
+                        <li>violet</li>
+                        <li>magenta1</li>
+                        <li>magenta2</li>
+                        <li>magenta3</li>
+                        <li>red1</li>
+                        <li>red2</li>
+                        <li>red3</li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <ul>
+                        <li>green1</li>
+                        <li>green2</li>
+                        <li>green3</li>
+                        <li>sky</li>
+                        <li>blue1</li>
+                        <li>blue2</li>
+                        <li>yellow1</li>
+                        <li>yellow2</li>
+                        <li>yellow3</li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <ul>
+                        <li>teal</li>
+                        <li>orange</li>
+                        <li>pumpkin</li>
+                        <li>pink1</li>
+                        <li>pink2</li>
+                        <li>brown1</li>
+                        <li>brown2</li>
+                        <li>dark1</li>
+                        <li>dark2</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <h5 class="pt-3">Are there any Social Colors Included?</h5>
+            <p>
+                Yes, and you can add more with great ease. You will find just under the colorArray in custom.js the socialColorArray, which includes just one brand name and a color.
+                This will generate <strong>color-BrandName</strong> and <strong>bg-BrandName</strong>. Add more simply by duplicating the code.
+            </p>
+            
+        </div>
+        
+        
+
+        
+        <div style="height:6000px"></div>
+        
+
+
+    </div>
+
+</div>  
+
+    
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+</body>
+
+    
+<!-- 
+
+        <div class="chapter container disabled" id="dev1">
+            <div class="pt-4"></div>
+            <div class="pt-4"></div>
+            <h1>AJAX Page Switch</h1>
+            <p class="text-primary mt-n2">For Insanely Fast Load Speeds and Switching</p>
+            <p>
+                AppKit Mobile uses an AJAX transition system which helps pages load much, much faster than your average Bootstrap page. 
+                This is achieved by "saving" the Styles and Scripts at the top and bottom of the page when you access it, and only changing the interior of the pages with your new HTML file. 
+            </p>
+            <h5>How is this faster?</h5>
+            <p>
+                Simple. Even with browser caching enabled, and a CDN, HTML pages still make calls to those scripts, which block the browser from rendering the page. In certain cases, where the page
+                needs fresh content, all script and styles will be re-called. Causing excess load. This means, that when you go from Home to About for example using AppKit Mobile, on the about page
+                only the content of the div id="page" will be changed and loaded. This makes the load times significantly faster, by up to 60% than a classic page. 
+            </p>
+            <h5>Is there anything I need to know?</h5>
+            <p>
+                Just one thing! Place all your CSS and JS scripts in all HTML files. This is necessary because, if you access page-2(example) directly from a link, and lack scripts and styles, it won't look great and won't work. However, our AJAX plugin will know
+                not to load these scripts if you're coming from page-1 to page-2 ( example names ). The AJAX script is there to only replace the div id="page" with the content of the new page you're going to. 
+            </p>
+            <h5>Where do I put my JavaScript Code?</h5>
+            <p>
+                First, be sure you place all your styles in the head of the page, and all your plugins just above custom.js. <br> After you've done this place all your custom javascript code inside custom.js inside the <strong>init_template()</strong> function.
+                This function will be destroyed and re-called once you go from one page to another. 
+            </p>
+            <h5>I want specific JS for specific pages, how can I do this?</h5>
+            <p>
+                Simple! Give the page-content a second class, for example, awesome-buyer-page-content. Now, in custom.js inside the init_template() function simply add the following code 
+            </p>
+            <div id="highlighterMainDiv_124843" class="syntaxhighlighter java"><div id="toolbarContainer_124843" class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td>&nbsp;</td></tr><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div></td><td id="codeContainer_124843" class="code"><div id="container_124843" class="container"><div class="line number1 index0 alt2"><code class="java keyword">if</code><code class="java plain">($(</code><code class="java string">'.awesome-buyer-page-content'</code><code class="java plain">).length){</code></div><div class="line number2 index1 alt1"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java comments">//fire your code here</code></div><div class="line number3 index2 alt2"><code class="java plain">}</code></div></div></td></tr><tr><td>&nbsp;</td></tr><tr></tr></tbody></table></div>
+            <p>
+                This will telll the JavaScript, that if the .awesome-buyer-page-content exists, then it should fire the function you add inside. Remember, when you switch from page to page the AJAX system will automatically destroy the init_template() function and re-trigger it into existence. So no need to worry about functions double firing.
+            </p>
+            
+            <h5>I want to disable AJAX transitions</h5>
+            <p>
+                Super easy! Open custom.js, at the very top you'll see <strong>isAjAX = true;</strong> just set it to false.
+            </p>
+        </div>
+
+-->

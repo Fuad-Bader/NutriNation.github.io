@@ -1,0 +1,1480 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>AppKit Mobile - Documentation</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/shCoreDefault.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i|Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i,900,900i&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">    
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+    
+<body>
+    
+    
+    
+<div class="row">
+    <div class="chapters">
+        <div class="ml-4 mt-5">
+            <h1 class="font-35 font-800 mb-n1">AppKit Mobile</h1>
+            <p class="font-13">Mobile Website Template and PWA</p>
+
+            <div class="divider"></div>
+            
+            <a href="index.html" class="btn btn-s btn-primary btn-full font-900 text-uppercase mr-4 mb-4 mt-n2">Back to Structure Docs</a>
+            
+            <div class="divider mb-0"></div>
+            
+            <p class="font-11 text-center mr-4 mb-0">This area is scrollable and includes multiple chapters, scroll to see all chapters.</p>
+            
+            <div class="divider mb-0"></div>
+            
+            <ul id="chaps" class="list-group mr-3">
+                <li><a class="list-group-item list-group-item-action  font-11 mb-n2 mt-4 text-success text-uppercase font-900" href="#">Component Lists</a></li>
+                <li><a class="list-group-item list-group-item-action" href="#c1">Main Card Style</a></li>
+                <li><a class="list-group-item list-group-item-action" href="#c2">Accordions</a></li>
+                <li><a class="list-group-item list-group-item-action" href="#c3">Action Sheets & Modals <i class="fa fa-exclamation-triangle float-right font-10 pt-1 text-secondary"></i></a></li>
+                <li><a class="list-group-item list-group-item-action" href="#c4">Ads <i class="fa fa-exclamation-triangle float-right font-10 pt-1 text-secondary"></i></a></li>
+                <li><a class="list-group-item list-group-item-action" href="#c6">Back to Top <i class="fa fa-exclamation-triangle float-right font-10 pt-1 text-secondary"></i></a></li>
+                <li><a class="list-group-item list-group-item-action" href="#c7">Bread Crumbs</a></li>
+                <li><a class="list-group-item list-group-item-action" href="#c8">Buttons & Icons</a></li>
+                <li><a class="list-group-item list-group-item-action" href="#c10a">Cards</a></li>
+                <li><a class="list-group-item list-group-item-action" href="#c9">Carousels</a></li>
+                <li><a class="list-group-item list-group-item-action" href="#c10">Charts & Graphs</a></li>
+                <li><a class="list-group-item list-group-item-action" href="#c11">Chips</a></li>
+                <li><a class="list-group-item list-group-item-action" href="#c12">Collapse</a></li>
+                <li><a class="list-group-item list-group-item-action" href="#c13">Columns</a></li>
+                <li><a class="list-group-item list-group-item-action" href="#c14">Detection</a></li>
+                <li><a class="list-group-item list-group-item-action" href="#c15">Disqus & Facebook</a></li>
+                <li><a class="list-group-item list-group-item-action" href="#c16">Dividers</a></li>
+                <li><a class="list-group-item list-group-item-action" href="#c17">Embeds</a></li>
+                <li><a class="list-group-item list-group-item-action" href="#c18">File Upload</a></li>
+                <li><a class="list-group-item list-group-item-action" href="#c19">Geo Location</a></li>
+                <li><a class="list-group-item list-group-item-action" href="#c20">Inputs</a></li>
+                <li><a class="list-group-item list-group-item-action" href="#c20a">Images</a></li>
+                <li><a class="list-group-item list-group-item-action" href="#c21">Link Lists / Groups</a></li>
+                <li><a class="list-group-item list-group-item-action" href="#c22">Notifications & Alerts <i class="fa fa-exclamation-triangle float-right font-10 pt-1 text-secondary"></i></a></li>
+                <li><a class="list-group-item list-group-item-action" href="#c23">Offline Detection</a></li>
+                <li><a class="list-group-item list-group-item-action" href="#c25">Preloaders</a></li>
+                <li><a class="list-group-item list-group-item-action" href="#c27">QR Generator</a></li>
+                <li><a class="list-group-item list-group-item-action" href="#c32">Sharing</a></li>
+                <li><a class="list-group-item list-group-item-action" href="#c32a">Search</a></li>
+                <li><a class="list-group-item list-group-item-action" href="#c33">Sidebars <i class="fa fa-exclamation-triangle float-right font-10 pt-1 text-secondary"></i></a></li>
+                <li><a class="list-group-item list-group-item-action" href="#c34">Snackbars <i class="fa fa-exclamation-triangle float-right font-10 pt-1 text-secondary"></i></a></li>
+                <li><a class="list-group-item list-group-item-action" href="#c37">Tabs</a></li>
+                <li><a class="list-group-item list-group-item-action" href="#c39">Toasts <i class="fa fa-exclamation-triangle float-right font-10 pt-1 text-secondary"></i></a></li>
+                <li><a class="list-group-item list-group-item-action" href="#c40">Toggles/Switches</a></li>
+                <li><a class="list-group-item list-group-item-action" href="#c43">Vibrate</a></li>
+                <li><a class="list-group-item list-group-item-action" href="#c45">Ending Words</a></li>
+            </ul>
+        
+            <div style="height:50px;"></div>
+        </div>
+    </div>
+    <div class="documentation">
+    
+        <!-- Main Chapter-->
+        <div class="chapter container" id="c1">
+            <div class="pt-4"></div>
+            <div class="pt-4"></div>
+            <h1>Components</h1>
+            <p class="text-primary mt-n2">
+                Each component explained in detail.
+            </p>
+            <p>
+                If you read the Structure documentation up until this point you will know that you can easily integrate components just by 
+                copy pasting them inside your page-content. <br><br>
+                
+                All components, unless specifically mentioned <strong>must be placed inside the page-content</strong>. Whenever a component requires a part of it
+                to be placed outside the page-content, we will add a warning so you will know this requires a bit of attention. Not placing them in the correct place
+                can lead to components not working properly.<br><br>            
+            </p>
+            
+            <div class="alert alert-primary" role="alert">
+                Check the sidebar list. Where you see <i class="fa fa-exclamation-triangle"></i> it means this component or parts of the component must be placed outside the page-content class.
+            </div>
+            
+            <h4 class="pt-5 mt-5">TIP: Copy and Paste Components from the Sample Files included.</h4>
+            <p>
+                To use components as easy as possible, each component is written in a separate page, and added in it's own card.<br><br> We strongly 
+                recommend you take copy and paste each component from the .html file you want into your pages, and read this documentation for your desired component to understand how to 
+                customize it even more. <br><br>We will explain each component and how to use it, but you will see them even better while using the samples provided.
+            </p>
+            
+            <h4 class="pt-3 mt-5">Missing Components in Documentation?</h4>
+            <p>
+                There are some components we didn't add here, for example, the typography page. These are elements that are simply copy and paste and really don't need any extra explanations. However, if you
+                do not understand something, regardless how small it is, please don't hesitate to contact us. We are always here to assist!
+            </p>
+            
+            <h4 class="pt-5 mt-5">Main Card Style</h4>
+            <p>
+                Unless you are using a special card design from the one in the pack, most elements are inserted into cards. <br>
+                These cards are made to create the nice, rounded and shadow effect, and also to create the margins around the elements inside the card.
+            </p>
+            <div id="highlighterMainDiv_690564" class="syntaxhighlighter html"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td>&nbsp;</td></tr><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div></td><td id="codeContainer_690564" class="code"><div id="container_690564" class="container"><div class="line number1 index0 alt2"><code class="html plain">&lt;</code><code class="html keyword">div</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"card card-style"</code><code class="html plain">&gt;</code></div><div class="line number2 index1 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">div</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"content UTILITY_SPACING"</code><code class="html plain">&gt;</code></div><div class="line number3 index2 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">h1</code><code class="html plain">&gt;Hello.&lt;/</code><code class="html keyword">h1</code><code class="html plain">&gt;</code></div><div class="line number4 index3 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">p</code><code class="html plain">&gt;I am a card.&lt;/</code><code class="html keyword">p</code><code class="html plain">&gt;</code></div><div class="line number5 index4 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">div</code><code class="html plain">&gt;</code></div><div class="line number6 index5 alt1"><code class="html plain">&lt;/</code><code class="html keyword">div</code><code class="html plain">&gt;</code></div></div></td></tr><tr><td>&nbsp;</td></tr><tr><td>&nbsp;</td></tr></tbody></table></div>
+            This is the default card structure.<br>
+            <strong>Line 1 </strong> defines the div as a card. Adding card-style will create the rounded borders and shadows and also leave a margin between it and the edges<br>
+            <strong>Line 2 </strong> is the content. This will create a margin inside the card itself, to keep things <br><br>
+            Notice that we have a <strong>UTILITY_SPACING</strong> space left in the content. This can be used to add utilities as mentioned in the structure documentation for adjusting the space between the content
+            and the card. For example, let's say you want to have no margin bottom for your  content, then you would simply add mb-0 instead of UTILITY_SPACING. 
+            You can use any spacing property here as explained by us in the <a href="index.html#cap3">Structure Utility Classes Chapter ( click to view )</a> or as explained by <a href="https://getbootstrap.com/docs/5.0/utilities/spacing/">Bootstrap Spacing Utility chapter.</a>
+            <br><br>
+            There are more card styles, but we will get to those in the following chapters. We used this intro so we can explain the basic element you will most often use.
+            
+        </div>
+
+        <!-- Accordions -->
+        <div class="chapter container" id="c2">
+            <div class="pt-4"></div>
+            <div class="pt-4"></div>
+            <h1>Accordions</h1>
+            <p class="text-primary mt-n2">
+                Built using the Bootstrap Collapse System - <a class="font-900" href="https://getbootstrap.com/docs/5.0/components/collapse/">Read more on Bootstrap Collapse Documentation</a>
+            </p>
+            <p>
+                We will explain each accordion we have in our component-accordions.html page in part, but please check the page as well and use the component by copy pasting it from there
+                and using this documentation as a guideline.
+            </p>
+            <!-- Accordion Classic-->
+            <div>
+                <h5>Accordion Classic</h5>
+                <div id="highlighterMainDiv_683026" class="syntaxhighlighter html">
+                    <table border="0" cellpadding="0" cellspacing="0">
+                        <tbody>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td class="gutter">
+                                    <div class="line number1 index0 alt2">01</div>
+                                    <div class="line number2 index1 alt1">02</div>
+                                    <div class="line number3 index2 alt2">03</div>
+                                    <div class="line number4 index3 alt1">04</div>
+                                    <div class="line number5 index4 alt2">05</div>
+                                    <div class="line number6 index5 alt1">06</div>
+                                    <div class="line number7 index6 alt2">07</div>
+                                    <div class="line number8 index7 alt1">08</div>
+                                    <div class="line number9 index8 alt2">09</div>
+                                    <div class="line number10 index9 alt1">10</div>
+                                    <div class="line number11 index10 alt2">11</div>
+                                    <div class="line number12 index11 alt1">12</div>
+                                </td>
+                                <td id="codeContainer_683026" class="code">
+                                    <div id="container_683026" class="container">
+                                        <div class="line number1 index0 alt2"><code class="html plain">&lt;</code><code class="html keyword">div</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"accordion"</code> <code class="html color1">id</code><code class="html plain">=</code><code class="html string">"accordion-1"</code><code class="html plain">&gt;</code></div>
+                                        <div class="line number2 index1 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">div</code><code class="html plain">&gt;</code></div>
+                                        <div class="line number3 index2 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">button</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"btn accordion-btn no-effect"</code> <code class="html color1">data-bs-toggle</code><code class="html plain">=</code><code class="html string">"collapse"</code> <code class="html color1">data-bs-target</code><code class="html plain">=</code><code class="html string">"#collapse1"</code><code class="html plain">&gt;</code></div>
+                                        <div class="line number4 index3 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">i</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"fa fa-heart color-red2-dark mr-2"</code><code class="html plain">&gt;&lt;/</code><code class="html keyword">i</code><code class="html plain">&gt;</code></div>
+                                        <div class="line number5 index4 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">Accordion Title 1</code></div>
+                                        <div class="line number6 index5 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">i</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"fa fa-plus font-10 accordion-icon"</code><code class="html plain">&gt;&lt;/</code><code class="html keyword">i</code><code class="html plain">&gt;</code></div>
+                                        <div class="line number7 index6 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;/</code><code class="html keyword">button</code><code class="html plain">&gt;</code></div>
+                                        <div class="line number8 index7 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">div</code> <code class="html color1">id</code><code class="html plain">=</code><code class="html string">"collapse1"</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"collapse"</code> <code class="html color1">data-parent</code><code class="html plain">=</code><code class="html string">"#accordion-1"</code><code class="html plain">&gt;</code></div>
+                                        <div class="line number9 index8 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html comments">&lt;!-- add your content here --&gt;</code></div>
+                                        <div class="line number10 index9 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;/</code><code class="html keyword">div</code><code class="html plain">&gt;</code></div>
+                                        <div class="line number11 index10 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;/</code><code class="html keyword">div</code><code class="html plain">&gt;</code></div>
+                                        <div class="line number12 index11 alt1"><code class="html plain">&lt;/</code><code class="html keyword">div</code><code class="html plain">&gt;</code></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>           
+                <strong>Line 1</strong> defines this div as the accordion, and the ID is used to target elements, so one closes when the other opens.<br>
+                <strong>Line 2 to Line 11</strong> is an accordion element. Duplicate these to create a new accordion item<br>
+                <strong>Line 3</strong>
+                    is the accordion button that you will tap to deploy. Please note that this has the data-bs-toggle="collapse" which is requied by javascript to define this element as a collapsible 
+                    element. The data-bs-target="#collapse1" must be identical to the ID of the div that will be collapsed or opened, in our case on line 8. Make sure to add the class <strong>no-effect</strong> in order for the icon not to rotate.<br>
+                <strong>Line 4</strong> is the FontAwesome 5 icon you wish to use<br>
+                <strong>Line 5</strong> is the Accordion Button Text<br>
+                <strong>Line 6</strong> is the Acccordion button right icon<br>
+                <strong>Line 7</strong> closes the button of the accordion<br>
+                <strong>Line 8,9,10</strong> is the accordion content that will show when tapping the button. This must have the ID identical to the button data-target and the data-parent must be identical to the one in line 1 so the accordion will know to close this button if you tap another one.<br>
+                <strong>Line 12</strong> Closes the accordion<br><br>
+                To create more accordion buttons simply duplicate lines 2 to 11, and replace #collapse1 on line 3 and line 8 with a unique name, for example #collapse2 and collapse2.
+            </div>
+            
+            <!-- Acordion Colors -->
+            <div>
+                <h5 class="pt-5">Accordion Colors</h5>
+                <div id="highlighterMainDiv_547579" class="syntaxhighlighter html">
+                <table border="0" cellpadding="0" cellspacing="0">
+                    <tbody>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="gutter">
+                                <div class="line number1 index0 alt2">01</div>
+                                <div class="line number2 index1 alt1">02</div>
+                                <div class="line number3 index2 alt2">03</div>
+                                <div class="line number4 index3 alt1">04</div>
+                                <div class="line number5 index4 alt2">05</div>
+                                <div class="line number6 index5 alt1">06</div>
+                                <div class="line number7 index6 alt2">07</div>
+                                <div class="line number8 index7 alt1">08</div>
+                                <div class="line number9 index8 alt2">09</div>
+                                <div class="line number10 index9 alt1">10</div>
+                                <div class="line number11 index10 alt2">11</div>
+                                <div class="line number12 index11 alt1">12</div>
+                            </td>
+                            <td id="codeContainer_547579" class="code">
+                                <div id="container_547579" class="container">
+                                    <div class="line number1 index0 alt2"><code class="html plain">&lt;</code><code class="html keyword">div</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"accordion"</code> <code class="html color1">id</code><code class="html plain">=</code><code class="html string">"accordion-1"</code><code class="html plain">&gt;</code></div>
+                                    <div class="line number2 index1 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">div</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"card card-style shadow-0 bg-highlight"</code><code class="html plain">&gt;</code></div>
+                                    <div class="line number3 index2 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">button</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"btn accordion-btn no-effect"</code> <code class="html color1">data-bs-toggle</code><code class="html plain">=</code><code class="html string">"collapse"</code> <code class="html color1">data-bs-target</code><code class="html plain">=</code><code class="html string">"#collapse1"</code><code class="html plain">&gt;</code></div>
+                                    <div class="line number4 index3 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">i</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"fa fa-heart color-red2-dark mr-2"</code><code class="html plain">&gt;&lt;/</code><code class="html keyword">i</code><code class="html plain">&gt;</code></div>
+                                    <div class="line number5 index4 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">Accordion Title 1</code></div>
+                                    <div class="line number6 index5 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">i</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"fa fa-plus font-10 accordion-icon"</code><code class="html plain">&gt;&lt;/</code><code class="html keyword">i</code><code class="html plain">&gt;</code></div>
+                                    <div class="line number7 index6 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;/</code><code class="html keyword">button</code><code class="html plain">&gt;</code></div>
+                                    <div class="line number8 index7 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">div</code> <code class="html color1">id</code><code class="html plain">=</code><code class="html string">"collapse1"</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"collapse bg-theme"</code> <code class="html color1">data-parent</code><code class="html plain">=</code><code class="html string">"#accordion-1"</code><code class="html plain">&gt;</code></div>
+                                    <div class="line number9 index8 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html comments">&lt;!-- add your content here --&gt;</code></div>
+                                    <div class="line number10 index9 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;/</code><code class="html keyword">div</code><code class="html plain">&gt;</code></div>
+                                    <div class="line number11 index10 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;/</code><code class="html keyword">div</code><code class="html plain">&gt;</code></div>
+                                    <div class="line number12 index11 alt1"><code class="html plain">&lt;/</code><code class="html keyword">div</code><code class="html plain">&gt;</code></div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>       
+                The color accordion works on the exact principle as the classic one with the following exceptions<br>
+                The accordion button on line 2 is now wrapped in a card with a background color attached, and the accordion content on line 8 has the class bg-theme, to keep it on the background of the page.
+            </div>
+            
+            <h5 class="pt-5">Accordion Cards</h5>
+            <p>
+                This card works on the same principle as the classic card, but, the button is now a Background Card, as explained in the cards chapter to follow.
+            </p>
+            
+        </div>
+
+        <!-- Action Sheets -->
+        <div class="chapter container" id="c3">
+            <div class="pt-4"></div>
+            <div class="pt-4"></div>
+            <h1>Action Sheets & Modals</h1>
+            <p class="text-primary mt-n2">
+                Custom built for beautiful effects and interactivity.
+            </p>
+            <p class="mt-n3 "><i class="fa fa-exclamation-triangle font-13 pr-3 text-danger"></i> The Action Sheet box must be placed outside the page-content</p>
+            <p>
+                The action sheets function on the Menu principle described in the <a href="index.html#cap5">Menu Structure in the Structure Documentation ( click )</a>
+                These are in essence simple bottom, top or modal placed menus that get triggered by any button on the screen.<br><br>
+                You can place any content you want inside action sheets, give them effects, and place them at the top, bottom or make them modal. Please check the Menu Structure to 
+                understand how to use these. After you understand how to trigger them, just copy and paste or build any component inside them, treating them as a individual entity.
+            </p>
+
+        </div>
+
+        <!-- Ads -->
+        <div class="chapter container" id="c4">
+            <div class="pt-4"></div>
+            <div class="pt-4"></div>
+            <h1>Ads</h1>
+            <p class="text-primary mt-n2">
+                Built and designed using better ad standards.
+            </p>
+            <p>
+                Ads can be placed inside the page content if the are not fixed or timed. For example, the most popular ads on mobile devices are the 300x50 and 300x250 banners. 
+                These can be created by adding the following code inside the page-content whenever you need them 
+            </p>
+            <strong>Ad 300x50 - in Content</strong>
+            <div id="highlighterMainDiv_622399" class="syntaxhighlighter html"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td>&nbsp;</td></tr><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div></td><td id="codeContainer_622399" class="code"><div id="container_622399" class="container"><div class="line number1 index0 alt2"><code class="html plain">&lt;</code><code class="html keyword">div</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"ad-300x50"</code><code class="html plain">&gt;</code></div><div class="line number2 index1 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html comments">&lt;!-- put your ad code here --&gt;</code></div><div class="line number3 index2 alt2"><code class="html plain">&lt;/</code><code class="html keyword">div</code><code class="html plain">&gt;</code></div></div></td></tr><tr></tr><tr></tr></tbody></table></div>
+            <br><br>
+            <strong>Ad 300x250 - in Contnet</strong>
+            <div id="highlighterMainDiv_622399" class="syntaxhighlighter html"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td>&nbsp;</td></tr><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div></td><td id="codeContainer_622399" class="code"><div id="container_622399" class="container"><div class="line number1 index0 alt2"><code class="html plain">&lt;</code><code class="html keyword">div</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"ad-300x250"</code><code class="html plain">&gt;</code></div><div class="line number2 index1 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html comments">&lt;!-- put your ad code here --&gt;</code></div><div class="line number3 index2 alt2"><code class="html plain">&lt;/</code><code class="html keyword">div</code><code class="html plain">&gt;</code></div></div></td></tr><tr></tr><tr></tr></tbody></table></div>
+
+            <p>These are classic boxes that are not fixed, and can be added in between the content area. </p>
+            
+            <h5 class="pt-5">Sticky/Fixed 300x50 Ads</h5>
+            <p class="mt-n1"><i class="fa fa-exclamation-triangle font-13 pr-3 text-danger"></i> The following DIV must be placed outside the page-content</p>
+            <div id="highlighterMainDiv_622399" class="syntaxhighlighter html"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td>&nbsp;</td></tr><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div></td><td id="codeContainer_622399" class="code"><div id="container_622399" class="container"><div class="line number1 index0 alt2"><code class="html plain">&lt;</code><code class="html keyword">div</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"ad-300x50 ad-300x50-fixed"</code><code class="html plain">&gt;</code></div><div class="line number2 index1 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html comments">&lt;!-- put your ad code here --&gt;</code></div><div class="line number3 index2 alt2"><code class="html plain">&lt;/</code><code class="html keyword">div</code><code class="html plain">&gt;</code></div></div></td></tr><tr></tr><tr></tr></tbody></table></div>
+            <p>This ad will stay fixed above the footer bar.</p>
+            
+            <h5 class="pt-5">Show on Scroll Ads</h5>
+            <p class="mt-n1"><i class="fa fa-exclamation-triangle font-13 pr-3 text-danger"></i> The following DIV must be placed outside the page-content</p>
+            <div id="highlighterMainDiv_387987" class="syntaxhighlighter html"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td>&nbsp;</td></tr><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div></td><td id="codeContainer_387987" class="code"><div id="container_387987" class="container"><div class="line number1 index0 alt2"><code class="html plain">&lt;</code><code class="html keyword">div</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"scroll-ad"</code><code class="html plain">&gt;</code></div><div class="line number2 index1 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">img</code> <code class="html color1">src</code><code class="html plain">=</code><code class="html string">"img.jpg"</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"shadow-l"</code><code class="html plain">&gt;</code></div><div class="line number3 index2 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">h1</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"text-uppercase font-900 font-18 color-white"</code><code class="html plain">&gt;Title&lt;/</code><code class="html keyword">h1</code><code class="html plain">&gt;</code></div><div class="line number4 index3 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">em</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"font-12"</code><code class="html plain">&gt;Flexibile, fast and fully featured. &lt;</code><code class="html keyword">br</code><code class="html plain">&gt; Pure mobile awesome!&lt;/</code><code class="html keyword">em</code><code class="html plain">&gt;</code></div><div class="line number5 index4 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">a</code> <code class="html color1">href</code><code class="html plain">=</code><code class="html string">"#"</code><code class="html plain">&gt;Button&lt;/</code><code class="html keyword">a</code><code class="html plain">&gt;</code></div><div class="line number6 index5 alt1"><code class="html plain">&lt;/</code><code class="html keyword">div</code><code class="html plain">&gt;</code></div></div></td></tr><tr></tr><tr></tr></tbody></table></div>
+            <p>This add will appear when you are scrolling, but hide at the top and bottom of the page. This can be found inside component-fixed-ads.html</p>
+            
+            <h5 class="pt-5">Timed Ads</h5>
+            <p class="mt-n1"><i class="fa fa-exclamation-triangle font-13 pr-3 text-danger"></i> The code below can be placed anywhere, but the Action Modal for the ad must be placed outside the page content.</p>
+            <div id="highlighterMainDiv_154452" class="syntaxhighlighter html"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td>&nbsp;</td></tr><tr><td class="gutter"><div class="line number1 index0 alt2">1</div></td><td id="codeContainer_154452" class="code"><div id="container_154452" class="container"><div class="line number1 index0 alt2"><code class="html plain">data-menu="ad-timed-1" data-timed-ad="5"</code></div></div></td></tr><tr></tr><tr></tr></tbody></table></div>
+            <p>
+                The ad time box itself is simply a modal menu, that is triggered by the above code. The data-timed-ad will represent the timeout until the close button is visible.
+                Please check the component-ad-timed.html to see the modal windows for these ads. Simply copy paste them and replace the content inside with your own.
+            </p>
+            <h6>Automatically triggering timed ads.</h6>
+            <p>
+                You can also trigger a timed ad automatically, by adding the following parameter to the code above 
+            </p>
+            <div id="highlighterMainDiv_154452" class="syntaxhighlighter html"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td>&nbsp;</td></tr><tr><td class="gutter"><div class="line number1 index0 alt2">1</div></td><td id="codeContainer_154452" class="code"><div id="container_154452" class="container"><div class="line number1 index0 alt2"><code class="html plain">data-menu="ad-timed-1" data-timed-ad="5" data-auto-show-ad="10"</code></div></div></td></tr><tr></tr><tr></tr></tbody></table></div>
+            <p>
+                The data auto-show-ad is represented in seconds and will automatically show the ad in 10 seconds. To add this to the page without a button being visible, simply add an empty a href="#" with this data
+                and don't add any color to it. Keep it somewhere on the page. 
+            </p>
+            
+        </div>
+
+        <!-- Back to Top -->
+        <div class="chapter container" id="c6">
+            <div class="pt-4"></div>
+            <div class="pt-4"></div>
+            <h1>Back to Top </h1>
+            <p class="text-primary mt-n2">
+                A simple and useful component
+            </p>
+            <p class="mt-n3 "><i class="fa fa-exclamation-triangle font-13 pr-3 text-danger"></i> Back to Top badge must be outside the page-content</p>
+            <p>
+                To use the Back to Top components, simply open component-back-to-top, and take the HTML code you wish for the badge you want and copy 
+                it outside the page-content. The code will handle the rest and will hide and show when it's needed.
+            </p>
+            
+        </div>
+        
+        <!-- Breadcrumbs -->
+        <div class="chapter container" id="c7">
+            <div class="pt-4"></div>
+            <div class="pt-4"></div>
+            <h1>Breadcrumbs </h1>
+            <p class="text-primary mt-n2">
+                Navigation depth and returning.
+            </p>
+            <p>
+                This feature works using the Bootstrap default Breadcrumb component added inside the card. This feature has been requrested by many of our customers in the past.
+                We must warn, that based on Mobile UX standards, your flow should never be so deep that it requires a breadcrumb. Use this component only where it's necessary.
+            </p>
+        </div>
+
+        <!-- Buttons and Icons -->
+        <div class="chapter container" id="c8">
+            <div class="pt-4"></div>
+            <div class="pt-4"></div>
+            <h1>Buttons and Icons </h1>
+            <p class="text-primary mt-n2">
+                The default Bootstrap Buttons will work perfectly, this is just an enhanced style of the Bootstrap System
+            </p>
+            <p>
+                The buttons seen in <a href="https://getbootstrap.com/docs/4.0/components/buttons/">Bootstrap's Documentation</a> are great, but we wanted to give them a more mobile personallity and 
+                extend their design to make them look even better. With this being said, you can use <strong>any button</strong> from Bootstrap, or use the ones found in component-buttons.html
+            </p>
+            <div id="highlighterMainDiv_134134" class="syntaxhighlighter html"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td>&nbsp;</td></tr><tr><td class="gutter"><div class="line number1 index0 alt2">1</div></td><td id="codeContainer_134134" class="code"><div id="container_134134" class="container"><div class="line number1 index0 alt2"><code class="html plain">&lt;</code><code class="html keyword">a</code> <code class="html color1">href</code><code class="html plain">=</code><code class="html string">"#"</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"btn UTILITY_CLASSES_HERE"</code><code class="html plain">&gt;Button&lt;/</code><code class="html keyword">a</code><code class="html plain">&gt;</code></div></div></td></tr><tr></tr><tr></tr></tbody></table></div>
+            <h5 class="pt-5">Replace UTLITY_CLASSES_HERE with your utility</h5>
+            <p>
+                Our button class is identical to that of Bootstrap, but, with a few utility classes added, we can extend the beauty of these buttons to limitless power. Add any of the following utility / secondary classes
+                to the buttons you want. You can use multiple utility classes combined.
+            </p>
+            <strong>Control Sizes</strong>
+            <ul>
+                <li>btn-xs</li>
+                <li>btn-s</li>
+                <li>btn-sm</li>
+                <li>btn-m</li>
+                <li>btn-l</li>
+                <li>btn-xl</li>
+                <li>btn-xxl</li>
+            </ul>
+            <br>
+            <strong>Placement</strong>
+            <ul>
+                <li>btn-center-s</li>
+                <li>btn-center-m</li>
+                <li>btn-center-l</li>
+                <li>btn-full</li>
+            </ul>
+            <br>
+            <strong>Color and Background</strong> - <a href="index.html#cap-colors">View available Colors</a>
+            <ul>
+                <li>bg-yourColor</li>
+                <li>color-yourColor</li>
+            </ul>
+            <br>
+            <strong>Font Size, Shadows, Text Transform </strong> - <a href="index.html#cap-utility">View available Utility Classes</a><br><br>
+                
+            <strong>Instant Example </strong><br>
+            Let's say you want to create a medium sized button, that is full width with rounded corners and a large shadow, that uses the background of your page and has a white bolded and uppercased text. 
+            <div id="highlighterMainDiv_477486" class="syntaxhighlighter html"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td>&nbsp;</td></tr><tr><td class="gutter"><div class="line number1 index0 alt2">1</div></td><td id="codeContainer_477486" class="code"><div id="container_477486" class="container"><div class="line number1 index0 alt2"><code class="html plain">&lt;</code><code class="html keyword">a</code> <code class="html color1">href</code><code class="html plain">=</code><code class="html string">"#"</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"btn btn-m rounded-sm shadow-xl bg-highlight color-white font-900 text-uppercase"</code><code class="html plain">&gt;Button&lt;/</code><code class="html keyword">a</code><code class="html plain">&gt;</code></div></div></td></tr><tr></tr><tr></tr></tbody></table></div>
+            As you can see , the code is super simple and intuitive, simply adding the utility you want to give it a new style.
+            
+            <br><br>            
+            <strong>3D Buttons</strong><br>
+            To use 3D buttons, you have to use 2 bg-colors as a utility class colors. One dark color for the bg parameter and one light color for the border. Also, be sure to add the btn-3d class:
+            <div id="highlighterMainDiv_234919" class="syntaxhighlighter html"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td>&nbsp;</td></tr><tr><td class="gutter"><div class="line number1 index0 alt2">1</div></td><td id="codeContainer_234919" class="code"><div id="container_234919" class="container"><div class="line number1 index0 alt2"><code class="html plain">&lt;</code><code class="html keyword">a</code> <code class="html color1">href</code><code class="html plain">=</code><code class="html string">"#"</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"btn btn-3d btn-m bg-red-dark border-red-light"</code><code class="html plain">&gt;Button&lt;/</code><code class="html keyword">a</code><code class="html plain">&gt;</code></div></div></td></tr><tr><td>&nbsp;</td></tr><tr><td>&nbsp;</td></tr></tbody></table></div>
+        
+            <h4>Icons</h4>
+            <p>
+                Icons are pretty much based in the same concept as buttons, the only difference is that icons don't support centering by using an icon class. You can center icons by adding them inside a paragraph
+                and giving that paragraph the class "text-center".<br>Beside this, the icons are built in the same way. Let's take an example: 
+            </p>
+            <div id="highlighterMainDiv_699545" class="syntaxhighlighter html"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td>&nbsp;</td></tr><tr><td class="gutter"><div class="line number1 index0 alt2">1</div></td><td id="codeContainer_699545" class="code"><div id="container_699545" class="container"><div class="line number1 index0 alt2"><code class="html plain">&lt;</code><code class="html keyword">a</code> <code class="html color1">href</code><code class="html plain">=</code><code class="html string">"#"</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"icon icon-xs rounded-xl bg-facebook"</code><code class="html plain">&gt;&lt;</code><code class="html keyword">i</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"fab fa-facebook"</code><code class="html plain">&gt;&lt;/</code><code class="html keyword">i</code><code class="html plain">&gt;&lt;/</code><code class="html keyword">a</code><code class="html plain">&gt;</code></div></div></td></tr><tr></tr><tr></tr></tbody></table></div>
+            <p>
+                Add the class icon, followed by a sizing class, then the background you want. Inside the icon, just place a font-awesome icon 
+            </p>
+            <strong>Control Sizes</strong>
+            <ul>
+                <li>icon-xs</li>
+                <li>icon-s</li>
+                <li>icon-sm</li>
+                <li>icon-m</li>
+                <li>icon-l</li>
+                <li>icon-xl</li>
+                <li>icon-xxl</li>
+            </ul>
+            <br>
+        </div>
+
+        <!-- Cards --> 
+        <div class="chapter container" id="c10a">
+            <div class="pt-4"></div>
+            <div class="pt-4"></div>
+            <h1>Cards</h1>
+            <p class="text-primary mt-n2">
+                The most flexible Cards in the World.
+            </p>
+            <p>
+                Our card/caption system has been called by our customers as simply the best solution for creating incredibly powerful cards, while at the same time giving you incredible flexibility. 
+                The <a href="https://getbootstrap.com/docs/4.0/components/card/">classic Bootstrap code for cards still</a> applies if you wish to use their designs.<br>
+                
+                What we did, is take their code, and slightly enhance it to make it even better than it already is, by
+                adding options for custom backgrounds, images, lazy loading, rounded borders, shadows, and much, much more. <br><br>
+                Using cards, you can create any style of caption you want, in less than 5 minutes. These are incredibly powerful, and we'll explain each part.<br>
+            </p>
+            <strong>Pages built using cards</strong><br>
+            <ul>
+                <li>Logins & Registers</li>
+                <li>Splash and Walkthroughs</li>
+                <li>Event Cards</li>
+                <li>About Us Page</li>
+                <li>... and more</li>
+            </ul>
+            <p>There are 2 types of cards. The classic "Expanding Card", that expands depending on the content inside, and the "Height Control" card where you can use extra flexibility in their content.</p>
+            <br><br>
+            
+            <!--Expanding Cards-->
+            <div>
+            <h4>Expanding Card</h4>
+                <p>
+                    The expanding card, is the main card style we use for our entire card system. This can support simple styles. Let's explain.
+                </p>
+                <div id="highlighterMainDiv_690564" class="syntaxhighlighter html"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td>&nbsp;</td></tr><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div></td><td id="codeContainer_690564" class="code"><div id="container_690564" class="container"><div class="line number1 index0 alt2"><code class="html plain">&lt;</code><code class="html keyword">div</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"card card-style UTILITY_STYLING"</code><code class="html plain">&gt;</code></div><div class="line number2 index1 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">div</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"content UTILITY_SPACING"</code><code class="html plain">&gt;</code></div><div class="line number3 index2 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">h1</code><code class="html plain">&gt;Hello.&lt;/</code><code class="html keyword">h1</code><code class="html plain">&gt;</code></div><div class="line number4 index3 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">p</code><code class="html plain">&gt;I am a card.&lt;/</code><code class="html keyword">p</code><code class="html plain">&gt;</code></div><div class="line number5 index4 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">div</code><code class="html plain">&gt;</code></div><div class="line number6 index5 alt1"><code class="html plain">&lt;/</code><code class="html keyword">div</code><code class="html plain">&gt;</code></div></div></td></tr><tr><td>&nbsp;</td></tr><tr><td>&nbsp;</td></tr></tbody></table></div>
+                <strong>Line - 1</strong> has the class card and card style required for the rounded borders and margins from the side of the screen. You also have the option to add utility styling classes. Here are all utility stylings available.
+                <ul class="pt-4">
+                    <li>bg-COLOR - available colors <a href="index.html#cap-colors">in Utility Colors</a></li>
+                    <li>bg-gradient-COLOR - available colors <a href="index.html#cap-colors">in Utility Colors</a></li>
+                    <li>shadow-VALUE ( value = 0, s, sm, m, l, xl ) <a href="index.html#cap-shadows">in Utility Shadows</a></li>
+                    <li>rounded-VALUE ( value = 0, s, sm, m, l, xl ) <a href="index.html#cap-rounded">in Utility Rounded</a></li>
+                    <li>Spacings - margins & paddings using the values in the <a href="index.html#cap3">Utility Documentation</a></li>
+                </ul>
+                <strong>Line - 2 </strong>is the content class which sets a space between the card and the margins. If you want your card to be full width, don't use this and also remove the card-style class,
+                However, if you want to use the content and need to modify the UTILITY_SPACING, distance between the content and the inside of the card, you can use the margins & paddings in the <a href="index.html#cap3">Utility Documentation</a>
+                <br><br>
+                Using the exact system described here is how we created the component-cards-gradient.html and component-cards-content.html. You can check these pages for live examples to better understand and
+                see the live code for these elements.
+            </div>
+            
+            <!-- Height Control Cards-->
+            <div>
+                <h4 class="pt-5">Height Control Cards.</h4>
+                <p>
+                    These are the cards which we used to create the awesome sliders, events pages and more. These have a few extra parameters, but offer incredible flexibility in creating
+                    immersive and beautiful elements.
+                </p>
+            
+                <div id="highlighterMainDiv_744675" class="syntaxhighlighter html"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td>&nbsp;</td></tr><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div></td><td id="codeContainer_744675" class="code"><div id="container_744675" class="container"><div class="line number1 index0 alt2"><code class="html plain">&lt;</code><code class="html keyword">div</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"card UTILITY_STYLING"</code> <code class="html color1">data-card-height</code><code class="html plain">=</code><code class="html string">"VALUE"</code><code class="html plain">&gt;</code></div><div class="line number2 index1 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html comments">&lt;!--- Card types go here--&gt;</code></div><div class="line number3 index2 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">div</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"card-overlay bg-VALUE opacity-VALUE"</code><code class="html plain">&gt;</code></div><div class="line number4 index3 alt1"><code class="html plain">&lt;/</code><code class="html keyword">div</code><code class="html plain">&gt;</code></div></div></td></tr><tr></tr><tr></tr></tbody></table></div>
+
+                <p>
+                    This is the basic structure of a card with height control. Let's explain how it works.<br><br>
+                </p>
+                    <strong>Line - 1</strong> has the class card and card style, which we explained at the very top of this documentation, but you also have the option to add utility styling classes. Here are all utility styilings avaiable.
+                    <ul class="pt-4">
+                        <li>bg-COLOR - available colors <a href="index.html#cap-colors">in Utility Colors</a></li>
+                        <li>bg-gradient-COLOR - available colors <a href="index.html#cap-colors">in Utility Colors</a></li>
+                        <li>shadow-VALUE ( value = 0, s, sm, m, l, xl ) <a href="index.html#cap-shadows">in Utility Shadows</a></li>
+                        <li>rounded-VALUE ( value = 0, s, sm, m, l, xl ) <a href="index.html#cap-rounded">in Utility Rounded</a></li>
+                        <li>Spacings - margins & paddings using the values in the <a href="index.html#cap3">Utility Documentation</a></li>
+                        <li>bg-NUMBER ( NUMBER can be between 1 and 30. These images can be found and replaced with your own by using CTRL+F / CMD+F in style.css or if you're using SCSS directly in zDemo.scss</li>
+                    </ul>
+                <p>
+                    <strong>Line 1</strong> also has the option of data-card-height. This value can be expressed in pixels, for example, data-card-height="300" or if you want the card to be the full size of the screen, use data-card-height="cover"<br>
+                    <strong>Line 2</strong> is where the card types will be added, will be explained below.<br>
+                    <strong>Line 3</strong> is the overlay of your card, meaning the background color that will be over the image, but under the text.
+                    In the "Expanding Card", this color was added in the first line, but here, the first line is the background image, and we use the color to place over the image.  Replace bg-VALUE with the color you want from 
+                    <a href="index.html#cap-colors">Available Color List</a> and the opacity-VALUE with an opacity you want from the 
+                    <a href="index.html#cap-opacity">Available Opacity List</a> to make the background image more or less visible. <br>
+                    <strong>Line 4</strong> closes the card itself.
+                </p>
+                <br>
+                
+                <h6 class="font-20 pt-2">Card Types</h6>
+                <div id="highlighterMainDiv_285744" class="syntaxhighlighter html"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td>&nbsp;</td></tr><tr><td class="gutter"><div class="line number1 index0 alt2">01</div><div class="line number2 index1 alt1">02</div><div class="line number3 index2 alt2">03</div><div class="line number4 index3 alt1">04</div><div class="line number5 index4 alt2">05</div><div class="line number6 index5 alt1">06</div><div class="line number7 index6 alt2">07</div><div class="line number8 index7 alt1">08</div><div class="line number9 index8 alt2">09</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div></td><td id="codeContainer_285744" class="code"><div id="container_285744" class="container"><div class="line number1 index0 alt2"><code class="html plain">&lt;</code><code class="html keyword">div</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"card-center"</code><code class="html plain">&gt;</code></div><div class="line number2 index1 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">I will appear in the center of the Caption</code></div><div class="line number3 index2 alt2"><code class="html plain">&lt;/</code><code class="html keyword">div</code><code class="html plain">&gt;</code></div><div class="line number4 index3 alt1"><code class="html spaces">&nbsp;</code>&nbsp;</div><div class="line number5 index4 alt2"><code class="html plain">&lt;</code><code class="html keyword">div</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"card-top mt-3 ms-3"</code><code class="html plain">&gt;</code></div><div class="line number6 index5 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">I will appear in the top part, pushed from the left and top by 15 pixels</code></div><div class="line number7 index6 alt2"><code class="html plain">&lt;/</code><code class="html keyword">div</code><code class="html plain">&gt;</code></div><div class="line number8 index7 alt1"><code class="html spaces">&nbsp;</code>&nbsp;</div><div class="line number9 index8 alt2"><code class="html plain">&lt;</code><code class="html keyword">div</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"card-bottom mb-3 ms-3"</code><code class="html plain">&gt;</code></div><div class="line number10 index9 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">I will appear in the bottom part, pushed from the left and bottom by 15 pixels</code></div><div class="line number11 index10 alt2"><code class="html plain">&lt;/</code><code class="html keyword">div</code><code class="html plain">&gt;</code></div></div></td></tr><tr></tr><tr></tr></tbody></table></div>
+                
+                <p>
+                    The card types are added inside the Height Control Cards, in line 2. When using cards with a fixed height, you can use these cards to place content 
+                    inside that card, whever you want. You can use as many elements you want, and move them around using the <a href="index.html#cap-spacing">Spacing Utilities.</a>
+                    <br><br>
+                    To see perfect examples of how these cards can be used, please check the component-cards-captions.html, where you will have live examples of multiple variations and also the
+                    component-cards-infinite.html to see an example where the background image is used is an infinite repeating image.
+                </p>
+            
+                <h6 class="font-20 pt-4">Preloading Images in Cards</h6>
+                <p>
+                    To preload an image in a card, in the starting div of the card, you will have to add this structure 
+                </p>
+                <div id="highlighterMainDiv_760759" class="syntaxhighlighter html"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td>&nbsp;</td></tr><tr><td class="gutter"><div class="line number1 index0 alt2">1</div></td><td id="codeContainer_760759" class="code"><div id="container_760759" class="container"><div class="line number1 index0 alt2"><code class="html plain">&lt;</code><code class="html keyword">div</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"card preload-img"</code> <code class="html color1">data-src</code><code class="html plain">=</code><code class="html string">"image.png"</code> <code class="html color1">data-card-height</code><code class="html plain">=</code><code class="html string">"VALUE"</code><code class="html plain">&gt;</code></div></div></td></tr><tr><td>&nbsp;</td></tr><tr><td>&nbsp;</td></tr></tbody></table></div>
+                <p>
+                    In this scenario, you can still use utility styles in your card, but you can no longer use the classes for bg-NUMBER for images. Everything else in the above code stays the same as described before.
+                </p>
+                
+                <h4 class="pt-4">Which is better? Expanding or Fixed Height</h4>
+                <p>
+                    Here is a list that allows you to better understand which card is best suited for your needs.
+                </p>
+                <div class="row text-center pt-">
+                    <div class="col-4 text-left">
+                        <h6 class="font-19 pb-3">Use case</h6>
+                        <p class="mb-3">Basic Use ( simple page elements ) </p>
+                        <p class="mb-3">Full Screen Elements</p>
+                        <p class="mb-3">Background Image/Infinite</p>
+                        <p class="mb-3">Background Color (gradient/simple)</p>
+                        <p class="mb-3">Content Position - top/center/bottom</p>
+                        <p class="mb-3">Cover Sliders & Walkthroughs</p>
+                    </div>
+                    <div class="col-4">
+                        <h6 class="font-19 pb-3">Expanding Card</h6>
+                        <p class="mb-3"><i class="fa fa-check-circle font-20 text-success"></i></p>
+                        <p class="mb-3"><i class="fa fa-times-circle font-20 text-danger"></i></p>
+                        <p class="mb-3"><i class="fa fa-times-circle font-20 text-danger"></i></p>
+                        <p class="mb-3"><i class="fa fa-check-circle font-20 text-success"></i></p>
+                        <p class="mb-3"><i class="fa fa-times-circle font-20 text-danger"></i></p>
+                        <p class="mb-3"><i class="fa fa-times-circle font-20 text-danger"></i></p>
+                    </div>
+                    <div class="col-4">
+                        <h6 class="font-19 pb-3">Fixed Height Card</h6>
+                        <p class="mb-3"><i class="fa fa-times-circle font-20 text-danger"></i></p>
+                        <p class="mb-3"><i class="fa fa-check-circle font-20 text-success"></i></p>
+                        <p class="mb-3"><i class="fa fa-check-circle font-20 text-success"></i></p>
+                        <p class="mb-3"><i class="fa fa-check-circle font-20 text-success"></i></p>
+                        <p class="mb-3"><i class="fa fa-check-circle font-20 text-success"></i></p>
+                        <p class="mb-3"><i class="fa fa-check-circle font-20 text-success"></i></p>
+                    </div>
+                </div>
+                <p>
+                    If you want to have full control over your background image, color, opacity, and the position of your text inside the card, then the fixed height card will work perfectly for you. <br><br>
+                    If you want to use simple text, or elements added inside a card, without caring about their placement, and just want them to flow with the page, then the Expanding classic card is perfect for you.
+                </p>
+
+            </div>
+            
+        </div>       
+        
+        <!-- Carousels --> 
+        <div class="chapter container" id="c9">
+            <div class="pt-4"></div>
+            <div class="pt-4"></div>
+            <h1>Carousels</h1>
+            <p class="text-primary mt-n2">
+                Slide anything. -> More about our carousel on <a href="https://splidejs.com/">https://splidejs.com/</a>
+            </p>
+            <p>
+                For the carousel we're using a pure Vanilla JavaScript slider called Splide. This is one of the most powerful, flexible and most performant sliders out there that has no dependancy requirements. Please do not update the splide script without first getting in touch with us. We've made it in such fashion that the slider is more powerful and less memory hungy, therefore increasing performance even on lower end devices.<br/><br/>
+                
+                <strong>Developer Notes</strong>: For the full API of the slider, please visit this page -> https://splidejs.com/category/users-guide/
+            </p>
+            
+            <h4>Examples:</h4>
+            <p>
+                Please open your components-carousles.html or component-sliders.html  (names can varry) and check the provided examples. We always shwocase all possible options in that page. However, let's explain the basic structure of a carousel, so we can detail a few elements.
+            </p>
+
+            <div id="highlighterMainDiv_630647" class="syntaxhighlighter html"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td>&nbsp;</td></tr><tr><td class="gutter"><div class="line number1 index0 alt2">01</div><div class="line number2 index1 alt1">02</div><div class="line number3 index2 alt2">03</div><div class="line number4 index3 alt1">04</div><div class="line number5 index4 alt2">05</div><div class="line number6 index5 alt1">06</div><div class="line number7 index6 alt2">07</div><div class="line number8 index7 alt1">08</div><div class="line number9 index8 alt2">09</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div><div class="line number12 index11 alt1">12</div><div class="line number13 index12 alt2">13</div><div class="line number14 index13 alt1">14</div><div class="line number15 index14 alt2">15</div></td><td id="codeContainer_630647" class="code"><div id="container_630647" class="container"><div class="line number1 index0 alt2"><code class="html plain">&lt;</code><code class="html keyword">div</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"splide SLIDER-TYPE ARROW-OPTIONS DOTS-OPTIONS"</code> <code class="html color1">id</code><code class="html plain">=</code><code class="html string">"UNIQUE-SLIDER-ID-1"</code><code class="html plain">&gt;</code></div><div class="line number2 index1 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">div</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"splide__track"</code><code class="html plain">&gt;</code></div><div class="line number3 index2 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">div</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"splide__list"</code><code class="html plain">&gt;</code></div><div class="line number4 index3 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">div</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"splide__slide"</code><code class="html plain">&gt;</code></div><div class="line number5 index4 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html comments">&lt;!-- Place the content or cards or images you want here this is a slide --&gt;</code></div><div class="line number6 index5 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;/</code><code class="html keyword">div</code><code class="html plain">&gt;</code></div><div class="line number7 index6 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">div</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"splide__slide"</code><code class="html plain">&gt;</code></div><div class="line number8 index7 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html comments">&lt;!-- Place the content or cards or images you want here this is a slide --&gt;</code></div><div class="line number9 index8 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;/</code><code class="html keyword">div</code><code class="html plain">&gt;</code></div><div class="line number10 index9 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">div</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"splide__slide"</code><code class="html plain">&gt;</code></div><div class="line number11 index10 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html comments">&lt;!-- Place the content or cards or images you want here this is a slide --&gt;</code></div><div class="line number12 index11 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;/</code><code class="html keyword">div</code><code class="html plain">&gt;</code></div><div class="line number13 index12 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;/</code><code class="html keyword">div</code><code class="html plain">&gt;</code></div><div class="line number14 index13 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;/</code><code class="html keyword">div</code><code class="html plain">&gt;</code></div><div class="line number15 index14 alt2"><code class="html plain">&lt;/</code><code class="html keyword">div</code><code class="html plain">&gt;</code></div></div></td></tr><tr><td>&nbsp;</td></tr><tr><td>&nbsp;</td></tr></tbody></table></div>
+
+
+            <h5>Code Explained</h5>
+            Although the code above is a bit larger than it's jQuery counterpart, it's fundamental structure is vital for use in Vanilla JavaScript as mentioned here -> <a href="https://splidejs.com/structure/">https://splidejs.com/structure/</a>. Let's explain step by step. The above code is the base for any slider, you can just copy and paste the code and update the values in line 1 as explained below
+            <br/><br/>
+            <ul>
+                <li><strong>Line 1:</strong> is the beginning of the slider div. This will define our slider type, arrows and dots. Replace the following classes seen on line one with the slider you want to use. <br/>
+                    <ul>
+<li>                        <strong>SLIDER-TYPE</strong> - Set the number of slides per view. Replace <strong>SLIDER-TYPE</strong> with either <strong>single-slider</strong> or <strong>double-slider</strong> or <strong>tripple-slider</strong><br/>
+</li>                        
+<li>                        <strong>ARROW-OPTIONS</strong> - Enable or disable the arrows of the slider. Replace with <strong>slider-no-arrows</strong> to hide the arrows or <strong>slider-has-arrows</strong> to show arrows.<br/>
+</li>                        <strong>DOTS-OPTIONS</strong> - Enable or disable the dots under the slider. Replace with <strong>slider-no-dots</strong> to hide the dots or <strong>slider-has-dots</strong> to show dots.<br/>
+<li>                        <span class="font-700" style="color:red!important;"><strong class="pl-0">UNIQUE-SLIDER-ID-1</strong> - You must give each slider you have on your page a unique ID. Be sure that your sliders have a unique ID. Giving your slider the same ID will cause errors and the sliders will be disabled. Please be sure you give each slider a UNIQUE ID! </span>
+</li>                    </ul>
+                </li> 
+                <li><strong>Line 2</strong> is the track. This is where the arrows and dots and controls are added to the slider and hidden until requrested. This element also has the purpose of setting a relative position to the inner elements. It is a required line</li>
+                <li><strong>Line 3</strong> is the list of slides. Inside of this, you can add your individual items. </li>
+                <li><strong>Line 4 to Line 6</strong>is a single slide. The class name is necessary. Add anything you want inside here, and duplicate these lines to create more slides.</li>
+            </ul>
+
+            <br>
+            You can use <strong>single-slider</strong> to generate a slider that will have only 1 slide per view, or <strong>double-slider</strong> which will generate a slider that will have 2  slides per view. And <strong>tripple-slider</strong> that will have 3 slides per view.
+            In our example, we used <a href="#c10a">Fixed Height Cards</a> to create the beautiful sliders you see throuhgout our page. These allow control over where the text is added and also
+            support the <a href="index.html#cap3">Utility Classes</a> for shadows, rounded borders, background colors, gradients and everything you can attach to a card. <br>
+            To create a full height slider or a walkthrough slider, this must be combined with cards that have the <strong>data-card-height="cover"</strong>
+            <br><br>
+            <strong>&lt;!-- Place the content or cards or images you want here this is a slide --&gt;</strong><br>
+            This is the main area of your carousel. Regardless if you use a double-slider, single-slider or cover slider, each individual slide must be in it's own separate div. This means for example
+            you can't start writing a heading, a paragraph and a button and expect the slider to know this is a slide. These must be wrapped in individual divs. In this area, the cards are the most
+            useful component you can use. We recommend using <a href="#c10a">Fixed Height Cards</a> as these will give you the best control over the slider size and over each individual slide text element and image.
+            <br><br>
+            Please refer to the component-carousels.html page for more, and let us know if you have any issues, we'll gladly help out.
+            
+        </div>
+        
+        <!-- Charts and Graphs --> 
+        <div class="chapter container" id="c10">
+            <div class="pt-4"></div>
+            <div class="pt-4"></div>
+            <h1>Charts and Graphs</h1>
+            <p class="text-primary mt-n2">
+                Powered by charts.js - the best chart plugin system.
+            </p>
+            <p>
+                Charts.js offers the absolute best chart system in the world. You can see the JavaScript required to generate these in the custom.js file by searching (CTRL+F Windows or CMD +F Mac) for charts.<br>
+                The codes there can be adapted for your use, and a full documentation on how to create your own charts and create simply insanely powereful solutions can be found on <br><br>
+                <a href="https://www.chartjs.org/docs/latest/">Charts.JS - https://www.chartjs.org/docs/latest/ - Official Documentation</a>
+            </p>
+        </div>
+
+        <!-- Chips --> 
+        <div class="chapter container" id="c11">
+            <div class="pt-4"></div>
+            <div class="pt-4"></div>
+            <h1>Chips</h1>
+            <p class="text-primary mt-n2">
+                Small pieces of information 
+            </p>
+            <p>
+                Chips are great for showing a tiny button that can house a small piece of information with an icon  or an image. Check the component-chips.html page.
+                These elements are self explanatory, and only require you to copy and paste them.<br><br>
+                You can deploy menus from chips by using the data-menu attribute, or anyother snackbar or toast or collapsible as long as you follow the trigger structure mentioned in each chapter.
+            </p>
+        </div>
+   
+        <!-- Collapse --> 
+        <div class="chapter container" id="c12">
+            <div class="pt-4"></div>
+            <div class="pt-4"></div>
+            <h1>Collapse</h1>
+            <p class="text-primary mt-n2">
+                Built using the Bootstrap Collapse System - <strong><a href="https://getbootstrap.com/docs/5.0/components/collapse/">Read more on Bootstrap Collapse Documentation</a></strong>
+            </p>
+            <p>
+                Collapsible elements are designed to house lists of links. These are super useful when you have a lot of listed information available for a single subject.
+                In our example, inside component-collapse.html, we simply created a list group, and added the logic of Bootstrap 5 collapse. You can do the same by following the next logic
+            </p>
+            <div id="highlighterMainDiv_348778" class="syntaxhighlighter java"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td>&nbsp;</td></tr><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div></td><td id="codeContainer_348778" class="code"><div id="container_348778" class="container"><div class="line number1 index0 alt2"><code class="java plain">&lt;a data-bs-toggle=</code><code class="java string">"collapse"</code> <code class="java plain">href=</code><code class="java string">"#collapse-1"</code><code class="java plain">&gt;&lt;!-- Collapse Trigger is Here --&gt;&lt;/a&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </code></div><div class="line number2 index1 alt1"><code class="java plain">&lt;div </code><code class="java keyword">class</code><code class="java plain">=</code><code class="java string">"collapse"</code> <code class="java plain">id=</code><code class="java string">"collapse-1"</code><code class="java plain">&gt;&lt;!-- I will appear when you tap the trigger--&gt;&lt;/div&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </code></div></div></td></tr><tr><td></td></tr><tr><td></td></tr></tbody></table></div>
+            <p>
+                Any element can be made collapsible, as long as you have the data-bs-toggle="collapse" on the trigger, and the class collapse on what will be shown when pressing the trigger
+                and make sure your href="UNIQUE_NAME" on the trigger is identical to the id="UNIQUE_NAME" on the element that will be shown when pressing the trigger.<br><br>
+                For more advanced uses, please check <a href="https://getbootstrap.com/docs/5.0/components/collapse/">the Bootstrap Collapse Documentation</a>
+            </p>
+        </div>   
+        
+        <!-- Columns --> 
+        <div class="chapter container" id="c13">
+            <div class="pt-4"></div>
+            <div class="pt-4"></div>
+            <h1>Columns</h1>
+            <p class="text-primary mt-n2">
+                Built using the Bootstrap Columns System - <strong><a href="https://getbootstrap.com/docs/5.0/layout/grid/">Read more on Bootstrap Columns Documentation</a></strong>
+            </p>
+            <p>
+                Our entire column system is based entirely on the Bootstrap system. Remember, our products are Mobile Templates, so we highly recommend that you don't
+                exceed 4 columns, since Mobile screens start from about 340px, and having more than 4 columns can lead to text being broken.<br>
+                <br>
+                This system is also applied for Gallery thumbnails, profile galleries. You can view demos of the columns inside the component-columns.html<br><br>
+                <a href="https://getbootstrap.com/docs/5.0/layout/grid/">Read more on Bootstrap Columns Documentation</a>
+            </p>
+        </div>
+      
+        <!-- Device Detection --> 
+        <div class="chapter container" id="c14">
+            <div class="pt-4"></div>
+            <div class="pt-4"></div>
+            <h1>Device Detection</h1>
+            <p class="text-primary mt-n2">
+                Serve content based on Android, iOS or none of these devices.
+            </p>
+            <p>
+                To show different content for different operating systems the process is incredibly simple. All you have to do is add the class <strong>show-android</strong> to show 
+                for Android devices, or <strong>show-ios</strong> to show on iOS devices. You can also add the class show-no-device to show only for devices that aren't Android or iOS
+            </p>
+        </div>   
+        
+        <!-- Disqus and Facebook --> 
+        <div class="chapter container" id="c15">
+            <div class="pt-4"></div>
+            <div class="pt-4"></div>
+            <h1>Disqus and Facebook</h1>
+            <p class="text-primary mt-n2">
+                Integrating Comment Systems
+            </p>
+            <p>
+                If you visit the component-disqus-comments.html or component-facebook-comments.html you will find that these systems are integrated by the embed codes provided by Facebook or Diqus.
+                <br><br>
+                How to Embed Facebook Comments - <a href="https://developers.facebook.com/docs/plugins/embedded-comments/">https://developers.facebook.com/docs/plugins/embedded-comments/</a><br>
+                How to Embed Disqus Comments - <a href="https://blog.disqus.com/how-to-embed-disqus-comments-on-your-website">https://blog.disqus.com/how-to-embed-disqus-comments-on-your-website</a>
+            </p>
+        </div>
+                
+        <!-- Dividers --> 
+        <div class="chapter container" id="c16">
+            <div class="pt-4"></div>
+            <div class="pt-4"></div>
+            <h1>Dividers</h1>
+            <p class="text-primary mt-n2">
+                Separating Content Elements.
+            </p>
+            <p>
+                Dividers serve the purpose of leaving a bit of space between your content elements. These are very simple to use and integrate in your page. 
+                Dividers can use the ultility classes for background colors by attaching the class bg-VALUE, and you can find the colors available in the 
+                <a href="index.html#cap-colors">Utility Colors Chapter</a><br><br>
+                Dividers are very self explanatory little pieces of code you can find in the component-dividers.html page. If you use a divider and wish it to be full width simply use the <strong>divider bg-VLAUE</strong> class.
+                If you want your divider to have the same left and right margin as your content, simply add <strong>divider-margins</strong> as a utility class.
+            </p>
+        </div>
+                    
+        <!-- Embeds --> 
+        <div class="chapter container" id="c17">
+            <div class="pt-4"></div>
+            <div class="pt-4"></div>
+            <h1>Embeds and Embedly</h1>
+            <p class="text-primary mt-n2">
+                Embed any content in your site.
+            </p>
+            <p>
+                There are two main methods to embed content in our product. One and the most classic known is by copying the embed HTML code. 
+            </p>
+            <div id="highlighterMainDiv_892561" class="syntaxhighlighter java"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td>&nbsp;</td></tr><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div></td><td id="codeContainer_892561" class="code"><div id="container_892561" class="container"><div class="line number1 index0 alt2"><code class="java plain">&lt;div </code><code class="java keyword">class</code><code class="java plain">=</code><code class="java string">"responsive-iframe"</code><code class="java plain">&gt;</code></div><div class="line number2 index1 alt1"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">&lt;iframe src=</code><code class="java string">'<a href="https://www.youtube.com/embed/c9MnSeYYtYY">https://www.youtube.com/embed/c9MnSeYYtYY</a>'</code> <code class="java plain">frameborder=</code><code class="java string">'0'</code> <code class="java plain">allowfullscreen&gt;&lt;/iframe&gt;</code></div><div class="line number3 index2 alt2"><code class="java plain">&lt;/div&gt;</code></div></div></td></tr><tr></tr><tr></tr></tbody></table></div>
+            <p>
+                The classic embed code above will automatically make the iframe responsive on Mobile Devices. Simply copy your iframe inside the div, and remove the width and height parameters that the iframe embed comes with.
+            </p>
+            <h5>Enter Embedly - Embed anything!</h5>
+            <p>
+                The component-embedly.html uses the most advanced embed system in the world at the moment available to HTML sites. Embedly generates an embed code for most websites you throw at it. 
+                You can simply visit <a href="https://embed.ly/code">https://embed.ly/code</a> to generate an embed code and then copy it in the page.
+            </p>
+        </div>
+                            
+        <!-- File Upload --> 
+        <div class="chapter container" id="c18">
+            <div class="pt-4"></div>
+            <div class="pt-4"></div>
+            <h1>File Upload - Web API</h1>
+            <p class="text-primary mt-n2">
+                Upload and decode images using Web API's .
+            </p>
+            <p>
+                The file upload API allows you to upload images and decript their value, when they were taken, modified, size and file name. This is only a front-end element that can be found inside
+                custom.js by searching (CTRL+F windows / CMD+F mac) for "upload-file" to find the JS behind it. You can use your own code logic to programatically adapt the JS for your needs.
+                <br><br>
+                By default, this component is found in component-file-upload.html, and you can use only the <strong>file-data</strong> div to use only the upload file input or use the <strong>upload-file-data</strong> 
+                under this as well to get the list information about what the image contains once the user uploads it. <br><br>
+                You can learn more about the File Web API here - <a href="https://developer.mozilla.org/en-US/docs/Web/API/File/Using_files_from_web_applications">https://developer.mozilla.org/en-US/docs/Web/API/File/Using_files_from_web_applications</a>
+            </p>
+        </div>
+                               
+        <!-- Geo Location --> 
+        <div class="chapter container" id="c19">
+            <div class="pt-4"></div>
+            <div class="pt-4"></div>
+            <h1>Geo Location - Web API</h1>
+            <p class="text-primary mt-n2">
+                Get device approximate location.
+            </p>
+            <p>
+                The GeoLocation available to websites uses WebAPI, which triangulates based on WiFi and Cellular towers. This does not give full access to the internal
+                device GPS like a native application would, meaning, the location outputed will not be 100% accurate. 
+                
+                To get the device location, you will simply have to add <strong>get-location</strong> class to a button, and add a empty div or paragraph with the class <strong>location-coordinates</strong><br>
+                <br>
+                To output the location on a map, simply embed a responsive map, with any location you want and give it the class <strong>location-map</strong>. <br>
+                <br>
+                Once the user taps the <strong>get-location</strong> button, they will be prompted to approve this ( which is mandatory and cannot be removed ). Once they approve this, the coordinates 
+                will be tracked and outputed to the <strong>location-coordinates</strong> element. If you use a map as well, our code will automatically add these coordinates to the map.
+            </p>
+        </div>
+                                 
+        <!-- Inputs --> 
+        <div class="chapter container" id="c20">
+            <div class="pt-4"></div>
+            <div class="pt-4"></div>
+            <h1>Inputs</h1>
+            <p class="text-primary mt-n2">
+                Built using the Bootstrap Input System - <strong><a href="https://getbootstrap.com/docs/5.0/forms/input-group/">Read more on Bootstrap Input Documentation</a></strong>.
+            </p>
+            <p>
+                Beside the classic inputs offered by Bootstrap, we created a few styles to complement the existing design found in our product. These are easy to use and you can simply copy paste
+                them from the input-components.html. However, there are a few things to note.
+            </p>
+            <div id="highlighterMainDiv_541388" class="syntaxhighlighter html"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td>&nbsp;</td></tr><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div></td><td id="codeContainer_541388" class="code"><div id="container_541388" class="container"><div class="line number1 index0 alt2"><code class="html plain">&lt;</code><code class="html keyword">div</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"input-style OPTION-1 OPTION-2 validate-field mb-4"</code><code class="html plain">&gt;</code></div><div class="line number2 index1 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">i</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"fa fa-user"</code><code class="html plain">&gt;&lt;/</code><code class="html keyword">i</code><code class="html plain">&gt;</code></div><div class="line number3 index2 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">input</code> <code class="html color1">type</code><code class="html plain">=</code><code class="html string">"name"</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"form-control validate-name"</code> <code class="html color1">id</code><code class="html plain">=</code><code class="html string">"form1"</code> <code class="html color1">placeholder</code><code class="html plain">=</code><code class="html string">"Name"</code><code class="html plain">&gt;</code></div><div class="line number4 index3 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">label</code> <code class="html color1">for</code><code class="html plain">=</code><code class="html string">"form1"</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"color-highlight"</code><code class="html plain">&gt;Name&lt;/</code><code class="html keyword">label</code><code class="html plain">&gt;</code></div><div class="line number5 index4 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">i</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"fa fa-times disabled invalid color-red-dark"</code><code class="html plain">&gt;&lt;/</code><code class="html keyword">i</code><code class="html plain">&gt;</code></div><div class="line number6 index5 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">i</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"fa fa-check disabled valid color-green-dark"</code><code class="html plain">&gt;&lt;/</code><code class="html keyword">i</code><code class="html plain">&gt;</code></div><div class="line number7 index6 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">em</code><code class="html plain">&gt;(required)&lt;/</code><code class="html keyword">em</code><code class="html plain">&gt;</code></div><div class="line number8 index7 alt1"><code class="html plain">&lt;/</code><code class="html keyword">div</code><code class="html plain">&gt;</code></div></div></td></tr><tr><td>&nbsp;</td></tr><tr><td>&nbsp;</td></tr></tbody></table></div>
+            <h5>How do I use these inputs?</h5>
+            <p>
+                Simply open component-inputs.html and copy and paste them in the form you want. The same applies to the checkboxes and radio buttons included.
+            </p>
+            <h5>What options are there?</h5>
+            <p>
+                You can replace:<br/>
+                <strong>OPTION-1</strong> with <strong>has-borders</strong> or <strong>no-borders</strong><br/>
+                <strong>OPTION-2</strong> with <strong>has-icon</strong> or <strong>no-icon</strong>. If you select <strong>no-icon</strong> you must delete <strong>Line 2</strong><br/>
+                <strong>VALIDATE-FIELD</strong> - if you don't want field validation, be sure you delete this attribute and also the validate-attribute on line 3. When using the fields without validation, lines 5 to 7 must also be deleted.
+            </p>
+            <h5>How are these validated?</h5>
+            <p>
+                We use regular expressions (RegEX) to validate the fields. With this being said, in case you require a more extensive plugin for validation, you can include any jQuery plugin you want by following
+                the <a href="index.html#faq7b">How do I add my own JavaScript code</a> developer note.
+            </p>
+        </div>
+                                         
+        <!-- Images --> 
+        <div class="chapter container" id="c20a">
+            <div class="pt-4"></div>
+            <div class="pt-4"></div>
+            <h1>Images</h1>
+            <p class="text-primary mt-n2">
+                Preloading and styling your img 
+            </p>
+            <p>
+                The image tag supports LazyLoad preloading to make it show after the other more important parts of the page are loaded. This is used to improve page speed and is recommended to be used wherever possible. 
+            </p>
+            <div id="highlighterMainDiv_193496" class="syntaxhighlighter html"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td>&nbsp;</td></tr><tr><td class="gutter"><div class="line number1 index0 alt2">1</div></td><td id="codeContainer_193496" class="code"><div id="container_193496" class="container"><div class="line number1 index0 alt2"><code class="html plain">&lt;</code><code class="html keyword">img</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"img-fluid preload-img"</code> <code class="html color1">src</code><code class="html plain">=</code><code class="html string">"images/empty.png"</code> <code class="html color1">data-src</code><code class="html plain">=</code><code class="html string">"location/image.png"</code> <code class="html color1">alt</code><code class="html plain">=</code><code class="html string">"image"</code><code class="html plain">&gt;</code></div></div></td></tr><tr><td>&nbsp;</td></tr><tr><td>&nbsp;</td></tr></tbody></table></div>
+            This should be the standard structure when you are preloading an image.<br>
+            <strong>Class: img-fluid</strong> - is to be used when you want your image to maintain aspect ratio and expand to the full size of the container it's placed in.<br>
+            <strong>Class: preload-img</strong> - is the class you should add to tell the code that this image will be preloaded.<br><br>
+            <strong>Attribute: src="images/empty"</strong> - will be loaded by default when your page loads, this should be a very, very small image.<br>
+            <strong>Attribute: data-src="image.png"</strong> - will be the actual image that will be loaded once your page finishes loading important elements.<br><br>
+            You can style your images further by using the <a href="index.html#cap3">Utility Classes</a> to make your images round, and more.
+        </div>
+                                 
+        <!-- Link Lists / Groups --> 
+        <div class="chapter container" id="c21">
+            <div class="pt-4"></div>
+            <div class="pt-4"></div>
+            <h1>Link Lists / Groups</h1>
+            <p class="text-primary mt-n2">
+                Built using the Bootstrap List Groups System - <strong><a href="https://getbootstrap.com/docs/5.0/components/list-group/">Read more on Bootstrap List Groups Documentation</a></strong>.
+            </p>
+            <p>
+                List groups from Bootstrap can be used as shown in the documentation example link above. However, to keep the design of our product more
+                in theme with its style, you can use the examples below. These use the same class architecture as bootstrap, but offer more design features, and are 
+                also compatible with switches. 
+            </p>
+            <h4 class="pt-3">Creating a List Group / Link List</h4>
+            <p>
+                A link list is a list of items that include a single line of text or a secondary description line with an icon to the left and right side. These are super simple to use and support the utility classes for colors and also 
+                support badges and switches.
+            </p>
+
+            <div id="highlighterMainDiv_550100" class="syntaxhighlighter java">
+    <table border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="gutter">
+                    <div class="line number1 index0 alt2">01</div>
+                    <div class="line number2 index1 alt1">02</div>
+                    <div class="line number3 index2 alt2">03</div>
+                    <div class="line number4 index3 alt1">04</div>
+                    <div class="line number5 index4 alt2">05</div>
+                    <div class="line number6 index5 alt1">06</div>
+                    <div class="line number7 index6 alt2">07</div>
+                    <div class="line number8 index7 alt1">08</div>
+                    <div class="line number9 index8 alt2">09</div>
+                    <div class="line number10 index9 alt1">10</div>
+                    <div class="line number11 index10 alt2">11</div>
+                    <div class="line number12 index11 alt1">12</div>
+                    <div class="line number13 index12 alt2">13</div>
+                    <div class="line number14 index13 alt1">14</div>
+                    <div class="line number15 index14 alt2">15</div>
+                    <div class="line number16 index15 alt1">16</div>
+                    <div class="line number17 index16 alt2">17</div>
+                    <div class="line number18 index17 alt1">18</div>
+                    <div class="line number19 index18 alt2">19</div>
+                    <div class="line number20 index19 alt1">20</div>
+                    <div class="line number21 index20 alt2">21</div>
+                    <div class="line number22 index21 alt1">22</div>
+                    <div class="line number23 index22 alt2">23</div>
+                    <div class="line number24 index23 alt1">24</div>
+                    <div class="line number25 index24 alt2">25</div>
+                    <div class="line number26 index25 alt1">26</div>
+                    <div class="line number27 index26 alt2">27</div>
+                    <div class="line number28 index27 alt1">28</div>
+                    <div class="line number29 index28 alt2">29</div>
+                    <div class="line number30 index29 alt1">30</div>
+                    <div class="line number31 index30 alt2">31</div>
+                    <div class="line number32 index31 alt1">32</div>
+                </td>
+                <td id="codeContainer_550100" class="code">
+                    <div id="container_550100" class="container">
+                        <div class="line number1 index0 alt2"><code class="java plain">&lt;div </code><code class="java keyword">class</code><code class="java plain">=</code><code class="java string">"list-group list-custom-SIZE_VALUE"</code><code class="java plain">&gt;</code></div>
+                        <div class="line number2 index1 alt1"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">&lt;a href=</code><code class="java string">"#"</code><code class="java plain">&gt;</code></div>
+                        <div class="line number3 index2 alt2"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">&lt;i </code><code class="java keyword">class</code><code class="java plain">=</code><code class="java string">"fa font-14 fa-cog color-brown1-dark"</code><code class="java plain">&gt;&lt;/i&gt;</code></div>
+                        <div class="line number4 index3 alt1"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">&lt;span&gt;Ultra Mobile&lt;/span&gt;</code></div>
+                        <div class="line number5 index4 alt2"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">&lt;strong&gt;Only use </code><code class="java keyword">this</code> <code class="java plain">line </code><code class="java keyword">for</code> <code class="java plain">large&lt;/strong&gt;</code></div>
+                        <div class="line number6 index5 alt1"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">&lt;i </code><code class="java keyword">class</code><code class="java plain">=</code><code class="java string">"fa fa-angle-right"</code><code class="java plain">&gt;&lt;/i&gt;</code></div>
+                        <div class="line number7 index6 alt2"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">&lt;/a&gt;&nbsp;&nbsp;&nbsp;&nbsp; </code></div>
+                        <div class="line number8 index7 alt1"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">&lt;a href=</code><code class="java string">"#"</code><code class="java plain">&gt;</code></div>
+                        <div class="line number9 index8 alt2"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">&lt;i </code><code class="java keyword">class</code><code class="java plain">=</code><code class="java string">"fa font-14 fa-bars rounded-xl shadow-xl bg-blue2-dark"</code><code class="java plain">&gt;&lt;/i&gt;</code></div>
+                        <div class="line number10 index9 alt1"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">&lt;span&gt;Azures Mobile&lt;/span&gt;</code></div>
+                        <div class="line number11 index10 alt2"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">&lt;strong&gt;Only use </code><code class="java keyword">this</code> <code class="java plain">line </code><code class="java keyword">for</code> <code class="java plain">large&lt;/strong&gt;</code></div>
+                        <div class="line number12 index11 alt1"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">&lt;span </code><code class="java keyword">class</code><code class="java plain">=</code><code class="java string">"badge bg-red2-dark font-10"</code><code class="java plain">&gt;$</code><code class="java value">25</code><code class="java plain">&lt;/span&gt;</code></div>
+                        <div class="line number13 index12 alt2"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">&lt;i </code><code class="java keyword">class</code><code class="java plain">=</code><code class="java string">"fa fa-angle-right"</code><code class="java plain">&gt;&lt;/i&gt;</code></div>
+                        <div class="line number14 index13 alt1"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">&lt;/a&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </code></div>
+                        <div class="line number15 index14 alt2"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">&lt;a href=</code><code class="java string">"#"</code><code class="java plain">&gt;</code></div>
+                        <div class="line number16 index15 alt1"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">&lt;i </code><code class="java keyword">class</code><code class="java plain">=</code><code class="java string">"fa font-14 fa-check rounded-sm shadow-m bg-green1-dark"</code><code class="java plain">&gt;&lt;/i&gt;</code></div>
+                        <div class="line number17 index16 alt2"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">&lt;span&gt;AppKit Mobile&lt;/span&gt;</code></div>
+                        <div class="line number18 index17 alt1"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">&lt;strong&gt;Only use </code><code class="java keyword">this</code> <code class="java plain">line </code><code class="java keyword">for</code> <code class="java plain">large&lt;/strong&gt;</code></div>
+                        <div class="line number19 index18 alt2"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">&lt;span </code><code class="java keyword">class</code><code class="java plain">=</code><code class="java string">"badge bg-green1-dark"</code><code class="java plain">&gt;FRESH&lt;/span&gt;</code></div>
+                        <div class="line number20 index19 alt1"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">&lt;i </code><code class="java keyword">class</code><code class="java plain">=</code><code class="java string">"fa fa-angle-right"</code><code class="java plain">&gt;&lt;/i&gt;</code></div>
+                        <div class="line number21 index20 alt2"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">&lt;/a&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </code></div>
+                        <div class="line number22 index21 alt1"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">&lt;a data-trigger-</code><code class="java keyword">switch</code><code class="java plain">=</code><code class="java string">"switch-1"</code> <code class="java keyword">class</code><code class="java plain">=</code><code class="java string">"border-0"</code> <code class="java plain">href=</code><code class="java string">"#"</code><code class="java plain">&gt;</code></div>
+                        <div class="line number23 index22 alt2"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">&lt;i </code><code class="java keyword">class</code><code class="java plain">=</code><code class="java string">"fa font-14 fa-star shadow-s bg-yellow1-dark"</code><code class="java plain">&gt;&lt;/i&gt;</code></div>
+                        <div class="line number24 index23 alt1"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">&lt;span&gt;Kolor Mobile&lt;/span&gt;</code></div>
+                        <div class="line number25 index24 alt2"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">&lt;strong&gt;Only use </code><code class="java keyword">this</code> <code class="java plain">line </code><code class="java keyword">for</code> <code class="java plain">large&lt;/strong&gt;</code></div>
+                        <div class="line number26 index25 alt1"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">&lt;div </code><code class="java keyword">class</code><code class="java plain">=</code><code class="java string">"custom-control scale-switch ios-switch"</code><code class="java plain">&gt;</code></div>
+                        <div class="line number27 index26 alt2"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">&lt;input type=</code><code class="java string">"checkbox"</code> <code class="java keyword">class</code><code class="java plain">=</code><code class="java string">"ios-input"</code> <code class="java plain">id=</code><code class="java string">"switch-1"</code><code class="java plain">&gt;</code></div>
+                        <div class="line number28 index27 alt1"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">&lt;label </code><code class="java keyword">class</code><code class="java plain">=</code><code class="java string">"custom-control-label"</code> <code class="java keyword">for</code><code class="java plain">=</code><code class="java string">"switch-1"</code><code class="java plain">&gt;&lt;/label&gt;</code></div>
+                        <div class="line number29 index28 alt2"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">&lt;/div&gt;</code></div>
+                        <div class="line number30 index29 alt1"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">&lt;i </code><code class="java keyword">class</code><code class="java plain">=</code><code class="java string">"fa fa-angle-right"</code><code class="java plain">&gt;&lt;/i&gt;</code></div>
+                        <div class="line number31 index30 alt2"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">&lt;/a&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </code></div>
+                        <div class="line number32 index31 alt1"><code class="java plain">&lt;/div&gt;</code></div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+            
+            <p>
+                The above code will generate a list group, let's dive in the code and explain it line by line.<br><br>
+                
+                <strong>Line 1</strong> defines this as being a list group and also, defines its size. You can replace the <strong>SIZE_VALUE</strong> with small or large. If you select the 
+                size as being <strong>large</strong>, then, you can use lines 5, 11,18,25. Otherwise, delete these lines. These are the second line of text in the case of large lists, like
+                we use in our demo in the component list.<br><br>
+                <strong>Lines 2 to 7</strong> generate a list, with a colored icon. - the icon is part of the font-awesome group, and uses the color-VALUE 
+                found in the <a href="index.html#cap-colors">Utility Colors chapter</a>. The last icon in this case is a simple arrow to the right side. This icon must be kept in all styles.<br><br>
+                
+                <strong>Lines 8 to 14 and 15 to 21</strong> The same principle as the first group applies here, with the exception of the icon, which now has utility classes for rounded borders 
+                and the badge. The badge is a smple span class with a background color and a font size. This can be used to showcase a price, the fact that it's new, hot or other useful tiny messages <br> <br>
+                <strong>Lines 22 to 31</strong> Works on the same principle as the previous ones, with an exception that we have inserted a switch in it. You can learn
+                all about switches in the <a href="#cap40">Switches chapter.</a> The switch will be triggerable by the list as well by using the "data-trigger="unique-number" that will corespond to the switch input id.<br>
+            </p>
+            For a better understanding of the list groups, simply check the component-link-lists.html, where all of these are exemplified. We also use these to list the pages and the components, so you
+            can view live use cases for them as well.
+        </div>
+                                     
+        <!-- Notifications & Alerts --> 
+        <div class="chapter container" id="c22">
+            <div class="pt-4"></div>
+            <div class="pt-4"></div>
+            <h1>Notifications & Alerts.</h1>
+            <p class="text-primary mt-n2">
+                Alerts using the Bootstrap Alerts System - <strong><a href="https://getbootstrap.com/docs/5.0/components/alerts/">Read more on Bootstrap Alerts Documentation</a></strong>.<br>
+                Notification boxes using the Bootstrap Toast System - <strong><a href="https://getbootstrap.com/docs/5.0/components/toasts/">Read more on Bootstrap Toasts Documentation</a></strong>
+            </p>
+            <h5 class="pt-5 pb-1">Classic Alerts</h5>
+            <p>
+                Using the default alerts of Boostrap means you can use any of the examples shown in the component-notifications.html, which include a span for an icon that can have any font awesome icon
+                included in the pack. Also, you can view more examples of alerts on <a href="https://getbootstrap.com/docs/5.0/components/alerts/">https://getbootstrap.com/docs/5.0/components/alerts/</a>
+            </p>
+            <h5 class="pt-5 pb-1">Dropdown Notifications</h5>
+            <p><i class="fa fa-exclamation-triangle font-13 pr-2 text-danger"></i> The notification that dropdown from the top must be placed outside the page-content</p>
+            <p>
+                Each notification that comes from the top of the page is placed outside the page content of the component-notifications.html page. These are designed to mimic the design of their
+                mobile counterparts. Let's explain the general code of each these.
+            </p>
+            <h5>General Explanation</h5>
+            <p>
+                This will just explain the general logic of the notification system. Please check after the page-content class is closed in component-notifications.html to view more examples. Each notification
+                includes simple elements inside you can easily modify using the Utility Classes to suit your needs. 
+            </p>
+            <div id="highlighterMainDiv_304589" class="syntaxhighlighter java"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td>&nbsp;</td></tr><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div></td><td id="codeContainer_304589" class="code"><div id="container_304589" class="container"><div class="line number1 index0 alt2"><code class="java plain">&lt;div id=</code><code class="java string">"notification-1"</code></div><div class="line number2 index1 alt1"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">data-bs-dismiss=</code><code class="java string">"notification-1"</code></div><div class="line number3 index2 alt2"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">data-bs-delay=</code><code class="java string">"3000"</code></div><div class="line number4 index3 alt1"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">data-bs-autohide=</code><code class="java string">"true"</code></div><div class="line number5 index4 alt2"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java keyword">class</code><code class="java plain">=</code><code class="java string">"notification NOTIFICATION_TYPE bg-dark1-dark"</code><code class="java plain">&gt;</code></div><div class="line number6 index5 alt1"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">&lt;!-- check the component-notifications.html page, after the page-content closes to see more--&gt;</code></div><div class="line number7 index6 alt2"><code class="java plain">&lt;/div&gt;&nbsp; </code></div></div></td></tr><tr></tr><tr></tr></tbody></table></div>
+            <p>
+                <strong>Line 1</strong>- defines the ID of the notification. This will be used in case you want to trigger the notification from a button on the page. You can 
+                trigger it by adding data-toast="notification-1" .Be sure this is always a unique number. This is also used to dismiss the notification from a button, or in our case, if the user taps it.
+                <br>
+                <strong>Line 2</strong>- is the data-bs-dissmiss attribute which shares the same unique ID as line 1. This is used if you want to dismiss the notitifcation by tapping it.
+                <br>
+                <strong>Line 3</strong>- is the delay. this is how long the notification will be visible on screen before <strong>Line 4</strong>, if set to true, will hide it back.
+                <br>
+                <strong>Line 5</strong>- is the class used for the notification and the background color you wish to use. <br>
+            </p>
+            <h6>What notification types can I use?</h6>
+            You can replace the class <strong>NOTIFICATION_TYPE</strong> with any of the following styles<br>
+            <ul>
+                <li>notification-android</li>
+                <li>notification-ios</li>
+                <li>notification-material</li>
+            </ul>
+            You can also remove this class completely and style your notification however you wish using the <a href="#index.html#cap3">Utility Classes</a>.
+            The best way to understand these notifications is simply to copy paste them, and adapt the content to your needs. 
+            
+            <h5 class="pt-5">Developer Notes</h5>
+            You can use programatic JS deployment for the dropdown notifications by checking the <a href="https://getbootstrap.com/docs/5.0/components/toasts/#javascript-behavior">Toast JavaScript Behavior of Boostrap.</a>
+        </div>
+        
+        <!-- Offline Detection --> 
+        <div class="chapter container" id="c23">
+            <div class="pt-4"></div>
+            <div class="pt-4"></div>
+            <h1>Offline Detection.</h1>
+            <p class="text-primary mt-n2">
+                Automatic process of detecting when you are online/offline
+            </p>
+            <p>
+                The offline detection system is automatic, and shows a small red or green text depending if you're online or not. 
+                These messages can be edited from scripts/pwa.js by searching for (CTRL+F windows or CMD+F mac) for "Offline Alerts"
+            </p>
+        </div>
+            
+        <!-- Preloaders --> 
+        <div class="chapter container" id="c25">
+            <div class="pt-4"></div>
+            <div class="pt-4"></div>
+            <h1>Preloaders.</h1>
+            <p class="text-primary mt-n2">
+                Show a loader before your page loads.
+            </p>
+            <p>
+                The preloader is automatically added to each page using the AJAX transition system and hidden when the page load is completed.
+            </p>
+            <div id="highlighterMainDiv_162334" class="syntaxhighlighter java"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td>&nbsp;</td></tr><tr><td class="gutter"><div class="line number1 index0 alt2">1</div></td><td id="codeContainer_162334" class="code"><div id="container_162334" class="container"><div class="line number1 index0 alt2"><code class="java plain">&lt;div id=</code><code class="java string">"preloader"</code><code class="java plain">&gt;&lt;div </code><code class="java keyword">class</code><code class="java plain">=</code><code class="java string">"spinner-border color-highlight"</code> <code class="java plain">role=</code><code class="java string">"status"</code><code class="java plain">&gt;&lt;/div&gt;&lt;/div&gt;</code></div></div></td></tr><tr><td>&nbsp;</td></tr><tr><td>&nbsp;</td></tr></tbody></table></div>
+            The following code represents the preloader. Inside we have have the spinner-border. You can replace the color of the preloader by replacing color-highlight with any of the
+            colors available in the <a href="index.html#cap-colors">Utility Colors</a>.
+            <br><br>
+            Unlike our competitors who use a preloader just for the sake of having an image to hide their site loading and sometimes this actually shows before the page is loaded, our preloader 
+            is added to the window.load event and inside a special function that detects when your page has actually finished downloading and removes the preloader only then.
+            <br><br>
+            <h5 class="pt-3 pb-3">Developer Note: Preloader isn't disapearing</h5>
+            <p>
+                <strong>Possible Cause 1</strong> - If your page shows an infinite preloader loop, you should inspect the console in your browser. This means the JavaScript is not running 
+                correctly and the functions that hide the preloader are not firing. <br><br>
+                <strong>Possible Cause 2</strong> - Preloaders can also not appear if you test in incompatible browsers that don't support CSS3. For example, internet explorer, but in this case
+                we recomemnd using the item for it's intented purpose, as browsers that don't support CSS3 will cause sever problems with any modern code.
+            </p>
+        </div>
+                
+        <!-- QR Generator --> 
+        <div class="chapter container" id="c27">
+            <div class="pt-4"></div>
+            <div class="pt-4"></div>
+            <h1>QR Generator.</h1>
+            <p class="text-primary mt-n2">
+                Generate automatic QR Codes based on current link, or manual generation
+            </p>
+            We are using an API to instantly generate QR codes, so you don't need complicated PHP api's to generate scripts. This can generate ANY qr code by simply using the following
+            structure.
+            <div id="highlighterMainDiv_941063" class="syntaxhighlighter java"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td>&nbsp;</td></tr><tr><td class="gutter"><div class="line number1 index0 alt2">1</div></td><td id="codeContainer_941063" class="code"><div id="container_941063" class="container"><div class="line number1 index0 alt2"><code class="java plain">&lt;img src=</code><code class="java string">"<a href="https://api.qrserver.com/v1/create-qr-code/?size=200x200&amp;data=ENTER_YOUR_FULL_URL_HERE">https://api.qrserver.com/v1/create-qr-code/?size=200x200&amp;data=ENTER_YOUR_FULL_URL_HERE</a>"</code><code class="java plain">&gt;</code></div></div></td></tr><tr><td>&nbsp;</td></tr><tr><td>&nbsp;</td></tr></tbody></table></div>
+            Simply copy and paste the code above and replace the <strong>ENTER_YOUR_FULL_URL_HERE</strong> with your address. Once you've done this save and render the page, the QR will automatically be displayed.
+            <div id="highlighterMainDiv_928379" class="syntaxhighlighter java"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td>&nbsp;</td></tr><tr><td class="gutter"><div class="line number1 index0 alt2">1</div></td><td id="codeContainer_928379" class="code"><div id="container_928379" class="container"><div class="line number1 index0 alt2"><code class="java plain">&lt;img </code><code class="java keyword">class</code><code class="java plain">=</code><code class="java string">"generate-qr-auto"</code> <code class="java plain">src=</code><code class="java string">""</code><code class="java plain">&gt;</code></div></div></td></tr><tr><td>&nbsp;</td></tr><tr><td>&nbsp;</td></tr></tbody></table></div>
+            The code above will automatically generate a QR code for the address on which the code is added to.
+        </div>    
+        
+        <!-- Sharing --> 
+        <div class="chapter container" id="c32">
+            <div class="pt-4"></div>
+            <div class="pt-4"></div>
+            <h1>Sharing</h1>
+            <p class="text-primary mt-n2">
+                Automatic Link Social Sharing
+            </p>
+            The automatic social sharing feature works great for your website when used in classic website mode. However, if you 
+            plan on using the page as a PWA, we still don't have access to API's to pick up the link of where your PWA is saved and share that link directly.
+            <br><br>
+            You can share the page where these buttons will be placed automatically by adding the following classes to the buttons you want to trigger sharing.
+            <ul class="pt-4">
+                <li>shareToFacebook</li>
+                <li>shareToTwitter</li>
+                <li>shareToLinkedIn</li>
+                <li>shareToPinterest</li>
+                <li>shareToWhatsApp</li>
+                <li>shareToMail</li>
+            </ul>
+            If you want to use or share a pre-defined URL, simply open custom.js and search (CTRL+F win  or CMD+F mac) for 
+            
+            <div id="highlighterMainDiv_992105" class="syntaxhighlighter java"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td>&nbsp;</td></tr><tr><td class="gutter"><div class="line number1 index0 alt2">1</div></td><td id="codeContainer_992105" class="code"><div id="container_992105" class="container"><div class="line number1 index0 alt2"><code class="java plain">var share_link = window.location.href;</code></div></div></td></tr><tr><td>&nbsp;</td></tr><tr><td>&nbsp;</td></tr></tbody></table></div>
+            
+            Now, we must replace the default page link with the page you want to use. Replace the above code with the following/
+            
+            <div id="highlighterMainDiv_370224" class="syntaxhighlighter java"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td>&nbsp;</td></tr><tr><td class="gutter"><div class="line number1 index0 alt2">1</div></td><td id="codeContainer_370224" class="code"><div id="container_370224" class="container"><div class="line number1 index0 alt2"><code class="java plain">var share_link = </code><code class="java string">'<a href="https://awesome-buyer-domain.com">https://awesome-buyer-domain.com</a>'</code><code class="java plain">;</code></div></div></td></tr><tr><td>&nbsp;</td></tr><tr><td>&nbsp;</td></tr></tbody></table></div>
+        </div>
+                  
+        <!-- Sharing --> 
+        <div class="chapter container" id="c32a">
+            <div class="pt-4"></div>
+            <div class="pt-4"></div>
+            <h1>Search</h1>
+            <p class="text-primary mt-n2">
+                Understanding the Search Component
+            </p>
+            Our page uses an actual search system built in front end. If you integrate this with PHP and pre-populate it with data you will have a live, functional search system that can be conencted to a back-end. 
+            Of course, in the limit of normal use, in case of stronger needs you will require a custom AJAX solution. But let's dive in our search system.
+            
+            <h5 class="pt-5">How does it work?</h5>
+            <p>
+                The search page, in our example, uses a input field for typing your search query, and a result list that will automatically appear if the word matches. Please use the structure for the input fields
+                and the search results box exactly as shown in the item. You can use <a href="index.html#cap3">Utility Classes</a> to change the design, and you can replace the "found" elements with whatever design you wish
+                as long as you keep them wrapped in the div following the code below.
+            </p>
+            <div id="highlighterMainDiv_54" class="syntaxhighlighter html"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td>&nbsp;</td></tr><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div></td><td id="codeContainer_54" class="code"><div id="container_54" class="container"><div class="line number1 index0 alt2"><code class="html plain">&lt;</code><code class="html keyword">div</code> <code class="html plain">data-filter-item </code><code class="html color1">data-filter-name</code><code class="html plain">=</code><code class="html string">"all products eazy mobile"</code>&nbsp; <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"search-result-list"</code><code class="html plain">&gt;</code></div><div class="line number2 index1 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html comments">&lt;!-- your search result --&gt;</code></div><div class="line number3 index2 alt2"><code class="html plain">&lt;/</code><code class="html keyword">div</code><code class="html plain">&gt;&nbsp;&nbsp; </code></div></div></td></tr><tr><td>&nbsp;</td></tr><tr><td>&nbsp;</td></tr></tbody></table></div>
+            <p>
+                Shown above is a search result. Inside this, you can add any component/element you want and it will be found if the user searches for any of the words inserted in the <strong>data-filter-name="your keywords here"</strong>. Be sure
+                the keywords are written in lowercase letters and separated with a space. 
+            </p>
+            
+            
+        </div>
+            
+        <!-- Sidebars --> 
+        <div class="chapter container" id="c33">
+            <div class="pt-4"></div>
+            <div class="pt-4"></div>
+            <h1>Sidebars</h1>
+            <p class="text-primary mt-n2">
+                The most advanced Sidebar System on any Mobile Template
+            </p>
+            <p class="mt-n3 "><i class="fa fa-exclamation-triangle font-13 pr-3 text-danger"></i> The Action Sheet box must be placed outside the page-content</p>
+
+            Our sidebars are built to run smoothly, powered by CSS3 transitions, and automatic screen placement.<br>
+            Unlike other frameworks, including Bootstrap, our code allows you to use any number of sidebars you want, with multiple effects and sizes. These are also
+            not limited to the content inside, so for example, if you want, you can even add a slider inside.<br><br>
+            A good example of the power of our sidebar system is the Instant Article page. Which is built entirely using the sidebar system described below.<br><br>
+            To begin with, the Sidebars work on the same menu structure explained in the <a href="index.html#cap-menu-structure">Menu Structure</a> in the first documentation. They are defined as menu-box-right and menu-box-left 
+            but support different effects. Let's get into detail.<br>
+            
+            <h5 class="pt-5">How to trigger a menu from a button/element</h5>
+            Any menu can be triggered by adding the <strong>data-menu="menu-UNIQUE-ID"</strong> to any element you want to use as a trigger.
+            <h5 class="pt-5">How to programatically show/hide a menu</h5>
+            Menus can be triggered programatically by adding their ID in the following function in custom.js after line 88. 
+            <div id="highlighterMainDiv_633918" class="syntaxhighlighter jscript">
+                <table border="0" cellpadding="0" cellspacing="0">
+                    <tbody>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="gutter">
+                                <div class="line number1 index0 alt2">1</div>
+                                <div class="line number2 index1 alt1">2</div>
+                                <div class="line number3 index2 alt2">3</div>
+                                <div class="line number4 index3 alt1">4</div>
+                            </td>
+                            <td id="codeContainer_633918" class="code">
+                                <div id="container_633918" class="container">
+                                    <div class="line number1 index0 alt2"><code class="jscript comments">//show menu</code></div>
+                                    <div class="line number2 index1 alt1"><code class="jscript plain">menu(</code><code class="jscript string">'your-menu-id'</code><code class="jscript plain">, <code>'show'</code>, 250);</code></div>
+                                    <div class="line number3 index2 alt2"><code class="jscript comments">//hide menu</code></div>
+                                    <div class="line number4 index3 alt1"><code class="jscript plain">menu(</code><code class="jscript string">'your-menu-id'</code><code class="jscript plain">, <code>'hide'</code>, 250);</code></div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <h5 class="pt-4">Menu Structure</h5>
+            First, please check the component-sidebars.html to view these in action. Please note that your menu code must be placed outside the page-content.
+            <div id="highlighterMainDiv_467083" class="syntaxhighlighter html">
+            <table border="0" cellpadding="0" cellspacing="0">
+                <tbody>
+                    <tr>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="gutter">
+                            <div class="line number1 index0 alt2">1</div>
+                            <div class="line number2 index1 alt1">2</div>
+                            <div class="line number3 index2 alt2">3</div>
+                            <div class="line number4 index3 alt1">4</div>
+                            <div class="line number5 index4 alt2">5</div>
+                            <div class="line number6 index5 alt1">6</div>
+                        </td>
+                        <td id="codeContainer_467083" class="code">
+                            <div id="container_467083" class="container">
+                                <div class="line number1 index0 alt2"><code class="html plain">&lt;</code><code class="html keyword">div</code> <code class="html color1">id</code><code class="html plain">=</code><code class="html string">"MENU_UNIQUE_NAME"</code></div>
+                                <div class="line number2 index1 alt1"><code class="html color1">class</code><code class="html plain">=</code><code class="html string">"menu MENU_BOX_POSITION"</code></div>
+                                <div class="line number3 index2 alt2"><code class="html color1">data-menu-width</code><code class="html plain">=</code><code class="html string">"VALUE_IN_PX"</code></div>
+                                <div class="line number4 index3 alt1"><code class="html color1">data-menu-effect</code><code class="html plain">=</code><code class="html string">"MENU_EFFECT"</code><code class="html plain">&gt;</code></div>
+                                <div class="line number5 index4 alt2"><code class="html comments">&lt;!-- Add what you want in your sidebar here --&gt;</code></div>
+                                <div class="line number6 index5 alt1"><code class="html plain">&lt;/</code><code class="html keyword">div</code><code class="html plain">&gt;</code></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>            
+            
+            <strong>Line 1</strong> - is the unique name you have to give to your menu. This will be used to trigger the menu using the data-menu="unique-id" or via programatic use.<br>
+            <strong>Line 2</strong> - is the class that defines this as being a menu, and also, the position. Replace  <strong>MENU_BOX_POSITION</strong> with <strong>menu-box-left</strong> or <strong>menu-box-right</strong>.<br>
+            <strong>Line 3</strong> - is the width you want for your sidebar. This value is set in pixels or in the case of full screen sidebars, 100%. <br>
+            <strong>Line 4</strong> - is the menu effect. You can replace <strong>MENU_EFFECT</strong> with <strong>menu-parallax</strong> or <strong>menu-push</strong> or <strong>menu-over</strong>. Please note that these effects do not apply in the case of 100% size of the sidebar.
+            
+            <br><br>
+            That's it! Now you have a sidebar menu! Add any content you want inside it! 
+            
+            <h5 class="pt-5">How do I close the sidebar when it's opened?</h5>
+            <p>
+                Inside your sidebar, add any button that has the class <strong>close-menu</strong>. That button will close any menu or use the programatic use explained above.
+            </p>
+            <h5 class="pt-3">Can I open a sidebar, from a sidebar?</h5>
+            <p>Yes! Inside your sidebar, add a button with the data-menu="your-menu-id" and that menu will be triggered.  </p>
+        
+        </div>
+    
+        <!-- Snackbars --> 
+        <div class="chapter container" id="c34">
+            <div class="pt-4"></div>
+            <div class="pt-4"></div>
+            <h1>Snackbars</h1>
+            <p class="text-primary mt-n2">
+                Built using the Bootstrap Toast System - <strong><a href="https://getbootstrap.com/docs/5.0/components/toasts/">Read more on Bootstrap Toast Documentation</a></strong>
+            </p>
+            <p class="mt-n3 "><i class="fa fa-exclamation-triangle font-13 pr-3 text-danger"></i> The Snackbars box must be placed outside the page-content</p>
+
+            <p>
+                Snackbars are in essence larger toasts, so, to avoid adding extra JavaScript and writing extended functions for these, we created the snacbkars 
+                using the toasts system offered by Boostrap. This makes it easy for them to be used in <a href="https://getbootstrap.com/docs/5.0/components/toasts/#javascript-behavior">Programatic Use</a> and also
+                keep the file size low, as the framework is already heavy on it's own
+            </p>
+            
+            <h5 class="pt-3">How do I trigger a snackbar?</h5>
+            <p>
+                Simply add <strong>data-toast="unique-snackbar-id"</strong> to any button you want to use to trigger the snackbar from.
+            </p>
+            <h5 class="pt-3">How do I programatically trigger snackbars?</h5>
+            <p>
+                Please check the <a href="https://getbootstrap.com/docs/5.0/components/toasts/#javascript-behavior">Programatic Use</a> explained by Bootstrap. Their system will work for Snackbars.
+            </p>
+            <h5 class="pt-2">Snackbar Structure</h5>
+            <div id="highlighterMainDiv_444730" class="syntaxhighlighter html"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td>&nbsp;</td></tr><tr><td class="gutter"><div class="line number1 index0 alt2">1</div></td><td id="codeContainer_444730" class="code"><div id="container_444730" class="container"><div class="line number1 index0 alt2"><code class="html plain">&lt;</code><code class="html keyword">div</code> <code class="html color1">id</code><code class="html plain">=</code><code class="html string">"UNIQUE_ID"</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"snackbar-toast UTILITY_COLORS"</code> <code class="html color1">data-bs-delay</code><code class="html plain">=</code><code class="html string">"3000"</code> <code class="html color1">data-bs-autohide</code><code class="html plain">=</code><code class="html string">"true"</code><code class="html plain">&gt;&lt;</code><code class="html keyword">i</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"fa fa-check mr-3"</code><code class="html plain">&gt;&lt;/</code><code class="html keyword">i</code><code class="html plain">&gt;your text&lt;/</code><code class="html keyword">div</code><code class="html plain">&gt;</code></div></div></td></tr><tr></tr><tr></tr></tbody></table></div>
+            <p>
+                The code above will generate a snackbar. Please be sure this <strong> code is placed outside the page-content</strong>. 
+                <br>The code must have a unique-id that you will use to trigger the snackbar via programatic use or via the data-toast="unique-id" system. The data-bs-delay is represented in miliseconds
+                and in the code above, means it will automatically disapear after 3 seconds.
+            </p>
+        </div>
+    
+        <!-- Tabs --> 
+        <div class="chapter container" id="c37">
+            <div class="pt-4"></div>
+            <div class="pt-4"></div>
+            <h1>Tabs</h1>
+            <p class="text-primary mt-n2">
+                Custom built for maximum flexibility
+            </p>
+            <p>
+                As Bootstrap doesn't offer an actual tab system, we built a very simple and efficient one, where we used code as simple to use as possible. Let's explain.
+            </p>.
+            <div id="highlighterMainDiv_729692" class="syntaxhighlighter html"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td>&nbsp;</td></tr><tr><td class="gutter"><div class="line number1 index0 alt2">01</div><div class="line number2 index1 alt1">02</div><div class="line number3 index2 alt2">03</div><div class="line number4 index3 alt1">04</div><div class="line number5 index4 alt2">05</div><div class="line number6 index5 alt1">06</div><div class="line number7 index6 alt2">07</div><div class="line number8 index7 alt1">08</div><div class="line number9 index8 alt2">09</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div><div class="line number12 index11 alt1">12</div><div class="line number13 index12 alt2">13</div><div class="line number14 index13 alt1">14</div><div class="line number15 index14 alt2">15</div><div class="line number16 index15 alt1">16</div><div class="line number17 index16 alt2">17</div></td><td id="codeContainer_729692" class="code"><div id="container_729692" class="container"><div class="line number1 index0 alt2"><code class="html plain">&lt;</code><code class="html keyword">div</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"content"</code> <code class="html color1">id</code><code class="html plain">=</code><code class="html string">"tab-group-UNIQUE-1"</code><code class="html plain">&gt;</code></div><div class="line number2 index1 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">div</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"tab-controls tabs-small tabs-rounded"</code> <code class="html color1">data-highlight</code><code class="html plain">=</code><code class="html string">"bg-highlight"</code><code class="html plain">&gt;</code></div><div class="line number3 index2 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">a</code> <code class="html color1">href</code><code class="html plain">=</code><code class="html string">"#"</code> <code class="html plain">data-active </code><code class="html color1">data-bs-toggle</code><code class="html plain">=</code><code class="html string">"collapse"</code> <code class="html color1">data-bs-target</code><code class="html plain">=</code><code class="html string">"#tab-UNIQUE-NUMBER-1"</code><code class="html plain">&gt;Tab 1&lt;/</code><code class="html keyword">a</code><code class="html plain">&gt;</code></div><div class="line number4 index3 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">a</code> <code class="html color1">href</code><code class="html plain">=</code><code class="html string">"#"</code> <code class="html color1">data-bs-toggle</code><code class="html plain">=</code><code class="html string">"collapse"</code> <code class="html color1">data-bs-target</code><code class="html plain">=</code><code class="html string">"#tab-UNIQUE-NUMBER-2"</code><code class="html plain">&gt;Tab 2&lt;/</code><code class="html keyword">a</code><code class="html plain">&gt;</code></div><div class="line number5 index4 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">a</code> <code class="html color1">href</code><code class="html plain">=</code><code class="html string">"#"</code> <code class="html color1">data-bs-toggle</code><code class="html plain">=</code><code class="html string">"collapse"</code> <code class="html color1">data-bs-target</code><code class="html plain">=</code><code class="html string">"#tab-UNIQUE-NUMBER-3"</code><code class="html plain">&gt;Tab 3&lt;/</code><code class="html keyword">a</code><code class="html plain">&gt;</code></div><div class="line number6 index5 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;/</code><code class="html keyword">div</code><code class="html plain">&gt;</code></div><div class="line number7 index6 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">div</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"clearfix mb-3"</code><code class="html plain">&gt;&lt;/</code><code class="html keyword">div</code><code class="html plain">&gt;</code></div><div class="line number8 index7 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">div</code> <code class="html color1">data-bs-parent</code><code class="html plain">=</code><code class="html string">"#tab-group-UNIQUE-1"</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"collapse show"</code> <code class="html color1">id</code><code class="html plain">=</code><code class="html string">"tab-UNIQUE-NUMBER-1"</code><code class="html plain">&gt;</code></div><div class="line number9 index8 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html comments">&lt;!-- Tab Content 1--&gt;</code></div><div class="line number10 index9 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;/</code><code class="html keyword">div</code><code class="html plain">&gt;</code></div><div class="line number11 index10 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">div</code> <code class="html color1">data-bs-parent</code><code class="html plain">=</code><code class="html string">"#tab-group-UNIQUE-1"</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"collapse"</code> <code class="html color1">id</code><code class="html plain">=</code><code class="html string">"tab-UNIQUE-NUMBER-2"</code><code class="html plain">&gt;</code></div><div class="line number12 index11 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html comments">&lt;!-- Tab Content 2 --&gt;</code></div><div class="line number13 index12 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;/</code><code class="html keyword">div</code><code class="html plain">&gt;</code></div><div class="line number14 index13 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">div</code> <code class="html color1">data-bs-parent</code><code class="html plain">=</code><code class="html string">"#tab-group-UNIQUE-1"</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"collapse"</code> <code class="html color1">id</code><code class="html plain">=</code><code class="html string">"tab-UNIQUE-NUMBER-3"</code><code class="html plain">&gt;</code></div><div class="line number15 index14 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html comments">&lt;!-- Tab Content 3 --&gt;</code></div><div class="line number16 index15 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;/</code><code class="html keyword">div</code><code class="html plain">&gt;&nbsp; </code></div><div class="line number17 index16 alt2"><code class="html plain">&lt;/</code><code class="html keyword">div</code><code class="html plain">&gt;</code></div></div></td></tr><tr><td>&nbsp;</td></tr><tr><td>&nbsp;</td></tr></tbody></table></div>
+
+            
+            <br>
+            <strong>Line 1</strong> - Is the content class, but this can be any div. It's important to keep the each set of tabs inside a independet div.<br>
+            <strong>Line 2</strong> - Is the div that will hold the tab controls. You can use <strong>tabs-round</strong> to make the tabs with rounded corner. Sizes can be <strong>tabs-small</strong> or <strong>tabs-large</strong>.<br>
+            <strong>Line 3 to Line 5</strong> - are the tab buttons. You can duplicate these to create more. Be sure you keep the <strong>data-bs-target</strong> unique for each individual tab.<br>
+            <strong>Line 6</strong> - closes the tab control buttons.<br>
+            <strong>Line 7</strong> - stops the floating of the tab buttons from affecting the content<br>
+            <strong>Line 8</strong> - clears the floatation between tabs, and also adds a margin between the tab content and the tab buttons. You can use the <a href="index.html#cap3">Utility Classes</a> to change this<br>
+            <strong>Line 8 16</strong> - are the tab content boxes. These are connected to their individual buttons using the unique name used in line 3 to 5, and will respond only to the unique identifier found in line 1. The <strong>id="tab-group-unique-1</strong> must be identical for the entire group of tabs above. The <strong>tab-unique-number</strong> must be unique for each individual tab inside the group. 
+            <br>
+        </div>  
+        
+        <!-- Toasts --> 
+        <div class="chapter container" id="c39">
+            <div class="pt-4"></div>
+            <div class="pt-4"></div>
+            <h1>Toasts</h1>
+            <p class="text-primary mt-n2">
+                Built using the Bootstrap Toast System - <strong><a href="https://getbootstrap.com/docs/5.0/components/toasts/">Read more on Bootstrap Toast Documentation</a></strong>
+            </p>
+            <p class="mt-n3 "><i class="fa fa-exclamation-triangle font-13 pr-3 text-danger"></i> The Toast box itself must be placed outside the page-content</p>
+            <p>
+                The default Bootstrap toasts can be used and triggered manually or programatically using our item by following the instructions mentioned <a href="https://getbootstrap.com/docs/5.0/components/toasts/">on Bootstrap Toast Documentation</a>. 
+            </p>
+           
+            <div id="highlighterMainDiv_530292" class="syntaxhighlighter html"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td>&nbsp;</td></tr><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div></td><td id="codeContainer_530292" class="code"><div id="container_530292" class="container"><div class="line number1 index0 alt2"><code class="html plain">&lt;</code><code class="html keyword">div</code> <code class="html color1">id</code><code class="html plain">=</code><code class="html string">"toast-1"</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"toast toast-tiny toast-top bg-blue2-dark"</code></div><div class="line number2 index1 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html color1">data-delay</code><code class="html plain">=</code><code class="html string">"3000"</code></div><div class="line number3 index2 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html color1">data-autohide</code><code class="html plain">=</code><code class="html string">"true"</code><code class="html plain">&gt;</code></div><div class="line number4 index3 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">i</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"fa fa-check mr-3"</code><code class="html plain">&gt;&lt;/</code><code class="html keyword">i</code><code class="html plain">&gt;</code></div><div class="line number5 index4 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">All Good! </code></div><div class="line number6 index5 alt1"><code class="html plain">&lt;/</code><code class="html keyword">div</code><code class="html plain">&gt;</code></div></div></td></tr><tr><td>&nbsp;</td></tr><tr><td>&nbsp;</td></tr></tbody></table></div>
+            
+            <p>
+                <strong>Line 1</strong> - contains the ID of the toast, this will be used to trigger it. Just use <strong>data-toast="unique-toast-id"</strong> on an element you wish to trigger the toast.<br>
+                <strong>Line 1</strong> - also contains the classes. The class toast is used to identify this for Bootstrap's JS. The <strong>toast-tiny</strong> is the class we use for styling.<br>
+                <strong>Line 1</strong> - also contains the <strong>toast-top</strong> or <strong>toast-bottom</strong> depending where you want your toast to show from and the last element is the background color you want which you can select from the <a href="index.html#cap-colors">Utility Colors</a><br>
+                <strong>Line 2 and 3</strong> - is the delay for the toast and the fact that this toast will auto hide. The time is expressed in miliseconds.<br>
+                <strong>Line 4</strong> - is the icon for your toast<br>
+                <strong>Line 5</strong> - is the text for your toast<br>
+                <strong>Line 6</strong> - is the ending of the toast.<br><br>
+                Create as many toasts as you need just be sure the ID is unique for each.
+            </p>
+            
+            <h5 class="pt-4">How do I programatically trigger toasts?</h5>
+            Please check the <a href="https://getbootstrap.com/docs/5.0/components/toasts/#javascript-behavior">Programatic Use</a> explained by Bootstrap. Their system will work for Snackbars.
+
+        </div>
+            
+        <!-- Toggles/Switches --> 
+        <div class="chapter container" id="c40">
+            <div class="pt-4"></div>
+            <div class="pt-4"></div>
+            <h1>Toggles / Switches</h1>
+            <p class="text-primary mt-n2">
+                Built using the Bootstrap Toggle Switches - <strong><a href="https://getbootstrap.com/docs/5.0/forms/checks-radios/#switches">Read more on Toggle Switches Documentation</a></strong>
+            </p>
+            <p>
+                Toggle switches are input elements which can be used to toggle content or to switch a state in the input. These are affected by the <strong>checked</strong> attribute just like a checkbox for example.<br><br>
+                First of all, let's show you the main switches availabe. We use iOS and Android Styled Switches. Let's explain their structure, and then we can get to more complicated use cases for them.
+            </p>
+
+            <div id="highlighterMainDiv_710516" class="syntaxhighlighter html"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td>&nbsp;</td></tr><tr><td class="gutter"><div class="line number1 index0 alt2">01</div><div class="line number2 index1 alt1">02</div><div class="line number3 index2 alt2">03</div><div class="line number4 index3 alt1">04</div><div class="line number5 index4 alt2">05</div><div class="line number6 index5 alt1">06</div><div class="line number7 index6 alt2">07</div><div class="line number8 index7 alt1">08</div><div class="line number9 index8 alt2">09</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div><div class="line number12 index11 alt1">12</div><div class="line number13 index12 alt2">13</div><div class="line number14 index13 alt1">14</div><div class="line number15 index14 alt2">15</div><div class="line number16 index15 alt1">16</div><div class="line number17 index16 alt2">17</div><div class="line number18 index17 alt1">18</div><div class="line number19 index18 alt2">19</div><div class="line number20 index19 alt1">20</div><div class="line number21 index20 alt2">21</div><div class="line number22 index21 alt1">22</div><div class="line number23 index22 alt2">23</div><div class="line number24 index23 alt1">24</div><div class="line number25 index24 alt2">25</div><div class="line number26 index25 alt1">26</div></td><td id="codeContainer_710516" class="code"><div id="container_710516" class="container"><div class="line number1 index0 alt2"><code class="html plain">&lt;</code><code class="html keyword">div</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"d-flex no-effect"</code></div><div class="line number2 index1 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html color1">data-trigger-switch</code><code class="html plain">=</code><code class="html string">"toggle-id-1"</code></div><div class="line number3 index2 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html color1">data-bs-toggle</code><code class="html plain">=</code><code class="html string">"collapse"</code></div><div class="line number4 index3 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html color1">href</code><code class="html plain">=</code><code class="html string">"#collapseExample1"</code></div><div class="line number5 index4 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html color1">role</code><code class="html plain">=</code><code class="html string">"button"</code></div><div class="line number6 index5 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html color1">aria-expanded</code><code class="html plain">=</code><code class="html string">"false"</code></div><div class="line number7 index6 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html color1">aria-controls</code><code class="html plain">=</code><code class="html string">"collapseExample1"</code></div><div class="line number8 index7 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&gt;</code></div><div class="line number9 index8 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">div</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"pt-1"</code><code class="html plain">&gt;</code></div><div class="line number10 index9 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">h5</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"font-600"</code><code class="html plain">&gt;Toggle Trigger&lt;/</code><code class="html keyword">h5</code><code class="html plain">&gt;</code></div><div class="line number11 index10 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;/</code><code class="html keyword">div</code><code class="html plain">&gt;</code></div><div class="line number12 index11 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">div</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"ms-auto me-4 pe-2"</code><code class="html plain">&gt;</code></div><div class="line number13 index12 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">div</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"custom-control BRAND-switch"</code><code class="html plain">&gt;</code></div><div class="line number14 index13 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">input</code> <code class="html color1">type</code><code class="html plain">=</code><code class="html string">"checkbox"</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"BRAND-input"</code> <code class="html color1">id</code><code class="html plain">=</code><code class="html string">"toggle-id-1"</code><code class="html plain">&gt;</code></div><div class="line number15 index14 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">label</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"custom-control-label"</code> <code class="html color1">for</code><code class="html plain">=</code><code class="html string">"toggle-id-1"</code><code class="html plain">&gt;&lt;/</code><code class="html keyword">label</code><code class="html plain">&gt;</code></div><div class="line number16 index15 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;/</code><code class="html keyword">div</code><code class="html plain">&gt;</code></div><div class="line number17 index16 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;/</code><code class="html keyword">div</code><code class="html plain">&gt;</code></div><div class="line number18 index17 alt1"><code class="html plain">&lt;/</code><code class="html keyword">div</code><code class="html plain">&gt;</code></div><div class="line number19 index18 alt2"><code class="html plain">&lt;</code><code class="html keyword">div</code> <code class="html color1">class</code><code class="html plain">=</code><code class="html string">"collapse"</code> <code class="html color1">id</code><code class="html plain">=</code><code class="html string">"collapseExample1"</code><code class="html plain">&gt;</code></div><div class="line number20 index19 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html comments">&lt;!-- </code></div><div class="line number21 index20 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html comments">Content goes here if you want to use the toggle to switch content. </code></div><div class="line number22 index21 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html comments">If not, simply delete lines 18 to 26 completely and remove line 3, line 6 and line 7. </code></div><div class="line number23 index22 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html comments">Also, replace href="#collapseExample1" with href="#".</code></div><div class="line number24 index23 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html comments">After doing this, the toggle will act like a regular input checkbox.</code></div><div class="line number25 index24 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html comments">--&gt;</code></div><div class="line number26 index25 alt1"><code class="html plain">&lt;/</code><code class="html keyword">div</code><code class="html plain">&gt;</code></div></div></td></tr><tr><td>&nbsp;</td></tr><tr><td>&nbsp;</td></tr></tbody></table></div>
+
+            
+            Firstly, the toggles we used in this example are aligned using flexboxes, which you can learn more about and how to compose following the <a href="https://getbootstrap.com/docs/5.0/utilities/flex/">official Boostrap documentation</a>. 
+            <br>
+            
+            <p>
+                Notice that the title is connected to the switch using the <strong>data-trigger-switch="toggle-id-1" | id="toggle-id-1" | for="toggle-id-1"</strong>. You can create
+                infinite number of toggles and connect them to a separate button on the screen that will activate them, as long as the above properties match eachother. 
+            </p>
+            <p>
+                <strong>Line 1</strong> - Creates a flexbox for the switch, so the icon and text can be aligned properly. <br/>
+                <strong>Line 2</strong> - When clicking anywhere on the switch, the icon will still change, this happens because <strong>data-trigger-switch="toggle-id-1"</strong> is 
+                identical to the input id and for on lines 14 and 15. You can create as many switches as you want, but these ID's must be unique for each switch. <br/>
+                <strong>Line 3</strong> - <em>optional</em> - is used when you want to toggle the content on line 19. This must be set to <strong>collapse</strong> together with the class of <strong>line 19</strong><br/>
+                <strong>Line 4</strong> - <em>optional</em> - is the unique ID that is used on <strong>line 19</strong> as well. When clicking the switch the content on line 19 will show or hide.<br/>
+                <strong>Line 5</strong> - Makes the entire line have a pointer hand effect. Easier to determine when working on desktop and editing the page.<br/>
+                <strong>Line 6</strong> - Defines if the collapse content should be visible or not by default. If you set this to true, be sure you also add a <strong>checked</strong> value to line 14 so that the input toggle will show as activated<br/>
+                <strong>Line 7</strong> - Defines that this switch will control the element on <strong>line 19</strong>
+                <strong>Line 8</strong> - Is the closing of the attributes inside the main div. We used separate lines for easier visibility.<br/>
+                <strong>Line 9 to Line 11</strong> - Are the toggle text on the starting side.<br/>
+                <strong>Line 12 to 17</strong> - Are the actual input itself. You can define it as <strong>ios</strong> or <strong>android</strong> styled by replacing <strong>BRAND-input</strong> with <strong>ios-input</strong> or <strong>android-input</strong>. Please be sure your <strong>id</strong> and <strong>for</strong> match the value of <strong>line 2</strong> and are unique for each switch you create.<br/>
+                <strong>Line 18</strong> - Closes the main div that houses the entire switch. <br/>
+                <strong>Lines 19 to 26</strong> - are the content that will be shown or hidden if you follow the instructions in <strong>Line 20 to 25 </strong> and the above mentioned lines to make sure you have unique identifiers for each toggle group. For live examples, be sure you check the <strong>component-toggles.html</strong> or <strong>component-switches.html</strong> (file names may differ)
+                
+            </p>
+            <p>
+                To create an Android type switch or an iOS type switch, simply replace the <strong>BRAND-switch | BRAND-input</strong> on line 6 and line 7 with <strong>ios-switch | ios-input</strong> or <strong>android-switch | android-input</strong>
+            </p>
+
+            <h5>Programatic Use</h5>
+            <p>
+                To modify the checked value of a switch, you must use the <a href="https://www.w3schools.com/jsref/prop_checkbox_checked.asp">Input Checkbox check property (link).</a>
+            </p>
+        </div>
+        
+        
+        <!-- Vibrate --> 
+        <div class="chapter container" id="c43">
+            <div class="pt-4"></div>
+            <div class="pt-4"></div>
+            <h1>Vibrate</h1>
+            <p class="text-primary mt-n2">
+                Using Native WebAPI Protocols
+            </p>
+            
+            <p>
+                To begin with, we must mention that iOS does not allow access to their Taptic / Vibration API. Vibrations will only work for Android devices, and only on buttons, not as a programatic gesture.
+                This is restricted on certain devices. If you own an Android device, chances are you saw with previous operating systems sites where the phone would start vibrating like crazy for no reason.<br>
+                <br>This is why the vibration API will only work on a gesture pre-made by the user, and cannot be programatically enabled. <br>
+                <br>
+                To make any button or element the user taps on vibrate, all you have to do is add the attribute <strong>data-vibrate="5"</strong>. The 5 represents 5 miliseconds. By default, mobile devices send vibrations of 5 to 125ms in length.
+                For the best possible user experience it is recomemnded not to send vibrations longer than this, so the user feels like your app is native to his experience, rather than something new and intrusive.
+            </p>
+            
+        </div>
+                    
+        <!-- Ending Words --> 
+        <div class="chapter container" id="c45">
+            <div class="pt-4"></div>
+            <div class="pt-4"></div>
+            <h1>Ending Words</h1>
+            <p class="text-primary mt-n2">
+                Thank you for being a awesome customer
+            </p>
+            
+            <p>
+                If you read the documentation thus far, you're probably a master of our components and can copy paste them to create the perfect interface for you. However, if you get stuck, please know, <strong>we are always here to help!</strong>
+            </p>
+            <br> 
+            <p>
+                A few tips that we must give. In the component documentation, we have included referrences to the Bootstrap documentation whenever extra features are available. Don't be afraid to experiment with them and 
+                read more about these features on Bootstrap's site. You can furhter enhance the already existing components we have. This will also be good if you <strong>are a devloper</strong> and know or want to know
+                JS behavior and how to increase the programatic power of our item. <br><br>
+                <strong>Don't forget!</strong> Always write your Custom Javascript as mentioned in the <a href="index.html#faq7b">Developer Notes Section</a> to be sure you avoid issues with code and always place your code in the correct place. Our item will cause 
+                you no stress if these small things are followed. 
+            </p>
+            
+            <h4 class="pt-5">Help! I got stuck! I don't know how to edit something!</h4>
+            <p>
+            If there is anything you don't find here, or you require clarifications for any element we have here, please open a support ticket on our forums. We will gladly help you out. 
+            <br><br>Our support times are blazing fast and we are patient with any question you may have. No question is small and no question is stupid. If you feel you don't understand something, please let us know! 
+            <br>
+            <br>
+            It's an immense pleasure for us to know our customers know and master our products and can place their imagination in our product to make it their own! 
+            <br>
+            <br>
+                So, please, if there is anything we may help you with from our product features, or pages, let us know!<br><br> We're always available for you on <a href="https://www.enableds.com ( the support page )">https://www.enableds.com ( the support page )</a>
+            </p>
+            
+            <a href="#" class="btn btn-m btn-primary font-900 text-uppercase mb-3">Structure Documentation</a><br>
+            <a href="#" class="btn btn-m btn-primary font-900 text-uppercase">Pages Documentation</a>
+
+            
+        </div>
+                
+
+        
+        <!-- Main Structure-->
+
+        <div style="height:200px"></div>
+        <div class="container">PS: Thank you for being an absolutely awesome customer! We love all our customers and will always provide the fastest support and always listen to your feedback, so don't be afraid to send us a ticket. We're here to listen and improve the features to bring you the absolute best!</div>
+        
+        <!-- Accordions -->
+
+
+    </div>
+
+</div>  
+
+    
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+</body>
+    

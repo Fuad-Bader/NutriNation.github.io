@@ -1,0 +1,382 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>AppKit Mobile</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+
+<body class="theme-light">
+
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+
+<div id="page">
+
+    <div class="header header-fixed header-logo-center header-auto-show">
+        <a href="index.html" class="header-title">Welcome</a>
+        <a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-chevron-left"></i></a>
+        <a href="#" data-menu="menu-main" class="header-icon header-icon-4"><i class="fas fa-bars"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-dark"><i class="fas fa-sun"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-light"><i class="fas fa-moon"></i></a>
+    </div>
+
+    <div id="footer-bar" class="footer-bar-6">
+        <a href="index-components.html"><i class="fa fa-layer-group"></i><span>Features</span></a>
+        <a href="index-pages.html" class="active-nav"><i class="fa fa-file"></i><span>Pages</span></a>
+        <a href="index.html" class="circle-nav"><i class="fa fa-home"></i><span>Welcome</span></a>
+        <a href="index-projects.html"><i class="fa fa-camera"></i><span>Projects</span></a>
+        <a href="#" data-menu="menu-main"><i class="fa fa-bars"></i><span>Menu</span></a>
+    </div>
+
+    <div class="page-title page-title-fixed">
+        <h1>Welcome</h1>
+        <a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-share"><i class="fa fa-share-alt"></i></a>
+        <a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-light" data-toggle-theme><i class="fa fa-moon"></i></a>
+        <a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-dark" data-toggle-theme><i class="fa fa-lightbulb color-yellow-dark"></i></a>
+        <a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-main"><i class="fa fa-bars"></i></a>
+    </div>
+    <div class="page-title-clear"></div>
+
+    <div class="page-content">
+
+        <div class="content mt-n4 mb-4">
+            <div class="search-box search-dark shadow-sm border-0 mt-4 bg-theme rounded-sm bottom-0">
+                <i class="fa fa-search ms-1"></i>
+                <input type="text" class="border-0" placeholder="Searching for something? Try 'neon'" data-search>
+            </div>
+            <div class="search-results disabled-search-list">
+                <div>
+                    <a href="#" data-filter-item data-filter-name="all run sport event marathon fastest">
+                        <div class="d-flex mt-4">
+                            <div class="align-self-center">
+                                <img src="images/pictures/1t.jpg" class="rounded-m me-3" width="80">
+                            </div>
+                            <div class="align-self-center">
+                                <h2 class="font-15 line-height-s mt-1">Marathon Fastest <br> Runner Event </h2>
+                                <p class="mb-1 font-11 mt-1 line-height-s">
+                                    12k+  Attending
+                                </p>
+                            </div>
+                            <div class="ms-auto ps-3 align-self-center text-center">
+                                <span class="btn btn-xxs gradient-blue text-uppercase font-600 rounded-xs">Details</span>
+                                <span class="color-highlight font-10 d-block">15 min away</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" data-filter-item data-filter-name="all neon night party music festival">
+                        <div class="d-flex mt-4">
+                            <div class="align-self-center">
+                                <img src="images/pictures/6t.jpg" class="rounded-m me-3" width="80">
+                            </div>
+                            <div class="align-self-center">
+                                <h2 class="font-15 line-height-s mt-1">Neon Nights <br> Music Festival </h2>
+                                <p class="mb-1 font-11 mt-1 line-height-s">
+                                    3.5k+ Attending
+                                </p>
+                            </div>
+                            <div class="ms-auto ps-3 align-self-center text-center">
+                                <span class="btn btn-xxs gradient-blue text-uppercase font-600 rounded-xs">Details</span>
+                                <span class="color-highlight font-10 d-block">2 hrs away</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" data-filter-item data-filter-name="all sing party karaoke night event">
+                        <div class="d-flex mt-4">
+                            <div class="align-self-center">
+                                <img src="images/pictures/20t.jpg" class="rounded-m me-3" width="80">
+                            </div>
+                            <div class="align-self-center">
+                                <h2 class="font-15 line-height-s mt-1">Sing For Us <br> Karaoke Nights </h2>
+                                <p class="mb-1 font-11 mt-1 line-height-s">
+                                   3.5k+ Attending
+                                </p>
+                            </div>
+                            <div class="ms-auto ps-3 align-self-center text-center">
+                                <span class="btn btn-xxs gradient-blue text-uppercase font-600 rounded-xs">Details</span>
+                                <span class="color-highlight font-10 d-block">3 hrs away</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="search-no-results disabled mt-4">
+            <div class="card card-style">
+                <div class="content">
+                    <h1>No Results</h1>
+                    <p>
+                        Your search brought up no results. Try using a different keyword. Or try typying all
+                        to see all items in the demo. These can be linked to anything you want.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="splide single-slider slider-no-arrows visible-slider slider-no-dots" id="single-slider-1">
+            <div class="splide__track">
+                <div class="splide__list">
+                    <div class="splide__slide">
+                        <div class="card card-style ms-3" style="background-image:url(images/pictures/1t.jpg);" data-card-height="300">
+                            <div class="card-top px-3 py-3">
+                                <a href="#" data-menu="menu-heart" class="bg-white rounded-sm icon icon-xs float-end"><i class="fa fa-heart color-red-dark"></i></a>
+                                <a href="#" class="bg-white color-black rounded-sm btn btn-xs float-start font-700 font-12">View Event</a>
+                            </div>
+                            <div class="card-bottom px-3 py-3">
+                                <h1 class="color-white">Marathon Fastest<br>Runner Event</h1>
+                                <div class="divider bg-white opacity-20 mb-3"></div>
+                                <div class="d-flex">
+                                    <div class="align-self-center">
+                                        <img src="images/pictures/6s.jpg" class="rounded-xl border border-dark-light"  width="25">
+                                        <img src="images/pictures/9s.jpg" class="rounded-xl border border-dark-light ms-n3" width="25">
+                                        <img src="images/pictures/5s.jpg" class="rounded-xl border border-dark-light ms-n3" width="25">
+                                        <img src="images/pictures/7s.jpg" class="rounded-xl border border-dark-light ms-n3" width="25">
+                                        <img src="images/pictures/13s.jpg" class="rounded-xl border border-dark-light ms-n3" width="25">
+                                    </div>
+                                    <div class="align-self-center">
+                                        <span class="ps-3 font-11 opacity-70 font-600 color-white">24k+ attending</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-overlay bg-gradient opacity-30"></div>
+                            <div class="card-overlay bg-gradient"></div>
+                        </div>
+                    </div>
+                    <div class="splide__slide">
+                        <div class="card card-style ms-3" style="background-image:url(images/pictures/6t.jpg);" data-card-height="300">
+                            <div class="card-top px-3 py-3">
+                                <a href="#" data-menu="menu-heart" class="bg-white rounded-sm icon icon-xs float-end"><i class="fa fa-heart color-red-dark"></i></a>
+                                <a href="#" class="bg-white color-black rounded-sm btn btn-xs float-start font-700 font-12">View Event</a>
+                            </div>
+                            <div class="card-bottom px-3 py-3">
+                                <h1 class="color-white">Neon Nights<br>Music Festival</h1>
+                                <div class="divider bg-white opacity-20 mb-3"></div>
+                                <div class="d-flex">
+                                    <div class="align-self-center">
+                                        <img src="images/pictures/6s.jpg" class="rounded-xl border border-dark-light"  width="25">
+                                        <img src="images/pictures/9s.jpg" class="rounded-xl border border-dark-light ms-n3" width="25">
+                                        <img src="images/pictures/5s.jpg" class="rounded-xl border border-dark-light ms-n3" width="25">
+                                        <img src="images/pictures/7s.jpg" class="rounded-xl border border-dark-light ms-n3" width="25">
+                                        <img src="images/pictures/13s.jpg" class="rounded-xl border border-dark-light ms-n3" width="25">
+                                    </div>
+                                    <div class="align-self-center">
+                                        <span class="ps-3 font-11 opacity-70 font-600 color-white">24k+ attending</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="card-overlay bg-gradient opacity-30"></div>
+                            <div class="card-overlay bg-gradient"></div>
+                        </div>
+                    </div>
+                    <div class="splide__slide">
+                        <div class="card card-style ms-3" style="background-image:url(images/pictures/20t.jpg);" data-card-height="300">
+                            <div class="card-top px-3 py-3">
+                                <a href="#" data-menu="menu-heart" class="bg-white rounded-sm icon icon-xs float-end"><i class="fa fa-heart color-red-dark"></i></a>
+                                <a href="#" class="bg-white color-black rounded-sm btn btn-xs float-start font-700 font-12">View Event</a>
+                            </div>
+                            <div class="card-bottom px-3 py-3">
+                                <h1 class="color-white">Sing for Us<br>Karaoke Nights</h1>
+                                <div class="divider bg-white opacity-20 mb-3"></div>
+                                <div class="d-flex">
+                                    <div class="align-self-center">
+                                        <img src="images/pictures/6s.jpg" class="rounded-xl border border-dark-light"  width="25">
+                                        <img src="images/pictures/9s.jpg" class="rounded-xl border border-dark-light ms-n3" width="25">
+                                        <img src="images/pictures/5s.jpg" class="rounded-xl border border-dark-light ms-n3" width="25">
+                                        <img src="images/pictures/7s.jpg" class="rounded-xl border border-dark-light ms-n3" width="25">
+                                        <img src="images/pictures/13s.jpg" class="rounded-xl border border-dark-light ms-n3" width="25">
+                                    </div>
+                                    <div class="align-self-center">
+                                        <span class="ps-3 font-11 opacity-70 font-600 color-white">24k+ attending</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="card-overlay bg-gradient opacity-30"></div>
+                            <div class="card-overlay bg-gradient"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content mt-0 mb-0">
+            <div class="d-flex">
+                <div class="align-self-center">
+                    <h1 class="mb-0 font-18">Events Near You</h1>
+                </div>
+                <div class="ms-auto align-self-center">
+                    <a href="#" class="float-end font-12 font-400">See All</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="splide double-slider visible-slider slider-no-arrows slider-no-dots ps-2" id="double-slider-1">
+            <div class="splide__track">
+                <div class="splide__list">
+                    <div class="splide__slide">
+                        <div class="card m-2 card-style">
+                            <img src="images/pictures/31t.jpg" class="img-fluid">
+                            <div class="p-2 bg-theme rounded-sm">
+                                <h4 class="font-14 line-height-s pb-1">Unplugged Live Guitar Session</h4>
+                                <p class="font-10 mb-0"><i class="fa fa-map-marker color-red-dark pe-2"></i>5 Minutes Away</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="splide__slide">
+                        <div class="card m-2 card-style">
+                            <img src="images/pictures/6t.jpg" class="img-fluid">
+                            <div class="p-2 bg-theme rounded-sm">
+                                <h4 class="font-14 line-height-s pb-1">Neon Music Festival</h4>
+                                <p class="font-10 mb-0"><i class="fa fa-map-marker color-red-dark pe-2"></i>15 Minutes Away</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="splide__slide">
+                        <div class="card m-2 card-style">
+                            <img src="images/pictures/20t.jpg" class="img-fluid">
+                            <div class="p-2 bg-theme rounded-sm">
+                                <h4 class="font-14 line-height-s pb-1">Karaoke Live Singing</h4>
+                                <p class="font-10 mb-0"><i class="fa fa-map-marker color-red-dark pe-2"></i>25 Minutes Away</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content mb-0">
+            <div class="d-flex">
+                <div class="align-self-center">
+                    <h1 class="mb-0 font-18">Recommended by Us</h1>
+                </div>
+                <div class="ms-auto align-self-center">
+                    <a href="#" class="float-end font-12 font-400">See All</a>
+                </div>
+            </div>
+            <div class="row mb-0">
+                <div class="col-6 pe-1">
+                    <div class="card card-style mx-0" style="background-image:url(images/pictures/16t.jpg);" data-card-height="350">
+                        <div class="card-bottom p-3">
+                            <h2 class="color-white">Sports</h2>
+                            <p class="color-white opacity-60 line-height-s">
+                                Run, Lift. Bike. Show us what you can do.
+                            </p>
+                        </div>
+                        <div class="card-overlay bg-gradient opacity-30"></div>
+                        <div class="card-overlay bg-gradient"></div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="card card-style mx-0 mb-2" style="background-image:url(images/pictures/24t.jpg);" data-card-height="170">
+                        <div class="card-bottom p-3">
+                            <h2 class="color-white">Parties</h2>
+                            <p class="color-white opacity-60 line-height-s font-12">
+                                Dance all Night.
+                            </p>
+                        </div>
+                        <div class="card-overlay bg-gradient opacity-30"></div>
+                        <div class="card-overlay bg-gradient"></div>
+                    </div>
+                    <div class="card card-style mx-0 mb-0" style="background-image:url(images/pictures/29t.jpg);" data-card-height="170">
+                        <div class="card-bottom p-3">
+                            <h2 class="color-white">Concerts</h2>
+                            <p class="color-white opacity-60 line-height-s font-12">
+                                Sing your heart out!
+                            </p>
+                        </div>
+                        <div class="card-overlay bg-gradient opacity-30"></div>
+                        <div class="card-overlay bg-gradient"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content mb-0">
+            <div class="d-flex">
+                <div class="align-self-center">
+                    <h1 class="mb-0 font-18">Attended by your Friends</h1>
+                </div>
+                <div class="ms-auto align-self-center">
+                    <a href="#" class="float-end font-12 font-400">See All</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="splide double-slider visible-slider slider-no-arrows slider-no-dots ps-2" id="double-slider-3">
+            <div class="splide__track">
+                <div class="splide__list">
+                    <div class="splide__slide">
+                        <div data-card-height="160" class="card rounded-m m-2 shadow-l" style="background-image:url(images/pictures/3s.jpg)">
+                            <div class="card-bottom mb-2">
+                                <h5 class="color-white font-15 px-2 line-height-s pb-1">Running Marathon</h5>
+                                <p class="color-white mb-0 mt-n2 font-11 opacity-50 px-2">John Attended</p>
+                            </div>
+                            <div class="card-overlay bg-gradient opacity-30"></div>
+                            <div class="card-overlay bg-gradient"></div>
+                        </div>
+                    </div>
+                    <div class="splide__slide">
+                        <div data-card-height="160" class="card rounded-m m-2 shadow-l" style="background-image:url(images/pictures/4s.jpg)">
+                            <div class="card-bottom mb-2">
+                                <h5 class="color-white font-15 px-2 line-height-s pb-1">Neon House Party Night</h5>
+                                <p class="color-white mb-0 mt-n2 font-11 opacity-50 px-2">David Attended</p>
+                            </div>
+                            <div class="card-overlay bg-gradien opacity-30t"></div>
+                            <div class="card-overlay bg-gradient"></div>
+                        </div>
+                    </div>
+                    <div class="splide__slide">
+                        <div data-card-height="160" class="card rounded-m m-2 shadow-l" style="background-image:url(images/pictures/1s.jpg)">
+                            <div class="card-bottom mb-2">
+                                <h5 class="color-white font-15 px-2">Karaoke Live Singing Night</h5>
+                                <p class="color-white mb-0 mt-n2 font-11 opacity-30 px-2">Alexandra Attended</p>
+                            </div>
+                            <div class="card-overlay bg-gradient opacity-30"></div>
+                            <div class="card-overlay bg-gradient"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="mt-4" data-menu-load="menu-footer.html"></div>
+    </div>
+    <!-- Page content ends here-->
+
+    <!-- Added to Bookmarks Menu-->
+    <div id="menu-heart"
+         class="menu menu-box-modal rounded-m"
+         data-menu-hide="1000"
+         data-menu-width="250"
+         data-menu-height="170">
+
+        <h1 class="text-center mt-3 pt-2">
+            <i class="fa fa-heart color-red-dark fa-3x scale-icon"></i>
+        </h1>
+        <h3 class="text-center pt-2">Saved to Favorites</h3>
+    </div>
+
+    <!-- Main Menu-->
+    <div id="menu-main" class="menu menu-box-left rounded-0" data-menu-load="menu-main.html" data-menu-width="280" data-menu-active="nav-pages"></div>
+
+    <!-- Share Menu-->
+    <div id="menu-share" class="menu menu-box-bottom rounded-m" data-menu-load="menu-share.html" data-menu-height="370"></div>
+
+    <!-- Colors Menu-->
+    <div id="menu-colors" class="menu menu-box-bottom rounded-m" data-menu-load="menu-colors.html" data-menu-height="480"></div>
+
+
+</div>
+
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>

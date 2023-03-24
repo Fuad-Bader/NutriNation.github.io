@@ -1,0 +1,202 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>AppKit Mobile</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">    
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+    
+<body class="theme-light">
+    
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+    
+<div id="page">
+    
+    <div class="header header-fixed header-logo-center">
+        <a href="index.html" class="header-title">Product Style 1</a>
+        <a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-chevron-left"></i></a>
+        <a href="#" data-menu="menu-main" class="header-icon header-icon-4"><i class="fas fa-bars"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-dark"><i class="fas fa-sun"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-light"><i class="fas fa-moon"></i></a>
+    </div>
+
+    <div id="footer-bar" class="footer-bar-6">
+        <a href="index-components.html"><i class="fa fa-layer-group"></i><span>Features</span></a>
+        <a href="index-pages.html" class="active-nav"><i class="fa fa-file"></i><span>Pages</span></a>
+        <a href="index.html" class="circle-nav"><i class="fa fa-home"></i><span>Welcome</span></a>
+        <a href="index-projects.html"><i class="fa fa-camera"></i><span>Projects</span></a>
+        <a href="#" data-menu="menu-main"><i class="fa fa-bars"></i><span>Menu</span></a>
+    </div>
+    
+    <div class="page-content header-clear-medium"> 
+  
+        <div class="card card-style">
+            <div class="content">
+                <div class="d-flex">
+                    <div class="align-self-center">
+                        <h1 class="font-30 pt-1">Prosciutto<br>Pizza</h1>
+                    </div>
+                    <div class="align-self-center ms-auto">
+                        <h1 class="font-24 text-end mb-n1 color-highlight font-600"><sup class="font-14">$</sup>8.99</h1>
+                        <p class="mt-n1 opacity-40 mt-n2 font-10 text-end">Free Delivery</p>
+                    </div>
+                </div>
+                <p class="pt-2 mb-2">
+                    Pizza  is a savory dish of Italian origin consisting of a usually round, flattened base of leavened wheat-based
+                    dough topped with tomatoes, cheese, and often various other ingredients, which is then baked at a high temperature,
+                    traditionally in a wood-fired oven.
+                </p>
+                <div class="pb-5">
+                    <img src="images/food/pizza.png" style="position:fixed; right:-100px; height:300px; width:300px;">
+                    <h5 class="font-13 font-600 color-highlight mb-n1 pt-4">Size</h5>
+                    <h1>Medium</h1>
+                    <h5 class="font-13 font-600 color-highlight mb-n1 pt-4">Crust</h5>
+                    <h1>Classic</h1>
+                    <h5 class="font-13 font-600 color-highlight mb-n1 pt-4">Delivery</h5>
+                    <h1>30 Min</h1>
+                </div>
+                
+                <div class="divider"></div>
+                
+                <p class="mb-n1 color-highlight font-600 font-12">Add or Remove</p>
+                <h2>Ingredients</h2>
+                <p>
+                    Make your own recipe, mix your ingredients and create the perfect burger for you.
+                </p>
+                <div class="d-flex">
+                    <div class="align-self-center">
+                        <h5 class="font-600 font-13">Lettuce</h5>
+                    </div>
+                    <div class="ms-auto align-self-center">
+                        <div class="stepper rounded-s small-switch me-n2">
+                            <a href="#" class="stepper-sub"><i class="fa fa-minus color-theme opacity-40"></i></a>
+                            <input type="number" min="1" max="5" value="1">
+                            <a href="#" class="stepper-add"><i class="fa fa-plus color-theme opacity-40"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class="align-self-center">
+                        <h5 class="font-600 font-13">Cheese</h5>
+                    </div>
+                    <div class="ms-auto align-self-center">
+                        <div class="stepper rounded-s small-switch me-n2">
+                            <a href="#" class="stepper-sub"><i class="fa fa-minus color-theme opacity-40"></i></a>
+                            <input type="number" min="1" max="5" value="2">
+                            <a href="#" class="stepper-add"><i class="fa fa-plus color-theme opacity-40"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class="align-self-center">
+                        <h5 class="font-600 font-13">Pork Ham</h5>
+                    </div>
+                    <div class="ms-auto align-self-center">
+                        <div class="stepper rounded-s small-switch me-n2">
+                            <a href="#" class="stepper-sub"><i class="fa fa-minus color-theme opacity-40"></i></a>
+                            <input type="number" min="1" max="5" value="2">
+                            <a href="#" class="stepper-add"><i class="fa fa-plus color-theme opacity-40"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class="align-self-center">
+                        <h5 class="font-600 font-13">Mustard</h5>
+                    </div>
+                    <div class="ms-auto align-self-center">
+                        <div class="stepper rounded-s small-switch me-n2">
+                            <a href="#" class="stepper-sub"><i class="fa fa-minus color-theme opacity-40"></i></a>
+                            <input type="number" min="1" max="5" value="1">
+                            <a href="#" class="stepper-add"><i class="fa fa-plus color-theme opacity-40"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class="align-self-center">
+                        <h5 class="font-600 font-13">Hot Sauce</h5>
+                    </div>
+                    <div class="ms-auto align-self-center">
+                        <div class="stepper rounded-s small-switch me-n2">
+                            <a href="#" class="stepper-sub"><i class="fa fa-minus color-theme opacity-40"></i></a>
+                            <input type="number" min="1" max="5" value="1">
+                            <a href="#" class="stepper-add"><i class="fa fa-plus color-theme opacity-40"></i></a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="divider mt-3"></div>
+                
+                <a href="#" class="btn btn-full gradient-blue btn-m font-600 rounded-sm">Order now</a>
+            </div>
+        </div>
+        
+        <div class="card card-style">
+            <div class="content">
+                <p class="mb-n1 color-highlight font-600">How about a snack?</p>
+                <h1 class="font-24 font-800">Desserts</h1>
+                <p>Products you may also like based on what you're currently looking at.
+            </div>
+            <div class="splide double-slider slider-no-dots" id="double-slider-1">
+                <div class="splide__track">
+                    <div class="splide__list">
+                        <div class="splide__slide">
+                            <div data-card-height="200" class="card mx-3 rounded-m shadow-l" style="background-image:url(images/food/small/2s.jpg)">
+                                <div class="card-bottom text-center">
+                                    <h2 class="color-white font-700 font-20 mb-3">Sauces</h2>
+                                    <a href="#" class="btn btn-xs btn-full font-13 font-600 gradient-highlight rounded-s me-2 ms-2 mb-2">View</a>
+                                </div>
+                                <div class="card-overlay bg-gradient"></div>
+                            </div>
+                        </div>
+                        <div class="splide__slide">
+                            <div data-card-height="200" class="card mx-3 rounded-m shadow-l" style="background-image:url(images/food/small/3s.jpg)">
+                                <div class="card-bottom text-center">
+                                    <h2 class="color-white font-700 font-18 mb-3">Dessert</h2>
+                                    <a href="#" class="btn btn-xs btn-full font-13 font-600 gradient-highlight rounded-s me-2 ms-2 mb-2">View</a>
+                                </div>
+                                <div class="card-overlay bg-gradient"></div>
+                            </div>
+                        </div>
+                        <div class="splide__slide">
+                            <div data-card-height="200" class="card mx-3 rounded-m shadow-l" style="background-image:url(images/food/small/4s.jpg)">
+                                <div class="card-bottom text-center">
+                                    <h2 class="color-white font-700 font-18 mb-3">Beverages</h2>
+                                    <a href="#" class="btn btn-xs btn-full font-13 font-600 gradient-highlight rounded-s me-2 ms-2 mb-2">View</a>
+                                </div>
+                                <div class="card-overlay bg-gradient"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        <div data-menu-load="menu-footer.html"></div>
+        
+    </div>
+    <!-- Page content ends here-->
+
+    
+    <!-- Main Menu--> 
+    <div id="menu-main" class="menu menu-box-left rounded-0" data-menu-load="menu-main.html" data-menu-width="280" data-menu-active="nav-pages"></div>
+    
+    <!-- Share Menu-->
+    <div id="menu-share" class="menu menu-box-bottom rounded-m" data-menu-load="menu-share.html" data-menu-height="370"></div>  
+    
+    <!-- Colors Menu-->
+    <div id="menu-colors" class="menu menu-box-bottom rounded-m" data-menu-load="menu-colors.html" data-menu-height="480"></div> 
+     
+    
+</div>
+
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>
