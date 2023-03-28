@@ -35,6 +35,8 @@ h6 {
   font-weight: 700;
   font-family: "Ubuntu", sans-serif; }
 
+
+
 p {
   color: #787878;
   font-size: 14px;
@@ -1748,6 +1750,122 @@ img {
           font-weight: 300; }
           .contact-area .contact-info .contact-address p:last-child a:hover {
             color: #0315ff; }
+
+            /*------------------------------------------------------------------
+    PRICING AREA
+-------------------------------------------------------------------*/
+
+
+
+.pricing-main h2{
+  font-family: 'nautilus_pompiliusregular';
+  padding-bottom:30px;
+}
+
+.pricing-main p{
+  letter-spacing: 0.16px;
+  padding: 20px 120px;
+  color: #666;
+  font-size: 18px;
+  text-align:center;
+}
+
+.panel-pricing-in{
+  clear:both;
+}
+.panel-pricing {
+  -moz-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+}
+.panel-pricing:hover {
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+}
+.panel-pricing .panel-heading {
+  padding: 20px 10px;
+}
+
+.pricing-main .panel-heading h3{
+  font-family: 'Roboto', sans-serif;
+  padding:15px 0px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color:#ffffff;
+}
+
+.panel-pricing .panel-heading .fa {
+  margin-top: 10px;
+  font-size: 58px;
+}
+.panel-pricing .list-group-item {
+  color: #202020;
+  border-bottom: 1px solid rgba(250, 250, 250, 0.5);
+  font-family: 'Roboto', sans-serif;
+  padding: 10px 15px;
+}
+.panel-pricing .list-group-item:last-child {
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+.panel-pricing .list-group-item:first-child {
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+}
+.panel-pricing .panel-body {
+  background-color: #f0f0f0;
+  font-size: 40px;
+  color: #777777;
+  padding: 20px;
+  margin: 0px;
+}
+
+.panel-body  p{
+  padding: 0px;
+  margin: 0;
+}
+.panel-body  p strong{
+  font-family: 'Roboto', sans-serif;
+  font-weight:700;
+  color: #000;
+  font-size: 42px;
+}
+
+.panel-body  p strong span{
+  color: #e75b1e;
+}
+.panel-pricing{
+  border:1px solid #e75b1e;
+}
+.panel-pricing .panel-heading{
+  background: #e75b1e;
+}
+.pricing-main .panel-footer .btn-block{
+  border-radius:0px;
+}
+.pricing-main .panel-footer a{
+  background: #e75b1e;
+  border: 3px solid #e75b1e;
+  color:#fff;
+  padding: 14px 16px;
+}
+.pricing-main .panel-footer a:hover{
+  background:none;
+  color:#202020;
+  border: 3px solid red;
+}
+
+.panel-pricing{
+  -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+.panel-pricing:hover{
+  margin-top: -8px;
+}
+
+.panel-pricing:hover
 
 /* ##### The End ##### */
 
