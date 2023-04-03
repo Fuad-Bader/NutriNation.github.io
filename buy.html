@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Buy</title>
+	<link rel="stylesheet"  href="buy.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"rel="stylesheet">
+	<link rel="stylesheet"  href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="header" style="background:radial-gradient(#fff,#b18874);">
+<div class="container">
+	   <div class="navbar">
+	<div class="logo">
+		<h1> NutriNation</h1>  
+	</div>
+		</div>
+ <div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+    <h2 class="active"> Request </h2>
+    <!-- Icon -->
+    <div class="fadeIn first">
+    </div>
+    <!-- Login Form -->
+    <form>
+      <input type="text" id="First Name" class="fadeIn second" name="First Name" placeholder="First Name">
+      <input type="text" id="Last Name" class="fadeIn third" name="Last Name" placeholder="Last Name">
+      <input type="text" id="Address" class="fadeIn second" name="Address" placeholder="Address">
+      <input type="text" id="Zip code" class="fadeIn third" name="Zip code" placeholder="Zip code">
+      <br>
+      <label><input type="radio" name="paymethod" checked="checked"> Orange cash</label>
+      <br>
+      <label><input type="radio" name="paymethod"> Zain cash</label>
+      <br>
+<label><input type="radio" name="paymethod"> Umniah wallet</label>
+<br>
+<input type="text" id="number" class="fadeIn second" name="Mobile Number" placeholder="Mobile Number">
+      <input type="submit" class="fadeIn fourth" value="Buy" onclick="showreq()">
+    </form>
+    <!-- Remind Passowrd -->
+    <div id="formFooter">
+      <a class="underlineHover" href="Main page.php">Cancel</a>
+    </div>
+  </div>
+</div>
+ </div>
+</div>
+<script type="text/javascript">
+  function showreq() 
+  {
+    window.alert("Your Request Has Been Sent");
+  }
+</script>
+</body>
+</html>
