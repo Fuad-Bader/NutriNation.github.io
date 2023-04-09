@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing:border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  padding: 64px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both
+}
+
+.column-66 {
+  float: left;
+  width: 66.66666%;
+  padding: 20px;
+}
+
+.column-33 {
+  float: left;
+  width: 33.33333%;
+  padding: 20px;
+}
+
+.large-font {
+  font-size: 48px;
+}
+
+.xlarge-font {
+  font-size: 64px
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #04AA6D;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  .column-66,
+  .column-33 {
+    width: 100%;
+    text-align: center;
+  }
+  img {
+    margin: auto;
+  }
+}
+.alert {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+  opacity: 1;
+  transition: opacity 0.6s;
+  margin-bottom: 15px;
+}
+
+
+.alert.info {background-color: #2196F3;}
+
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float:left;
+  font-size: 50px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+.imgmap{
+    text-align:center;
+  }
+</style>
+</head>
+<body>
+
+<div style="text-align:center">
+
+</div>
+<div class="alert info">
+  <span class="closebtn">&times;</span>  
+ <marquee scrollamount="20" direction="right"><h1>   <font face="verdana" size="30" color=white><mark>Gyms near you!</mark></font>
+
+<h1/></marquee> 
+</div>
+
+
+<!-- Clarity Section -->
+
+<div class="container" style="background-color:#f1f1f1" >
+  <div class="row">
+        
+	<div class="imgmap">	
+<img src="Screenshot.png" usemap="#image-map"></div>
+
+<map name="image-map">
+    <area target="_blank" alt="" title="" href="https://wordwall.net/ar/resource/32681999/%D8%A7%D9%84%D8%A7%D8%B1%D8%AF%D9%86" coords="8,88,185,27" shape="rect">
+    <area target="" alt="" title="" href="https://www.w3schools.com/html/html_images_imagemap.asp" coords="183,114,3,176" shape="rect">
+    <area target="" alt="" title="" href="https://www.google.com/maps/@30.1829959,35.7297673,15z" coords="186,204,8,263" shape="rect">
+    <area target="" alt="" title="" href="https://www.google.com/maps/@30.1829959,35.7297673,15z" coords="179,288,7,349" shape="rect">
+    <area target="" alt="" title="" href="https://mail.google.com/mail/u/0/#inbox" coords="184,377,7,437" shape="rect">
+    <area target="" alt="" title="" href="https://www.youtube.com/" coords="" shape="rect">
+</map>
+
+  </div>
+</div>
+
+
+
+<script>
+var close = document.getElementsByClassName("closebtn");
+var i;
+
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function(){
+    var div = this.parentElement;
+    div.style.opacity = "0";
+    setTimeout(function(){ div.style.display = "none"; }, 600);
+  }
+}
+</script>
+
+</body>
+</html>
