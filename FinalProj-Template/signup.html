@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>signup</title>
+  <link rel="stylesheet" href="css/login.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="header" style="background:radial-gradient(#fff,#b18874);">
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <h1> NutriNation</h1>
+        </div>
+      </div>
+      <div class="wrapper fadeInDown">
+        <div id="formContent">
+          <!-- Tabs Titles -->
+          <a href="#">
+            <h2 class="active"> signup </h2>
+          </a>
+          <!-- Icon -->
+          <div class="fadeIn first">
+          </div>
+          <!-- Login Form -->
+          <form  onsubmit="return validate()">
+            <input type="text" id="FirstName" class="fadeIn second" name="FirstName" placeholder="First Name" required>
+            <input type="text" id="LastName" class="fadeIn third" name="LastName" placeholder="Last Name" required>
+            <input type="email" id="Email" class="fadeIn second" name="Email" placeholder="Email addres" required>
+            <input type="password" id="pass1" class="fadeIn third" name="pass1" placeholder="Password" required>
+            <input type="password" id="pass2" class="fadeIn second" name="pass2" placeholder="Re-type password"
+              required>
+            <br><br>
+            <input type="submit" class="fadeIn fourth" value="Sign up" onclick="validate()">
+            <br>
+            <p>Or sign up with</p>
+            <br>
+            <a
+              href="https://accounts.google.com/o/oauth2/auth?client_id=YOUR_CLIENT_ID&redirect_uri=YOUR_REDIRECT_URI&response_type=code&scope=email%20profile">
+              <img src="img/signup-logos/google-logo-png-webinar-optimizing-for-success-google-business-webinar-13.png"
+                height="50px">
+            </a>
+
+            <a
+              href="https://www.facebook.com/dialog/oauth?client_id=YOUR_CLIENT_ID&redirect_uri=YOUR_REDIRECT_URI&scope=email">
+              <img src="img/signup-logos/Facebook-logo.png" height="48px" style=" margin-bottom: 2px;">
+            </a>
+
+            <br>
+            <br>
+            Already have account? <a href="login.html">Login</a>
+            <br>
+            <br>
+          </form>
+          <!-- Remind Passowrd -->
+          <div id="formFooter">
+            <a class="underlineHover" href="index.html">Cancel</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script>
+    function validate() {
+      const passwordInput = document.getElementById('password');
+      const confirmPasswordInput = document.getElementById('confirmPassword');
+
+      function validatePassword() {
+        if (passwordInput.value !== confirmPasswordInput.value) {
+          confirmPasswordInput.setCustomValidity("Passwords don't match");
+        } else {
+          confirmPasswordInput.setCustomValidity('');
+        }
+      }
+
+      passwordInput.addEventListener('change', validatePassword);
+      confirmPasswordInput.addEventListener('keyup', validatePassword);
+    }
+  </script>
+
+</body>
+
+</html>
