@@ -330,8 +330,8 @@ input[type=submit] {
 }
 
 #message p {
-  padding: 10px 35px;
-  font-size: 18px;
+  padding: 5px;
+  font-size: 15px;
 }
 
 /* Add a green text color and a checkmark when the requirements are right */
@@ -341,7 +341,7 @@ input[type=submit] {
 
 .valid:before {
   position: relative;
-  left: -35px;
+  left: -20px;
   content: "✔";
 }
 
@@ -352,6 +352,6 @@ input[type=submit] {
 
 .invalid:before {
   position: relative;
-  left: -35px;
+  left: -20px;
   content: "✖";
 }

@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/login.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="js/signup.js"></script>
 </head>
 
 <body>
@@ -27,33 +28,43 @@
           <div class="fadeIn first">
           </div>
           <!-- Login Form -->
-          <form  onsubmit="return validate()">
+          <form onsubmit="return validate()">
+
             <input type="text" id="FirstName" class="fadeIn second" name="FirstName" placeholder="First Name" required>
+
             <input type="text" id="LastName" class="fadeIn third" name="LastName" placeholder="Last Name" required>
+
             <input type="email" id="Email" class="fadeIn second" name="Email" placeholder="Email addres" required>
-			
-			
-            <input type="password" id="pass" class="fadeIn third" name="pass" placeholder="Password" required>
-            <input type="password" id="confirm_pass" class="fadeIn second" name="confirm_pass" placeholder="Re-type password"
-               onkeyup="validate_password()" required>
-			   <input type="checkbox" onclick="myFunction()">Show Password
+
+
+            <input type="password" id="psw" class="fadeIn third" name="psw" placeholder="Password"
+              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+              title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+              required>
+
+            <input type="password" id="confirm_pass" class="fadeIn second" name="confirm_pass"
+              placeholder="Re-type password" onkeyup="validate_password()" required>
+
+            <div id="message">
+              <h3>Password must contain:</h3>
+              <p id="letter" class="invalid">special characters(`!@#$%^&*)</p>
+              <p id="capital" class="invalid">capital (uppercase) letter</p>
+              <p id="number" class="invalid">number</p>
+              <p id="length" class="invalid">Minimum 8 characters</p>
+            </div>
+
             <br><br>
-			<span id="wrong_pass_alert"></span>
+
+            Show Password<input type="checkbox" onclick="myFunction()">
+
+            <br><br>
+
+            <span id="wrong_pass_alert"></span>
+
             <input type="submit" class="fadeIn fourth" value="Sign up" onclick="validate()">
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
+
+
+
             <br>
             <p>Or sign up with</p>
             <br>
@@ -82,77 +93,7 @@
       </div>
     </div>
   </div>
-
-
-
-  <script>
-    function validate() {
-      const passwordInput = document.getElementById('password');
-      const confirmPasswordInput = document.getElementById('confirmPassword');
-
-      function validatePassword() {
-        if (passwordInput.value !== confirmPasswordInput.value) {
-          confirmPasswordInput.setCustomValidity("Passwords don't match");
-        } else {
-          confirmPasswordInput.setCustomValidity('');
-        }
-      }
-
-      passwordInput.addEventListener('change', validatePassword);
-      confirmPasswordInput.addEventListener('keyup', validatePassword);
-    }
-	
-	
-	
-	
-	
-	
-	 function validate_password() {
- 
-            var pass = document.getElementById('pass').value;
-            var confirm_pass = document.getElementById('confirm_pass').value;
-            if (pass != confirm_pass) {
-                document.getElementById('wrong_pass_alert').style.color = 'red';
-                document.getElementById('wrong_pass_alert').innerHTML
-                  = '☒ Use same password';
-                document.getElementById('create').disabled = true;
-                document.getElementById('create').style.opacity = (0.4);
-            } else {
-                document.getElementById('wrong_pass_alert').style.color = 'green';
-                document.getElementById('wrong_pass_alert').innerHTML =
-                    '🗹 Password Matched';
-                document.getElementById('create').disabled = false;
-                document.getElementById('create').style.opacity = (1);
-            }
-        }
- 
-        function wrong_pass_alert() {
-            if (document.getElementById('pass').value != "" &&
-                document.getElementById('confirm_pass').value != "") {
-                alert("Your response is submitted");
-            } else {
-                alert("Please fill all the fields");
-            }
-        }
-		
-		
-		
-		
-		//show password
-function myFunction() {{
-  var x = document.getElementById("pass");
-  var y = document.getElementById("confirm_pass");}
-  if (x.type && y.type === "password") {
-    x.type = "text";
-	 y.type = "text";
-  } else {
-    x.type = "password";
-	y.type = "password";
-  }
-}
-	
-  </script>
-
+  <script type="text/javascript" src="js/signup.js"></script>
 </body>
 
 </html>
