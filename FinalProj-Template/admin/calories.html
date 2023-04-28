@@ -84,7 +84,7 @@
                                             </div>
                                             <div class="form-group">
                                                 <label for="WeightValue" class="control-label mb-1">Weight</label>
-                                                <input id="WeightValue" name="cc-number" type="tel" class="form-control cc-number identified visa" value="" data-val="true"
+                                                <input id="WeightValue" name="cc-number" value="<?$user_info['weight']?>" type="text" class="form-control cc-number identified visa" value="" data-val="true"
                                                     data-val-required="Please enter your Weight" data-val-cc-number="Please enter a valid card number"
                                                     autocomplete="cc-number">
                                                 <span class="help-block" data-valmsg-for="cc-number" data-valmsg-replace="true"></span>
@@ -94,7 +94,7 @@
                                                 <div class="col-12 col-md-9">
                                                     <label class="control-label mb-1">Choose physical active</label></br>
                                                     <select  id="activityLevel" class="form-control">
-                                                        <option value="">Pleas select</option>
+                                                        <option value="">Please select</option>
                                                         <option value="sedentary">Sedentary</option>
                                                         <option value="lightly active">Lightly active</option>
                                                         <option value="moderately active">Moderately active</option>
