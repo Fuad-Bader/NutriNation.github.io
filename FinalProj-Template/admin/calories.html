@@ -11,7 +11,7 @@
     <meta name="keywords" content="au theme template">
 
     <!-- Title Page-->
-    <title>Forms</title>
+    <title></title>
 
     <!-- Fontfaces CSS-->
     <link href="css/font-face.css" rel="stylesheet" media="all">
@@ -140,8 +140,8 @@
                                      
                                      <B>Your Body State </B>
                                      </br></br>
-                                     <img id="myImage" src="images/body/caloris2.png" height="50%" width="100%">
-                                    </br></br></br>
+                                     <img id="myImage" src="images/body/colors.png" height="50%" width="100%">
+                                    </br></br></br></br></br></br>
                                         </div>
                                     </div>
                                 </div>
@@ -189,18 +189,24 @@
          var img = document.getElementById("myImage");
          var bmi = weight / Math.pow(height/100, 2);
            
-                if (bmi>=18.5 && bmi<=24.9) {
-                    img.src = "images/body/55.jpg";
+         if (bmi<15.9) {
+                    img.src = "images/body/less16.png";
+                } else if (bmi >=16 && bmi<=16.9) {
+                    img.src = "images/body/16to17.png";
+                } else if (bmi >=17 && bmi<=18.4) {
+                    img.src = "images/body/17to18.5.png";
+                } else if (bmi >=18.5 && bmi<=24.9) {
+                    img.src = "images/body/18.5to25.png";
                 } else if (bmi >=25 && bmi<=29.9) {
-                    img.src = "images/body/44.jpg";
+                    img.src = "images/body/25to30.png";
                 } else if (bmi>=30 && bmi<=34.9) {
-                    img.src = "images/body/33.jpg";
+                    img.src = "images/body/30to35.png";
                 } else if (bmi>=35 && bmi<=39.9) {
-                    img.src = "images/body/22.jpg";
+                    img.src = "images/body/35to40.png";
                 } else if (bmi>= 40) {
-                    img.src = "images/body/11.jpg";
+                    img.src = "images/body/more40.png";
                 } else {
-                    img.src = "images/body/66k.jpg";
+                    img.src = "images/body/b&w.png";
                 }
 
          switch (activityLevel)
@@ -227,7 +233,7 @@
          
 
          alert(`Your daily calorie needs are ${dailyCalories.toFixed(2)} calories.`);
-          alert(`Your bmi ${bmi.toFixed(2)} `);
+         alert(`Your bmi ${bmi.toFixed(2)} `);
 
          document.getElementById("bodymass").innerHTML = bmi.toFixed(2);
          document.getElementById("dailyCalories").innerHTML = dailyCalories.toFixed(2);
