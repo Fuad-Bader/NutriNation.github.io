@@ -43,7 +43,16 @@
             <!-- MAIN CONTENT-->
             <div class="main-content">
                 <div class="section__content section__content--p30">
+                    <!-- <div class="container-fluid"> <B>The Calorie Calculator (BMR)</B></br>
+                        is a mathematical process based on calculating
+                        the number of calories consumed per day for a person (male/female)several 
+                        factors such as height, weight, age, gender, and the type of daily physical activity.
+                        </br>
+                        <B>The Body Mass Index (BMI) calculator</B></br>
+                        is a tool for assessing normal weight or overweight, which examines the relationship between body length and weight.</br>
+                     </div> -->
                     <div class="container-fluid">
+                        
                         <div class="row">
                             <div class="col-1"></div>
                             <div class="col-lg-5">
@@ -84,7 +93,7 @@
                                             </div>
                                             <div class="form-group">
                                                 <label for="WeightValue" class="control-label mb-1">Weight</label>
-                                                <input id="WeightValue" name="cc-number" value="<?$user_info['weight']?>" type="text" class="form-control cc-number identified visa" value="" data-val="true"
+                                                <input id="WeightValue" name="cc-number" type="tel" class="form-control cc-number identified visa" value="" data-val="true"
                                                     data-val-required="Please enter your Weight" data-val-cc-number="Please enter a valid card number"
                                                     autocomplete="cc-number">
                                                 <span class="help-block" data-valmsg-for="cc-number" data-valmsg-replace="true"></span>
@@ -94,7 +103,7 @@
                                                 <div class="col-12 col-md-9">
                                                     <label class="control-label mb-1">Choose physical active</label></br>
                                                     <select  id="activityLevel" class="form-control">
-                                                        <option value="">Please select</option>
+                                                        <option value="">Pleas select</option>
                                                         <option value="sedentary">Sedentary</option>
                                                         <option value="lightly active">Lightly active</option>
                                                         <option value="moderately active">Moderately active</option>
@@ -104,7 +113,7 @@
                                                 </div>
                                             </div>
                                             <div>
-                                                <button onclick="BMR_RMI()" type="submit" class="btn btn-lg btn-info btn-block" >
+                                                <button onclick="BMR_RMI()" type="submit" class="btn btn-lg btn-info btn-block"  >
                                                    <span >Calculate</span>
                                                 </button>
                                             </div>
@@ -115,24 +124,24 @@
                             </div>
                             <div class="col-lg-5">
                                 <div class="card">
-                                    <div class="card-header">
-                                        <strong></strong>
-                                        <small> Form</small>
+                                    <div class="card-title">
+                                    </br>
+                                        <h3 class="text-center title-2">Your Information</h3>
                                     </div>
-                                    <div class="card-body card-block">
-                                        <div>
-                                            <B>The Calorie Calculator (BMR)</B></br>
-                                            is a mathematical process based on calculating
-                                            the number of calories consumed per day for a person (male/female)several 
-                                            factors such as height, weight, age, gender, and the type of daily physical activity.
-                                            </br></br>
-                                            <B>The Body Mass Index (BMI) calculator</B></br>
-                                            is a tool for assessing normal weight or overweight. Weight is assessed by using 
-                                            the body mass index (BMI), which examines the relationship between body length and weight.
-                                            <p id="result"> the result</p>
-                                        </br>
-                                        <div id="result" > </div>
-                                        </br></br></br></br></br></br></br></br></br></br></br>
+                                    <hr>
+                                     <div class="card-body card-block">
+                                     <B>The Daily Calories You Need </B>
+                                     <input id="dailyCalories" type="tel" class="form-control cc-number identified visa" value="" >
+                                     </br>
+                                     
+                                     <B>Your Body Mass IS </B>
+                                     <input id="bodymass" type="tel" class="form-control cc-number identified visa" value="" >
+                                     </br>
+                                     
+                                     <B>Your Body State </B>
+                                     </br></br>
+                                     <img id="myImage" src="images/body/66k.jpg" height="50%" width="100%">
+                                    </br></br></br>
                                         </div>
                                     </div>
                                 </div>
@@ -150,12 +159,86 @@
                 </div>
             </div>
         </div>
-        </div>
-        </div>
-        </div>
 
-    </div>
-    
+    </div>  
+    <script>
+        function BMR_RMI()
+        { 
+         let weight = document.getElementById("WeightValue").value;
+         let height = document.getElementById("TallValue").value;
+         let age =    document.getElementById("AgeValue").value;
+         let bmr,gender;
+        
+         var radio=document.getElementsByName('gender');
+         for(i=0;i<radio.length;i++)
+         {
+           if(radio[i].checked)
+           gender=(radio[i].value);
+         } 
+
+         if (gender === "male") 
+         {
+          bmr = 88.362 + (13.397 * weight) + (4.799 * height) - (5.677 * age);
+         } else if (gender === "female") {
+          bmr = 447.593 + (9.247 * weight) + (3.098 * height) - (4.330 * age);
+         } 
+        
+         let dailyCalories;
+         let activityLevel = document.getElementById("activityLevel").value;
+        
+         var img = document.getElementById("myImage");
+         var bmi = weight / Math.pow(height/100, 2);
+           
+                if (bmi>=18.5 && bmi<=24.9) {
+                    img.src = "images/body/55.jpg";
+                } else if (bmi >=25 && bmi<=29.9) {
+                    img.src = "images/body/44.jpg";
+                } else if (bmi>=30 && bmi<=34.9) {
+                    img.src = "images/body/33.jpg";
+                } else if (bmi>=35 && bmi<=39.9) {
+                    img.src = "images/body/22.jpg";
+                } else if (bmi>= 40) {
+                    img.src = "images/body/11.jpg";
+                } else {
+                    img.src = "images/body/66k.jpg";
+                }
+
+         switch (activityLevel)
+         {
+            case "sedentary":
+            dailyCalories = bmr * 1.2;
+            break;
+            case "lightly active":
+           dailyCalories = bmr * 1.375;
+            break;
+            case "moderately active":
+            dailyCalories = bmr * 1.55;
+            break;
+            case "very active":
+            dailyCalories = bmr * 1.725;
+            break;
+            case "extremely active":
+            dailyCalories = bmr * 1.9;
+            break;
+            default:
+            dailyCalories=("Invalid activity level entered.");
+         }
+          
+         
+
+         alert(`Your daily calorie needs are ${dailyCalories.toFixed(2)} calories.`);
+          alert(`Your bmi ${bmi.toFixed(2)} `);
+
+         document.getElementById("bodymass").innerHTML = bmi.toFixed(2);
+         document.getElementById("dailyCalories").innerHTML = dailyCalories.toFixed(2);
+
+         
+         
+         
+        }
+        
+
+        </script>
 
 
 
@@ -164,7 +247,8 @@
 
 
 
-    <script src="js/BMR.js"></script>
+
+
     <!-- Jquery JS-->
     <script src="vendor/jquery-3.2.1.min.js"></script>
     <!-- Bootstrap JS-->
