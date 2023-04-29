@@ -1,0 +1,234 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>AppKit Mobile</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+
+<body class="theme-light">
+
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+
+<div id="page">
+
+    <div class="header header-fixed header-logo-center header-auto-show">
+        <a href="index.html" class="header-title">Welcome</a>
+        <a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-chevron-left"></i></a>
+        <a href="#" data-menu="menu-main" class="header-icon header-icon-4"><i class="fas fa-bars"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-dark"><i class="fas fa-sun"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-light"><i class="fas fa-moon"></i></a>
+    </div>
+
+    <div id="footer-bar" class="footer-bar-6">
+        <a href="index-components.html"><i class="fa fa-layer-group"></i><span>Features</span></a>
+        <a href="index-pages.html" class="active-nav"><i class="fa fa-file"></i><span>Pages</span></a>
+        <a href="index.html" class="circle-nav"><i class="fa fa-home"></i><span>Welcome</span></a>
+        <a href="index-projects.html"><i class="fa fa-camera"></i><span>Projects</span></a>
+        <a href="#" data-menu="menu-main"><i class="fa fa-bars"></i><span>Menu</span></a>
+    </div>
+
+	<div class="page-title page-title-fixed">
+		<h1 class="font-20">Task Actions</h1>
+		<a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-share"><i class="fa fa-share-alt"></i></a>
+		<a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-light" data-toggle-theme><i class="fa fa-moon"></i></a>
+		<a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-dark" data-toggle-theme><i class="fa fa-lightbulb color-yellow-dark"></i></a>
+		<a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-main"><i class="fa fa-bars"></i></a>
+	</div>
+	<div class="page-title-clear"></div>
+
+    <div class="page-content">
+
+		<div class="card card-style">
+			<div class="content">
+				<p class="mb-n1 color-highlight font-600 mb-n1">Interact </p>
+				<h2>Task Actions</h2>
+				<p>
+					Activate menus, set permissions, and do more in less space, with Action Sheets and Modals.
+				</p>
+				<div class="list-group list-custom-small">
+					<a href="#" data-menu="menu-complete"><i class="fa fa-check-circle color-green-dark"></i><span>Task Complete</span><i class="fa fa-angle-right"></i></a>
+					<a href="#" data-menu="menu-upload"><i class="fa fa-file-upload color-red-dark"></i><span>Upload to Task</span><i class="fa fa-angle-right"></i></a>
+					<a href="#" data-menu="menu-invite"><i class="fa fa-user color-blue-dark"></i><span>Invite Member</span><i class="fa fa-angle-right"></i></a>
+					<a href="#" data-menu="menu-member"><i class="fa fa-lock color-red-dark"></i><span>Member Permission</span><i class="fa fa-angle-right"></i></a>
+				</div>
+				<a href="component-action-sheets.html" class="btn btn-full btn-m rounded-sm border-0 text-uppercase font-700 gradient-green mt-4">View More Action Sheets</a>
+			</div>
+		</div>
+
+
+
+        <div class="" data-menu-load="menu-footer.html"></div>
+    </div>
+    <!-- Page content ends here-->
+
+    <!-- Added to Bookmarks Menu-->
+    <div id="menu-complete"
+         class="menu menu-box-modal rounded-m"
+         data-menu-hide="1000"
+         data-menu-width="250"
+         data-menu-height="170">
+
+        <h1 class="text-center mt-3 pt-2">
+            <i class="fa fa-check-circle color-green-dark fa-3x"></i>
+        </h1>
+        <h3 class="text-center pt-2">Task Complete</h3>
+    </div>
+
+	<div id="menu-invite" class="menu menu-box-bottom rounded-m bg-theme">
+		<div class="content mt-2 pb-4">
+			<p class="mb-n1 color-highlight font-600 mb-n1">Members </p>
+			<h2>Send Invite</h2>
+			<p class="mb-3">
+				Add new team mates to your project and set access.
+			</p>
+
+			<div class="input-style has-borders has-icon validate-field mb-4">
+				<i class="fa fa-at"></i>
+				<input type="email" class="form-control validate-name" id="form1a" placeholder="Enter Email Address">
+				<label for="form1a" class="color-highlight">Enter Email Address</label>
+				<i class="fa fa-times disabled invalid color-red-dark"></i>
+				<i class="fa fa-check disabled valid color-green-dark"></i>
+				<em>(required)</em>
+			</div>
+
+			<div class="divider mb-3 mt-3"></div>
+
+			<p class="mb-n1 color-highlight font-600 mb-n1">Set Permissions </p>
+			<div class="list-group list-custom-small">
+				<a href="#" data-trigger-switch="switch-1">
+					<i class="fa fa-upload gradient-gray color-white rounded-sm ms-0"></i>
+					<span>Upload Files</span>
+					<div class="custom-control small-switch ios-switch">
+						<input type="checkbox" class="ios-input" id="switch-1" checked>
+						<label class="custom-control-label" for="switch-1"></label>
+					</div>
+				</a>
+				<a href="#" data-trigger-switch="switch-2">
+					<i class="fa fa-download gradient-blue color-white rounded-sm ms-0"></i>
+					<span>Download Files</span>
+					<div class="custom-control small-switch ios-switch">
+						<input type="checkbox" class="ios-input" id="switch-2" checked>
+						<label class="custom-control-label" for="switch-2"></label>
+					</div>
+				</a>
+				<a href="#" data-trigger-switch="switch-3">
+					<i class="fa fa-check gradient-green color-white rounded-sm ms-0"></i>
+					<span>Complete Task</span>
+					<div class="custom-control small-switch ios-switch">
+						<input type="checkbox" class="ios-input" id="switch-3">
+						<label class="custom-control-label" for="switch-3"></label>
+					</div>
+				</a>
+				<a href="#" data-trigger-switch="switch-4">
+					<i class="fa fa-plus gradient-brown color-white rounded-sm ms-0"></i>
+					<span>Add New Members</span>
+					<div class="custom-control small-switch ios-switch">
+						<input type="checkbox" class="ios-input" id="switch-4">
+						<label class="custom-control-label" for="switch-4"></label>
+					</div>
+				</a>
+			</div>
+			<a href="#" class="btn btn-full font-700 rounded-sm mt-4 mb-4 btn-m gradient-blue border-0 text-uppercase">Send Invite</a>
+		</div>
+	</div>
+
+
+
+	<div id="menu-upload" class="menu menu-box-bottom rounded-m bg-theme" data-menu-height="275" data-menu-effect="menu-over">
+		<div class="list-group list-custom-small ps-2 me-4">
+			<a href="#">
+				<i class="font-14 fa fa-file gradient-gray color-white rounded-sm"></i>
+				<span class="font-13">File</span>
+				<i class="fa fa-angle-right"></i>
+			</a>
+			<a href="#">
+				<i class="font-14 fa fa-image gradient-green  color-white rounded-sm""></i>
+				<span class="font-13">Photo</span>
+				<i class="fa fa-angle-right"></i>
+			</a>
+			<a href="#">
+				<i class="font-14 fa fa-video gradient-red  color-white rounded-sm""></i>
+				<span class="font-13">Video</span>
+				<i class="fa fa-angle-right"></i>
+			</a>
+			<a href="#">
+				<i class="font-14 fa fa-camera gradient-blue color-white rounded-sm""></i>
+				<span class="font-13">Camera</span>
+				<i class="fa fa-angle-right"></i>
+			</a>
+			<a href="#">
+				<i class="font-14 fa fa-map-marker gradient-green  color-white rounded-sm""></i>
+				<span class="font-13">Location</span>
+				<i class="fa fa-angle-right"></i>
+			</a>
+		</div>
+	</div>
+
+	<div id="menu-member" class="menu menu-box-bottom rounded-m">
+		<div class="content mt-2 pb-4">
+			<div class="list-group list-custom-small">
+				<a href="#" data-trigger-switch="switch-1">
+					<i class="fa fa-upload gradient-gray color-white rounded-sm ms-0"></i>
+					<span>Upload Files</span>
+					<div class="custom-control small-switch ios-switch">
+						<input type="checkbox" class="ios-input" id="switch-1" checked>
+						<label class="custom-control-label" for="switch-1"></label>
+					</div>
+				</a>
+				<a href="#" data-trigger-switch="switch-2">
+					<i class="fa fa-download gradient-blue color-white rounded-sm ms-0"></i>
+					<span>Download Files</span>
+					<div class="custom-control small-switch ios-switch">
+						<input type="checkbox" class="ios-input" id="switch-2" checked>
+						<label class="custom-control-label" for="switch-2"></label>
+					</div>
+				</a>
+				<a href="#" data-trigger-switch="switch-3">
+					<i class="fa fa-check gradient-green color-white rounded-sm ms-0"></i>
+					<span>Complete Task</span>
+					<div class="custom-control small-switch ios-switch">
+						<input type="checkbox" class="ios-input" id="switch-3">
+						<label class="custom-control-label" for="switch-3"></label>
+					</div>
+				</a>
+				<a href="#" data-trigger-switch="switch-4">
+					<i class="fa fa-plus gradient-brown color-white rounded-sm ms-0"></i>
+					<span>Add New Members</span>
+					<div class="custom-control small-switch ios-switch">
+						<input type="checkbox" class="ios-input" id="switch-4">
+						<label class="custom-control-label" for="switch-4"></label>
+					</div>
+				</a>
+				<a href="#"">
+					<i class="fa fa-plus gradient-red color-white rounded-sm ms-0"></i>
+					<span>Remove Member</span>
+					<i class="fa fa-angle-right"></i>
+				</a>
+			</div>
+		</div>
+	</div>
+
+    <!-- Main Menu-->
+    <div id="menu-main" class="menu menu-box-left rounded-0" data-menu-load="menu-main.html" data-menu-width="280" data-menu-active="nav-pages"></div>
+
+    <!-- Share Menu-->
+    <div id="menu-share" class="menu menu-box-bottom rounded-m" data-menu-load="menu-share.html" data-menu-height="370"></div>
+
+    <!-- Colors Menu-->
+    <div id="menu-colors" class="menu menu-box-bottom rounded-m" data-menu-load="menu-colors.html" data-menu-height="480"></div>
+
+
+</div>
+
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>

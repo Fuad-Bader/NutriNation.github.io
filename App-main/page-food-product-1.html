@@ -1,0 +1,319 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>AppKit Mobile</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">    
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+    
+<body class="theme-light">
+    
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+    
+<div id="page">
+    
+    <div class="header header-fixed header-logo-center header-auto-show">
+        <a href="index.html" class="header-title">Product Style 1</a>
+        <a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-chevron-left"></i></a>
+        <a href="#" data-menu="menu-main" class="header-icon header-icon-4"><i class="fas fa-bars"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-dark"><i class="fas fa-sun"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-light"><i class="fas fa-moon"></i></a>
+    </div>
+
+    <div id="footer-bar" class="footer-bar-6">
+        <a href="index-components.html"><i class="fa fa-layer-group"></i><span>Features</span></a>
+        <a href="index-pages.html" class="active-nav"><i class="fa fa-file"></i><span>Pages</span></a>
+        <a href="index.html" class="circle-nav"><i class="fa fa-home"></i><span>Welcome</span></a>
+        <a href="index-projects.html"><i class="fa fa-camera"></i><span>Projects</span></a>
+        <a href="#" data-menu="menu-main"><i class="fa fa-bars"></i><span>Menu</span></a>
+    </div>
+    
+    <div class="page-title page-title-fixed">
+        <a href="#" class="page-title-icon shadow-xl bg-theme color-theme me-0 ms-3" data-back-button><i class="fa fa-arrow-left"></i></a>
+        <h1>Product</h1>
+        <a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-light" data-toggle-theme><i class="fa fa-moon"></i></a>
+        <a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-dark" data-toggle-theme><i class="fa fa-lightbulb color-yellow-dark"></i></a>
+        <a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-main"><i class="fa fa-bars"></i></a>
+    </div>
+    <div class="page-title-clear"></div>
+
+    <div class="page-content"> 
+        
+        <div class="card card-style" style="background-image:url(images/food/regular/8.jpg)" data-card-height="300"></div>        
+        
+        <div class="card card-style">
+            <div class="content mb-0">
+                <p class="mb-n1 color-highlight font-600">The House Special</p>
+                <h1 class="font-24 font-800">Crispy Chicken Strips</h1>
+                <p class="font-13 line-height-l mb-3">
+                    A hamburger (also burger for short) is a sandwich consisting of one or more cooked patties of ground meat, 
+                    usually beef, placed inside a sliced bread roll or bun. The patty may be pan fried, grilled, smoked or flame broiled.
+                </p>
+                                
+                <div class="d-flex pb-2">
+                    <div class="me-auto">
+                        <p class="mb-n1 color-highlight font-12">Energy</p>
+                        <h1 class="font-18">735 kcal</h1>
+                    </div>
+                    <div class="m-auto">
+                        <p class="mb-n1 color-highlight font-12">Weight</p>
+                        <h1 class="font-18">32 oz</h1>
+                    </div>
+                    <div class="ms-auto">
+                        <p class="mb-n1 color-highlight font-12">Delivery</p>
+                        <h1 class="font-18">45 min</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card card-style">
+            <div class="content mt-3">
+                <p class="mb-n1 color-highlight font-600 font-12">Add or Remove</p>
+                <h2>Ingredients</h2>
+                <p>
+                    Make your own recipe, mix your ingredients and create the perfect burger for you.
+                </p>
+                <div class="d-flex">
+                    <div class="align-self-center">
+                        <h5 class="font-600 font-13">Lettuce</h5>
+                    </div>
+                    <div class="ms-auto align-self-center">
+                        <div class="stepper rounded-s small-switch me-n2">
+                            <a href="#" class="stepper-sub"><i class="fa fa-minus color-theme opacity-40"></i></a>
+                            <input type="number" min="1" max="5" value="1">
+                            <a href="#" class="stepper-add"><i class="fa fa-plus color-theme opacity-40"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class="align-self-center">
+                        <h5 class="font-600 font-13">Cheese</h5>
+                    </div>
+                    <div class="ms-auto align-self-center">
+                        <div class="stepper rounded-s small-switch me-n2">
+                            <a href="#" class="stepper-sub"><i class="fa fa-minus color-theme opacity-40"></i></a>
+                            <input type="number" min="1" max="5" value="2">
+                            <a href="#" class="stepper-add"><i class="fa fa-plus color-theme opacity-40"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class="align-self-center">
+                        <h5 class="font-600 font-13">Pork Ham</h5>
+                    </div>
+                    <div class="ms-auto align-self-center">
+                        <div class="stepper rounded-s small-switch me-n2">
+                            <a href="#" class="stepper-sub"><i class="fa fa-minus color-theme opacity-40"></i></a>
+                            <input type="number" min="1" max="5" value="2">
+                            <a href="#" class="stepper-add"><i class="fa fa-plus color-theme opacity-40"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class="align-self-center">
+                        <h5 class="font-600 font-13">Mustard</h5>
+                    </div>
+                    <div class="ms-auto align-self-center">
+                        <div class="stepper rounded-s small-switch me-n2">
+                            <a href="#" class="stepper-sub"><i class="fa fa-minus color-theme opacity-40"></i></a>
+                            <input type="number" min="1" max="5" value="1">
+                            <a href="#" class="stepper-add"><i class="fa fa-plus color-theme opacity-40"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class="align-self-center">
+                        <h5 class="font-600 font-13">Hot Sauce</h5>
+                    </div>
+                    <div class="ms-auto align-self-center">
+                        <div class="stepper rounded-s small-switch me-n2">
+                            <a href="#" class="stepper-sub"><i class="fa fa-minus color-theme opacity-40"></i></a>
+                            <input type="number" min="1" max="5" value="1">
+                            <a href="#" class="stepper-add"><i class="fa fa-plus color-theme opacity-40"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card card-style">
+            <div class="content mt-3">
+                <p class="mb-n1 color-highlight font-600 font-12">A refreshing</p>
+                <h2>Beverage</h2>
+                <p>
+                   Any tasty meal works great with a tasty drink. Would you like us to include one with your order?
+                </p>
+                
+                <div class="row mb-0">
+                    <div class="col-6">
+                        <div class="input-style has-borders input-style-always-active no-icon mb-4">
+                            <label for="form5" class="color-highlight font-500">Select a Drink</label>
+                            <select id="form5">
+                                <option value="default" disabled selected>Select a Drink</option>
+                                <option value="1">Soda</option>
+                                <option value="2">Beer</option>
+                                <option value="3">Water</option>
+                            </select>
+                            <span><i class="fa fa-chevron-down"></i></span>
+                            <i class="fa fa-check disabled valid color-green-dark"></i>
+                            <i class="fa fa-check disabled invalid color-red-dark"></i>
+                            <em></em>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="input-style has-borders input-style-always-active no-icon mb-4">
+                            <label for="form51" class="color-highlight font-500">Drink Size</label>
+                            <select id="form51">
+                                <option value="default" disabled selected>Drink Size</option>
+                                <option value="5">Small</option>
+                                <option value="6">Medium</option>
+                                <option value="7">Large</option>
+                            </select>
+                            <span><i class="fa fa-chevron-down"></i></span>
+                            <i class="fa fa-check disabled valid color-green-dark"></i>
+                            <i class="fa fa-check disabled invalid color-red-dark"></i>
+                            <em></em>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="card card-style">
+            <div class="content mt-3">
+                <p class="mb-n1 color-highlight font-600 font-12">Share your</p>
+                <h2>Delivery Details</h2>
+                <p class="pb-3">
+                    Please review your order and make sure everything is correct. Once you hit submit we'll get started on your food.
+                </p>
+                <div class="input-style has-borders no-icon validate-field input-style-always-active mb-4">
+                    <input type="name" class="form-control validate-name" id="form1" placeholder="Steve Jobs Street, 11/24">
+                    <label for="form1" class="color-highlight">Street Address</label>
+                    <i class="fa fa-times disabled invalid color-red-dark"></i>
+                    <i class="fa fa-check disabled valid color-green-dark"></i>
+                    <em>(required)</em>
+                </div>
+                <div class="input-style has-borders no-icon validate-field input-style-always-active mb-4">
+                    <input type="tel" class="form-control validate-tel" id="form1" placeholder="+1 2345 6678">
+                    <label for="form1" class="color-highlight">Phone Number</label>
+                    <i class="fa fa-times disabled invalid color-red-dark"></i>
+                    <i class="fa fa-check disabled valid color-green-dark"></i>
+                    <em>(required)</em>
+                </div>
+            </div>
+        </div>
+        <div class="card card-style">
+            <div class="content mt-3">
+                <p class="mb-n1 color-highlight font-600 font-12">Your Order</p>
+                <h2>Summary</h2>
+                <p class="mb-02">
+                    Please review your order and make sure everything is correct. Once you hit submit we'll get started on your food.
+                </p>
+                
+                <div class="row">
+                    <div class="col-6">
+                        <h4>Total</h4>
+                    </div>
+                    <div class="col-6 text-end">
+                        <h4>$52.12</h4>
+                    </div>
+                    <div class="col-12 pb-3"></div>
+                    <div class="col-6">
+                        <h4 class="opacity-50 font-13">Items</h4>
+                    </div>
+                    <div class="col-6 text-end">
+                        <h4 class="font-13 opacity-50">$45.10</h4>
+                    </div>
+                    <div class="col-6">
+                        <h4 class="opacity-50 font-13">Extras</h4>
+                    </div>
+                    <div class="col-6 text-end">
+                        <h4 class="font-13 opacity-50">$15.02</h4>
+                    </div>
+                    <div class="col-6">
+                        <h4 class="opacity-50 font-13">Shipping</h4>
+                    </div>
+                    <div class="col-6 text-end">
+                        <h4 class="font-13 opacity-50">Free</h4>
+                    </div>
+                </div>
+                <div class="divider mt-4"></div>
+                <h6 class="font-15 font-600 mb-n1"><i class="fa fa-check-circle color-green-dark icon-30"></i> Your order includes Free Delivery</h6>
+                <div class="divider mt-4"></div>
+                                            
+                <a href="#" class="btn btn-full btn-m font-700 rounded-sm gradient-blue">Order Now</a>
+            </div>
+        </div>
+
+        <div class="card card-style">
+            <div class="content">
+                <p class="mb-n1 color-highlight font-600">These work great</p>
+                <h1 class="font-24 font-800">Add to your Order</h1>
+                <p>Products you may also like based on what you're currently looking at.
+            </div>
+            <div class="splide double-slider slider-no-dots" id="double-slider-1">
+                <div class="splide__track">
+                    <div class="splide__list">
+                        <div class="splide__slide">
+                            <div data-card-height="200" class="card mx-3 rounded-m shadow-l" style="background-image:url(images/food/small/2s.jpg)">
+                                <div class="card-bottom text-center">
+                                    <h2 class="color-white font-700 font-20 mb-3">Sauces</h2>
+                                    <a href="#" class="btn btn-xs btn-full font-13 font-600 gradient-highlight rounded-s me-2 ms-2 mb-2">View</a>
+                                </div>
+                                <div class="card-overlay bg-gradient"></div>
+                            </div>
+                        </div>
+                        <div class="splide__slide">
+                            <div data-card-height="200" class="card mx-3 rounded-m shadow-l" style="background-image:url(images/food/small/3s.jpg)">
+                                <div class="card-bottom text-center">
+                                    <h2 class="color-white font-700 font-18 mb-3">Dessert</h2>
+                                    <a href="#" class="btn btn-xs btn-full font-13 font-600 gradient-highlight rounded-s me-2 ms-2 mb-2">View</a>
+                                </div>
+                                <div class="card-overlay bg-gradient"></div>
+                            </div>
+                        </div>
+                        <div class="splide__slide">
+                            <div data-card-height="200" class="card mx-3 rounded-m shadow-l" style="background-image:url(images/food/small/4s.jpg)">
+                                <div class="card-bottom text-center">
+                                    <h2 class="color-white font-700 font-18 mb-3">Beverages</h2>
+                                    <a href="#" class="btn btn-xs btn-full font-13 font-600 gradient-highlight rounded-s me-2 ms-2 mb-2">View</a>
+                                </div>
+                                <div class="card-overlay bg-gradient"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div data-menu-load="menu-footer.html"></div>
+        
+    </div>
+    <!-- Page content ends here-->
+
+    
+    <!-- Main Menu--> 
+    <div id="menu-main" class="menu menu-box-left rounded-0" data-menu-load="menu-main.html" data-menu-width="280" data-menu-active="nav-pages"></div>
+    
+    <!-- Share Menu-->
+    <div id="menu-share" class="menu menu-box-bottom rounded-m" data-menu-load="menu-share.html" data-menu-height="370"></div>  
+    
+    <!-- Colors Menu-->
+    <div id="menu-colors" class="menu menu-box-bottom rounded-m" data-menu-load="menu-colors.html" data-menu-height="480"></div> 
+     
+    
+</div>
+
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>
