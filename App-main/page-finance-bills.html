@@ -1,0 +1,314 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>AppKit Mobile</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+
+<body class="theme-light">
+
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+
+<div id="page">
+
+    <div class="header header-fixed header-logo-center header-auto-show">
+        <a href="index.html" class="header-title">Bills</a>
+        <a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-chevron-left"></i></a>
+        <a href="#" data-menu="menu-main" class="header-icon header-icon-4"><i class="fas fa-bars"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-dark"><i class="fas fa-sun"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-light"><i class="fas fa-moon"></i></a>
+    </div>
+
+    <div id="footer-bar" class="footer-bar-6">
+        <a href="index-components.html"><i class="fa fa-layer-group"></i><span>Features</span></a>
+        <a href="index-pages.html" class="active-nav"><i class="fa fa-file"></i><span>Pages</span></a>
+        <a href="index.html" class="circle-nav"><i class="fa fa-home"></i><span>Welcome</span></a>
+        <a href="index-projects.html"><i class="fa fa-camera"></i><span>Projects</span></a>
+        <a href="#" data-menu="menu-main"><i class="fa fa-bars"></i><span>Menu</span></a>
+    </div>
+
+    <div class="page-title page-title-fixed">
+        <h1>Bills</h1>
+        <a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-share"><i class="fa fa-share-alt"></i></a>
+        <a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-light" data-toggle-theme><i class="fa fa-moon"></i></a>
+        <a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-dark" data-toggle-theme><i class="fa fa-lightbulb color-yellow-dark"></i></a>
+        <a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-main"><i class="fa fa-bars"></i></a>
+    </div>
+    <div class="page-title-clear"></div>
+
+    <div class="page-content">
+
+    <div id="tab-group-1">
+        <div class="card card-style bg-theme pb-0">
+            <div class="content mb-0 mx-0 my-0">
+                <div class="tab-controls tabs-small" data-highlight="bg-highlight">
+                    <a href="#" data-active data-bs-toggle="collapse" data-bs-target="#tab-1">Pending</a>
+                    <a href="#" data-bs-toggle="collapse" data-bs-target="#tab-2">Paid</a>
+                </div>
+            </div>
+        </div>
+        <div data-bs-parent="#tab-group-1" class="collapse show" id="tab-1">
+            <div class="content mt-0">
+                <div class="row mb-0">
+                    <div class="col-6 pe-2 text-center">
+                        <a href="#" data-menu="menu-bill" class="card card-style mx-0 mb-3 px-3 pt-4">
+                            <i class="fab fa-spotify color-green-dark font-40"></i>
+                            <h4 class="pt-3 mb-0">Spotify</h4>
+                            <span class="color-red-dark font-11">Overdue 2 Days</span>
+                            <span class="color-theme font-14 opacity-50 pt-3">Total: $19.99</span>
+                            <strong class="color-theme font-10 opacity-30 pt-3">Tap to View Invoice</strong>
+                        </a>
+                    </div>
+                    <div class="col-6 ps-2 text-center">
+                        <a href="#" data-menu="menu-bill" class="card card-style mx-0 mb-3 px-3 pt-4">
+                            <i class="fa fa-tint color-blue-dark font-40"></i>
+                            <h4 class="pt-3 mb-0">Water Bill</h4>
+                            <span class="color-green-dark font-11">Due Today</span>
+                            <span class="color-theme font-14 opacity-50 pt-3">Total: $14.53</span>
+                            <strong class="color-theme font-10 opacity-30 pt-3">Tap to View Invoice</strong>
+                        </a>
+                    </div>
+                    <div class="col-6 pe-2 text-center">
+                        <a href="#" data-menu="menu-bill" class="card card-style mx-0 mb-3 px-3 pt-4">
+                            <i class="fa fa-bolt color-yellow-dark font-40"></i>
+                            <h4 class="pt-3 mb-0">Electric Bill</h4>
+                            <span class="color-blue-dark font-11">Due Tomorrow</span>
+                            <span class="color-theme font-14 opacity-50 pt-3">Total: $25.35</span>
+                            <strong class="color-theme font-10 opacity-30 pt-3">Tap to View Invoice</strong>
+                        </a>
+                    </div>
+                    <div class="col-6 ps-1 text-center">
+                        <a href="#" data-menu="menu-bill" class="card card-style mx-0 mb-3 px-3 pt-4">
+                            <i class="fa fa-cloud color-teal-dark font-40"></i>
+                            <h4 class="pt-3 mb-0">Cloud Store</h4>
+                            <span class="color-blue-dark font-11">Due Tomorrow</span>
+                            <span class="color-theme font-14 opacity-50 pt-3">Total: $25.35</span>
+                            <strong class="color-theme font-10 opacity-30 pt-3">Tap to View Invoice</strong>
+                        </a>
+                    </div>
+                    <div class="col-6 pe-2 text-center">
+                        <a href="#" data-menu="menu-bill" class="card card-style mx-0 mb-3 px-3 pt-4">
+                            <i class="fab fa-google color-red-dark font-40"></i>
+                            <h4 class="pt-3 mb-0">Google Ads</h4>
+                            <span class="color-blue-dark font-11">Due Tomorrow</span>
+                            <span class="color-theme font-14 opacity-50 pt-3">Total: $144.53</span>
+                            <strong class="color-theme font-10 opacity-30 pt-3">Tap to View Invoice</strong>
+                        </a>
+                    </div>
+                    <div class="col-6 ps-1 text-center">
+                        <a href="#" data-menu="menu-bill" class="card card-style mx-0 mb-3 px-3 pt-4">
+                            <i class="fab fa-digital-ocean color-blue-dark font-40"></i>
+                            <h4 class="pt-3 mb-0">Digital Ocean</h4>
+                            <span class="color-blue-dark font-11">Due Tomorrow</span>
+                            <span class="color-theme font-14 opacity-50 pt-3">Total: $258.53</span>
+                            <strong class="color-theme font-10 opacity-30 pt-3">Tap to View Invoice</strong>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-bs-parent="#tab-group-1" class="collapse" id="tab-2">
+            <div class="card card-style p-3">
+                <a href="#" data-menu="menu-invoice" class="d-flex">
+                    <div class="align-self-center">
+                        <span class="icon icon-s gradient-green color-white rounded-sm shadow-xxl"><i class="fab fa-spotify font-20"></i></span>
+                    </div>
+                    <div class="align-self-center">
+                        <h5 class="ps-3 mb-n1 font-15">Spotify Music</h5>
+                        <span class="ps-3 font-11 color-theme opacity-70"">Monthly Subscription</span>
+                    </div>
+                    <div class="ms-auto text-end align-self-center">
+                        <h5 class="color-theme font-15 font-700 d-block mb-n1">$19.99</h5>
+                        <span class="color-green-dark font-11">15th August <i class="fa fa-check-circle"></i></span>
+                    </div>
+                </a>
+                <div class="divider my-3"></div>
+                <a href="#" data-menu="menu-invoice" class="d-flex">
+                    <div class="align-self-center">
+                        <span class="icon icon-s gradient-blue color-white rounded-sm shadow-xxl"><i class="fa fa-tint font-20"></i></span>
+                    </div>
+                    <div class="align-self-center">
+                        <h5 class="ps-3 mb-n1 font-15">Water Bill</h5>
+                        <span class="ps-3 font-11 color-theme opacity-70"">Invoice: #415-4516-8565</span>
+                    </div>
+                    <div class="ms-auto text-end align-self-center">
+                        <strong class="color-theme font-14 d-block mb-n1">$21.25</strong>
+                        <span class="color-green-dark font-11 d-block">15th August <i class="fa fa-check-circle"></i></span>
+                    </div>
+                </a>
+                <div class="divider my-3"></div>
+                <a href="#" data-menu="menu-invoice" class="d-flex">
+                    <div class="align-self-center">
+                        <span class="icon icon-s gradient-yellow color-white rounded-sm shadow-xxl"><i class="fa fa-bolt font-20"></i></span>
+                    </div>
+                    <div class="align-self-center">
+                        <h5 class="ps-3 mb-n1 font-15">Electric Bill</h5>
+                        <span class="ps-3 font-11 color-theme opacity-70"">Invoice: #415-4516-8565</span>
+                    </div>
+                    <div class="ms-auto text-end align-self-center">
+                        <strong class="color-theme font-14 d-block mb-n1">$43.52</strong>
+                        <span class="color-green-dark font-11 d-block">15th August <i class="fa fa-check-circle"></i></span>
+                    </div>
+                </a>
+                <div class="divider my-3"></div>
+                <a href="#" data-menu="menu-invoice" class="d-flex">
+                    <div class="align-self-center">
+                        <span class="icon icon-s gradient-teal color-white rounded-sm shadow-xxl"><i class="fa fa-cloud font-20"></i></span>
+                    </div>
+                    <div class="align-self-center">
+                        <h5 class="ps-3 mb-n1 font-15">Online Storage</h5>
+                        <span class="ps-3 font-11 color-theme opacity-70"">Invoice: #415-4516-8565</span>
+                    </div>
+                    <div class="ms-auto text-end align-self-center">
+                        <strong class="color-theme font-14 d-block mb-n1">$43.52</strong>
+                        <span class="color-green-dark font-11 d-block">15th August <i class="fa fa-check-circle"></i></span>
+                    </div>
+                </a>
+                <div class="divider my-3"></div>
+                <a href="#" data-menu="menu-invoice" class="d-flex">
+                    <div class="align-self-center">
+                        <span class="icon icon-s gradient-pink color-white rounded-sm shadow-xxl"><i class="fab fa-dribbble font-20"></i></span>
+                    </div>
+                    <div class="align-self-center">
+                        <h5 class="ps-3 mb-n1 font-15">Dribbble</h5>
+                        <span class="ps-3 font-11 color-theme opacity-70"">Yearly Subscription</span>
+                    </div>
+                    <div class="ms-auto text-end align-self-center">
+                        <strong class="color-theme font-14 d-block mb-n1">$35.50</strong>
+                        <span class="color-green-dark font-11 d-block">15th August <i class="fa fa-check-circle"></i></span>
+                    </div>
+                </a>
+                <div class="divider my-3"></div>
+                <p class="text-center font-11 opacity-50 mb-0">Tap any Bill to See the Invoice File</p>
+            </div>
+        </div>
+    </div>
+
+
+
+        <div data-menu-load="menu-footer.html"></div>
+    </div>
+    <!-- Page content ends here-->
+
+    <!-- Cards Menu-->
+    <div id="menu-bill"
+         class="menu menu-box-bottom rounded-m bg-white"
+         data-menu-height="405">
+        <div class="menu-title">
+            <p class="color-highlight font-600">Submit a Payment.</p>
+            <h1 class="font-24">Bills & Invoices</h1>
+            <a href="#" class="close-menu"><i class="fa fa-times-circle"></i></a>
+        </div>
+        <div class="content">
+            <div class="input-style has-borders no-icon input-style-always-active">
+                <label for="form5412" class="color-highlight">Select a Bill</label>
+                <select id="form5412">
+                    <option value="asd2a">Spotify Music</option>
+                    <option value="asd2a">Water Bill</option>
+                    <option value="asd1b">Electric Bill</option>
+                    <option value="asd1c">Online Storage</option>
+                    <option value="asd1c">Dribbble</option>
+                </select>
+                <span><i class="fa fa-chevron-down"></i></span>
+                <i class="fa fa-check disabled valid color-green-dark"></i>
+                <i class="fa fa-check disabled invalid color-red-dark"></i>
+                <em></em>
+            </div>
+
+            <div class="pb-2"></div>
+
+            <div class="input-style has-borders no-icon input-style-always-active validate-field">
+                <input type="number" class="form-control validate-number" id="form1aafee5" placeholder="#12-345-6772">
+                <label for="form1aafee5" class="color-highlight font-12 font-500">Invoice ID</label>
+                <i class="fa fa-times disabled invalid color-red-dark"></i>
+                <i class="fa fa-check disabled valid color-green-dark"></i>
+                <em>(required)</em>
+            </div>
+
+            <div class="pb-2"></div>
+
+            <div class="input-style has-borders no-icon input-style-always-active validate-field">
+                <input type="number" class="form-control validate-number" id="form1aafee51" placeholder="$25.35">
+                <label for="form1aafee51" class="color-highlight font-12 font-500">Bill Amount</label>
+                <i class="fa fa-times disabled invalid color-red-dark"></i>
+                <i class="fa fa-check disabled valid color-green-dark"></i>
+                <em>(required)</em>
+            </div>
+
+            <div class="pb-2"></div>
+
+            <a href="#" class="close-menu btn btn-l font-13 font-600 gradient-blue btn-full rounded-s border-0">Pay Bill</a>
+        </div>
+    </div>
+
+     <!-- Invoice Menu-->
+    <div id="menu-invoice"
+         class="menu menu-box-bottom rounded-m bg-white"
+         data-menu-height="495">
+        <div class="menu-title">
+            <p class="color-highlight font-600">Monthly Subscription.</p>
+            <h1 class="font-24">Spotify Music</h1>
+            <a href="#" class="close-menu"><i class="fa fa-times-circle"></i></a>
+        </div>
+        <div class="content mb-0">
+            <div class="row mb-0">
+                <div class="col-4"><p class="color-theme">Provider</p></div>
+                <div class="col-8"><p class="text-end opacity-80">Spotify Music Inc.</p></div>
+
+                <div class="col-12 pt-2"><div class="divider mb-2"></div></div>
+
+                <div class="col-4"><p class="color-theme">Interval</p></div>
+                <div class="col-8"><p class="text-end opacity-80">15th August - 15h September.</p></div>
+
+                <div class="col-12 pt-2"><div class="divider mb-2"></div></div>
+
+                <div class="col-4"><p class="color-theme">Value</p></div>
+                <div class="col-8"><p class="text-end opacity-80">$19.99</p></div>
+
+                <div class="col-12 pt-2"><div class="divider mb-2"></div></div>
+
+                <div class="col-4"><p class="color-theme">Status</p></div>
+                <div class="col-8"><p class="text-end color-green-dark">Invoice Paid</p></div>
+
+                <div class="col-12 pt-2"><div class="divider mb-2"></div></div>
+
+                <div class="col-4"><p class="color-theme">Date Paid</p></div>
+                <div class="col-8"><p class="text-end opacity-80">16th September</p></div>
+
+                <div class="col-12 pt-2"><div class="divider mb-2"></div></div>
+
+                <div class="col-4"><p class="color-theme">Paid Using</p></div>
+                <div class="col-8"><p class="text-end opacity-80">Credit Card</p></div>
+
+                <div class="col-12 pt-2"><div class="divider mb-2"></div></div>
+            </div>
+            <p class="font-11 opacity-50 pt-3 mb-4">Thank you for choosing Spotify Music as your Music Provider</p>
+            <a href="#" class="close-menu btn btn-l font-13 font-600 text-uppercase gradient-green btn-full rounded-s border-0">This Bill is Paid</a>
+        </div>
+    </div>
+
+
+    <!-- Main Menu-->
+    <div id="menu-main" class="menu menu-box-left rounded-0" data-menu-load="menu-main.html" data-menu-width="280" data-menu-active="nav-pages"></div>
+
+    <!-- Share Menu-->
+    <div id="menu-share" class="menu menu-box-bottom rounded-m" data-menu-load="menu-share.html" data-menu-height="370"></div>
+
+    <!-- Colors Menu-->
+    <div id="menu-colors" class="menu menu-box-bottom rounded-m" data-menu-load="menu-colors.html" data-menu-height="480"></div>
+
+
+</div>
+
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>

@@ -1,0 +1,573 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>AppKit Mobile</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+
+<body class="theme-light">
+
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+
+<div id="page">
+
+    <div class="header header-fixed header-logo-center header-auto-show">
+        <a href="index.html" class="header-title">Wallet</a>
+        <a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-chevron-left"></i></a>
+        <a href="#" data-menu="menu-main" class="header-icon header-icon-4"><i class="fas fa-bars"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-dark"><i class="fas fa-sun"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-light"><i class="fas fa-moon"></i></a>
+    </div>
+
+    <div id="footer-bar" class="footer-bar-6">
+        <a href="index-components.html"><i class="fa fa-layer-group"></i><span>Features</span></a>
+        <a href="index-pages.html" class="active-nav"><i class="fa fa-file"></i><span>Pages</span></a>
+        <a href="index.html" class="circle-nav"><i class="fa fa-home"></i><span>Welcome</span></a>
+        <a href="index-projects.html"><i class="fa fa-camera"></i><span>Projects</span></a>
+        <a href="#" data-menu="menu-main"><i class="fa fa-bars"></i><span>Menu</span></a>
+    </div>
+
+
+    <div class="page-content">
+
+        <div class="card notch-clear rounded-0 gradient-dark mb-n5">
+            <div class="card-body pt-4 mt-2 mb-n2">
+                <h1 class="color-white font-30 float-start">Welcome</h1>
+                <a href="#" data-menu="menu-cards" class="float-end color-white btn btn-xxs font-600 rounded-s border-white"><i class="fa fa-plus me-2"></i>Add Card</a>
+                <div clas="clearfix"></div>
+            </div>
+
+            <div class="card-body mx-0 px-0 mt-n4 mb-4">
+                <div class="splide single-slider slider-no-arrows slider-no-dots" id="single-slider-1">
+                    <div class="splide__track">
+                        <div class="splide__list">
+                            <div class="splide__slide">
+                                <div class="card card-style mx-3 mt-4 bg-20" data-card-height="210">
+                                    <div class="card-top ps-3 pt-3">
+                                        <h1 class="color-white font-19">MasterCard</h1>
+                                    </div>
+                                    <div class="card-center pe-3">
+                                        <h4 class="color-white text-end">**** **** **** 6345</h4>
+                                    </div>
+                                    <div class="card-bottom ps-3 pb-2">
+                                        <h5 class="color-white">Jack Singer</h5>
+                                    </div>
+                                    <div class="card-bottom pe-3 pb-2">
+                                        <h5 class="color-white float-end">01/26</h5>
+                                    </div>
+                                    <div class="card-overlay bg-gradient"></div>
+                                </div>
+                            </div>
+                            <div class="splide__slide">
+                                <div class="card card-style mx-3 mt-4 bg-1" data-card-height="210">
+                                    <div class="card-top ps-3 pt-3">
+                                        <h1 class="color-white">AMEX</h1>
+                                    </div>
+                                    <div class="card-center pe-3">
+                                        <h4 class="color-white text-end">**** **** **** 3415</h4>
+                                    </div>
+                                    <div class="card-bottom ps-3 pb-2">
+                                        <h5 class="color-white">John Runner</h5>
+                                    </div>
+                                    <div class="card-bottom pe-3 pb-2">
+                                        <h5 class="color-white float-end">03/25</h5>
+                                    </div>
+                                    <div class="card-overlay bg-gradient"></div>
+                                </div>
+                            </div>
+                            <div class="splide__slide">
+                                <div class="card card-style mx-3 mt-4 bg-6" data-card-height="210">
+                                    <div class="card-top ps-3 pt-3">
+                                        <h1 class="color-white">Visa</h1>
+                                    </div>
+                                    <div class="card-center pe-3">
+                                        <h4 class="color-white text-end">**** **** **** 3456</h4>
+                                    </div>
+                                    <div class="card-bottom ps-3 pb-2">
+                                        <h5 class="color-white">Jane Louder</h5>
+                                    </div>
+                                    <div class="card-bottom pe-3 pb-2">
+                                        <h5 class="color-white float-end">05/24</h5>
+                                    </div>
+                                    <div class="card-overlay bg-gradient"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card card-style mt-n3">
+            <div class="content mb-2 mt-3">
+                <div class="row text-center mb-0">
+                    <a href="#" data-menu="menu-withdraw" class="col-3">
+                        <span class="icon icon-l gradient-green shadow-l rounded-sm">
+                            <i class="fa fa-university font-18 color-white"></i>
+                        </span>
+                        <p class="mb-0 pt-1 font-11">Withdraw</p>
+                    </a>
+                    <a href="#" data-menu="menu-transfer" class="col-3">
+                        <span class="icon icon-l gradient-blue shadow-l rounded-sm">
+                            <i class="fa fa-arrow-up font-18 color-white"></i>
+                        </span>
+                        <p class="mb-0 pt-1 font-11">Transfer</p>
+                    </a>
+                    <a href="#" data-menu="menu-request" class="col-3">
+                        <span class="icon icon-l gradient-brown shadow-l rounded-sm">
+                            <i class="fa fa-arrow-down font-18 color-white"></i>
+                        </span>
+                        <p class="mb-0 pt-1 font-11">Request</p>
+                    </a>
+                    <a href="#" data-menu="menu-receipts" class="col-3">
+                        <span class="icon icon-l gradient-magenta shadow-l rounded-sm">
+                            <i class="fa fa-receipt font-18 color-white"></i>
+                        </span>
+                        <p class="mb-0 pt-1 font-11">Bills</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card card-style mt-n3">
+            <div class="content mb-2 mt-3">
+                <div class="d-flex">
+                    <div class="pe-4">
+                        <p class="font-600 color-highlight mb-0">Your Balance</p>
+                        <h1>$23,500</h1>
+                    </div>
+                    <div class="w-100 pt-1">
+                        <h6 class="font-14 font-500">Income<span class="float-end color-green-dark">+$3.115</span></h6>
+                        <div class="divider mb-2 mt-1"></div>
+                        <h6 class="font-14 font-500">Expenses<span class="float-end color-red-dark">-$1.315</span></h6>
+                    </div>
+                </div>
+                <div class="divider mb-3"></div>
+                <div class="row mb-0">
+                    <div class="col-6 pe-1">
+                        <h6 class="font-12 font-500">Subscriptions</h6>
+                        <h2 class="color-brown-dark mb-0">+11.2%</h2>
+                    </div>
+                    <div class="col-6 ps-1">
+                        <h6 class="font-12 font-500">Savings</h6>
+                        <h2 class="color-blue-dark mb-0">$14,500</h2>
+                    </div>
+                    <div class="col-12 pb-3"></div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card card-style">
+            <div class="content mb-0">
+                <p class="font-600 color-highlight mb-n1">Friends and Family</p>
+                <h2>Transactions</h2>
+                <p>
+                    Showing latest activity from your card. These transactions have already been processed.
+                </p>
+                <div class="list-group list-custom-large">
+                    <a href="#">
+                        <img src="images/pictures/6s.jpg" class="rounded-xl">
+                        <span>Jane Louder</span>
+                        <strong>Direct Wire Transfer</strong>
+                        <span class="badge bg-red-dark font-11">25.00 USD</span>
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                    <a href="#">
+                        <img src="images/pictures/15s.jpg" class="rounded-xl">
+                        <span>Johanna Doe</span>
+                        <strong>Direct Wire Transfer</strong>
+                        <span class="badge bg-green-dark font-11">100.00 USD</span>
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card card-style">
+            <div class="content mb-0">
+                <p class="font-600 color-highlight mb-n1">Your Latest</p>
+                <h2>Subscriptions</h2>
+                <p>
+                    Showing latest activity from your card. These transactions have already been processed.
+                </p>
+                <div class="list-group list-custom-large">
+                    <a href="#">
+                        <i class="fab fa-spotify rounded-xl shadow-s bg-dark-dark"></i>
+                        <span>Spotify Premium</span>
+                        <strong>Monthly Subscription</strong>
+                        <span class="badge bg-yellow-dark font-11">25.00 USD</span>
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-heart rounded-xl shadow-s bg-red-dark"></i>
+                        <span>Gym Membership</span>
+                        <span class="badge bg-red-dark font-11">15.00 USD</span>
+                        <strong class="left-10">Monthly Subsciption</strong>
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                    <a href="#" class="border-0">
+                        <i class="fa fa-dollar-sign rounded-xl shadow-s bg-green-dark"></i>
+                        <span>Bank Added Funds</span>
+                        <strong>Manual Payment Adusted</strong>
+                        <span class="badge bg-blue-dark font-11">1500.00 USD</span>
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card card-style">
+            <div class="content mb-0">
+                <p class="font-600 color-highlight mb-n1">Graphical</p>
+                <h2>Overview</h2>
+                <p>
+                    Showing latest activity from your card. These transactions have already been processed.
+                </p>
+                <div class="chart-container mb-4" style="height:300px;">
+                    <canvas class="wallet-chart" id="wallet-chart"></canvas>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card card-style">
+            <div class="content">
+                <p class="font-600 color-highlight mb-n1">Financial</p>
+                <h2>Reports</h2>
+                <p>
+                    Showing latest activity from your card. These transactions have already been processed.
+                </p>
+                <a href="#" class="d-flex py-2">
+                    <div>
+                        <i class="fa fa-file-signature icon-30 me-3 mt-2 fa-2x"></i>
+                    </div>
+                    <div>
+                        <p class="color-highlight mb-n1 font-12 font-600">Download</p>
+                        <h5 class="mb-0">Quarter Report</h5>
+                    </div>
+                </a>
+                <a href="#" class="d-flex py-2">
+                    <div>
+                        <i class="fa fa-file-pdf icon-30 me-3 mt-2 fa-2x"></i>
+                    </div>
+                    <div>
+                        <p class="color-highlight mb-n1 font-12 font-600">Download</p>
+                        <h5 class="mb-0">Savings Sheet</h5>
+                    </div>
+                </a>
+                <a href="#" class="d-flex py-2">
+                    <div>
+                        <i class="fa fa-file-invoice icon-30 me-3 mt-2 fa-2x"></i>
+                    </div>
+                    <div>
+                        <p class="color-highlight mb-n1 font-12 font-600">Download</p>
+                        <h5 class="mb-0">Service Invoice</h5>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+      <div data-menu-load="menu-footer.html"></div>
+    </div>
+    <!-- Page content ends here-->
+
+
+    <!-- Cards Menu-->
+    <div id="menu-cards"
+         class="menu menu-box-bottom rounded-m bg-white"
+         data-menu-height="430">
+        <div class="menu-title">
+            <p class="color-highlight font-600">This is a Demo</p>
+            <h1>Add a Card</h1>
+            <a href="#" class="close-menu"><i class="fa fa-times-circle"></i></a>
+        </div>
+        <div class="content mt-0">
+            <p>
+                This is just a demo. Don't enter real information.
+            </p>
+            <div class="input-style has-borders no-icon input-style-always-active validate-field mb-4">
+                <input type="text" class="form-control validate-name" id="form1a" placeholder="John Doe">
+                <label for="form1a" class="color-highlight font-12 font-500">Cardholder Name</label>
+                <i class="fa fa-times disabled invalid color-red-dark"></i>
+                <i class="fa fa-check disabled valid color-green-dark"></i>
+                <em>(required)</em>
+            </div>
+            <div class="input-style has-borders no-icon input-style-always-active validate-field mb-4">
+                <input type="number" class="form-control validate-name" id="form1b" placeholder="1234 5678 9012 3456">
+                <label for="form1b" class="color-highlight font-12 font-500">Number On Card</label>
+                <i class="fa fa-times disabled invalid color-red-dark"></i>
+                <i class="fa fa-check disabled valid color-green-dark"></i>
+                <em>(required)</em>
+            </div>
+            <div class="row mb-0">
+                <div class="col-6">
+                    <div class="input-style has-borders no-icon input-style-always-active validate-field mb-4">
+                        <input type="number" class="form-control validate-name" id="form1c" placeholder="05/25">
+                        <label for="form1c" class="color-highlight font-12 font-500">Expiration</label>
+                        <i class="fa fa-times disabled invalid color-red-dark"></i>
+                        <i class="fa fa-check disabled valid color-green-dark"></i>
+                        <em>(*)</em>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="input-style has-borders no-icon input-style-always-active validate-field mb-4">
+                        <input type="number" class="form-control validate-name" id="form1d" placeholder="123">
+                        <label for="form1d" class="color-highlight font-12 font-500">Security</label>
+                        <i class="fa fa-times disabled invalid color-red-dark"></i>
+                        <i class="fa fa-check disabled valid color-green-dark"></i>
+                        <em>(*)</em>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn btn-m font-13 font-600 gradient-blue btn-full rounded-s mt-3">Add Card</a>
+        </div>
+    </div>
+
+    <!-- Cards Menu-->
+    <div id="menu-withdraw"
+         class="menu menu-box-bottom rounded-m bg-white"
+         data-menu-height="480">
+        <div class="menu-title">
+            <p class="color-highlight font-600">Funds to your Account</p>
+            <h1>Withdraw</h1>
+            <a href="#" class="close-menu"><i class="fa fa-times-circle"></i></a>
+        </div>
+        <div class="content">
+            <div class="input-style has-borders no-icon input-style-always-active">
+                <label for="form5" class="color-highlight">From</label>
+                <select id="form5">
+                    <option value="asd2">Main Account</option>
+                    <option value="asd1">Savings Account</option>
+                </select>
+                <span><i class="fa fa-chevron-down"></i></span>
+                <i class="fa fa-check disabled valid color-green-dark"></i>
+                <i class="fa fa-check disabled invalid color-red-dark"></i>
+                <em></em>
+            </div>
+
+            <div class="pb-2"></div>
+
+            <div class="input-style has-borders no-icon input-style-always-active validate-field">
+                <input type="number" class="form-control validate-number" id="form1aa" placeholder="$2.500">
+                <label for="form1aa" class="color-highlight font-12 font-500">Amount</label>
+                <i class="fa fa-times disabled invalid color-red-dark"></i>
+                <i class="fa fa-check disabled valid color-green-dark"></i>
+                <em>(required)</em>
+            </div>
+
+            <div class="pb-2"></div>
+
+            <div class="input-style has-borders no-icon input-style-always-active validate-field">
+                <input type="number" class="form-control validate-number" id="form1aab" placeholder="ABC12 1234 5678 9012">
+                <label for="form1aab" class="color-highlight font-12 font-500">IBAN</label>
+                <i class="fa fa-times disabled invalid color-red-dark"></i>
+                <i class="fa fa-check disabled valid color-green-dark"></i>
+                <em>(required)</em>
+            </div>
+
+            <div class="pb-2"></div>
+
+            <div class="input-style has-borders no-icon input-style-always-active">
+                <label for="form51" class="color-highlight">Withdrawal</label>
+                <select id="form51">
+                    <option value="default" selected>Regular Transfer - 24 hours - Free</option>
+                    <option value="iOS">Instant Transfer - 5 Minutes + $2.5 Fee</option>
+                </select>
+                <span><i class="fa fa-chevron-down"></i></span>
+                <i class="fa fa-check disabled valid color-green-dark"></i>
+                <i class="fa fa-check disabled invalid color-red-dark"></i>
+                <em></em>
+            </div>
+
+            <div class="pb-2"></div>
+
+            <a href="#" class="close-menu btn btn-l font-13 font-600 gradient-blue btn-full rounded-s border-0">Submit Request</a>
+        </div>
+    </div>
+
+    <!-- Cards Menu-->
+    <div id="menu-request"
+         class="menu menu-box-bottom rounded-m bg-white "
+         data-menu-height="410">
+        <div class="menu-title">
+            <p class="color-highlight font-600">Send a Payment</p>
+            <h1>Request</h1>
+            <a href="#" class="close-menu"><i class="fa fa-times-circle"></i></a>
+        </div>
+        <div class="content">
+            <div class="input-style has-borders no-icon input-style-always-active validate-field">
+                <input type="email" class="form-control validate-email" id="form1aabc" placeholder="name@domain.com">
+                <label for="form1aabc" class="color-highlight font-12 font-500">From</label>
+                <i class="fa fa-times disabled invalid color-red-dark"></i>
+                <i class="fa fa-check disabled valid color-green-dark"></i>
+                <em>(required)</em>
+            </div>
+
+            <div class="pb-2"></div>
+
+            <div class="input-style has-borders no-icon input-style-always-active validate-field">
+                <input type="number" class="form-control validate-number" id="form1aaf" placeholder="$2.500">
+                <label for="form1aaf" class="color-highlight font-12 font-500">Amount</label>
+                <i class="fa fa-times disabled invalid color-red-dark"></i>
+                <i class="fa fa-check disabled valid color-green-dark"></i>
+                <em>(required)</em>
+            </div>
+
+            <div class="pb-2"></div>
+
+            <div class="input-style has-borders no-icon input-style-always-active">
+                <label for="form51b" class="color-highlight">Fees:</label>
+                <select id="form51b">
+                    <option value="default" selected>Paid by Sender - $4.51</option>
+                    <option value="iOS">Paid by Receiver - $4.51</option>
+                </select>
+                <span><i class="fa fa-chevron-down"></i></span>
+                <i class="fa fa-check disabled valid color-green-dark"></i>
+                <i class="fa fa-check disabled invalid color-red-dark"></i>
+                <em></em>
+            </div>
+
+
+            <div class="pb-2"></div>
+
+            <a href="#" class="close-menu btn btn-l font-13 font-600 gradient-blue btn-full rounded-s border-0">Send Payment Request</a>
+        </div>
+    </div>
+
+    <!-- Cards Menu-->
+    <div id="menu-transfer"
+         class="menu menu-box-bottom rounded-m bg-white"
+         data-menu-height="485">
+        <div class="menu-title">
+            <p class="color-highlight font-600">Send a Payment</p>
+            <h1>Transfer</h1>
+            <a href="#" class="close-menu"><i class="fa fa-times-circle"></i></a>
+        </div>
+        <div class="content">
+            <div class="input-style has-borders no-icon input-style-always-active">
+                <label for="form541" class="color-highlight">Account</label>
+                <select id="form541">
+                    <option value="asd2">Main Account</option>
+                    <option value="asd1">Savings Account</option>
+                </select>
+                <span><i class="fa fa-chevron-down"></i></span>
+                <i class="fa fa-check disabled valid color-green-dark"></i>
+                <i class="fa fa-check disabled invalid color-red-dark"></i>
+                <em></em>
+            </div>
+
+            <div class="pb-2"></div>
+
+            <div class="input-style has-borders no-icon input-style-always-active validate-field">
+                <input type="email" class="form-control validate-email" id="form1aabcdd" placeholder="name@domain.com">
+                <label for="form1aabcdd" class="color-highlight font-12 font-500">Send To:</label>
+                <i class="fa fa-times disabled invalid color-red-dark"></i>
+                <i class="fa fa-check disabled valid color-green-dark"></i>
+                <em>(required)</em>
+            </div>
+
+            <div class="pb-2"></div>
+
+            <div class="input-style has-borders no-icon input-style-always-active validate-field">
+                <input type="number" class="form-control validate-number" id="form1aafee" placeholder="$2.500">
+                <label for="form1aafee" class="color-highlight font-12 font-500">Amount</label>
+                <i class="fa fa-times disabled invalid color-red-dark"></i>
+                <i class="fa fa-check disabled valid color-green-dark"></i>
+                <em>(required)</em>
+            </div>
+
+            <div class="pb-2"></div>
+
+            <div class="input-style has-borders no-icon input-style-always-active">
+                <label for="form51b31" class="color-highlight">Fees:</label>
+                <select id="form51b31">
+                    <option value="default" selected>Paid by Sender - $4.51</option>
+                    <option value="iOS">Paid by Receiver - $4.51</option>
+                </select>
+                <span><i class="fa fa-chevron-down"></i></span>
+                <i class="fa fa-check disabled valid color-green-dark"></i>
+                <i class="fa fa-check disabled invalid color-red-dark"></i>
+                <em></em>
+            </div>
+
+            <div class="pb-2"></div>
+
+            <a href="#" class="close-menu btn btn-l font-13 font-600 gradient-blue btn-full rounded-s border-0">Transfer Funds</a>
+        </div>
+    </div>
+
+    <!-- Cards Menu-->
+    <div id="menu-receipts"
+         class="menu menu-box-bottom rounded-m bg-white"
+         data-menu-height="405">
+        <div class="menu-title">
+            <p class="color-highlight font-600">Unpaid Bills</p>
+            <h1>Invoices</h1>
+            <a href="#" class="close-menu"><i class="fa fa-times-circle"></i></a>
+        </div>
+        <div class="content">
+            <div class="input-style has-borders no-icon input-style-always-active">
+                <label for="form5412" class="color-highlight">Provider</label>
+                <select id="form5412">
+                    <option value="asd2a">Water Company</option>
+                    <option value="asd1b">Internet Company</option>
+                    <option value="asd1c">Electricity Company</option>
+                </select>
+                <span><i class="fa fa-chevron-down"></i></span>
+                <i class="fa fa-check disabled valid color-green-dark"></i>
+                <i class="fa fa-check disabled invalid color-red-dark"></i>
+                <em></em>
+            </div>
+
+            <div class="pb-2"></div>
+
+            <div class="input-style has-borders no-icon input-style-always-active validate-field">
+                <input type="number" class="form-control validate-number" id="form1aafee5" placeholder="#12-345-6772">
+                <label for="form1aafee5" class="color-highlight font-12 font-500">Invoice ID</label>
+                <i class="fa fa-times disabled invalid color-red-dark"></i>
+                <i class="fa fa-check disabled valid color-green-dark"></i>
+                <em>(required)</em>
+            </div>
+
+            <div class="pb-2"></div>
+
+            <div class="input-style has-borders no-icon input-style-always-active validate-field">
+                <input type="number" class="form-control validate-number" id="form1aafee51" placeholder="$25.35">
+                <label for="form1aafee51" class="color-highlight font-12 font-500">Bill Amount</label>
+                <i class="fa fa-times disabled invalid color-red-dark"></i>
+                <i class="fa fa-check disabled valid color-green-dark"></i>
+                <em>(required)</em>
+            </div>
+
+            <div class="pb-2"></div>
+
+            <a href="#" class="close-menu btn btn-l font-13 font-600 gradient-blue btn-full rounded-s border-0">Pay Bill</a>
+        </div>
+    </div>
+
+
+    <!-- Main Menu-->
+    <div id="menu-main" class="menu menu-box-left rounded-0" data-menu-load="menu-main.html" data-menu-width="280" data-menu-active="nav-pages"></div>
+
+    <!-- Share Menu-->
+    <div id="menu-share" class="menu menu-box-bottom rounded-m" data-menu-load="menu-share.html" data-menu-height="370"></div>
+
+    <!-- Colors Menu-->
+    <div id="menu-colors" class="menu menu-box-bottom rounded-m" data-menu-load="menu-colors.html" data-menu-height="480"></div>
+
+
+</div>
+
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>

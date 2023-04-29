@@ -1,0 +1,497 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>AppKit Mobile</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+
+<body class="theme-light">
+
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+
+<div id="page">
+
+<div id="page">
+
+    <div class="header header-fixed header-logo-center header-auto-show">
+        <a href="index.html" class="header-title">Finance Actions</a>
+        <a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-chevron-left"></i></a>
+        <a href="#" data-menu="menu-main" class="header-icon header-icon-4"><i class="fas fa-bars"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-dark"><i class="fas fa-sun"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-light"><i class="fas fa-moon"></i></a>
+    </div>
+
+    <div id="footer-bar" class="footer-bar-6">
+        <a href="index-components.html"><i class="fa fa-layer-group"></i><span>Features</span></a>
+        <a href="index-pages.html" class="active-nav"><i class="fa fa-file"></i><span>Pages</span></a>
+        <a href="index.html" class="circle-nav"><i class="fa fa-home"></i><span>Welcome</span></a>
+        <a href="index-projects.html"><i class="fa fa-camera"></i><span>Projects</span></a>
+        <a href="#" data-menu="menu-main"><i class="fa fa-bars"></i><span>Menu</span></a>
+    </div>
+
+    <div class="page-title page-title-fixed">
+        <h1 class="font-22">Finance</h1>
+        <a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-share"><i class="fa fa-share-alt"></i></a>
+        <a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-light" data-toggle-theme><i class="fa fa-moon"></i></a>
+        <a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-dark" data-toggle-theme><i class="fa fa-lightbulb color-yellow-dark"></i></a>
+        <a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-main"><i class="fa fa-bars"></i></a>
+    </div>
+    <div class="page-title-clear"></div>
+
+    <div class="page-content">
+
+        <div class="card card-style">
+            <div class="content mt-3 mb-0">
+                <p class="color-highlight font-600 mb-n1">Interact With</p>
+                <h1>Action Sheets</h1>
+                <p>
+                    Action Sheets are great to show awesome interactive steps for your users when browsing your interface.
+                </p>
+                <div class="divider mb-0"></div>
+                <div class="list-group list-custom-small list-icon-0">
+                    <a href="#" data-menu="menu-authorize"><i class="fa fa-exclamation rounded-sm gradient-red color-white"></i><span>Authorize</span><i class="fa fa-angle-right"></i></a>
+                    <a href="#" data-menu="menu-confirmation"><i class="fa fa-check rounded-sm gradient-green color-white"></i><span>Confirmation</span><i class="fa fa-angle-right"></i></a>
+                    <a href="#" data-menu="menu-goal"><i class="fa fa-star rounded-sm gradient-yellow color-white"></i><span>Saving Goal</span><i class="fa fa-angle-right"></i></a>
+                    <a href="#" data-menu="menu-status"><i class="fa fa-sync rounded-sm gradient-blue color-white"></i><span>Payment Status</span><i class="fa fa-angle-right"></i></a>
+                    <a href="#" data-menu="menu-cards"><i class="fa fa-plus rounded-sm gradient-brown color-white"></i><span>Add Card</span><i class="fa fa-angle-right"></i></a>
+                    <a href="#" data-menu="menu-withdraw"><i class="fa fa-university rounded-sm gradient-orange color-white"></i><span>Withdraw</span><i class="fa fa-angle-right"></i></a>
+                    <a href="#" data-menu="menu-request"><i class="fa fa-arrow-down rounded-sm gradient-brown color-white"></i><span>Request</span><i class="fa fa-angle-right"></i></a>
+                    <a href="#" data-menu="menu-transfer"><i class="fa fa-arrow-up rounded-sm gradient-green color-white"></i><span>Transfer</span><i class="fa fa-angle-right"></i></a>
+                    <a href="#" data-menu="menu-receipts"><i class="fa fa-dollar-sign rounded-sm gradient-blue color-white"></i><span>Pay Bill</span><i class="fa fa-angle-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+      <div data-menu-load="menu-footer.html"></div>
+    </div>
+    <!-- Page content ends here-->
+
+    <!-- Cards Authorization-->
+    <div id="menu-authorize"
+         class="menu menu-box-bottom rounded-m bg-white"
+         data-menu-height="390">
+        <div class="menu-title">
+            <p class="color-highlight font-600">Action Required</p>
+            <h1>Authorize</h1>
+            <a href="#" class="close-menu"><i class="fa fa-times-circle"></i></a>
+        </div>
+        <div class="divider mb-3 divider-margins"></div>
+        <p class="content mt-0">
+            The following transaction requires your approval.
+        </p>
+        <div class="row text-center pt-4 mx-3 mb-0">
+            <div class="col-4">
+                <img src="images/avatars/13s.png" alt="img" width="80" class="bg-green-dark rounded-sm">
+                <h5 class="font-400 font-12 pt-2">Sandra Lock</h5>
+            </div>
+            <div class="col-4">
+                <i class="fa fa-long-arrow-alt-right d-block font-40 mt-2"></i>
+                <h5>$250.00</h5>
+            </div>
+            <div class="col-4">
+                <img src="images/avatars/5s.png" alt="img" width="80" class="bg-blue-dark rounded-sm">
+                <h5 class="font-400 font-12 pt-2">Jackson Doe</h5>
+            </div>
+        </div>
+        <a href="#" class="btn-margins btn btn-m font-13 font-600 gradient-blue btn-full rounded-s mt-3">Approve Transaction</a>
+        <a href="#" class="color-red-dark text-center d-block mt-n3 font-11">Reject Transaction</a>
+    </div>
+
+    <!-- Confirmation-->
+    <div id="menu-confirmation"
+         class="menu menu-box-bottom rounded-m bg-white"
+         data-menu-height="350">
+         <div class="content text-center mb-0 pt-4">
+             <i class="fa fa-check-circle color-green-dark fa-7x pb-3"></i>
+             <h1 class="font-30">Success</h1>
+             <p class="boxed-text-xl font-15">
+                 The transfer has been successfully processed. Email receipt has been sent.
+             </p>
+         </div>
+         <a href="#" class="btn-margins btn btn-m font-13 font-600 gradient-green border-0 btn-full rounded-s mt-4">Awesome</a>
+    </div>
+
+    <!-- Cards Menu-->
+    <div id="menu-goal"
+         class="menu menu-box-bottom rounded-m bg-white"
+         data-menu-height="350">
+        <div class="menu-title">
+            <p class="color-highlight font-600">Your Goal Progress</p>
+            <h1>Buy a House</h1>
+            <a href="#" class="close-menu"><i class="fa fa-times-circle"></i></a>
+        </div>
+        <div class="content mt-0">
+
+            <div class="divider mb-3"></div>
+
+            <div class="progress rounded-sm mb-3" style="height:42px">
+                <div class="progress-bar gradient-green text-start ps-3 color-white"
+                     role="progressbar" style="width: 83%"
+                     aria-valuenow="10" aria-valuemin="0"
+                     aria-valuemax="100">
+                     83% Complete
+                </div>
+            </div>
+
+            <div class="divider mb-3"></div>
+
+            <div class="d-flex pb-3">
+                <div>
+                    <h6 class="font-11">Amount Saved</h6>
+                    <h3>$1,155,315</h3>
+                </div>
+                <div class="ms-auto text-end">
+                    <h6 class="font-11">Your Goal</h6>
+                    <h3>$1,400,000</h3>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+            <a href="#" class="close-menu btn btn-m btn-full font-13 font-600 gradient-blue btn-full rounded-s mt-3 border-0">View Goals</a>
+        </div>
+    </div>
+
+    <!-- Cards Menu-->
+    <div id="menu-cards"
+         class="menu menu-box-bottom rounded-m bg-white"
+         data-menu-height="440">
+        <div class="menu-title">
+            <p class="color-highlight font-600">This is a Demo</p>
+            <h1>Add a Card</h1>
+            <a href="#" class="close-menu"><i class="fa fa-times-circle"></i></a>
+        </div>
+        <div class="content mt-0">
+            <p>
+                This is just a demo. Don't enter real information.
+            </p>
+            <div class="input-style has-borders no-icon input-style-always-active validate-field mb-4">
+                <input type="text" class="form-control validate-name" id="form1a" placeholder="John Doe">
+                <label for="form1a" class="color-highlight font-12 font-500">Cardholder Name</label>
+                <i class="fa fa-times disabled invalid color-red-dark"></i>
+                <i class="fa fa-check disabled valid color-green-dark"></i>
+                <em>(required)</em>
+            </div>
+            <div class="input-style has-borders no-icon input-style-always-active validate-field mb-4">
+                <input type="number" class="form-control validate-name" id="form1b" placeholder="1234 5678 9012 3456">
+                <label for="form1b" class="color-highlight font-12 font-500">Number On Card</label>
+                <i class="fa fa-times disabled invalid color-red-dark"></i>
+                <i class="fa fa-check disabled valid color-green-dark"></i>
+                <em>(required)</em>
+            </div>
+            <div class="row mb-0">
+                <div class="col-6">
+                    <div class="input-style has-borders no-icon input-style-always-active validate-field mb-4">
+                        <input type="number" class="form-control validate-name" id="form1c" placeholder="05/25">
+                        <label for="form1c" class="color-highlight font-12 font-500">Expiration</label>
+                        <i class="fa fa-times disabled invalid color-red-dark"></i>
+                        <i class="fa fa-check disabled valid color-green-dark"></i>
+                        <em>(*)</em>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="input-style has-borders no-icon input-style-always-active validate-field mb-4">
+                        <input type="number" class="form-control validate-name" id="form1d" placeholder="123">
+                        <label for="form1d" class="color-highlight font-12 font-500">Security</label>
+                        <i class="fa fa-times disabled invalid color-red-dark"></i>
+                        <i class="fa fa-check disabled valid color-green-dark"></i>
+                        <em>(*)</em>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="close-menu btn btn-m font-13 font-600 gradient-blue btn-full rounded-s mt-3 border-0">Add Card</a>
+        </div>
+    </div>
+
+    <!-- Cards Menu-->
+    <div id="menu-withdraw"
+         class="menu menu-box-bottom rounded-m bg-white"
+         data-menu-height="480">
+        <div class="menu-title">
+            <p class="color-highlight font-600">Funds to your Account</p>
+            <h1>Withdraw</h1>
+            <a href="#" class="close-menu"><i class="fa fa-times-circle"></i></a>
+        </div>
+        <div class="content">
+            <div class="input-style has-borders no-icon input-style-always-active">
+                <label for="form5" class="color-highlight">From</label>
+                <select id="form5">
+                    <option value="asd2">Main Account</option>
+                    <option value="asd1">Savings Account</option>
+                </select>
+                <span><i class="fa fa-chevron-down"></i></span>
+                <i class="fa fa-check disabled valid color-green-dark"></i>
+                <i class="fa fa-check disabled invalid color-red-dark"></i>
+                <em></em>
+            </div>
+
+            <div class="pb-2"></div>
+
+            <div class="input-style has-borders no-icon input-style-always-active validate-field">
+                <input type="number" class="form-control validate-number" id="form1aa" placeholder="$2.500">
+                <label for="form1aa" class="color-highlight font-12 font-500">Amount</label>
+                <i class="fa fa-times disabled invalid color-red-dark"></i>
+                <i class="fa fa-check disabled valid color-green-dark"></i>
+                <em>(required)</em>
+            </div>
+
+            <div class="pb-2"></div>
+
+            <div class="input-style has-borders no-icon input-style-always-active validate-field">
+                <input type="number" class="form-control validate-number" id="form1aab" placeholder="ABC12 1234 5678 9012">
+                <label for="form1aab" class="color-highlight font-12 font-500">IBAN</label>
+                <i class="fa fa-times disabled invalid color-red-dark"></i>
+                <i class="fa fa-check disabled valid color-green-dark"></i>
+                <em>(required)</em>
+            </div>
+
+            <div class="pb-2"></div>
+
+            <div class="input-style has-borders no-icon input-style-always-active">
+                <label for="form51" class="color-highlight">Withdrawal</label>
+                <select id="form51">
+                    <option value="default" selected>Regular Transfer - 24 hours - Free</option>
+                    <option value="iOS">Instant Transfer - 5 Minutes + $2.5 Fee</option>
+                </select>
+                <span><i class="fa fa-chevron-down"></i></span>
+                <i class="fa fa-check disabled valid color-green-dark"></i>
+                <i class="fa fa-check disabled invalid color-red-dark"></i>
+                <em></em>
+            </div>
+
+            <div class="pb-2"></div>
+
+            <a href="#" class="close-menu btn btn-l font-13 font-600 gradient-blue btn-full rounded-s border-0">Submit Request</a>
+        </div>
+    </div>
+
+    <!-- Cards Menu-->
+    <div id="menu-request"
+         class="menu menu-box-bottom rounded-m bg-white "
+         data-menu-height="410">
+        <div class="menu-title">
+            <p class="color-highlight font-600">Send a Payment</p>
+            <h1>Request</h1>
+            <a href="#" class="close-menu"><i class="fa fa-times-circle"></i></a>
+        </div>
+        <div class="content">
+            <div class="input-style has-borders no-icon input-style-always-active validate-field">
+                <input type="email" class="form-control validate-email" id="form1aabc" placeholder="name@domain.com">
+                <label for="form1aabc" class="color-highlight font-12 font-500">From</label>
+                <i class="fa fa-times disabled invalid color-red-dark"></i>
+                <i class="fa fa-check disabled valid color-green-dark"></i>
+                <em>(required)</em>
+            </div>
+
+            <div class="pb-2"></div>
+
+            <div class="input-style has-borders no-icon input-style-always-active validate-field">
+                <input type="number" class="form-control validate-number" id="form1aaf" placeholder="$2.500">
+                <label for="form1aaf" class="color-highlight font-12 font-500">Amount</label>
+                <i class="fa fa-times disabled invalid color-red-dark"></i>
+                <i class="fa fa-check disabled valid color-green-dark"></i>
+                <em>(required)</em>
+            </div>
+
+            <div class="pb-2"></div>
+
+            <div class="input-style has-borders no-icon input-style-always-active">
+                <label for="form51b" class="color-highlight">Fees:</label>
+                <select id="form51b">
+                    <option value="default" selected>Paid by Sender - $4.51</option>
+                    <option value="iOS">Paid by Receiver - $4.51</option>
+                </select>
+                <span><i class="fa fa-chevron-down"></i></span>
+                <i class="fa fa-check disabled valid color-green-dark"></i>
+                <i class="fa fa-check disabled invalid color-red-dark"></i>
+                <em></em>
+            </div>
+
+
+            <div class="pb-2"></div>
+
+            <a href="#" class="close-menu btn btn-l font-13 font-600 gradient-blue btn-full rounded-s border-0">Send Payment Request</a>
+        </div>
+    </div>
+
+    <!-- Cards Menu-->
+    <div id="menu-transfer"
+         class="menu menu-box-bottom rounded-m bg-white"
+         data-menu-height="485">
+        <div class="menu-title">
+            <p class="color-highlight font-600">Send a Payment</p>
+            <h1>Transfer</h1>
+            <a href="#" class="close-menu"><i class="fa fa-times-circle"></i></a>
+        </div>
+        <div class="content">
+            <div class="input-style has-borders no-icon input-style-always-active">
+                <label for="form541" class="color-highlight">Account</label>
+                <select id="form541">
+                    <option value="asd2">Main Account</option>
+                    <option value="asd1">Savings Account</option>
+                </select>
+                <span><i class="fa fa-chevron-down"></i></span>
+                <i class="fa fa-check disabled valid color-green-dark"></i>
+                <i class="fa fa-check disabled invalid color-red-dark"></i>
+                <em></em>
+            </div>
+
+            <div class="pb-2"></div>
+
+            <div class="input-style has-borders no-icon input-style-always-active validate-field">
+                <input type="email" class="form-control validate-email" id="form1aabcdd" placeholder="name@domain.com">
+                <label for="form1aabcdd" class="color-highlight font-12 font-500">Send To:</label>
+                <i class="fa fa-times disabled invalid color-red-dark"></i>
+                <i class="fa fa-check disabled valid color-green-dark"></i>
+                <em>(required)</em>
+            </div>
+
+            <div class="pb-2"></div>
+
+            <div class="input-style has-borders no-icon input-style-always-active validate-field">
+                <input type="number" class="form-control validate-number" id="form1aafee" placeholder="$2.500">
+                <label for="form1aafee" class="color-highlight font-12 font-500">Amount</label>
+                <i class="fa fa-times disabled invalid color-red-dark"></i>
+                <i class="fa fa-check disabled valid color-green-dark"></i>
+                <em>(required)</em>
+            </div>
+
+            <div class="pb-2"></div>
+
+            <div class="input-style has-borders no-icon input-style-always-active">
+                <label for="form51b31" class="color-highlight">Fees:</label>
+                <select id="form51b31">
+                    <option value="default" selected>Paid by Sender - $4.51</option>
+                    <option value="iOS">Paid by Receiver - $4.51</option>
+                </select>
+                <span><i class="fa fa-chevron-down"></i></span>
+                <i class="fa fa-check disabled valid color-green-dark"></i>
+                <i class="fa fa-check disabled invalid color-red-dark"></i>
+                <em></em>
+            </div>
+
+            <div class="pb-2"></div>
+
+            <a href="#" class="close-menu btn btn-l font-13 font-600 gradient-blue btn-full rounded-s border-0">Transfer Funds</a>
+        </div>
+    </div>
+
+    <!-- Cards Menu-->
+    <div id="menu-receipts"
+         class="menu menu-box-bottom rounded-m bg-white"
+         data-menu-height="405">
+        <div class="menu-title">
+            <p class="color-highlight font-600">Unpaid Bills</p>
+            <h1>Invoices</h1>
+            <a href="#" class="close-menu"><i class="fa fa-times-circle"></i></a>
+        </div>
+        <div class="content">
+            <div class="input-style has-borders no-icon input-style-always-active">
+                <label for="form5412" class="color-highlight">Provider</label>
+                <select id="form5412">
+                    <option value="asd2a">Water Company</option>
+                    <option value="asd1b">Internet Company</option>
+                    <option value="asd1c">Electricity Company</option>
+                </select>
+                <span><i class="fa fa-chevron-down"></i></span>
+                <i class="fa fa-check disabled valid color-green-dark"></i>
+                <i class="fa fa-check disabled invalid color-red-dark"></i>
+                <em></em>
+            </div>
+
+            <div class="pb-2"></div>
+
+            <div class="input-style has-borders no-icon input-style-always-active validate-field">
+                <input type="number" class="form-control validate-number" id="form1aafee5" placeholder="#12-345-6772">
+                <label for="form1aafee5" class="color-highlight font-12 font-500">Invoice ID</label>
+                <i class="fa fa-times disabled invalid color-red-dark"></i>
+                <i class="fa fa-check disabled valid color-green-dark"></i>
+                <em>(required)</em>
+            </div>
+
+            <div class="pb-2"></div>
+
+            <div class="input-style has-borders no-icon input-style-always-active validate-field">
+                <input type="number" class="form-control validate-number" id="form1aafee51" placeholder="$25.35">
+                <label for="form1aafee51" class="color-highlight font-12 font-500">Bill Amount</label>
+                <i class="fa fa-times disabled invalid color-red-dark"></i>
+                <i class="fa fa-check disabled valid color-green-dark"></i>
+                <em>(required)</em>
+            </div>
+
+            <div class="pb-2"></div>
+
+            <a href="#" class="close-menu btn btn-l font-13 font-600 gradient-blue btn-full rounded-s border-0">Pay Bill</a>
+        </div>
+    </div>
+
+    <!-- Invoice Menu-->
+    <div id="menu-status"
+         class="menu menu-box-bottom rounded-m bg-white"
+         data-menu-height="495">
+        <div class="menu-title">
+            <p class="color-highlight font-600">Payment Transfer To.</p>
+            <h1 class="font-24">Spotify Music</h1>
+            <a href="#" class="close-menu"><i class="fa fa-times-circle"></i></a>
+        </div>
+        <div class="content mb-0">
+            <div class="row mb-0">
+                <div class="col-4"><p class="color-theme">Provider</p></div>
+                <div class="col-8"><p class="text-end opacity-80">Spotify Music Inc.</p></div>
+
+                <div class="col-12 pt-2"><div class="divider mb-2"></div></div>
+
+                <div class="col-4"><p class="color-theme">Interval</p></div>
+                <div class="col-8"><p class="text-end opacity-80">15th August - 15h September.</p></div>
+
+                <div class="col-12 pt-2"><div class="divider mb-2"></div></div>
+
+                <div class="col-4"><p class="color-theme">Value</p></div>
+                <div class="col-8"><p class="text-end opacity-80">$19.99</p></div>
+
+                <div class="col-12 pt-2"><div class="divider mb-2"></div></div>
+
+                <div class="col-4"><p class="color-theme">Status</p></div>
+                <div class="col-8"><p class="text-end color-green-dark">Invoice Paid</p></div>
+
+                <div class="col-12 pt-2"><div class="divider mb-2"></div></div>
+
+                <div class="col-4"><p class="color-theme">Date Paid</p></div>
+                <div class="col-8"><p class="text-end opacity-80">16th September</p></div>
+
+                <div class="col-12 pt-2"><div class="divider mb-2"></div></div>
+
+                <div class="col-4"><p class="color-theme">Paid Using</p></div>
+                <div class="col-8"><p class="text-end opacity-80">Credit Card</p></div>
+
+                <div class="col-12 pt-2"><div class="divider mb-2"></div></div>
+            </div>
+            <p class="font-11 opacity-50 pt-3 mb-4">Thank you for choosing Spotify Music as your Music Provider</p>
+            <a href="#" class="close-menu btn btn-l font-13 font-600 text-uppercase gradient-green btn-full rounded-s border-0">This Bill is Paid</a>
+        </div>
+    </div>
+
+
+    <!-- Main Menu-->
+    <div id="menu-main" class="menu menu-box-left rounded-0" data-menu-load="menu-main.html" data-menu-width="280" data-menu-active="nav-pages"></div>
+
+    <!-- Share Menu-->
+    <div id="menu-share" class="menu menu-box-bottom rounded-m" data-menu-load="menu-share.html" data-menu-height="370"></div>
+
+    <!-- Colors Menu-->
+    <div id="menu-colors" class="menu menu-box-bottom rounded-m" data-menu-load="menu-colors.html" data-menu-height="480"></div>
+
+
+</div>
+
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>

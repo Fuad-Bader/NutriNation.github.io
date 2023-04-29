@@ -1,0 +1,451 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>AppKit Mobile</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+
+<body class="theme-light">
+
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+
+<div id="page">
+
+    <div class="header header-fixed header-logo-center">
+        <a href="index.html" class="header-title">Task Single - 1</a>
+        <a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-chevron-left"></i></a>
+        <a href="#" data-menu="menu-main" class="header-icon header-icon-4"><i class="fas fa-bars"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-dark"><i class="fas fa-sun"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-light"><i class="fas fa-moon"></i></a>
+    </div>
+
+    <div id="footer-bar" class="footer-bar-6">
+        <a href="index-components.html"><i class="fa fa-layer-group"></i><span>Features</span></a>
+        <a href="index-pages.html" class="active-nav"><i class="fa fa-file"></i><span>Pages</span></a>
+        <a href="index.html" class="circle-nav"><i class="fa fa-home"></i><span>Welcome</span></a>
+        <a href="index-projects.html"><i class="fa fa-camera"></i><span>Projects</span></a>
+        <a href="#" data-menu="menu-main"><i class="fa fa-bars"></i><span>Menu</span></a>
+    </div>
+
+    <div class="card card-fixed bg-6" data-card-height="400">
+		<div class="card-top p-3 mt-5">
+			<div class="d-flex">
+				<div>
+					<h6 class="font-400 color-white font-11 pt-1">Assigned to Task</h6>
+					<img src="images/avatars/1s.png" class="rounded-xl border border-gray-dark bg-green-dark" width="30">
+					<img src="images/avatars/3s.png" class="rounded-xl border border-gray-dark ms-n3 bg-blue-dark" width="30">
+					<img src="images/avatars/5s.png" class="rounded-xl border border-gray-dark ms-n3 bg-red-dark" width="30">
+					<img src="images/avatars/6s.png" class="rounded-xl border border-gray-dark ms-n3 bg-teal-dark" width="30">
+					<img src="images/avatars/7s.png" class="rounded-xl border border-gray-dark ms-n3 bg-magenta-dark" width="30">
+				</div>
+				<div class="ms-auto text-center">
+					<h6 class="font-500 color-white font-11 pt-1 mb-0">Tasks</h6>
+					<h5 class="font-20 mb-1 color-white pt-1">4/5</h5>
+				</div>
+			</div>
+		</div>
+		<div class="card-bottom p-3 pb-4 mb-2">
+			<h1 class="color-white mb-0 line-height-m">Add Task <br> Project Pack</h1>
+			<div class="d-flex">
+				<div>
+					<h5 class="font-12 color-white font-500 pb-2 pt-2 mb-0"><i class="fa fa-check-circle font-12 color-blue-dark pe-1"></i> 25 Tasks</h5>
+				</div>
+				<div class="ms-auto">
+					<h5 class="font-12 color-white font-500 pb-2 pt-2 mb-0"><i class="fa fa-tag font-12 color-brown-dark pe-1"></i> AppKit</h5>
+				</div>
+				<div class="ms-auto">
+					<h5 class="font-12 color-white font-500 pb-2 pt-2 mb-0"><i class="fa fa-exclamation-circle font-12 color-red-dark pe-1"></i> High Priority</h5>
+				</div>
+			</div>
+		</div>
+		<div class="card-overlay bg-gradient"></div>
+		<div class="card-overlay bg-black opacity-20"></div>
+    </div>
+    <div class="card card-clear" data-card-height="400"></div>
+
+    <div class="page-content pb-4">
+
+        <!-- card in this page format must have the class card-full to avoid seeing behind it-->
+        <div class="card card-full rounded-m pb-5">
+            <div class="content">
+                <p class="mb-n1 color-highlight font-600 mb-n1">Project Briefing </p>
+                <h2>Description</h2>
+                <p>
+					We're adding task management pages to AppKit. This will improve the exprience and create an even better use scope for our customers.
+				</p>
+            </div>
+
+			<div class="content">
+				<p class="mb-n1 color-highlight font-600 mb-n1">Files </p>
+				<h2>Attachements</h2>
+				<p>
+					Project requisites attached below. These are just dummy links. You can attach any file to them.
+				</p>
+				<div class="row text-center mb-0">
+					<a href="#" class="col-3">
+						<i class="fa fa-file-pdf color-red-dark font-30"></i>
+						<span class="font-10 color-theme d-block">brief.pdf</span>
+					</a>
+					<a href="#" class="col-3">
+						<i class="fa fa-file-archive color-blue-dark font-30"></i>
+						<span class="font-10 color-theme d-block">assets.zip</span>
+					</a>
+					<a href="#" class="col-3">
+						<i class="fa fa-file-contract color-gray-dark font-30"></i>
+						<span class="font-10 color-theme d-block">license.txt</span>
+					</a>
+					<a href="#" class="col-3">
+						<i class="fa fa-file-image color-green-dark font-30"></i>
+						<span class="font-10 color-theme d-block">logo.svg</span>
+					</a>
+				</div>
+			</div>
+
+			<div class="content mt-3">
+				<p class="mb-n1 color-highlight font-600 mb-n1">Team </p>
+				<h2 class="mb-0">Manage</h2>
+				<p class="mb-4">
+					Manage project access and permissions.
+				</p>
+				<a href="#" data-menu="menu-member" class="d-flex">
+					<div>
+						<img src="images/avatars/1s.png" width="40" class="rounded-sm bg-red-dark me-3">
+					</div>
+					<div>
+						<h5 class="mb-n1">Jane Doeson</h5>
+						<p class="mb-0 font-11 font-500 color-red-dark">Project Manager</p>
+					</div>
+					<div class="ms-auto pt-1">
+						<span class="badge bg-red-dark font-10 rounded-s">YOU</span>
+					</div>
+				</a>
+				<div class="divider mb-3 mt-2"></div>
+				<a href="#" data-menu="menu-member"  class="d-flex">
+					<div>
+						<img src="images/avatars/2s.png" width="40" class="rounded-sm bg-teal-dark me-3">
+					</div>
+					<div>
+						<h5 class="mb-n1">Jack Sons</h5>
+						<p class="font-11 font-500 mb-0 color-blue-dark">Front End Developer</p>
+					</div>
+					<div class="ms-auto">
+						<span class="icon icon-m color-gray-dark me-n2 opacity-50"><i class="fa fa-cog font-18"></i></span>
+					</div>
+				</a>
+				<div class="divider mb-3 mt-2"></div>
+				<a href="#" data-menu="menu-member"  class="d-flex">
+					<div>
+						<img src="images/avatars/7s.png" width="40" class="rounded-sm bg-teal-dark me-3">
+					</div>
+					<div>
+						<h5 class="mb-n1">Alex Curls</h5>
+						<p class="font-11 font-500 mb-0 color-blue-dark">Back End Developer</p>
+					</div>
+					<div class="ms-auto">
+						<span class="icon icon-m color-gray-dark me-n2 opacity-50"><i class="fa fa-cog font-18"></i></span>
+					</div>
+				</a>
+				<div class="divider mb-3 mt-2"></div>
+				<a href="#" data-menu="menu-member"  class="d-flex">
+					<div>
+						<img src="images/avatars/5s.png" width="40" class="rounded-sm bg-teal-dark me-3">
+					</div>
+					<div>
+						<h5 class="mb-n1">Max Bearded</h5>
+						<p class="font-11 font-500 mb-0 color-blue-dark">Marketing & SEO</p>
+					</div>
+					<div class="ms-auto">
+						<span class="icon icon-m color-gray-dark me-n2 opacity-50"><i class="fa fa-cog font-18"></i></span>
+					</div>
+				</a>
+				<div class="divider mb-3 mt-2"></div>
+				<a href="#" data-menu="menu-invite" class="d-flex">
+					<div>
+						<span class="icon icon-m bg-gray-dark rounded-sm me-3"><i class="fa fa-plus"></i></span>
+					</div>
+					<div>
+						<h5 class="ms-n1 mb-n1">Add New Member</h5>
+						<p class="ms-n1 font-11 font-500 mb-0 color-blue-dark">Send Invite to Team</p>
+					</div>
+					<div class="ms-auto">
+						<span class="icon icon-m color-gray-dark me-n2 opacity-50"><i class="fa fa-envelope font-18"></i></span>
+					</div>
+				</a>
+			</div>
+
+			<div class="content">
+				<p class="mb-n1 color-highlight font-600 mb-n1">Project </p>
+				<h2>Tasklist</h2>
+				<div class="form-check icon-check">
+					<input class="font-14 form-check-input" type="checkbox" value="" id="check2b">
+					<label class="font-14 form-check-label" for="check2b">Clean Code</label>
+					<i class="font-17 icon-check-1 far fa-square color-gray-dark"></i>
+					<i class="font-17 icon-check-2 fa fa-check-square color-green-dark"></i>
+					<span class="badge bg-green-dark text-uppercase float-end mt-2 p-1 font-8">YOUR TASK</span>
+				</div>
+				<div class="form-check icon-check">
+					<input class="font-14 form-check-input" type="checkbox" value="" id="check2a">
+					<label class="font-14 form-check-label" for="check2a">Create Pages</label>
+					<i class="font-17 icon-check-1 far fa-square color-gray-dark"></i>
+					<i class="font-17 icon-check-2 fa fa-check-square color-green-dark"></i>
+					<span class="badge bg-blue-dark text-uppercase float-end mt-2 p-1 font-8">JACK SON</span>
+				</div>
+				<div class="form-check icon-check">
+					<input class="font-14 form-check-input" type="checkbox" value="" id="check2c">
+					<label class="font-14 form-check-label" for="check2c">Connect to CMS</label>
+					<i class="font-17 icon-check-1 far fa-square color-gray-dark"></i>
+					<i class="font-17 icon-check-2 fa fa-check-square color-green-dark"></i>
+					<span class="badge bg-blue-dark text-uppercase float-end mt-2 p-1 font-8">John DOE</span>
+				</div>
+				<div class="form-check icon-check">
+					<input class="font-14 form-check-input" type="checkbox" value="" id="check1a" checked>
+					<label class="font-14 form-check-label" for="check1a">Wireframe</label>
+					<i class="font-17 icon-check-1 far fa-square color-gray-dark"></i>
+					<i class="font-17 icon-check-2 fa fa-check-square color-green-dark"></i>
+					<span class="badge bg-green-dark text-uppercase float-end mt-2 p-1 font-8">APPROVED</span>
+				</div>
+				<div class="form-check icon-check">
+					<input class="font-14 form-check-input" type="checkbox" value="" id="check1b" checked>
+					<label class="font-14 form-check-label" for="check1b">Code Framework</label>
+					<i class="font-17 icon-check-1 far fa-square color-gray-dark"></i>
+					<i class="font-17 icon-check-2 fa fa-check-square color-green-dark"></i>
+					<span class="badge bg-green-dark text-uppercase float-end mt-2 p-1 font-8">APPROVED</span>
+				</div>
+				<div class="form-check icon-check">
+					<input class="font-14 form-check-input" type="checkbox" value="" id="check1c" checked>
+					<label class="font-14 form-check-label" for="check1c">Install Requisites</label>
+					<i class="font-17 icon-check-1 far fa-square color-gray-dark"></i>
+					<i class="font-17 icon-check-2 fa fa-check-square color-green-dark"></i>
+					<span class="badge bg-green-dark text-uppercase float-end mt-2 p-1 font-8">APPROVED</span>
+				</div>
+				<div class="form-check icon-check">
+					<input class="font-14 form-check-input" type="checkbox" value="" id="check1d" checked>
+					<label class="font-14 form-check-label" for="check1d">Develop Starter Page</label>
+					<i class="font-17 icon-check-1 far fa-square color-gray-dark"></i>
+					<i class="font-17 icon-check-2 fa fa-check-square color-green-dark"></i>
+					<span class="badge bg-green-dark text-uppercase float-end mt-2 p-1 font-8">APPROVED</span>
+				</div>
+			</div>
+
+			<div class="content">
+				<p class="mb-n1 color-highlight font-600 mb-n1">Messages </p>
+				<h2>Updates</h2>
+
+				<div class="speech-icon-left pt-2">
+					<div class="speech-bubble speech-right bg-highlight color-white">
+						<strong>@Enabled</strong>, code standards task is up to you mate. Sounds good?
+					</div>
+					<div class="clearfix"></div>
+					<img src="images/avatars/1s.png" class="rounded-xl border bg-green-dark border-highlight border-s">
+				</div>
+				<div class="speech-icon-right">
+					<div class="speech-bubble speech-left color-black">
+						Yeap! I'll take it from here.
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="speech-icon-right">
+					<div class="speech-bubble speech-left color-black mt-n2">
+						I'll keep you posted.
+					</div>
+					<div class="clearfix"></div>
+					<img src="images/avatars/2s.png" class="rounded-xl border bg-red-dark border-black border-s">
+				</div>
+				<div class="speech-icon-left">
+					<div class="speech-bubble speech-right bg-highlight color-white">
+						Excellent! Looking forward to updates! Ping me if needed.
+					</div>
+					<div class="clearfix"></div>
+					<img src="images/avatars/1s.png" class="rounded-xl border bg-green-dark border-highlight border-s">
+				</div>
+				<div class="mt-3">
+					<div class="d-flex rounded-m gradient-yellow p-3 mt-2 mb-1">
+						<div class="align-self-center">
+							<i class="fa fa-sync color-black fa-spin font-26 me-3 mt-1 color-white"></i>
+						</div>
+						<div class="align-self-center me-auto">
+							<h4 class="font-16 mb-0 color-black">Project Awaiting Updates</h4>
+							<p class="font-12 mb-0 mt-n2 color-black opacity-70">Is this task complete?</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="divider divider-margins mb-2"></div>
+			<div class="d-flex mx-2 text-center">
+				<div class="me-3 speach-icon">
+					<a href="#" class="bg-gray-dark rounded-sm ms-2" data-menu="menu-upload"><i class="fa fa-plus"></i></a>
+				</div>
+				<div class="flex-fill speach-input">
+					<input type="text" class="form-control" placeholder="Enter your Message here">
+				</div>
+				<div class="ms-3 speach-icon">
+					<a href="#" class="bg-blue-dark rounded-sm me-2"><i class="fa fa-arrow-up"></i></a>
+				</div>
+			</div>
+
+
+        </div>
+    </div>
+    <!-- Page content ends here-->
+
+
+	<div id="menu-invite" class="menu menu-box-bottom rounded-m bg-theme">
+		<div class="content mt-2 pb-4">
+			<p class="mb-n1 color-highlight font-600 mb-n1">Members </p>
+			<h2>Send Invite</h2>
+			<p class="mb-3">
+				Add new team mates to your project and set access.
+			</p>
+
+			<div class="input-style has-borders has-icon validate-field mb-4">
+				<i class="fa fa-at"></i>
+				<input type="email" class="form-control validate-name" id="form1a" placeholder="Enter Email Address">
+				<label for="form1a" class="color-highlight">Enter Email Address</label>
+				<i class="fa fa-times disabled invalid color-red-dark"></i>
+				<i class="fa fa-check disabled valid color-green-dark"></i>
+				<em>(required)</em>
+			</div>
+
+			<div class="divider mb-3 mt-3"></div>
+
+			<p class="mb-n1 color-highlight font-600 mb-n1">Set Permissions </p>
+			<div class="list-group list-custom-small">
+				<a href="#" data-trigger-switch="switch-1">
+					<i class="fa fa-upload gradient-gray color-white rounded-sm ms-0"></i>
+					<span>Upload Files</span>
+					<div class="custom-control small-switch ios-switch">
+						<input type="checkbox" class="ios-input" id="switch-1" checked>
+						<label class="custom-control-label" for="switch-1"></label>
+					</div>
+				</a>
+				<a href="#" data-trigger-switch="switch-2">
+					<i class="fa fa-download gradient-blue color-white rounded-sm ms-0"></i>
+					<span>Download Files</span>
+					<div class="custom-control small-switch ios-switch">
+						<input type="checkbox" class="ios-input" id="switch-2" checked>
+						<label class="custom-control-label" for="switch-2"></label>
+					</div>
+				</a>
+				<a href="#" data-trigger-switch="switch-3">
+					<i class="fa fa-check gradient-green color-white rounded-sm ms-0"></i>
+					<span>Complete Task</span>
+					<div class="custom-control small-switch ios-switch">
+						<input type="checkbox" class="ios-input" id="switch-3">
+						<label class="custom-control-label" for="switch-3"></label>
+					</div>
+				</a>
+				<a href="#" data-trigger-switch="switch-4">
+					<i class="fa fa-plus gradient-brown color-white rounded-sm ms-0"></i>
+					<span>Add New Members</span>
+					<div class="custom-control small-switch ios-switch">
+						<input type="checkbox" class="ios-input" id="switch-4">
+						<label class="custom-control-label" for="switch-4"></label>
+					</div>
+				</a>
+			</div>
+			<a href="#" class="btn btn-full font-700 rounded-sm mt-4 mb-4 btn-m gradient-blue border-0 text-uppercase">Send Invite</a>
+		</div>
+	</div>
+
+
+
+	<div id="menu-upload" class="menu menu-box-bottom rounded-m bg-theme" data-menu-height="275" data-menu-effect="menu-over">
+		<div class="list-group list-custom-small ps-2 me-4">
+			<a href="#">
+				<i class="font-14 fa fa-file gradient-gray color-white rounded-sm"></i>
+				<span class="font-13">File</span>
+				<i class="fa fa-angle-right"></i>
+			</a>
+			<a href="#">
+				<i class="font-14 fa fa-image gradient-green  color-white rounded-sm""></i>
+				<span class="font-13">Photo</span>
+				<i class="fa fa-angle-right"></i>
+			</a>
+			<a href="#">
+				<i class="font-14 fa fa-video gradient-red  color-white rounded-sm""></i>
+				<span class="font-13">Video</span>
+				<i class="fa fa-angle-right"></i>
+			</a>
+			<a href="#">
+				<i class="font-14 fa fa-camera gradient-blue color-white rounded-sm""></i>
+				<span class="font-13">Camera</span>
+				<i class="fa fa-angle-right"></i>
+			</a>
+			<a href="#">
+				<i class="font-14 fa fa-map-marker gradient-green  color-white rounded-sm""></i>
+				<span class="font-13">Location</span>
+				<i class="fa fa-angle-right"></i>
+			</a>
+		</div>
+	</div>
+
+	<div id="menu-member" class="menu menu-box-bottom rounded-m">
+		<div class="content mt-2 pb-4">
+			<div class="list-group list-custom-small">
+				<a href="#" data-trigger-switch="switch-1">
+					<i class="fa fa-upload gradient-gray color-white rounded-sm ms-0"></i>
+					<span>Upload Files</span>
+					<div class="custom-control small-switch ios-switch">
+						<input type="checkbox" class="ios-input" id="switch-1" checked>
+						<label class="custom-control-label" for="switch-1"></label>
+					</div>
+				</a>
+				<a href="#" data-trigger-switch="switch-2">
+					<i class="fa fa-download gradient-blue color-white rounded-sm ms-0"></i>
+					<span>Download Files</span>
+					<div class="custom-control small-switch ios-switch">
+						<input type="checkbox" class="ios-input" id="switch-2" checked>
+						<label class="custom-control-label" for="switch-2"></label>
+					</div>
+				</a>
+				<a href="#" data-trigger-switch="switch-3">
+					<i class="fa fa-check gradient-green color-white rounded-sm ms-0"></i>
+					<span>Complete Task</span>
+					<div class="custom-control small-switch ios-switch">
+						<input type="checkbox" class="ios-input" id="switch-3">
+						<label class="custom-control-label" for="switch-3"></label>
+					</div>
+				</a>
+				<a href="#" data-trigger-switch="switch-4">
+					<i class="fa fa-plus gradient-brown color-white rounded-sm ms-0"></i>
+					<span>Add New Members</span>
+					<div class="custom-control small-switch ios-switch">
+						<input type="checkbox" class="ios-input" id="switch-4">
+						<label class="custom-control-label" for="switch-4"></label>
+					</div>
+				</a>
+				<a href="#"">
+					<i class="fa fa-plus gradient-red color-white rounded-sm ms-0"></i>
+					<span>Remove Member</span>
+					<i class="fa fa-angle-right"></i>
+				</a>
+			</div>
+		</div>
+	</div>
+
+
+
+    <!-- Main Menu-->
+    <div id="menu-main" class="menu menu-box-left rounded-0" data-menu-load="menu-main.html" data-menu-width="280" data-menu-active="nav-pages"></div>
+
+    <!-- Share Menu-->
+    <div id="menu-share" class="menu menu-box-bottom rounded-m" data-menu-load="menu-share.html" data-menu-height="370"></div>
+
+    <!-- Colors Menu-->
+    <div id="menu-colors" class="menu menu-box-bottom rounded-m" data-menu-load="menu-colors.html" data-menu-height="480"></div>
+
+
+</div>
+
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>
