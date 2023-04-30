@@ -1,0 +1,185 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>AppKit Mobile</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">    
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+    
+<body class="theme-light">
+    
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+    
+<div id="page">
+    
+    <div class="header header-fixed header-logo-center header-auto-show">
+        <a href="index.html" class="header-title">Store</a>
+        <a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-chevron-left"></i></a>
+        <a href="#" data-menu="menu-main" class="header-icon header-icon-4"><i class="fas fa-bars"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-dark"><i class="fas fa-sun"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-light"><i class="fas fa-moon"></i></a>
+    </div>
+
+    <div id="footer-bar" class="footer-bar-6">
+        <a href="index-components.html"><i class="fa fa-layer-group"></i><span>Features</span></a>
+        <a href="index-pages.html" class="active-nav"><i class="fa fa-file"></i><span>Pages</span></a>
+        <a href="index.html" class="circle-nav"><i class="fa fa-home"></i><span>Welcome</span></a>
+        <a href="index-projects.html"><i class="fa fa-camera"></i><span>Projects</span></a>
+        <a href="#" data-menu="menu-main"><i class="fa fa-bars"></i><span>Menu</span></a>
+    </div>
+    
+    <div class="page-title page-title-fixed">
+        <a href="#" class="page-title-icon shadow-xl bg-theme color-theme me-0 ms-3" data-back-button><i class="fa fa-arrow-left"></i></a>
+        <h1>Cards</h1>
+        <a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-light" data-toggle-theme><i class="fa fa-moon"></i></a>
+        <a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-dark" data-toggle-theme><i class="fa fa-lightbulb color-yellow-dark"></i></a>
+        <a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-main"><i class="fa fa-bars"></i></a>
+    </div>
+    <div class="page-title-clear"></div>
+        
+    <div class="page-content">
+        
+        <div class="card card-style card-full-left" style="background-image:url(images/food/regular/1.jpg)" data-card-height="300">
+            <div class="card-bottom px-3 pb-3">
+                <div class="d-flex">
+                    <div class="align-self-center">
+                        <h1 class="color-white font-20 mb-n2">The House Special</h1>
+                        <h1 class="color-white font-30 mb-0">Rolay Burger</h1>
+                    </div>
+                    <div class="align-self-center ms-auto">
+                        <a href="#" class="btn bg-white color-black rounded-m btn-s font-600">Order Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-top pe-3 mt-3">
+                <div class="float-end bg">
+                    <span class="color-white pe-2">Recommended by: </span>
+                    <img src="images/pictures/31s.jpg" class="rounded-xl border border-white" width="30">
+                    <img src="images/pictures/14s.jpg" class="rounded-xl border border-white ms-n3" width="30">
+                    <img src="images/pictures/5s.jpg" class="rounded-xl border border-white ms-n3" width="30">
+                    <img class="bg-theme color-black rounded-xl ms-n3" src="images/empty.png" width="30"><span class="d-inline-block text-center font-600" style="width:30px; margin-left:-30px; transform:translateY(2px);">+9</span>
+                </div>
+            </div>
+            <div class="card-overlay bg-black opacity-40"></div>
+            <div class="card-overlay bg-gradient opacity-90"></div>
+        </div>            
+        
+        <div class="card card-style card-full-right" style="background-image:url(images/food/regular/2.jpg)" data-card-height="350">
+            <div class="card-top pt-4 ps-3">
+                <p class="color-white font-10 bg-red-dark d-inline px-2 py-1 rounded-xs text-uppercase">ALL YOU CAN EAT</p>
+                <h1 class="color-white font-800 font-40 mb-0 mt-4">Pizza</h1>
+                <h1 class="color-white font-800 font-40 mb-4">Night</h1>
+                <p class="color-white font-700 font-15 opacity-90">
+                    Love Pizza? So do we! How much can you <br>chug down without taking a break?
+                </p>
+            </div>
+            <div class="card-bottom ps-3 mb-3 pb-1">
+                <h4 class="color-white opacity-50 font-14"><i class="fa fa-user pe-2"></i> 351 Joined</h4>
+            </div>
+            <div class="card-bottom pe-3 mb-3">
+                <div class="float-end">
+                    <a href="#" class="btn btn-s bg-white color-black font-600 rounded-m">Join Event</a>
+                </div>
+            </div>
+            <div class="card-overlay bg-black opacity-80"></div>
+        </div>
+        
+        <div class="card card-style card-full-left" style="background-image:url(images/food/regular/3.jpg)" data-card-height="230">
+            <div class="card rounded-0 shadow-xl" data-card-height="cover" style="width:100px; z-index:99;">
+                <div class="card-center text-center">
+                    <h1 class="font-28 text-uppercase font-900 opacity-30">Mon</h1>
+                    <h1 class="font-24 font-900">27th</h1>
+                </div>
+            </div>
+            <div class="card-top ps-5 ms-5 pt-3">
+                <div class="ps-4">
+                    <h1 class="color-white pt-3 pb-3">Grand Opening </h1>
+                    <p class="color-white mb-0"><i class="fa fa-mobile color-white pe-2 icon-30"></i> Bench Pressing and Squats</p>
+                    <p class="color-white"><i class="fa fa-map-marker color-white pe-2 icon-30"></i> Steve Jobs Theater, Palo Alto</p>
+                    <a href="#" data-menu="menu-join" class="btn btn-m bg-white color-black font-700">Accept</a>
+                    <a href="#" data-menu="menu-join" class="btn btn-m border-white color-white font-700 ms-3">Decline</a>
+                </div>
+            </div>
+            <div class="card-overlay bg-black opacity-70"></div>
+        </div>
+
+        
+        <div class="card ms-3 me-3 card-style mx-0 px-2 bg-highlight" style="background-image:url(images/food/sweets/sweet-2.png);" data-card-height="350">
+            <div class="card-top ps-3 pe-3">
+                <p class="color-white opacity-50 font-600 mb-n1 pt-3">Dessert & Sweets</p>
+                <h1 class="mb-0 color-white font-30">Strawberry Pie</h1>
+            </div>
+            <div class="card-bottom ps-3 pe-3 pb-3">
+                <h1 class="mb-n2 color-white font-800 text-end font-30"><span class="font-12 font-300 opacity-30">per serving</span> $24.99</h1>
+            </div>
+            <div class="card-bottom">
+                <a href="#" class="btn btn-m font-600 color-black bg-white ms-2 mb-2 rounded-sm">Order Now</a>
+            </div>
+        </div>
+   
+  
+        <div class="card card-style">
+            <img src="images/pictures/4.jpg" class="img-fluid">
+            <div class="card-body ms-1 me-1 mt-n3">
+                <p class="font-600 color-highlight mt-3 mb-n1">Drinks and Apetizers</p>
+                <h1 class="font-800 font-28 mb-4">Beverages</h1>
+                
+                <div class="d-flex mb-n3">
+                    <div>
+                        <h5 class="mb-0">Whiskey</h5>
+                        <p class="opacity-50 line-height-s font-12">Malt or Distiled</p>
+                    </div>
+                    <div class="ms-auto ps-3">
+                        <h4>$5<sup>.99</sup></h4>
+                    </div>
+                </div>
+                
+                <div class="d-flex mb-n3">
+                    <div>
+                        <h5 class="mb-0">Tequila</h5>
+                        <p class="opacity-50 line-height-s font-12">Original with Lemon</p>
+                    </div>
+                    <div class="ms-auto ps-3">
+                        <h4>$9<sup>.99</sup></h4>
+                    </div>
+                </div>
+                <div class="d-flex mb-n3">
+                    <div>
+                        <h5 class="mb-0">Beer</h5>
+                        <p class="opacity-50 line-height-s font-12">Filtered or Unfiltered</p>
+                    </div>
+                    <div class="ms-auto ps-3">
+                        <h4>$19<sup>.99</sup></h4>
+                    </div>
+                </div>
+            </div>    
+        </div>
+                      
+        
+        <div data-menu-load="menu-footer.html"></div>
+    </div>
+    <!-- Page content ends here-->
+    
+    <!-- Main Menu--> 
+    <div id="menu-main" class="menu menu-box-left rounded-0" data-menu-load="menu-main.html" data-menu-width="280" data-menu-active="nav-components"></div>
+    
+    <!-- Share Menu-->
+    <div id="menu-share" class="menu menu-box-bottom rounded-m" data-menu-load="menu-share.html" data-menu-height="370"></div>  
+    
+    <!-- Colors Menu-->
+    <div id="menu-colors" class="menu menu-box-bottom rounded-m" data-menu-load="menu-colors.html" data-menu-height="480"></div> 
+     
+    
+</div>
+
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>

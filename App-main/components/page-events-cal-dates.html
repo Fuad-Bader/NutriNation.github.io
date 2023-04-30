@@ -1,0 +1,191 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>AppKit Mobile</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+
+<body class="theme-light">
+
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+
+<div id="page">
+
+    <div class="header header-fixed header-logo-center header-auto-show">
+        <a href="index.html" class="header-title">Calendar</a>
+        <a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-chevron-left"></i></a>
+        <a href="#" data-menu="menu-main" class="header-icon header-icon-4"><i class="fas fa-bars"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-dark"><i class="fas fa-sun"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-light"><i class="fas fa-moon"></i></a>
+    </div>
+
+    <div id="footer-bar" class="footer-bar-6">
+        <a href="index-components.html"><i class="fa fa-layer-group"></i><span>Features</span></a>
+        <a href="index-pages.html" class="active-nav"><i class="fa fa-file"></i><span>Pages</span></a>
+        <a href="index.html" class="circle-nav"><i class="fa fa-home"></i><span>Welcome</span></a>
+        <a href="index-projects.html"><i class="fa fa-camera"></i><span>Projects</span></a>
+        <a href="#" data-menu="menu-main"><i class="fa fa-bars"></i><span>Menu</span></a>
+    </div>
+
+    <div class="page-title page-title-fixed">
+        <h1>Calendar</h1>
+        <a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-share"><i class="fa fa-share-alt"></i></a>
+        <a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-light" data-toggle-theme><i class="fa fa-moon"></i></a>
+        <a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-dark" data-toggle-theme><i class="fa fa-lightbulb color-yellow-dark"></i></a>
+        <a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-main"><i class="fa fa-bars"></i></a>
+    </div>
+    <div class="page-title-clear"></div>
+
+    <div class="page-content">
+
+        <div class="card card-style">
+            <div class="cal-header">
+                <h4 class="cal-title text-center text-uppercase font-800 bg-highlight color-white">June</h4>
+                <h6 class="cal-title-left color-white"><i class="fa fa-chevron-left"></i></h6>
+                <h6 class="cal-title-right color-white"><i class="fa fa-chevron-right"></i></h6>
+            </div>
+            <div class="clearfix"></div>
+            <div class="cal-days bg-highlight opacity-80 pt-2 pb-2">
+                <a href="#">SUN</a>
+                <a href="#">MON</a>
+                <a href="#">TUE</a>
+                <a href="#">WED</a>
+                <a href="#">THU</a>
+                <a href="#">FRI</a>
+                <a href="#">SAT</a>
+                <div class="clearfix"></div>
+            </div>
+            <div class="divider mb-1"></div>
+            <div class="cal-dates cal-dates-border">
+                <a href="#" class="cal-disabled">25</a>
+                <a href="#" class="cal-disabled">26</a>
+                <a href="#" class="cal-disabled">27</a>
+                <a href="#" class="cal-disabled">28</a>
+                <a href="#" class="cal-disabled">29</a>
+                <a href="#" class="cal-disabled">30</a>
+                <a href="#" data-menu="menu-events">1</a>
+                <a href="#" data-menu="menu-events">2</a>
+                <a href="#" data-menu="menu-events">3</a>
+                <a href="#" data-menu="menu-events">4</a>
+                <a href="#" data-menu="menu-events">5</a>
+                <a href="#" data-menu="menu-events">6</a>
+                <a href="#" data-menu="menu-events">7</a>
+                <a href="#" data-menu="menu-events">8</a>
+                <a href="#" data-menu="menu-events">9</a>
+                <a href="#" data-menu="menu-events">10</a>
+                <a href="#" data-menu="menu-events">11</a>
+                <a href="#" class="cal-selected"><i class="fa fa-square color-highlight"></i><span>12</span></a>
+                <a href="#" data-menu="menu-events">13</a>
+                <a href="#" data-menu="menu-events">14</a>
+                <a href="#" data-menu="menu-events">15</a>
+                <a href="#" data-menu="menu-events">16</a>
+                <a href="#" data-menu="menu-events">17</a>
+                <a href="#" data-menu="menu-events">18</a>
+                <a href="#" data-menu="menu-events">19</a>
+                <a href="#" data-menu="menu-events">20</a>
+                <a href="#" data-menu="menu-events">21</a>
+                <a href="#" data-menu="menu-events">22</a>
+                <a href="#" data-menu="menu-events">23</a>
+                <a href="#" data-menu="menu-events">24</a>
+                <a href="#" data-menu="menu-events">25</a>
+                <a href="#" data-menu="menu-events">26</a>
+                <a href="#" data-menu="menu-events">27</a>
+                <a href="#" data-menu="menu-events">28</a>
+                <a href="#" data-menu="menu-events">29</a>
+                <a href="#" data-menu="menu-events">30</a>
+                <a href="#" data-menu="menu-events">31</a>
+                <a href="#" class="cal-disabled">1</a>
+                <a href="#" class="cal-disabled">2</a>
+                <a href="#" class="cal-disabled">3</a>
+                <a href="#" class="cal-disabled">4</a>
+                <a href="#" class="cal-disabled">5</a>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+        <div data-menu-load="menu-footer.html"></div>
+    </div>
+    <!-- Page content ends here-->
+
+    <!-- Menu Events-->
+    <div id="menu-events" class="menu menu-box-bottom rounded-m" data-menu-height="420">
+        <div class="menu-title">
+            <p class="color-highlight">Showing Events for</p>
+            <h1 class="font-24">25th August</h1>
+            <a href="#" class="close-menu"><i class="fa fa-times-circle"></i></a>
+        </div>
+        <div class="divider divider-margins mt-2 mb-3"></div>
+        <div class="content mt-0">
+            <a href="#" class="d-flex mb-3">
+                <div class="align-self-center">
+                    <img src="images/pictures/1s.jpg" width="60" class="rounded-sm me-3">
+                </div>
+                <div class="align-self-center">
+                    <h5>Marathon And Sprint Event</h5>
+                    <p class="mb-0 mt-n1 font-10">
+                        <span><i class="fa fa-map-marker color-blue-dark pe-1"></i>Palo Alto</span>
+                        <span class="ps-2"><i class="fa fa-user color-green-dark pe-1"></i>25k+ Attending</span>
+                    </p>
+                </div>
+                <div class="align-self-center ms-auto">
+                    <i class="fa fa-arrow-right pe-2 opacity-30"></i>
+                </div>
+            </a>
+            <a href="#" class="d-flex mb-3">
+                <div class="align-self-center">
+                    <img src="images/pictures/2s.jpg" width="60" class="rounded-sm me-3">
+                </div>
+                <div class="align-self-center">
+                    <h5>Neon Makeup Photography</h5>
+                    <p class="mb-0 mt-n1 font-10">
+                        <span><i class="fa fa-map-marker color-blue-dark pe-1"></i>Palo Alto</span>
+                        <span class="ps-2"><i class="fa fa-user color-green-dark pe-1"></i>25k+ Attending</span>
+                    </p>
+                </div>
+                <div class="align-self-center ms-auto">
+                    <i class="fa fa-arrow-right pe-2 opacity-30"></i>
+                </div>
+            </a>
+            <a href="#" class="d-flex mb-3">
+                <div class="align-self-center">
+                    <img src="images/pictures/31s.jpg" width="60" class="rounded-sm me-3">
+                </div>
+                <div class="align-self-center">
+                    <h5>Live Karaoke and Singing</h5>
+                    <p class="mb-0 mt-n1 font-10">
+                        <span><i class="fa fa-map-marker color-blue-dark pe-1"></i>Palo Alto</span>
+                        <span class="ps-2"><i class="fa fa-user color-green-dark pe-1"></i>25k+ Attending</span>
+                    </p>
+                </div>
+                <div class="align-self-center ms-auto">
+                    <i class="fa fa-arrow-right pe-2 opacity-30"></i>
+                </div>
+            </a>
+            <a href="#" class="btn btn-full btn-m text-uppercase font-700 border-0 mt-4 mx-1 rounded-sm gradient-blue">View All Events</a>
+        </div>
+    </div>
+
+    <!-- Main Menu-->
+    <div id="menu-main" class="menu menu-box-left rounded-0" data-menu-load="menu-main.html" data-menu-width="280" data-menu-active="nav-pages"></div>
+
+    <!-- Share Menu-->
+    <div id="menu-share" class="menu menu-box-bottom rounded-m" data-menu-load="menu-share.html" data-menu-height="370"></div>
+
+    <!-- Colors Menu-->
+    <div id="menu-colors" class="menu menu-box-bottom rounded-m" data-menu-load="menu-colors.html" data-menu-height="480"></div>
+
+
+</div>
+
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>

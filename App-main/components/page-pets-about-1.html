@@ -1,0 +1,217 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>AppKit Mobile</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+
+<body class="theme-light">
+
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+
+<div id="page">
+
+    <div class="header header-fixed header-logo-center header-auto-show">
+        <a href="index.html" class="header-title">Welcome</a>
+        <a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-chevron-left"></i></a>
+        <a href="#" data-menu="menu-main" class="header-icon header-icon-4"><i class="fas fa-bars"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-dark"><i class="fas fa-sun"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-light"><i class="fas fa-moon"></i></a>
+    </div>
+
+    <div id="footer-bar" class="footer-bar-6">
+        <a href="index-components.html"><i class="fa fa-layer-group"></i><span>Features</span></a>
+        <a href="index-pages.html" class="active-nav"><i class="fa fa-file"></i><span>Pages</span></a>
+        <a href="index.html" class="circle-nav"><i class="fa fa-home"></i><span>Welcome</span></a>
+        <a href="index-projects.html"><i class="fa fa-camera"></i><span>Projects</span></a>
+        <a href="#" data-menu="menu-main"><i class="fa fa-bars"></i><span>Menu</span></a>
+    </div>
+
+
+    <div class="card card-fixed mb-n5 rounded-0" style="background-image:url(images/pets/6m.jpg)" data-card-height="550">
+		<div class="card-top pe-3">
+			<a href="#" data-back-button class="btn btn-s rounded-sm scale-box bg-theme color-theme font-700 text-uppercase float-end mt-4">Call Now</a>
+		</div>
+		<div class="card-bottom p-3 pb-0">
+			<div class="d-flex">
+				<div class="w-75">
+					<p class="mb-0 font-14 font-700 color-white opacity-70">Americal Pitbull</p>
+					<h1 class="color-white font-30 font-800 mb-0">Maximus</h1>
+				</div>
+				<div class="w-25 ms-auto text-center align-self-center">
+					<i class="color-white font-18 fa fa-paw pt-1"></i>
+					<h5 class="color-white mb-0">Male</h5>
+				</div>
+				<div class="w-25 me-auto text-center align-self-center">
+					<i class="color-white font-18 fa fa-calendar pt-1"></i>
+					<h5 class="color-white mb-0">3 Yrs</h5>
+				</div>
+			</div>
+
+			<p class="color-white opacity-80 pb-3 pt-2">
+				Max is an adorable pupper that is looking for a forever home. He's big, but don't be fooled! His love and affection is even bigger!
+			</p>
+		</div>
+		<div class="card-overlay bg-gradient rounded-0"></div>
+    </div>
+    <div class="card card-clear" data-card-height="560"></div>
+
+
+    <div class="page-content pb-3">
+
+        <div class="card card-full rounded-m pb-4">
+            <div class="drag-line"></div>
+
+
+				<div class="content mb-n2">
+					<div class="row mb-0">
+						<div class="col-7 pe-1">
+							<div class="card card-style mb-3 mx-0" style="background-image:url(images/pets/8l.jpg);" data-card-height="350">
+								<div class="card-bottom p-3">
+									<h2 class="color-white">Powerful</h2>
+									<p class="color-white opacity-60 line-height-s">
+										Max will guard you with his life. That's a certainty.
+									</p>
+								</div>
+								<div class="card-overlay bg-gradient opacity-30"></div>
+								<div class="card-overlay bg-gradient"></div>
+							</div>
+						</div>
+						<div class="col-5">
+							<div class="card card-style mx-0 mb-2" style="background-image:url(images/pets/9l.jpg);" data-card-height="170">
+								<div class="card-bottom p-3">
+									<h2 class="color-white mb-0">Smart</h2>
+									<p class="color-white opacity-60 line-height-s font-12">
+										He likes tricks!
+									</p>
+								</div>
+								<div class="card-overlay bg-gradient opacity-30"></div>
+								<div class="card-overlay bg-gradient"></div>
+							</div>
+							<div class="card card-style mx-0 mb-0" style="background-image:url(images/pets/7l.jpg);" data-card-height="170">
+								<div class="card-bottom p-3">
+									<h2 class="color-white mb-0">Cuddly</h2>
+									<p class="color-white opacity-60 line-height-s font-12">
+										And belly rubs!
+									</p>
+								</div>
+								<div class="card-overlay bg-gradient opacity-30"></div>
+								<div class="card-overlay bg-gradient"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="content mb-0">
+					<div class="d-flex">
+						<div class="align-self-center">
+							<h1 class="mb-0 font-18">About Max</h1>
+						</div>
+						<div class="ms-auto align-self-center">
+							<a href="#" class="float-end font-12 font-400 pb-1">Call for More</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="content mt-2 mb-0">
+					<div class="row">
+						<div class="col-4">
+							<span class="font-11">Breed</span>
+							<p class="mt-n2 mb-1">
+								<strong class="color-theme">Pitbull</strong>
+							</p>
+						</div>
+						<div class="col-4">
+							<span class="font-11">Vaccinated</span>
+							<p class="mt-n2 mb-1">
+								<strong class="color-theme">Yes</strong>
+							</p>
+						</div>
+						<div class="col-4">
+							<span class="font-11">Good with Kids</span>
+							<p class="mt-n2 mb-1">
+								<strong class="color-theme">Yes</strong>
+							</p>
+						</div>
+						<div class="col-4">
+							<span class="font-11">Energy</span>
+							<p class="mt-n2 mb-1">
+								<strong class="color-theme">7/10</strong>
+							</p>
+						</div>
+						<div class="col-4">
+							<span class="font-11">Weight</span>
+							<p class="mt-n2 mb-1">
+								<strong class="color-theme">23kg+</strong>
+							</p>
+						</div>
+						<div class="col-4">
+							<span class="font-11">Maintenance</span>
+							<p class="mt-n2 mb-1">
+								<strong class="color-theme">Medium</strong>
+							</p>
+						</div>
+						<div class="col-4">
+							<span class="font-11">Lifespan</span>
+							<p class="mt-n2 mb-1">
+								<strong class="color-theme">15+ Yrs</strong>
+							</p>
+						</div>
+						<div class="col-4">
+							<span class="font-11">Pedigree</span>
+							<p class="mt-n2 mb-1">
+								<strong class="color-theme">Yes</strong>
+							</p>
+						</div>
+						<div class="col-4">
+							<span class="font-11">Attitude</span>
+							<p class="mt-n2 mb-1">
+								<strong class="color-theme">Soft</strong>
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<a href="tel:+1 234 567 8911" class="default-link card card-style mb-5 mt-n2" style="background-image:url(images/pets/6m.jpg);" data-card-height="120">
+					<div class="card-center ps-3">
+						<h1 class="color-white mb-n2 font-20">Book your Viewing</h1>
+						<p class="color-white opacity-70 mb-0">Call us now and see Max! Tap to Call!</p>
+					</div>
+					<div class="card-center">
+						<span class="icon icon-s float-end bg-theme color-black me-3 rounded-xl"><i class="fa fa-phone color-green-dark"></i></span>
+					</div>
+					<div class="card-overlay bg-black opacity-60"></div>
+				</a>
+
+
+            </div>
+        </div>
+
+    </div>
+    <!-- Page content ends here-->
+
+    <!-- Main Menu-->
+    <div id="menu-main" class="menu menu-box-left rounded-0" data-menu-load="menu-main.html" data-menu-width="280" data-menu-active="nav-contact"></div>
+
+    <!-- Share Menu-->
+    <div id="menu-share" class="menu menu-box-bottom rounded-m" data-menu-load="menu-share.html" data-menu-height="370"></div>
+
+    <!-- Colors Menu-->
+    <div id="menu-colors" class="menu menu-box-bottom rounded-m" data-menu-load="menu-colors.html" data-menu-height="480"></div>
+
+
+</div>
+
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>

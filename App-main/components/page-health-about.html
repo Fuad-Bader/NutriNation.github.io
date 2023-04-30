@@ -1,0 +1,177 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>AppKit Mobile</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+
+<body class="theme-light">
+
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+
+<div id="page">
+
+    <div class="header header-fixed header-logo-center header-auto-show">
+        <a href="index.html" class="header-title">About 1</a>
+        <a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-chevron-left"></i></a>
+        <a href="#" data-menu="menu-main" class="header-icon header-icon-4"><i class="fas fa-bars"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-dark"><i class="fas fa-sun"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-light"><i class="fas fa-moon"></i></a>
+    </div>
+
+    <div id="footer-bar" class="footer-bar-6">
+        <a href="index-components.html"><i class="fa fa-layer-group"></i><span>Features</span></a>
+        <a href="index-pages.html" class="active-nav"><i class="fa fa-file"></i><span>Pages</span></a>
+        <a href="index.html" class="circle-nav"><i class="fa fa-home"></i><span>Welcome</span></a>
+        <a href="index-projects.html"><i class="fa fa-camera"></i><span>Projects</span></a>
+        <a href="#" data-menu="menu-main"><i class="fa fa-bars"></i><span>Menu</span></a>
+    </div>
+
+    <div class="page-title page-title-fixed">
+        <h1 class="font-22">About Us</h1>
+        <a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-share"><i class="fa fa-share-alt"></i></a>
+        <a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-light" data-toggle-theme><i class="fa fa-moon"></i></a>
+        <a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-dark" data-toggle-theme><i class="fa fa-lightbulb color-yellow-dark"></i></a>
+        <a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-main"><i class="fa fa-bars"></i></a>
+    </div>
+    <div class="page-title-clear"></div>
+
+    <div class="page-content">
+
+        <div class="card-body mx-0 px-0 mt-n2">
+			<div class="card card-style ms-3 mb-2" style="background-image:url(images/health/11t.jpg);" data-card-height="450">
+				<div class="card-bottom m-2 text-center">
+					<h1 class="color-white font-29">Dan Michaels</h1>
+					<h5 class="color-white mt-n2 opacity-60 pb-3">Lead Chief Neurosurgeon</h5>
+					<a href="tel:+1 234 567 8991" class="default-link btn btn-sm bg-blue-dark color-white rounded-sm text-uppercase font-700 mb-3">Schedule Appointment</a>
+				</div>
+				<div class="card-overlay bg-gradient opacity-30"></div>
+				<div class="card-overlay bg-gradient"></div>
+			</div>
+		</div>
+
+
+        <div class="card card-style">
+            <div class="content mb-0">
+                <p class="mb-n1 font-600 color-highlight">A short Intro</p>
+                <h1>Who is Dr. Dan?</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas quis neque enim. Curabitur placerat vehicula quam vitae tempor. In feugiat in urna quis lacinia.
+                </p>
+				<ul class="icon-list">
+					<li class="line-height-s pb-2"><i class="fa fa-trophy color-yellow-dark fa-fw me-3"></i>2021 - 1st Place - Neurosurgeon of the Year Award</li>
+					<li class="line-height-s pb-2"><i class="fa fa-award color-blue-dark fa-fw me-3"></i>2011 - 2021 - Harvard Medicine - Graduate with Honors</li>
+					<li class="line-height-s pb-2"><i class="fa fa-award color-red-dark fa-fw me-3"></i>2005 - 2011 - School of Medicine - Graduate with Honors</li>
+				</ul>
+            </div>
+        </div>
+
+        <div class="row mb-0">
+            <div class="col-6 pe-0">
+                <div class="card card-style">
+                    <img src="images/health/1t.jpg" class="img-fluid">
+                    <div class="p-2">
+                        <p class="font-600 color-highlight mb-n2">Assistant</p>
+                        <h4 class="pt-2">Md. Joeson</h4>
+                        <p class="mb-2">
+                            First Assistant of Dr Dan, with over 15 years experience.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 ps-0">
+                <div class="card card-style">
+                    <img src="images/health/3t.jpg" class="img-fluid">
+                    <div class="p-2">
+                        <p class="font-600 color-highlight mb-n2">Assistant</p>
+                        <h4 class="pt-2">Md. Doeson</h4>
+                        <p class="mb-2">
+                            Second Assistant of Dr Dan, with over 15 years experience.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card card-style">
+            <div class="content">
+                <p class="mb-n1 font-600 color-highlight">A very short bio</p>
+                <h1>Our Department</h1>
+                <p>
+                    Enabled is a business powered by 2 folks just like you who aim
+                    to create beautiful mobile interfaces and treat customers like we love to be treated.
+                </p>
+
+                <div class="d-flex mb-4">
+                    <div class="align-self-center"><i class="fa fa-brain color-dark-dark fa-3x icon-70 text-center"></i></div>
+                    <div class="me-auto ps-4">
+                        <h4>Neurology</h4>
+                        <p>
+                            Complete analyzed data from MRI and FMRI data.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="d-flex mb-4">
+                    <div class="align-self-center"><i class="fa fa-heart color-red-dark fa-3x icon-70 text-center"></i></div>
+                    <div class="me-auto ps-4">
+                        <h4>Cardiology</h4>
+                        <p>
+                            Analyzing ECG's and Doppler images and scans.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="d-flex">
+                    <div class="align-self-center"><i class="fa fa-flask color-green-dark fa-3x icon-70 text-center"></i></div>
+                    <div class="me-auto ps-4">
+                        <h4>Lab Works</h4>
+                        <p>
+                            Everything carfully examined by our experts.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card card-style mt-3" data-card-height="100" style="background-image:url(images/health/7m.jpg)">
+			<div class="card-center px-3 no-click">
+				<h1 class="color-white mb-n2 font-18">Dan Michales</h1>
+				<h5 class="color-white mt-n1 opacity-60 font-14">Schedule Meeting</h5>
+			</div>
+			<div class="card-center">
+				<a href="tel:+1 234 567 8909" class="float-end mx-3 gradient-highlight btn-s rounded-sm shadow-xl text-uppercase font-800">Call Now</a>
+			</div>
+			<div class="card-overlay bg-black opacity-80"></div>
+		</div>
+
+
+        <div data-menu-load="menu-footer.html"></div>
+    </div>
+    <!-- Page content ends here-->
+
+    <!-- Main Menu-->
+    <div id="menu-main" class="menu menu-box-left rounded-0" data-menu-load="menu-main.html" data-menu-width="280" data-menu-active="nav-pages"></div>
+
+    <!-- Share Menu-->
+    <div id="menu-share" class="menu menu-box-bottom rounded-m" data-menu-load="menu-share.html" data-menu-height="370"></div>
+
+    <!-- Colors Menu-->
+    <div id="menu-colors" class="menu menu-box-bottom rounded-m" data-menu-load="menu-colors.html" data-menu-height="480"></div>
+
+
+</div>
+
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>

@@ -1,0 +1,227 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>AppKit Mobile</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+
+<body class="theme-light">
+
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+
+<div id="page">
+
+    <div class="header header-fixed header-logo-center header-auto-show">
+        <a href="index.html" class="header-title">News</a>
+        <a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-chevron-left"></i></a>
+        <a href="#" data-menu="menu-main" class="header-icon header-icon-4"><i class="fas fa-bars"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-dark"><i class="fas fa-sun"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-light"><i class="fas fa-moon"></i></a>
+    </div>
+
+    <div id="footer-bar" class="footer-bar-6">
+        <a href="index-components.html"><i class="fa fa-layer-group"></i><span>Features</span></a>
+        <a href="index-pages.html" class="active-nav"><i class="fa fa-file"></i><span>Pages</span></a>
+        <a href="index.html" class="circle-nav"><i class="fa fa-home"></i><span>Welcome</span></a>
+        <a href="index-projects.html"><i class="fa fa-camera"></i><span>Projects</span></a>
+        <a href="#" data-menu="menu-main"><i class="fa fa-bars"></i><span>Menu</span></a>
+    </div>
+
+
+
+    <div class="page-content">
+
+        <div class="card card-style mt-4" data-card-height="400" style="background-image:url('images/travel/4m.jpg')">
+            <div class="card-top mt-3 pb-5 ps-3">
+                <a href="#" data-back-button class="icon icon-s bg-theme rounded-xl float-start me-3"><i class="fa color-theme fa-arrow-left"></i></a>
+                <a href="#" data-menu="menu-share"  class="icon icon-s bg-theme rounded-xl float-end me-3"><i class="fa color-theme fa-share-alt"></i></a>
+                <a href="#" data-menu="menu-heart"  class="icon icon-s bg-theme rounded-xl float-end me-2"><i class="fa color-red-dark fa-bookmark"></i></a>
+            </div>
+            <div class="card-bottom pb-5 px-3">
+                <h1 class="color-white">
+                    Appkit Makes your Mobile Experience Absolutely Amazing.
+                </h1>
+            </div>
+            <div class="card-bottom px-3">
+                <div class="d-flex">
+                    <div class="me-auto color-white"><span class="badge no-click bg-highlight p-2 text-uppercase rounded-s mb-3">FRESH UPDATE</span></div>
+                    <div class="mx-auto color-white"><span class="font-11"><i class="far fa-calendar pe-2"></i>18 Jan</span></div>
+                    <div class="mx-auto color-white"><span class="font-11"><i class="far fa-comment pe-2"></i>21k </span></div>
+                    <div class="mx-auto color-white"><span class="font-11"><i class="far fa-heart pe-2"></i>356k</span></div>
+                </div>
+            </div>
+            <div class="card-overlay bg-gradient"></div>
+        </div>
+
+        <div class="card card-style mt-4" style="margin-bottom:-110px; z-index:5;">
+            <div class="content">
+                <p class="mb-n1 font-700 color-highlight">Where Beauty Meets Function</p>
+                <h2>The best Mobile PWA's on Envato</h2>
+                <p class="pt-2">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Curabitur aliquam non nunc quis maximus.
+                    Fusce volutpat arcu id ante maximus vestibulum.
+                    Curabitur non nisi venenatis, pharetra nisl et, ullamcorper diam.
+                    Morbi interdum varius molestie. Quisque feugiat augue id diam ornare auctor.
+                </p>
+                <div class="d-flex">
+                    <a href="#" class="mx-auto shareToFacebook icon icon-xs rounded-sm bg-facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="mx-auto shareToTwitter icon icon-xs rounded-sm bg-twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="mx-auto shareToWhatsApp icon icon-xs rounded-sm bg-whatsapp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="mx-auto shareToLinkedIn icon icon-xs rounded-sm bg-linkedin"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="mx-auto shareToMail icon icon-xs rounded-sm bg-mail"><i class="fa fa-envelope"></i></a>
+                </div>
+
+                <div class="divider mt-4"></div>
+
+                <p class="mb-n1 font-700 color-highlight">Articles look sooo good!</p>
+                <h1>Image Galleries</h1>
+                <p>
+                    This page is not WordPress, it's an HTML website. Yes, that's right. but you can convert it to WordPress yourself or hire an expert from Envato Studio.
+                </p>
+                <div class="row">
+                    <div class="col-4">
+                        <img src="images/empty.png" data-src="images/travel/1s.jpg" class="preload-img shadow-s img-fluid rounded-s" alt="img">
+                    </div>
+                    <div class="col-4">
+                        <img src="images/empty.png" data-src="images/travel/4s.jpg" class="preload-img shadow-s img-fluid rounded-s" alt="img">
+                    </div>
+                    <div class="col-4">
+                        <img src="images/empty.png" data-src="images/travel/8s.jpg" class="preload-img shadow-s img-fluid rounded-s" alt="img">
+                    </div>
+                </div>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tristique libero ultrices orci aliquam, ac pellentesque justo porta. Nunc aliquet mi ipsum.
+                    Nulla facilisis odio a lacus semper euismod. Vestibulum a posuere magna.
+                </p>
+                <div class="row mb-3">
+                    <div class="col-6">
+                        <img src="images/travel/5l.jpg" class="img-fluid rounded-m shadow-xxl">
+                    </div>
+                    <div class="col-6">
+                        <h3>Step 1</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Vivamus tristique libero ultrices orci aliquam, ac pellentesque justo porta.
+                        </p>
+                    </div>
+                    <div class="w-100 mt-4"></div>
+                    <div class="col-6">
+                        <h3>Step 2</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Vivamus tristique libero ultrices orci aliquam, ac pellentesque justo porta.
+                        </p>
+                    </div>
+                    <div class="col-6">
+                        <img src="images/travel/8l.jpg" class="img-fluid rounded-m shadow-xxl">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-0" data-card-height="600" style="background-image:url('images/travel/7m.jpg')">
+            <div class="card-center text-center">
+                <i class="fa fa-quote-left color-white fa-4x"></i>
+                <h1 class="color-white pt-2 px-4 line-height-xl">Built in Bootstrap 5 with Vanilla JS Appkit is Versatile and Easy to use Running on The Latest Technologies</h1>
+                <a href="#" class="color-highlight">Appkit Customer - 5 Star Rating</a>
+            </div>
+            <div class="card-overlay bg-black opacity-80"></div>
+        </div>
+
+        <div class="card card-style over-card" style="margin-top:-110px">
+            <div class="content">
+                <p class="mb-n1 font-700 color-highlight">Feedback is always Listend To!</p>
+                <h1>Brand New Fresh Updates</h1>
+                <p>
+                    Appkit was built with a passion for mobile technologies, and now, thanks to your continued feedback, we constantly add new packages and features to optimize your experience
+                    and give you everything your page needs to be the best mobile PWA in the world.
+                </p>
+                <a href="#" class="d-flex">
+                    <div class="me-3 mb-3">
+                        <img src="images/travel/6s.jpg" class="rounded-sm" width="50">
+                    </div>
+                    <div class="me-auto">
+                        <h5 class="font-700 pt-1 mb-n1">Interview with Jane Louder.</h5>
+                        <span class="color-theme opacity-30 font-10">By John Doe, July 15th 2023</span>
+                    </div>
+                </a>
+                <a href="#" class="d-flex">
+                    <div class="me-3 mb-3">
+                        <img src="images/travel/3s.jpg" class="rounded-sm" width="50">
+                    </div>
+                    <div class="me-auto">
+                        <h5 class="font-700 pt-1 mb-n1">The truth behind club Glasses.</h5>
+                        <span class="color-theme opacity-30 font-10">By John Doe, July 15th 2023</span>
+                    </div>
+                </a>
+                <a href="#" class="d-flex">
+                    <div class="me-3">
+                        <img src="images/travel/6s.jpg" class="rounded-sm" width="50">
+                    </div>
+                    <div class="me-auto">
+                        <h5 class="font-700 pt-1 mb-n1">Dancinng Make you Happier.</h5>
+                        <span class="color-theme opacity-30 font-10">By John Doe, July 15th 2023</span>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+        <div class="card card-style" style="background-image:url('images/travel/9m.jpg')">
+            <div class="card-body my-3 ">
+                <h1 class="color-white">
+                    Featured on Envato
+                </h1>
+                <p class="color-white opacity-70 mb-0">
+                    Appkit is and will always be  a trending product.<br>
+                    Scheduled updates and top notch customer support.
+                </p>
+                <a href="#" class="btn btn-m rounded-sm bg-highlight color-white mt-3 text-uppercase font-800">GET APPKIT TODAY</a>
+            </div>
+            <div class="card-overlay bg-black opacity-70"></div>
+        </div>
+
+        <div data-menu-load="menu-footer.html"></div>
+
+
+    </div>
+    <!-- Page content ends here-->
+
+    <!-- Added to Bookmarks Menu-->
+    <div id="menu-heart"
+         class="menu menu-box-modal rounded-m"
+         data-menu-hide="800"
+         data-menu-width="250"
+         data-menu-height="170">
+
+        <h1 class="text-center mt-3 pt-2">
+            <i class="fa fa-heart color-red-dark fa-3x"></i>
+        </h1>
+        <h3 class="text-center pt-2">Added to Favorites</h3>
+    </div>
+
+    <!-- Main Menu-->
+    <div id="menu-main" class="menu menu-box-left rounded-0" data-menu-load="menu-main.html" data-menu-width="280" data-menu-active="nav-contact"></div>
+
+    <!-- Share Menu-->
+    <div id="menu-share" class="menu menu-box-bottom rounded-m" data-menu-load="menu-share.html" data-menu-height="370"></div>
+
+    <!-- Colors Menu-->
+    <div id="menu-colors" class="menu menu-box-bottom rounded-m" data-menu-load="menu-colors.html" data-menu-height="480"></div>
+
+
+</div>
+
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>
