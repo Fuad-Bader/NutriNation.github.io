@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,31 +13,31 @@
     <title>Calories counter</title>
 
     <!-- Fontfaces CSS-->
-    <link href="admin/css/font-face.css" rel="stylesheet" media="all">
-    <link href="admin/vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
-    <link href="admin/vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
-    <link href="admin/vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link href="css/font-face.css" rel="stylesheet" media="all">
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
 
     <!-- Bootstrap CSS-->
-    <link href="admin/vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
+    <link href="vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
 
     <!-- Vendor CSS-->
-    <link href="admin/vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
-    <link href="admin/vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" media="all">
-    <link href="admin/vendor/wow/animate.css" rel="stylesheet" media="all">
-    <link href="admin/vendor/css-hamburgers/hamburgers.min.css" rel="stylesheet" media="all">
-    <link href="admin/vendor/slick/slick.css" rel="stylesheet" media="all">
-    <link href="admin/vendor/select2/select2.min.css" rel="stylesheet" media="all">
-    <link href="admin/vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
+    <link href="vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
+    <link href="vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" media="all">
+    <link href="vendor/wow/animate.css" rel="stylesheet" media="all">
+    <link href="vendor/css-hamburgers/hamburgers.min.css" rel="stylesheet" media="all">
+    <link href="vendor/slick/slick.css" rel="stylesheet" media="all">
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
 
     <!-- Main CSS-->
-    <link href="admin/css/theme.css" rel="stylesheet" media="all">
-
+    <link href="css/theme.css" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="../css/core-style.css">
 </head>
 
 <body class="animsition">
     <div class="page-wrapper">
-
+        <!-- header start-->
         <header class="header_area">
             <div class="classy-nav-container breakpoint-off d-flex align-items-center justify-content-between">
                 <!-- Classy Menu -->
@@ -58,7 +57,7 @@
                         <!-- Nav Start -->
                         <div class="classynav">
                             <ul>
-    
+
                                 <li><a href="#">Pages</a>
                                     <ul class="dropdown">
                                         <li><a href="index.html">Home</a></li>
@@ -77,10 +76,10 @@
                         <!-- Nav End -->
                     </div>
                 </nav>
-    
+
                 <!-- Header Meta Data -->
                 <div class="header-meta d-flex clearfix justify-content-end">
-    
+
                     <!-- Favourite Area -->
                     <div class="favourite-area">
                         <a href="#"><img src="img/core-img/heart.svg" alt=""></a>
@@ -89,11 +88,12 @@
                     <div class="user-login-info">
                         <a href="login.html"><img src="img/core-img/user.svg" alt=""></a>
                     </div>
-    
+
                 </div>
-    
+
             </div>
         </header>
+        <!--header end-->
         <!-- PAGE CONTAINER-->
         <div class="page-container">
             <!-- MAIN CONTENT-->
@@ -108,7 +108,7 @@
                         is a tool for assessing normal weight or overweight, which examines the relationship between body length and weight.</br>
                      </div> -->
                     <div class="container-fluid">
-                        
+
                         <div class="row">
                             <div class="col-1"></div>
                             <div class="col-lg-5">
@@ -120,18 +120,20 @@
                                         <hr>
                                         <form action="" method="post" novalidate="novalidate">
                                             <div style="text-align:center;">
-                                            <img src= "images/2 (2).jpg" width="25%" height="25%"/> 
-                                            <img src="images/2 (1).jpg" width="25%" height="25%"/>
+                                                <img src="images/2 (2).jpg" width="25%" height="25%" />
+                                                <img src="images/2 (1).jpg" width="25%" height="25%" />
                                             </div>
                                             <div class="row form-group" style="text-align: center;">
-                                                <div class="col col-md-9" >
-                                                    <div class="form-check-inline form-check" >
-                                                        <span style="color: white;">   ******************   </span>
-                                                        <label  class="form-check-label ">
-                                                            <input type="radio"  name="gender" value="male" class="form-check-input">male
-                                                        </label> <span style="color: white;">   **********   </span>
-                                                        <label  class="form-check-label ">
-                                                            <input type="radio"  name="gender" value="female" class="form-check-input">female
+                                                <div class="col col-md-9">
+                                                    <div class="form-check-inline form-check">
+                                                        <span style="color: white;"> ****************** </span>
+                                                        <label class="form-check-label ">
+                                                            <input type="radio" name="gender" value="male"
+                                                                class="form-check-input">male
+                                                        </label> <span style="color: white;"> ********** </span>
+                                                        <label class="form-check-label ">
+                                                            <input type="radio" name="gender" value="female"
+                                                                class="form-check-input">female
                                                         </label>
                                                     </div>
                                                 </div>
@@ -139,26 +141,35 @@
 
                                             <div class="form-group">
                                                 <label for="AgeValue" class="control-label mb-1">Age</label>
-                                                <input id="AgeValue" name="Age" type="text" class="form-control" aria-required="true" aria-invalid="false" value="">
+                                                <input id="AgeValue" name="Age" type="text" class="form-control"
+                                                    aria-required="true" aria-invalid="false" value="">
                                             </div>
                                             <div class="form-group has-success">
                                                 <label for="TallValue" class="control-label mb-1">Height</label>
-                                                <input id="TallValue" name="Height" type="text" class="form-control cc-name valid" data-val="true" data-val-required="Please enter your Height"
-                                                    autocomplete="cc-name" aria-required="true" aria-invalid="false" aria-describedby="cc-name-error">
-                                                <span class="help-block field-validation-valid" data-valmsg-for="cc-name" data-valmsg-replace="true"></span>
+                                                <input id="TallValue" name="Height" type="text"
+                                                    class="form-control cc-name valid" data-val="true"
+                                                    data-val-required="Please enter your Height" autocomplete="cc-name"
+                                                    aria-required="true" aria-invalid="false"
+                                                    aria-describedby="cc-name-error">
+                                                <span class="help-block field-validation-valid"
+                                                    data-valmsg-for="cc-name" data-valmsg-replace="true"></span>
                                             </div>
                                             <div class="form-group">
                                                 <label for="WeightValue" class="control-label mb-1">Weight</label>
-                                                <input id="WeightValue" name="cc-number" type="tel" class="form-control cc-number identified visa" value="" data-val="true"
-                                                    data-val-required="Please enter your Weight" data-val-cc-number="Please enter a valid card number"
+                                                <input id="WeightValue" name="cc-number" type="tel"
+                                                    class="form-control cc-number identified visa" value=""
+                                                    data-val="true" data-val-required="Please enter your Weight"
+                                                    data-val-cc-number="Please enter a valid card number"
                                                     autocomplete="cc-number">
-                                                <span class="help-block" data-valmsg-for="cc-number" data-valmsg-replace="true"></span>
+                                                <span class="help-block" data-valmsg-for="cc-number"
+                                                    data-valmsg-replace="true"></span>
                                             </div>
 
                                             <div class="row form-group">
                                                 <div class="col-12 col-md-9">
-                                                    <label class="control-label mb-1">Choose physical active</label></br>
-                                                    <select  id="activityLevel" class="form-control">
+                                                    <label class="control-label mb-1">Choose physical
+                                                        active</label></br>
+                                                    <select id="activityLevel" class="form-control">
                                                         <option value="">Please select</option>
                                                         <option value="sedentary">Sedentary</option>
                                                         <option value="lightly active">Lightly active</option>
@@ -169,138 +180,138 @@
                                                 </div>
                                             </div>
                                             <div>
-                                                <button onclick="BMR_RMI()" type="submit" class="btn btn-lg btn-info btn-block"  >
-                                                   <span >Calculate</span>
+                                                <input type="button" onclick="BMR_RMI()"
+                                                    class="btn btn-lg btn-info btn-block" value="calculate">
+
                                                 </button>
                                             </div>
                                         </form>
                                     </div>
                                 </div>
-                            
+
                             </div>
                             <div class="col-lg-5">
                                 <div class="card">
                                     <div class="card-title">
-                                    </br>
+                                        </br>
                                         <h3 class="text-center title-2">Your Information</h3>
                                     </div>
                                     <hr>
-                                     <div class="card-body card-block">
-                                     <B>The Daily Calories You Need </B>
-                                     <input id="dailyCalories" type="tel" class="form-control cc-number identified visa" value="" disabled >
-                                     </br>
-                                     
-                                     <B>Your Body Mass IS </B>
-                                     <input id="bodymass"type="tel" class="form-control cc-number identified visa" value=""  disabled>
-                                     </br>
-                                     
-                                     <B>Your Body State </B>
-                                     </br></br>
-                                     <img id="myImage" src="images/body/colors.png" height="50%" width="100%">
-                                    </br></br></br></br></br></br>
-                                        </div>
+                                    <div class="card-body card-block">
+                                        <B>The Daily Calories You Need </B>
+                                        <input id="dailyCalories" type="tel"
+                                            class="form-control cc-number identified visa" value="" disabled>
+                                        </br>
+
+                                        <B>Your Body Mass IS </B>
+                                        <input id="bodymass" type="tel" class="form-control cc-number identified visa"
+                                            value="" disabled>
+                                        </br>
+
+                                        <B>Your Body State </B>
+                                        </br></br>
+                                        <img id="myImage" src="images/body/colors.png" height="50%" width="100%">
+                                        </br></br></br></br></br></br>
                                     </div>
                                 </div>
-                            </div> 
-                            <div class="col-1"></div>
-                        </div>    
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="copyright">
-                                    <p>Copyright © 2018 Colorlib. All rights reserved. Template by <a href="https://colorlib.com">Colorlib</a>.</p>
-                                </div>
+                            </div>
+                        </div>
+                        <div class="col-1"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="copyright">
+                                <p>Copyright © 2018 Colorlib. All rights reserved. Template by <a
+                                        href="https://colorlib.com">Colorlib</a>.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-    </div>  
+    </div>
     <script>
-        function BMR_RMI()
-        { 
-         let weight = document.getElementById("WeightValue").value;
-         let height = document.getElementById("TallValue").value;
-         let age =    document.getElementById("AgeValue").value;
-         let bmr,gender;
-        
-         var radio=document.getElementsByName('gender');
-         for(i=0;i<radio.length;i++)
-         {
-           if(radio[i].checked)
-           gender=(radio[i].value);
-         } 
+        function BMR_RMI() {
+            let weight = document.getElementById("WeightValue").value;
+            let height = document.getElementById("TallValue").value;
+            let age = document.getElementById("AgeValue").value;
+            let bmr, gender;
 
-         if (gender === "male") 
-         {
-          bmr = 88.362 + (13.397 * weight) + (4.799 * height) - (5.677 * age);
-         } else if (gender === "female") {
-          bmr = 447.593 + (9.247 * weight) + (3.098 * height) - (4.330 * age);
-         } 
-        
-         let dailyCalories;
-         let activityLevel = document.getElementById("activityLevel").value;
-        
-         var img = document.getElementById("myImage");
-         var bmi = weight / Math.pow(height/100, 2);
-           
-         if (bmi<15.9) {
-                    img.src = "images/body/less16.png";
-                } else if (bmi >=16 && bmi<=16.9) {
-                    img.src = "images/body/16to17.png";
-                } else if (bmi >=17 && bmi<=18.4) {
-                    img.src = "images/body/17to18.5.png";
-                } else if (bmi >=18.5 && bmi<=24.9) {
-                    img.src = "images/body/18.5to25.png";
-                } else if (bmi >=25 && bmi<=29.9) {
-                    img.src = "images/body/25to30.png";
-                } else if (bmi>=30 && bmi<=34.9) {
-                    img.src = "images/body/30to35.png";
-                } else if (bmi>=35 && bmi<=39.9) {
-                    img.src = "images/body/35to40.png";
-                } else if (bmi>= 40) {
-                    img.src = "images/body/more40.png";
-                } else {
-                    img.src = "images/body/b&w.png";
-                }
+            var radio = document.getElementsByName('gender');
+            for (i = 0; i < radio.length; i++) {
+                if (radio[i].checked)
+                    gender = (radio[i].value);
+            }
 
-         switch (activityLevel)
-         {
-            case "sedentary":
-            dailyCalories = bmr * 1.2;
-            break;
-            case "lightly active":
-           dailyCalories = bmr * 1.375;
-            break;
-            case "moderately active":
-            dailyCalories = bmr * 1.55;
-            break;
-            case "very active":
-            dailyCalories = bmr * 1.725;
-            break;
-            case "extremely active":
-            dailyCalories = bmr * 1.9;
-            break;
-            default:
-            dailyCalories=("Invalid activity level entered.");
-         }
-          
-         
+            if (gender === "male") {
+                bmr = 88.362 + (13.397 * weight) + (4.799 * height) - (5.677 * age);
+            } else if (gender === "female") {
+                bmr = 447.593 + (9.247 * weight) + (3.098 * height) - (4.330 * age);
+            }
 
-         alert(`Your daily calorie needs are ${dailyCalories.toFixed(2)} calories.`);
-         alert(`Your bmi ${bmi.toFixed(2)} `);
+            let dailyCalories;
+            let activityLevel = document.getElementById("activityLevel").value;
 
-         document.getElementById("bodymass").innerHTML = bmi.toFixed(2);
-         document.getElementById("dailyCalories").innerHTML = dailyCalories.toFixed(2);
+            var img = document.getElementById("myImage");
+            var bmi = weight / Math.pow(height / 100, 2);
 
-         
-         
-         
+            if (bmi < 15.9) {
+                img.src = "images/body/less16.png";
+            } else if (bmi >= 16 && bmi <= 16.9) {
+                img.src = "images/body/16to17.png";
+            } else if (bmi >= 17 && bmi <= 18.4) {
+                img.src = "images/body/17to18.5.png";
+            } else if (bmi >= 18.5 && bmi <= 24.9) {
+                img.src = "images/body/18.5to25.png";
+            } else if (bmi >= 25 && bmi <= 29.9) {
+                img.src = "images/body/25to30.png";
+            } else if (bmi >= 30 && bmi <= 34.9) {
+                img.src = "images/body/30to35.png";
+            } else if (bmi >= 35 && bmi <= 39.9) {
+                img.src = "images/body/35to40.png";
+            } else if (bmi >= 40) {
+                img.src = "images/body/more40.png";
+            } else {
+                img.src = "images/body/b&w.png";
+            }
+
+            switch (activityLevel) {
+                case "sedentary":
+                    dailyCalories = bmr * 1.2;
+                    break;
+                case "lightly active":
+                    dailyCalories = bmr * 1.375;
+                    break;
+                case "moderately active":
+                    dailyCalories = bmr * 1.55;
+                    break;
+                case "very active":
+                    dailyCalories = bmr * 1.725;
+                    break;
+                case "extremely active":
+                    dailyCalories = bmr * 1.9;
+                    break;
+                default:
+                    dailyCalories = ("Invalid activity level entered.");
+            }
+
+
+
+            //  alert(`Your daily calorie needs are ${dailyCalories.toFixed(2)} calories.`);
+            //  alert(`Your bmi ${bmi.toFixed(2)} `);
+
+            document.getElementById("bodymass").innerHTML = bmi.toFixed(2);
+            document.getElementById("dailyCalories").innerHTML = dailyCalories.toFixed(2);
+
+
+
+
         }
-        
 
-        </script>
+
+    </script>
 
 
 
@@ -338,4 +349,3 @@
 </body>
 
 </html>
-
