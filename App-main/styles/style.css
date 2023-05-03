@@ -2413,6 +2413,7 @@ body {
 
 .font-16 {
   font-size: 16px !important;
+  
 }
 
 .font-17 {
@@ -7095,6 +7096,7 @@ input[type=number] {
 .splide__slide {
   position: relative;
   outline: none;
+  
 }
 
 .splide__slide {
@@ -7335,3 +7337,10 @@ input[type=number] {
   top: 0;
   left: 0;
   }
+
+.cat{
+  padding-left: 10px;
+  padding-top: 5px;
+  
+}
+

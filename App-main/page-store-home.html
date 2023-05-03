@@ -1,480 +1,567 @@
 <!DOCTYPE HTML>
 <html lang="en">
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
-<title>NutriNation</title>
-<link rel="icon" href="/images/NutriNation-N-transparent.png">
-<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
-<link rel="stylesheet" type="text/css" href="styles/style.css">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">
-<link rel="manifest" href="_manifest.json">
-<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+    <title>NutriNation</title>
+    <link rel="icon" href="/images/NutriNation-N-transparent.png">
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">
+    <link rel="manifest" href="_manifest.json">
+    <link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
 </head>
 
 <body class="theme-light" data-highlight="highlight-red">
 
-<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
-
-<div id="page">
-
-    <div class="header header-auto-show header-fixed header-logo-center">
-        <a href="index.html" class="header-title">NutriNation</a>
-        <a href="#" data-menu="menu-main" class="header-icon header-icon-1"><i class="fas fa-bars"></i></a>
-        <a href="#" data-toggle-theme class="header-icon header-icon-4 show-on-theme-dark"><i class="fas fa-sun"></i></a>
-        <a href="#" data-toggle-theme class="header-icon header-icon-4 show-on-theme-light"><i class="fas fa-moon"></i></a>
-        <a href="#" data-menu="menu-share" class="header-icon header-icon-3"><i class="fas fa-share-alt"></i></a>
+    <div id="preloader">
+        <div class="spinner-border color-highlight" role="status"></div>
     </div>
 
-    
+    <div id="page">
 
-    <div id="footer-bar" class="footer-bar-6">
-        <a href="page-profile-2.html"><i class="fa fa-user"></i><span>Profile</span></a>
-        <a href="page-chat.html"><img src="" data-src="images/NutriNation-N-transparent.png" width="18" class="rounded-circle shadow-xl preload-img"><span>Jess AI</span></a>
-        <a href="index.html" class="circle-nav active-nav"><i class="fa fa-home"></i><span>Home</span></a>
-        <a href="page-store-home.html"><i class="fa fa-cutlery"></i><span>Products</span></a>
-        <a href="#" data-menu="menu-main"><i class="fa fa-bars"></i><span>Menu</span></a>
-    </div>
-    
-    <div class="page-title page-title-fixed">
-        <h1>Store</h1>
-        <a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-share"><i class="fa fa-share-alt"></i></a>
-        <a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-light" data-toggle-theme><i class="fa fa-moon"></i></a>
-        <a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-dark" data-toggle-theme><i class="fa fa-lightbulb color-yellow-dark"></i></a>
-        <a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-main"><i class="fa fa-bars"></i></a>
-    </div>
-    <div class="page-title-clear"></div>
-        
-    <div class="page-content">
-                    
-        <div class="splide single-slider slider-no-arrows slider-no-dots" id="single-slider-1">
-            <div class="splide__track">
-                <div class="splide__list">
-                    <div class="splide__slide">
-                        <div class="card card-style mb-3 " data-card-height="300" style="background-image: url(images/products/Biocrackers.jpg);">
-                            <div class="card-top">
-                                
-                            </div>
-                            <div class="card-bottom mb-3 ms-3 me-3">
-                                
-                                <h1 class="color-white font-800 mb-n2">Biocrackers</h1>
-                                <p class="color-white font-14 mb-2 opacity-60">
-                                    Healthy and gluten-free crackers for your snack time
-                                </p>
-                            </div>
-                            <div class="card-overlay bg-black opacity-60"></div>
-                        </div>
-                    </div>
-                    <div class="splide__slide">
-                        <div class="card card-style mb-3 " data-card-height="300" style="background-image: url(images/products/energy-smoothie.jpg)"> 
-                            <div class="card-top">
-                                
-                            </div>
-                            <div class="card-bottom mb-3 ms-3 me-3">
-                                <h1 class="color-white font-800 mb-n2">Energy smoothie</h1>
-                                <p class="color-white font-14 mb-2 opacity-60">
-                                    Try our new energizing smoothie to stay sharp and Healthy
-                                </p>
-                            </div>
-                            <div class="card-overlay bg-black opacity-60"></div>
-                        </div>
-                    </div>
-                    <div class="splide__slide">
-                        <div class="card card-style mb-3 " data-card-height="300" style="background-image: url(images/products/grenade.jpg);">
-                            <div class="card-top">
-                                
-                            </div>
-                            <div class="card-bottom mb-3 ms-3 me-3">
-                                <h1 class="color-white font-800 mb-n2">Grenade </h1>
-                                <p class="color-white font-14 mb-2 opacity-60">
-                                    Start your day with a grenade punch
-                                </p>
-                            </div>
-
-                            <div class="card-overlay bg-black opacity-60"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="splide topic-slider slider-no-arrows slider-no-dots pb-2" id="topic-slider-1">
-            <div class="splide__track">
-                <div class="splide__list">
-                    <div class="splide__slide">
-                        <h1 class="font-16 d-block"><a href="#" class="color-theme">Snacks</a></h1>
-                    </div>
-                    <div class="splide__slide">
-                        <h1 class="font-16 d-block"><a href="#" class="color-theme opacity-50">Supplements</a></h1>
-                    </div>
-                    <div class="splide__slide">
-                        <h1 class="font-16 d-block"><a href="#" class="color-theme opacity-50">Drinks</a></h1>
-                    </div>
-                    <div class="splide__slide">
-                        <h1 class="font-16 d-block"><a href="#" class="color-theme opacity-50">Chips</a></h1>
-                    </div>
-                    <div class="splide__slide">
-                        <h1 class="font-16 d-block"><a href="#" class="color-theme opacity-50">Nuts&Seeds</a></h1>
-                    </div>
-                   
-                    <div class="splide__slide">
-                        <h1 class="font-16 d-block"><a href="#" class="color-theme opacity-50">Gluten-free</a></h1>
-                    </div>
-                    <div class="splide__slide">
-                        <h1 class="font-16 d-block"><a href="#" class="color-theme opacity-50">Sugar-free</a></h1>
-                    </div>
-                </div>
-            </div>
-        </div>           
-        
-        <div class="splide double-slider slider-no-dots" id="double-slider-1">
-            <div class="splide__track">
-                <div class="splide__list">
-                    <div class="splide__slide">
-                        <a href="https://www.rubadiet.com/product/%d8%a3%d9%84%d9%88%d8%a7%d8%ad-%d8%a8%d9%88%d8%a8-%d9%85%d8%b9-%d8%a7%d9%84%d8%b4%d9%88%d9%81%d8%a7%d9%86/" target="_blank">
-                            
-                            <div class="card mx-3 mb-0 card-style " data-card-height="250" style="background-image: url(images/products/protein.jpg);"> 
-                                <div class="card-top">
-                                </div>
-                                <div class="card-bottom">
-                                    <h3 class="color-white font-800 mb-3 pb-1 ps-3">$2<sup>.47</sup></h3>
-                                </div>
-                                <div class="card-overlay bg-gradient"></div>
-                            </div>
-                            <p class="mx-3 mb-0 mt-2 color-highlight font-600">In stock</p>
-                            <h4 class="mx-3 mb-4">Feel-fit<br>protein</h4>
-                        </a>
-                    </div>
-
-                    <div class="splide__slide">
-                      <a href="https://www.rubadiet.com/product/%d8%a7%d9%84%d9%88%d8%a7%d8%ad-%d8%a7%d9%84%d8%b4%d9%88%d9%81%d8%a7%d9%86/" target="_blank">
-
-                          <div class="card mx-3 mb-0 card-style " data-card-height="250" style="background-image: url(images/products/oats.jpg);">
-                            <div class="card-top">
-                            </div>
-                            <div class="card-bottom">
-                                <p class="color-white mb-n1 pb-1 ps-3 font-12 opacity-40 font-400"><del>$5<sup>.64</sup></del></p>
-                                <h3 class="color-white font-800 mb-3 pb-1 ps-3">$2<sup>.82</sup></h3>
-                            </div>
-                            <div class="card-overlay bg-gradient"></div>
-                        </div>
-                        <p class="mx-3 mb-0 mt-2 color-highlight font-600">50% Discount</p>
-                        <h4 class="mx-3 mb-4">Oat <br>bars</h4>
-                    </a>
-                    </div>
-
-                    <div class="splide__slide">
-                       <a href="https://www.rubadiet.com/product/%d8%b1%d9%82%d8%a7%d8%a6%d9%82-%d8%b4%d9%8a%d8%a8%d8%b3/" target="_blank">
-                        
-                           <div class="card mx-3 mb-0 card-style " data-card-height="250" style="background-image: url(images/products/kimifinne.jpg);">
-                            <div class="card-top">
-                            </div>
-                            <div class="card-bottom">
-                                <h3 class="color-white font-800 mb-3 pb-1 ps-3">$1<sup>.83</sup></h3>
-                            </div>
-                            <div class="card-overlay bg-gradient"></div>
-                        </div>
-                        <p class="mx-3 mb-0 mt-2 color-highlight font-600">In stock</p>
-                        <h4 class="mx-3 mb-4">KimmeFinne <br> chips</h4>
-                    </a>
-                    </div>
-
-                    <div class="splide__slide">
-                        <a href="https://www.rubadiet.com/product/%d8%b4%d9%8a%d9%83-%d8%a7%d9%88%d8%a8%d8%aa%d9%8a%d9%81%d8%a7%d8%b3%d8%aa/" target="_blank">
-
-                            <div class="card mx-3 mb-0 card-style " data-card-height="250" style="background-image: url(images/products/optifast2.jpg);"> 
-                                <div class="card-top">
-                                </div>
-                                <div class="card-bottom">
-                                    <p class="color-white mb-n1 pb-1 ps-3 font-12 opacity-40 font-400"><del>$6<sup>.98</sup></del></p>
-                                    <h3 class="color-white font-800 mb-3 pb-1 ps-3">$3<sup>.49</sup></h3>
-                                </div>
-                                <div class="card-overlay bg-gradient"></div>
-                            </div>
-                            <p class="mx-3 mb-0 mt-2 color-highlight font-600">50% Discount</p>
-                            <h4 class="mx-3 mb-4">OptiFast<br>shake</h4>
-                        </a>
-                        </div>
-                </div>
-            </div>
+        <div class="header header-auto-show header-fixed header-logo-center">
+            <a href="index.html" class="header-title">NutriNation</a>
+            <a href="#" data-menu="menu-main" class="header-icon header-icon-1"><i class="fas fa-bars"></i></a>
+            <a href="#" data-toggle-theme class="header-icon header-icon-4 show-on-theme-dark"><i
+                    class="fas fa-sun"></i></a>
+            <a href="#" data-toggle-theme class="header-icon header-icon-4 show-on-theme-light"><i
+                    class="fas fa-moon"></i></a>
+            <a href="#" data-menu="menu-share" class="header-icon header-icon-3"><i class="fas fa-share-alt"></i></a>
         </div>
 
-        <div class="divider divider-margins"></div>
-        
-        <div class="card card-style">
-            <div class="content mb-0">
-                <p class="mb-n1 font-600 color-highlight">Handpicked by our Staff</p>
-                <h2 class="mb-4">Featured Products</h2>
-                
+
+
+        <div id="footer-bar" class="footer-bar-6">
+            <a href="page-profile-2.html"><i class="fa fa-user"></i><span>Profile</span></a>
+            <a href="page-chat.html"><img src="" data-src="images/NutriNation-N-transparent.png" width="18"
+                    class="rounded-circle shadow-xl preload-img"><span>Jess AI</span></a>
+            <a href="index.html" class="circle-nav active-nav"><i class="fa fa-home"></i><span>Home</span></a>
+            <a href="page-store-home.html"><i class="fa fa-cutlery"></i><span>Products</span></a>
+            <a href="#" data-menu="menu-main"><i class="fa fa-bars"></i><span>Menu</span></a>
+        </div>
+
+        <div class="page-title page-title-fixed">
+            <h1>Store</h1>
+            <a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-share"><i
+                    class="fa fa-share-alt"></i></a>
+            <a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-light" data-toggle-theme><i
+                    class="fa fa-moon"></i></a>
+            <a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-dark" data-toggle-theme><i
+                    class="fa fa-lightbulb color-yellow-dark"></i></a>
+            <a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-main"><i
+                    class="fa fa-bars"></i></a>
+        </div>
+        <div class="page-title-clear"></div>
+
+        <div class="page-content">
+
+            <div class="splide single-slider slider-no-arrows slider-no-dots" id="single-slider-1">
+                <div class="splide__track">
+                    <div class="splide__list">
+                        <div class="splide__slide">
+                            <div class="card card-style mb-3 " data-card-height="300"
+                                style="background-image: url(images/products/Biocrackers.jpg);">
+                                <div class="card-top">
+
+                                </div>
+                                <div class="card-bottom mb-3 ms-3 me-3">
+
+                                    <h1 class="color-white font-800 mb-n2">Biocrackers</h1>
+                                    <p class="color-white font-14 mb-2 opacity-60">
+                                        Healthy and gluten-free crackers for your snack time
+                                    </p>
+                                </div>
+                                <div class="card-overlay bg-black opacity-60"></div>
+                            </div>
+                        </div>
+                        <div class="splide__slide">
+                            <div class="card card-style mb-3 " data-card-height="300"
+                                style="background-image: url(images/products/energy-smoothie.jpg)">
+                                <div class="card-top">
+
+                                </div>
+                                <div class="card-bottom mb-3 ms-3 me-3">
+                                    <h1 class="color-white font-800 mb-n2">Energy smoothie</h1>
+                                    <p class="color-white font-14 mb-2 opacity-60">
+                                        Try our new energizing smoothie to stay sharp and Healthy
+                                    </p>
+                                </div>
+                                <div class="card-overlay bg-black opacity-60"></div>
+                            </div>
+                        </div>
+                        <div class="splide__slide">
+                            <div class="card card-style mb-3 " data-card-height="300"
+                                style="background-image: url(images/products/grenade.jpg);">
+                                <div class="card-top">
+
+                                </div>
+                                <div class="card-bottom mb-3 ms-3 me-3">
+                                    <h1 class="color-white font-800 mb-n2">Grenade </h1>
+                                    <p class="color-white font-14 mb-2 opacity-60">
+                                        Start your day with a grenade punch
+                                    </p>
+                                </div>
+
+                                <div class="card-overlay bg-black opacity-60"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="color-theme cat">CATEGORIES</p>
+        <div class="tarees">
+
+            <div class="splide topic-slider slider-no-arrows slider-no-dots pb-2" id="topic-slider-1">
+                <div class="splide__track">
+                    <div class="splide__list">
+                        <div class="splide__slide">
+                            <h1 class="font-16 d-block"><a
+                                href="https://www.rubadiet.com/%d9%85%d8%aa%d8%ac%d8%b1-%d8%a7%d9%84%d9%83%d8%aa%d8%b1%d9%88%d9%86%d9%8a/"
+                                class="color-theme" target="_blank">All</a></h1>
+                            </div>
+                        <div class="splide__slide">
+                            <h1 class="font-16 d-block"><a
+                                href="https://www.rubadiet.com/%d9%85%d8%aa%d8%ac%d8%b1-%d8%a7%d9%84%d9%83%d8%aa%d8%b1%d9%88%d9%86%d9%8a/?filters=product_cat[910]"
+                                class="color-theme opacity-50" target="_blank">Candies</a></h1>
+                            </div>
+                            <div class="splide__slide">
+                                <h1 class="font-16 d-block"><a
+                                    href="https://www.rubadiet.com/%d9%85%d8%aa%d8%ac%d8%b1-%d8%a7%d9%84%d9%83%d8%aa%d8%b1%d9%88%d9%86%d9%8a/?filters=product_cat[902]"
+                                    class="color-theme opacity-50" target="_blank">Keto-products</a></h1>
+                        </div>
+                        <div class="splide__slide">
+                            <h1 class="font-16 d-block"><a
+                                href="https://www.rubadiet.com/%d9%85%d8%aa%d8%ac%d8%b1-%d8%a7%d9%84%d9%83%d8%aa%d8%b1%d9%88%d9%86%d9%8a/?filters=product_cat[916]"
+                                class="color-theme opacity-50" target="_blank">Snacks</a></h1>
+                            </div>
+                        <div class="splide__slide">
+                            <h1 class="font-16 d-block"><a
+                                    href="https://www.rubadiet.com/%d9%85%d8%aa%d8%ac%d8%b1-%d8%a7%d9%84%d9%83%d8%aa%d8%b1%d9%88%d9%86%d9%8a/?filters=product_cat[919]"
+                                    class="color-theme opacity-50" target="_blank">Supplements</a></h1>
+                                </div>
+                        <div class="splide__slide">
+                            <h1 class="font-16 d-block"><a
+                                href="https://www.rubadiet.com/%d9%85%d8%aa%d8%ac%d8%b1-%d8%a7%d9%84%d9%83%d8%aa%d8%b1%d9%88%d9%86%d9%8a/?filters=product_cat[919]"
+                                class="color-theme opacity-50" target="_blank">Chocolates</a></h1>
+                            </div>
+                            <div class="splide__slide">
+                                <h1 class="font-16 d-block"><a
+                                    href="https://www.rubadiet.com/%d9%85%d8%aa%d8%ac%d8%b1-%d8%a7%d9%84%d9%83%d8%aa%d8%b1%d9%88%d9%86%d9%8a/?filters=product_cat[917]"
+                                    class="color-theme opacity-50" target="_blank">Drinks</a></h1>
+                                </div>
+                                <div class="splide__slide">
+                                    <h1 class="font-16 d-block"><a
+                                        href="https://www.rubadiet.com/%d9%85%d8%aa%d8%ac%d8%b1-%d8%a7%d9%84%d9%83%d8%aa%d8%b1%d9%88%d9%86%d9%8a/?filters=product_cat[906]"
+                                        class="color-theme opacity-50" target="_blank">Chips</a></h1>
+                                    </div>
+                                    <div class="splide__slide">
+                                        <h1 class="font-16 d-block"><a
+                                            href="https://www.rubadiet.com/%d9%85%d8%aa%d8%ac%d8%b1-%d8%a7%d9%84%d9%83%d8%aa%d8%b1%d9%88%d9%86%d9%8a/?filters=product_cat[918]"
+                                            class="color-theme opacity-50" target="_blank">Nuts&Seeds</a></h1>
+                                        </div>
+                                        <div class="splide__slide">
+                                            <h1 class="font-16 d-block"><a
+                                                href="https://www.rubadiet.com/%d9%85%d8%aa%d8%ac%d8%b1-%d8%a7%d9%84%d9%83%d8%aa%d8%b1%d9%88%d9%86%d9%8a/?filters=product_cat[903]"
+                                                class="color-theme opacity-50" target="_blank">Gluten-free</a></h1>
+                                            </div>
+                                            <div class="splide__slide">
+                                                <h1 class="font-16 d-block"><a
+                                                    href="https://www.rubadiet.com/%d9%85%d8%aa%d8%ac%d8%b1-%d8%a7%d9%84%d9%83%d8%aa%d8%b1%d9%88%d9%86%d9%8a/?filters=product_cat[914]"
+                                                    class="color-theme opacity-50" target="_blank">Sugar-free</a></h1>
+                                                </div>
+                                                <div class="splide__slide">
+                                                    <h1 class="font-16 d-block"><a
+                                                        href="https://www.rubadiet.com/%d9%85%d8%aa%d8%ac%d8%b1-%d8%a7%d9%84%d9%83%d8%aa%d8%b1%d9%88%d9%86%d9%8a/?filters=product_cat[904]"
+                                                        class="color-theme opacity-50" target="_blank">Macarons&Cereals</a></h1>
+                                                    </div>
+                                                    <div class="splide__slide">
+                                                        <h1 class="font-16 d-block"><a
+                                    href="https://www.rubadiet.com/%d9%85%d8%aa%d8%ac%d8%b1-%d8%a7%d9%84%d9%83%d8%aa%d8%b1%d9%88%d9%86%d9%8a/?filters=product_cat[911]"
+                                    class="color-theme opacity-50" target="_blank">Proteins</a></h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="splide double-slider slider-no-dots" id="double-slider-1">
+                <div class="splide__track">
+                    <div class="splide__list">
+                        <div class="splide__slide">
+                            <a href="https://www.rubadiet.com/product/%d8%a3%d9%84%d9%88%d8%a7%d8%ad-%d8%a8%d9%88%d8%a8-%d9%85%d8%b9-%d8%a7%d9%84%d8%b4%d9%88%d9%81%d8%a7%d9%86/"
+                                target="_blank">
+
+                                <div class="card mx-3 mb-0 card-style " data-card-height="250"
+                                    style="background-image: url(images/products/protein.jpg);">
+                                    <div class="card-top">
+                                    </div>
+                                    <div class="card-bottom">
+                                        <h3 class="color-white font-800 mb-3 pb-1 ps-3">$2<sup>.47</sup></h3>
+                                    </div>
+                                    <div class="card-overlay bg-gradient"></div>
+                                </div>
+                                <p class="mx-3 mb-0 mt-2 color-highlight font-600">In stock</p>
+                                <h4 class="mx-3 mb-4">Feel-fit<br>proteiz</h4>
+                            </a>
+                        </div>
+
+                        <div class="splide__slide">
+                            <a href="https://www.rubadiet.com/product/%d8%a7%d9%84%d9%88%d8%a7%d8%ad-%d8%a7%d9%84%d8%b4%d9%88%d9%81%d8%a7%d9%86/"
+                                target="_blank">
+
+                                <div class="card mx-3 mb-0 card-style " data-card-height="250"
+                                    style="background-image: url(images/products/oats.jpg);">
+                                    <div class="card-top">
+                                    </div>
+                                    <div class="card-bottom">
+                                        <p class="color-white mb-n1 pb-1 ps-3 font-12 opacity-40 font-400">
+                                            <del>$5<sup>.64</sup></del></p>
+                                        <h3 class="color-white font-800 mb-3 pb-1 ps-3">$2<sup>.82</sup></h3>
+                                    </div>
+                                    <div class="card-overlay bg-gradient"></div>
+                                </div>
+                                <p class="mx-3 mb-0 mt-2 color-highlight font-600">50% Discount</p>
+                                <h4 class="mx-3 mb-4">Oat <br>bars</h4>
+                            </a>
+                        </div>
+
+                        <div class="splide__slide">
+                            <a href="https://www.rubadiet.com/product/%d8%b1%d9%82%d8%a7%d8%a6%d9%82-%d8%b4%d9%8a%d8%a8%d8%b3/"
+                                target="_blank">
+
+                                <div class="card mx-3 mb-0 card-style " data-card-height="250"
+                                    style="background-image: url(images/products/kimifinne.jpg);">
+                                    <div class="card-top">
+                                    </div>
+                                    <div class="card-bottom">
+                                        <h3 class="color-white font-800 mb-3 pb-1 ps-3">$1<sup>.83</sup></h3>
+                                    </div>
+                                    <div class="card-overlay bg-gradient"></div>
+                                </div>
+                                <p class="mx-3 mb-0 mt-2 color-highlight font-600">In stock</p>
+                                <h4 class="mx-3 mb-4">KimmeFinne <br> chips</h4>
+                            </a>
+                        </div>
+
+                        <div class="splide__slide">
+                            <a href="https://www.rubadiet.com/product/%d8%b4%d9%8a%d9%83-%d8%a7%d9%88%d8%a8%d8%aa%d9%8a%d9%81%d8%a7%d8%b3%d8%aa/"
+                                target="_blank">
+
+                                <div class="card mx-3 mb-0 card-style " data-card-height="250"
+                                    style="background-image: url(images/products/optifast2.jpg);">
+                                    <div class="card-top">
+                                    </div>
+                                    <div class="card-bottom">
+                                        <p class="color-white mb-n1 pb-1 ps-3 font-12 opacity-40 font-400">
+                                            <del>$6<sup>.98</sup></del></p>
+                                        <h3 class="color-white font-800 mb-3 pb-1 ps-3">$3<sup>.49</sup></h3>
+                                    </div>
+                                    <div class="card-overlay bg-gradient"></div>
+                                </div>
+                                <p class="mx-3 mb-0 mt-2 color-highlight font-600">50% Discount</p>
+                                <h4 class="mx-3 mb-4">OptiFast<br>shake</h4>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="divider divider-margins"></div>
+
+            <div class="card card-style">
+                <div class="content mb-0">
+                    <p class="mb-n1 font-600 color-highlight">Handpicked by our Staff</p>
+                    <h2 class="mb-4">Featured Products</h2>
+
+                    <div class="row mb-0">
+                        <div class="col-6 mb-4 pe-0">
+                            <a href="https://www.rubadiet.com/product/%d9%85%d9%83%d9%85%d9%84-%d8%ba%d8%b0%d8%a7%d8%a6%d9%8a-%d8%b9%d8%a7%d9%84%d9%8a-%d8%a8%d8%a7%d9%84%d8%b7%d8%a7%d9%82%d8%a9-fortisip/"
+                                target="_blank">
+                                <img src="images/products/fortisip.jpg" class="rounded-sm shadow-xl img-fluid"></a>
+                        </div>
+                        <div class="col-6">
+                            <a href="#" class="d-block">
+                                <i class="fa fa-star color-yellow-dark"></i>
+                                <i class="fa fa-star color-yellow-dark"></i>
+                                <i class="fa fa-star color-yellow-dark"></i>
+                                <i class="fa fa-star color-yellow-dark"></i>
+                                <i class="fa fa-star color-yellow-dark"></i><br>
+                            </a>
+                            <a href="https://www.rubadiet.com/product/%d9%85%d9%83%d9%85%d9%84-%d8%ba%d8%b0%d8%a7%d8%a6%d9%8a-%d8%b9%d8%a7%d9%84%d9%8a-%d8%a8%d8%a7%d9%84%d8%b7%d8%a7%d9%82%d8%a9-fortisip/"
+                                target="_blank">
+                                <h5 class="mb-0">Fortisip</h5>
+                                <span class="color-green-dark font-10">In Stock</span>
+                            </a>
+                            <h1 class="mt-1 mb-n2 font-800">$4<sup class="font-300 font-16">.81</sup></h1>
+                            <span class="opacity-50 font-11"><del>$9<sup>.62</sup></del> (- 50%)</span>
+                        </div>
+
+                        <div class="w-100 divider divider-margins"></div>
+
+                        <div class="col-6 mb-4 pe-0">
+                            <a href="https://www.rubadiet.com/product/%d8%b1%d9%82%d8%a7%d8%a6%d9%82-%d8%b4%d9%8a%d8%a8%d8%b3/"
+                                target="_blank">
+                                <img src="images/products/josweet-sucralose.jpg"
+                                    class="rounded-sm shadow-xl img-fluid"></a>
+                        </div>
+                        <div class="col-6">
+                            <a href="#" class="d-block">
+                                <i class="fa fa-star color-yellow-dark"></i>
+                                <i class="fa fa-star color-yellow-dark"></i>
+                                <i class="fa fa-star color-yellow-dark"></i>
+                                <i class="fa fa-star color-yellow-dark"></i>
+                                <i class="fa fa-star color-yellow-dark"></i><br>
+                            </a>
+                            <a href="https://www.rubadiet.com/product/%d9%82%d8%b7%d8%b1-%d8%ac%d9%88%d8%b3%d9%88%d9%8a%d8%aa/"
+                                target="_blank">
+                                <h5 class="mb-0">josweet-sucralose</h5>
+                                <span class="color-green-dark font-10">In Stock</span>
+                            </a>
+                            <h1 class="mt-1 mb-n2 font-800">$3<sup class="font-300 font-16">.53</sup></h1>
+                            <span class="opacity-50 font-11"><del>$7<sup>.06</sup></del> (- 50%)</span>
+                        </div>
+
+                        <div class="w-100 divider divider-margins"></div>
+
+                        <div class="col-6 mb-4 pe-0">
+                            <a href="#"><img src="images/products/fusion.jpg"
+                                    class="rounded-sm shadow-xl img-fluid"></a>
+                        </div>
+                        <div class="col-6">
+                            <a href="#" class="d-block">
+                                <i class="fa fa-star color-yellow-dark"></i>
+                                <i class="fa fa-star color-yellow-dark"></i>
+                                <i class="fa fa-star color-yellow-dark"></i>
+                                <i class="fa fa-star color-yellow-dark"></i>
+                                <i class="fa fa-star color-yellow-dark"></i><br>
+                            </a>
+                            <a href="#">
+                                <h5 class="mb-0">Fusion supplement</h5>
+                                <span class="color-green-dark font-10">In Stock</span>
+                            </a>
+                            <h1 class="mt-1 mb-n2 font-800">$5<sup class="font-300 font-16">.64</sup></h1>
+                            <span class="opacity-50 font-11"><del>$11<sup>.28</sup></del> (- 50%)</span>
+                        </div>
+                    </div>
+
+                    <a href="https://www.rubadiet.com/%D9%85%D8%AA%D8%AC%D8%B1-%D8%A7%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A/"
+                        class="btn btn-full btn-sm rounded-s mb-3 font-600 gradient-highlight" target="_blank">View More
+                        Featured Products</a>
+                </div>
+            </div>
+
+            <div class="content mb-3">
+                <h3>Popular Categories</h3>
+            </div>
+            <div class="splide double-slider slider-no-dots" id="double-slider-3">
+                <div class="splide__track">
+                    <div class="splide__list">
+                        <div class="splide__slide">
+                            <a href="https://www.rubadiet.com/%D9%85%D8%AA%D8%AC%D8%B1-%D8%A7%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A/?filters=product_cat[916]"
+                                target="_blank">
+                                <div class="card mx-3 card-style " data-card-height="120"
+                                    style="background-image: url(images/products/protein.jpg);">
+                                    <div class="card-center">
+                                        <h3 class="color-white font-800 pb-0 mb-0 ps-3">Snack bars</h3>
+                                    </div>
+
+                                    <div class="card-overlay bg-gradient"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="splide__slide">
+                            <a href="https://www.rubadiet.com/%D9%85%D8%AA%D8%AC%D8%B1-%D8%A7%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A/?filters=product_cat[906]"
+                                target="_blank">
+
+                                <div class="card mx-3 card-style " data-card-height="120"
+                                    style="background-image: url(images/products/kimifinne.jpg);">
+                                    <div class="card-center">
+                                        <h3 class="color-white font-800 pb-0 mb-0 ps-3">Chips</h3>
+                                    </div>
+                                    <div class="card-overlay bg-gradient"></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card card-style">
+                <div class="content mb-0">
+                    <p class="mb-n1 font-600 color-highlight">Fresh Arrivals</p>
+                    <h2 class="mb-4">New in Store</h2>
+
+                    <div class="row text-center mb-0">
+                        <div class="col-6 mb-4">
+                            <a href="https://www.rubadiet.com/product/%d8%b4%d9%8a%d8%a8%d8%b3-pop/"
+                                target="_blank"><img src="images/products/popchips.jpg"
+                                    class="rounded-sm shadow-xl img-fluid"></a>
+                            <a href="#" class="d-block mt-3">
+                                <i class="fa fa-star color-yellow-dark"></i>
+                                <i class="fa fa-star color-yellow-dark"></i>
+                                <i class="fa fa-star color-yellow-dark"></i>
+                                <i class="fa fa-star color-yellow-dark"></i>
+                                <i class="fa fa-star color-yellow-dark"></i><br>
+                                <span class="font-10 d-block mt-n1">130 Reviewers</span>
+                            </a>
+                            <a href="https://www.rubadiet.com/product/%d8%b4%d9%8a%d8%a8%d8%b3-pop/" target="_blank">
+                                <h5 class="mt-1">Popchips</h5>
+                                <span class="color-green-dark font-10">In Stock</span>
+                            </a>
+                            <h1 class="mt-1 mb-n2 font-800">$2<sup class="font-300 font-16">.47</sup></h1>
+                            <span class="opacity-50 font-11"><del>$4<sup>.94</sup></del> (- 50%)</span>
+                        </div>
+
+                        <div class="col-6 mb-4">
+                            <a href="https://www.rubadiet.com/product/%d8%ae%d9%84-%d8%a7%d9%84%d8%aa%d9%81%d8%a7%d8%ad/"
+                                target="_blank"><img src="images/products/apple-vingar.jpg"
+                                    class="rounded-sm shadow-xl img-fluid"></a>
+                            <a href="#" class="d-block mt-3">
+                                <i class="fa fa-star color-yellow-dark"></i>
+                                <i class="fa fa-star color-yellow-dark"></i>
+                                <i class="fa fa-star color-yellow-dark"></i>
+                                <i class="fa fa-star color-yellow-dark"></i>
+                                <i class="fa fa-star-half color-yellow-dark"></i><br>
+                                <span class="font-10 d-block mt-n1">41 Reviewers</span>
+                            </a>
+                            <a href="https://www.rubadiet.com/product/%d8%ae%d9%84-%d8%a7%d9%84%d8%aa%d9%81%d8%a7%d8%ad/"
+                                target="_blank">
+                                <h5 class="mt-1">Apple cider vinegar</h5>
+                                <span class="color-green-dark font-10">In Stock</span>
+                            </a>
+                            <h1 class="mt-1 mb-n2 font-800">$9<sup class="font-300 font-16">.87</sup></h1>
+                            <span class="opacity-50 font-11"><del>$19<sup>.74</sup></del> (- 50%)</span>
+                        </div>
+                    </div>
+
+
+                    <a href="https://www.rubadiet.com/%D9%85%D8%AA%D8%AC%D8%B1-%D8%A7%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A/"
+                        class="btn btn-full btn-sm rounded-s mb-3 font-600 gradient-highlight" target="_blank">View More
+                        New Arrivals</a>
+
+                </div>
+            </div>
+
+
+
+            <div data-menu-load="menu-footer.html"></div>
+        </div>
+        <!-- Page content ends here-->
+
+        <!-- menu cart -->
+        <div id="menu-cart" class="menu menu-box-bottom rounded-m bg-theme" data-menu-height="420">
+            <div class="menu-title">
+                <p class="color-highlight">Customize your Order</p>
+                <h1 class="font-22 font-800">Customize Product</h1>
+                <a href="#" class="close-menu"><i class="fa fa-times-circle"></i></a>
+            </div>
+
+            <div class="content">
+
+                <div class="divider mt-n2"></div>
+
+                <div class="d-flex mb-4">
+                    <div>
+                        <img src="images/pictures/17s.jpg" class="rounded-sm" width="80">
+                    </div>
+                    <div class="w-100 ms-3 pt-1">
+                        <h6 class="font-500 font-14 pb-2">Awesome headset with pinkish color and iPhone adapter </h6>
+                        <h4>$49.99</h4>
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+
                 <div class="row mb-0">
-                    <div class="col-6 mb-4 pe-0">
-                        <a href="https://www.rubadiet.com/product/%d9%85%d9%83%d9%85%d9%84-%d8%ba%d8%b0%d8%a7%d8%a6%d9%8a-%d8%b9%d8%a7%d9%84%d9%8a-%d8%a8%d8%a7%d9%84%d8%b7%d8%a7%d9%82%d8%a9-fortisip/" target="_blank">
-                            <img src="images/products/fortisip.jpg" class="rounded-sm shadow-xl img-fluid"></a>
-                    </div>
-                    <div class="col-6">
-                        <a href="#" class="d-block">
-                            <i class="fa fa-star color-yellow-dark"></i>
-                            <i class="fa fa-star color-yellow-dark"></i>
-                            <i class="fa fa-star color-yellow-dark"></i>
-                            <i class="fa fa-star color-yellow-dark"></i>
-                            <i class="fa fa-star color-yellow-dark"></i><br>
-                        </a>
-                        <a href="https://www.rubadiet.com/product/%d9%85%d9%83%d9%85%d9%84-%d8%ba%d8%b0%d8%a7%d8%a6%d9%8a-%d8%b9%d8%a7%d9%84%d9%8a-%d8%a8%d8%a7%d9%84%d8%b7%d8%a7%d9%82%d8%a9-fortisip/" target="_blank">
-                            <h5 class="mb-0">Fortisip</h5>
-                            <span class="color-green-dark font-10">In Stock</span>
-                        </a>
-                        <h1 class="mt-1 mb-n2 font-800">$4<sup class="font-300 font-16">.81</sup></h1>
-                        <span class="opacity-50 font-11"><del>$9<sup>.62</sup></del> (- 50%)</span>
-                    </div>
-                    
-                    <div class="w-100 divider divider-margins"></div>
-                                        
-                    <div class="col-6 mb-4 pe-0">
-                        <a href="https://www.rubadiet.com/product/%d8%b1%d9%82%d8%a7%d8%a6%d9%82-%d8%b4%d9%8a%d8%a8%d8%b3/" target="_blank">
-                            <img src="images/products/josweet-sucralose.jpg" class="rounded-sm shadow-xl img-fluid"></a>
-                    </div>
-                    <div class="col-6">
-                        <a href="#" class="d-block">
-                            <i class="fa fa-star color-yellow-dark"></i>
-                            <i class="fa fa-star color-yellow-dark"></i>
-                            <i class="fa fa-star color-yellow-dark"></i>
-                            <i class="fa fa-star color-yellow-dark"></i>
-                            <i class="fa fa-star color-yellow-dark"></i><br>
-                        </a>
-                        <a href="https://www.rubadiet.com/product/%d9%82%d8%b7%d8%b1-%d8%ac%d9%88%d8%b3%d9%88%d9%8a%d8%aa/" target="_blank">
-                            <h5 class="mb-0">josweet-sucralose</h5>
-                            <span class="color-green-dark font-10">In Stock</span>
-                        </a>
-                        <h1 class="mt-1 mb-n2 font-800">$3<sup class="font-300 font-16">.53</sup></h1>
-                        <span class="opacity-50 font-11"><del>$7<sup>.06</sup></del> (- 50%)</span>
-                    </div>
-                    
-                    <div class="w-100 divider divider-margins"></div>
-                    
-                    <div class="col-6 mb-4 pe-0">
-                        <a href="#"><img src="images/products/fusion.jpg" class="rounded-sm shadow-xl img-fluid"></a>
-                    </div>
-                    <div class="col-6">
-                        <a href="#" class="d-block">
-                            <i class="fa fa-star color-yellow-dark"></i>
-                            <i class="fa fa-star color-yellow-dark"></i>
-                            <i class="fa fa-star color-yellow-dark"></i>
-                            <i class="fa fa-star color-yellow-dark"></i>
-                            <i class="fa fa-star color-yellow-dark"></i><br>
-                        </a>
-                        <a href="#">
-                            <h5 class="mb-0">Fusion supplement</h5>
-                            <span class="color-green-dark font-10">In Stock</span>
-                        </a>
-                        <h1 class="mt-1 mb-n2 font-800">$5<sup class="font-300 font-16">.64</sup></h1>
-                        <span class="opacity-50 font-11"><del>$11<sup>.28</sup></del> (- 50%)</span>
-                    </div>        
-                </div>
-                                
-                <a href="https://www.rubadiet.com/%D9%85%D8%AA%D8%AC%D8%B1-%D8%A7%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A/" class="btn btn-full btn-sm rounded-s mb-3 font-600 gradient-highlight" target="_blank">View More Featured Products</a>
-            </div>
-        </div>
-        
-        <div class="content mb-3">
-            <h3>Popular Categories</h3>
-        </div>
-        <div class="splide double-slider slider-no-dots" id="double-slider-3">
-            <div class="splide__track">
-                <div class="splide__list">
-                    <div class="splide__slide">
-                       <a href="https://www.rubadiet.com/%D9%85%D8%AA%D8%AC%D8%B1-%D8%A7%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A/?filters=product_cat[916]" target="_blank"> <div class="card mx-3 card-style " data-card-height="120" style="background-image: url(images/products/protein.jpg);">
-                            <div class="card-center">
-                                <h3 class="color-white font-800 pb-0 mb-0 ps-3">Snack bars</h3>
-                            </div>
-
-                            <div class="card-overlay bg-gradient"></div>
+                    <div class="col-4">
+                        <div class="input-style has-borders no-icon input-style-always-active validate-field mb-4">
+                            <input type="number" class="form-control validate-number" id="form412" placeholder="1">
+                            <label for="form412" class="color-highlight">Quantity</label>
+                            <i class="fa fa-times disabled invalid color-red-dark"></i>
+                            <i class="fa fa-check disabled valid color-green-dark"></i>
+                            <em>(required)</em>
                         </div>
-                    </a>
                     </div>
-                    <div class="splide__slide">
-                        <a href="https://www.rubadiet.com/%D9%85%D8%AA%D8%AC%D8%B1-%D8%A7%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A/?filters=product_cat[906]" target="_blank">
-
-                            <div class="card mx-3 card-style " data-card-height="120" style="background-image: url(images/products/kimifinne.jpg);">
-                                <div class="card-center">
-                                    <h3 class="color-white font-800 pb-0 mb-0 ps-3">Chips</h3>
-                                </div>
-                                <div class="card-overlay bg-gradient"></div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="card card-style">
-            <div class="content mb-0">
-                <p class="mb-n1 font-600 color-highlight">Fresh Arrivals</p>
-                <h2 class="mb-4">New in Store</h2>
-                
-                <div class="row text-center mb-0">
-                    <div class="col-6 mb-4">
-                        <a href="https://www.rubadiet.com/product/%d8%b4%d9%8a%d8%a8%d8%b3-pop/" target="_blank"><img src="images/products/popchips.jpg" class="rounded-sm shadow-xl img-fluid"></a>
-                        <a href="#" class="d-block mt-3">
-                            <i class="fa fa-star color-yellow-dark"></i>
-                            <i class="fa fa-star color-yellow-dark"></i>
-                            <i class="fa fa-star color-yellow-dark"></i>
-                            <i class="fa fa-star color-yellow-dark"></i>
-                            <i class="fa fa-star color-yellow-dark"></i><br>
-                            <span class="font-10 d-block mt-n1">130 Reviewers</span>
-                        </a>
-                        <a href="https://www.rubadiet.com/product/%d8%b4%d9%8a%d8%a8%d8%b3-pop/" target="_blank">
-                            <h5 class="mt-1">Popchips</h5>
-                            <span class="color-green-dark font-10">In Stock</span>
-                        </a>
-                        <h1 class="mt-1 mb-n2 font-800">$2<sup class="font-300 font-16">.47</sup></h1>
-                        <span class="opacity-50 font-11"><del>$4<sup>.94</sup></del> (- 50%)</span>
-                    </div>
-                    
-                    <div class="col-6 mb-4">
-                        <a href="https://www.rubadiet.com/product/%d8%ae%d9%84-%d8%a7%d9%84%d8%aa%d9%81%d8%a7%d8%ad/" target="_blank"><img src="images/products/apple-vingar.jpg" class="rounded-sm shadow-xl img-fluid"></a>
-                        <a href="#" class="d-block mt-3">
-                            <i class="fa fa-star color-yellow-dark"></i>
-                            <i class="fa fa-star color-yellow-dark"></i>
-                            <i class="fa fa-star color-yellow-dark"></i>
-                            <i class="fa fa-star color-yellow-dark"></i>
-                            <i class="fa fa-star-half color-yellow-dark"></i><br>
-                            <span class="font-10 d-block mt-n1">41 Reviewers</span>
-                        </a>
-                        <a href="https://www.rubadiet.com/product/%d8%ae%d9%84-%d8%a7%d9%84%d8%aa%d9%81%d8%a7%d8%ad/" target="_blank">
-                            <h5 class="mt-1">Apple cider vinegar</h5>
-                            <span class="color-green-dark font-10">In Stock</span>
-                        </a>
-                        <h1 class="mt-1 mb-n2 font-800">$9<sup class="font-300 font-16">.87</sup></h1>
-                        <span class="opacity-50 font-11"><del>$19<sup>.74</sup></del> (- 50%)</span>
-                    </div>
-                </div>
-
-                
-                <a href="https://www.rubadiet.com/%D9%85%D8%AA%D8%AC%D8%B1-%D8%A7%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A/" class="btn btn-full btn-sm rounded-s mb-3 font-600 gradient-highlight" target="_blank">View More New Arrivals</a>
-                
-            </div>
-        </div>
-
-        
-        
-        <div data-menu-load="menu-footer.html"></div>
-    </div>
-    <!-- Page content ends here-->
-    
-    <!-- menu cart -->
-    <div id="menu-cart" 
-         class="menu menu-box-bottom rounded-m bg-theme" 
-         data-menu-height="420">
-        <div class="menu-title">
-            <p class="color-highlight">Customize your Order</p>
-            <h1 class="font-22 font-800">Customize Product</h1>
-            <a href="#" class="close-menu"><i class="fa fa-times-circle"></i></a>
-        </div>
-        
-        <div class="content">
-            
-            <div class="divider mt-n2"></div>
-            
-            <div class="d-flex mb-4">
-                <div>
-                    <img src="images/pictures/17s.jpg" class="rounded-sm" width="80">
-                </div>
-                <div class="w-100 ms-3 pt-1">
-                    <h6 class="font-500 font-14 pb-2">Awesome headset with pinkish color and iPhone adapter  </h6>
-                    <h4>$49.99</h4>
-                </div>
-            </div>
-            
-            <div class="divider"></div>
-            
-            <div class="row mb-0">
-                <div class="col-4">
-                    <div class="input-style has-borders no-icon input-style-always-active validate-field mb-4">
-                        <input type="number" class="form-control validate-number" id="form412" placeholder="1">
-                        <label for="form412" class="color-highlight">Quantity</label>
-                        <i class="fa fa-times disabled invalid color-red-dark"></i>
-                        <i class="fa fa-check disabled valid color-green-dark"></i>
-                        <em>(required)</em>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="input-style has-borders no-icon input-style-always-active mb-4">
-                        <label for="form52" class="color-highlight">Storage</label>
-                        <select id="form52">
+                    <div class="col-4">
+                        <div class="input-style has-borders no-icon input-style-always-active mb-4">
+                            <label for="form52" class="color-highlight">Storage</label>
+                            <select id="form52">
                                 <option value="default" selected>64 GB</option>
                                 <option value="a">128 GB</option>
                                 <option value="b">256 GB</option>
                                 <option value="c">512 GB</option>
-                        </select>
-                        <span><i class="fa fa-chevron-down"></i></span>
-                        <i class="fa fa-check disabled valid color-green-dark"></i>
-                        <i class="fa fa-check disabled invalid color-red-dark"></i>
-                        <em></em>
+                            </select>
+                            <span><i class="fa fa-chevron-down"></i></span>
+                            <i class="fa fa-check disabled valid color-green-dark"></i>
+                            <i class="fa fa-check disabled invalid color-red-dark"></i>
+                            <em></em>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="input-style has-borders no-icon input-style-always-active mb-4">
+                            <label for="form512" class="color-highlight">Storage</label>
+                            <select id="form512">
+                                <option value="default" selected>Small</option>
+                                <option value="a">Medium</option>
+                                <option value="b">Large</option>
+                            </select>
+                            <span><i class="fa fa-chevron-down"></i></span>
+                            <i class="fa fa-check disabled valid color-green-dark"></i>
+                            <i class="fa fa-check disabled invalid color-red-dark"></i>
+                            <em></em>
+                        </div>
                     </div>
                 </div>
-                <div class="col-4">
-                    <div class="input-style has-borders no-icon input-style-always-active mb-4">
-                        <label for="form512" class="color-highlight">Storage</label>
-                        <select id="form512">
-                            <option value="default" selected>Small</option>
-                            <option value="a">Medium</option>
-                            <option value="b">Large</option>
-                        </select>
-                        <span><i class="fa fa-chevron-down"></i></span>
-                        <i class="fa fa-check disabled valid color-green-dark"></i>
-                        <i class="fa fa-check disabled invalid color-red-dark"></i>
-                        <em></em>
-                    </div>
-                </div>
-            </div>            
-            
-            <a href="#" class="close-menu btn btn-full gradient-blue font-13 btn-m font-600 mt-3 rounded-s">Apply Changes</a>
-            
+
+                <a href="#" class="close-menu btn btn-full gradient-blue font-13 btn-m font-600 mt-3 rounded-s">Apply
+                    Changes</a>
+
+            </div>
         </div>
+
+
+        <!-- Added to Bookmarks Menu-->
+        <div id="menu-heart" class="menu menu-box-modal rounded-m" data-menu-hide="800" data-menu-width="250"
+            data-menu-height="170">
+
+            <h1 class="text-center mt-3 pt-2">
+                <i class="fa fa-check-circle color-green-dark fa-3x"></i>
+            </h1>
+            <h3 class="text-center pt-2">Saved to Favorites</h3>
+        </div>
+
+        <!-- Added to Cart Menu-->
+        <div id="menu-added" class="menu menu-box-modal rounded-m" data-menu-hide="800" data-menu-width="250"
+            data-menu-height="170">
+
+            <h1 class="text-center mt-3 pt-2">
+                <i class="fa fa-shopping-bag color-brown-dark fa-3x"></i>
+            </h1>
+            <h3 class="text-center pt-2">Added to Cart</h3>
+        </div>
+
+        <!-- Main Menu-->
+        <div id="menu-main" class="menu menu-box-left rounded-0" data-menu-load="menu-main.html" data-menu-width="280"
+            data-menu-active="nav-pages"></div>
+
+        <!-- Share Menu-->
+        <div id="menu-share" class="menu menu-box-bottom rounded-m" data-menu-load="menu-share.html"
+            data-menu-height="370"></div>
+
+        <!-- Colors Menu-->
+        <div id="menu-colors" class="menu menu-box-bottom rounded-m" data-menu-load="menu-colors.html"
+            data-menu-height="480"></div>
+
+
     </div>
 
-    
-    <!-- Added to Bookmarks Menu-->
-    <div id="menu-heart" 
-         class="menu menu-box-modal rounded-m" 
-         data-menu-hide="800"
-         data-menu-width="250"
-         data-menu-height="170">
-        
-        <h1 class="text-center mt-3 pt-2">
-            <i class="fa fa-check-circle color-green-dark fa-3x"></i>
-        </h1>
-        <h3 class="text-center pt-2">Saved to Favorites</h3>
-    </div>
-    
-    <!-- Added to Cart Menu-->
-    <div id="menu-added" 
-         class="menu menu-box-modal rounded-m" 
-         data-menu-hide="800"
-         data-menu-width="250"
-         data-menu-height="170">
-        
-        <h1 class="text-center mt-3 pt-2">
-            <i class="fa fa-shopping-bag color-brown-dark fa-3x"></i>
-        </h1>
-        <h3 class="text-center pt-2">Added to Cart</h3>
-    </div>
-    
-    <!-- Main Menu--> 
-    <div id="menu-main" class="menu menu-box-left rounded-0" data-menu-load="menu-main.html" data-menu-width="280" data-menu-active="nav-pages"></div>
-    
-    <!-- Share Menu-->
-    <div id="menu-share" class="menu menu-box-bottom rounded-m" data-menu-load="menu-share.html" data-menu-height="370"></div>  
-    
-    <!-- Colors Menu-->
-    <div id="menu-colors" class="menu menu-box-bottom rounded-m" data-menu-load="menu-colors.html" data-menu-height="480"></div> 
-     
-    
-</div>
-
-<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
-<script type="text/javascript" src="scripts/custom.js"></script>
+    <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="scripts/custom.js"></script>
 </body>
