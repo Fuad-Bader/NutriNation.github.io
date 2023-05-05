@@ -1,0 +1,152 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>AppKit Mobile</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+
+<body class="theme-light">
+
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+
+<div id="page">
+
+    <div class="header header-fixed header-logo-center header-auto-show">
+        <a href="index.html" class="header-title">Interests</a>
+        <a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-chevron-left"></i></a>
+        <a href="#" data-menu="menu-main" class="header-icon header-icon-4"><i class="fas fa-bars"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-dark"><i class="fas fa-sun"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-3 show-on-theme-light"><i class="fas fa-moon"></i></a>
+    </div>
+
+    <div id="footer-bar" class="footer-bar-6">
+        <a href="index-components.html"><i class="fa fa-layer-group"></i><span>Features</span></a>
+        <a href="index-pages.html" class="active-nav"><i class="fa fa-file"></i><span>Pages</span></a>
+        <a href="index.html" class="circle-nav"><i class="fa fa-home"></i><span>Welcome</span></a>
+        <a href="index-projects.html"><i class="fa fa-camera"></i><span>Projects</span></a>
+        <a href="#" data-menu="menu-main"><i class="fa fa-bars"></i><span>Menu</span></a>
+    </div>
+
+    <div class="page-title page-title-fixed">
+        <h1 class="font-22">Symptoms</h1>
+        <a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-share"><i class="fa fa-share-alt"></i></a>
+        <a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-light" data-toggle-theme><i class="fa fa-moon"></i></a>
+        <a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-dark" data-toggle-theme><i class="fa fa-lightbulb color-yellow-dark"></i></a>
+        <a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-main"><i class="fa fa-bars"></i></a>
+    </div>
+    <div class="page-title-clear"></div>
+
+    <div class="page-content">
+
+
+        <div class="card card-style">
+            <div class="content">
+                <p class="mb-n1 color-highlight font-600">Sympthom Checker</p>
+                <h1 class="font-20">Describe how you feel</h1>
+                <p>
+                    A category, or interest selector page based on checkboxes. This is great if you want to get info from your users about what they like
+                    and then submit through a form.
+                </p>
+                <div class="divider"></div>
+				<h5 class="mb-3">In the past week, I feel:</h5>
+                <div class="form-check interest-check mb-4">
+                      <input class="form-check-input" type="checkbox" value="" id="check1">
+                      <label class="form-check-label shadow-xl rounded-xl" for="check1">Not feeling great at all</label>
+                      <i class="fa fa-check-circle color-white font-18"></i>
+                      <i class="fa fa-frown font-17 color-red-dark"></i>
+                </div>
+                <div class="form-check interest-check mb-4">
+                      <input class="form-check-input" type="checkbox" value="" id="check2">
+                      <label class="form-check-label shadow-xl rounded-xl" for="check2">I'm okay, been better.</label>
+                      <i class="fa fa-check-circle color-white font-18"></i>
+                      <i class="fa fa-meh font-17 color-yellow-dark"></i>
+                </div>
+                <div class="form-check interest-check">
+                      <input class="form-check-input" type="checkbox" value="" id="check3">
+                      <label class="form-check-label shadow-xl rounded-xl" for="check3">I'm doing good!</label>
+                      <i class="fa fa-check-circle color-white font-18"></i>
+                      <i class="fa fa-smile font-17 color-green-dark"></i>
+                </div>
+
+                <div class="divider"></div>
+				<h5 class="mb-3">How are your energy levels?</h5>
+                <div class="form-check interest-check mb-4">
+                      <input class="form-check-input" type="checkbox" value="" id="check1a">
+                      <label class="form-check-label shadow-xl rounded-xl" for="check1a">Lethargic</label>
+                      <i class="fa fa-check-circle color-white font-18"></i>
+                      <i class="fa fa-battery-empty font-17 color-red-dark"></i>
+                </div>
+				<br>
+                <div class="form-check interest-check mb-4">
+                      <input class="form-check-input" type="checkbox" value="" id="check2a">
+                      <label class="form-check-label shadow-xl rounded-xl" for="check2a">Lazy and Dull</label>
+                      <i class="fa fa-check-circle color-white font-18"></i>
+                      <i class="fa fa-battery-half font-17 color-yellow-dark"></i>
+                </div>
+				<br>
+                <div class="form-check interest-check">
+                      <input class="form-check-input" type="checkbox" value="" id="check3a">
+                      <label class="form-check-label shadow-xl rounded-xl" for="check3a">Let's Dance!!!</label>
+                      <i class="fa fa-check-circle color-white font-18"></i>
+                      <i class="fa fa-battery-full font-17 color-green-dark"></i>
+                </div>
+
+                <div class="divider"></div>
+				<h5 class="mb-3">How have you been sleeping?</h5>
+                <div class="form-check interest-check mb-4">
+                      <input class="form-check-input" type="checkbox" value="" id="check1ab">
+                      <label class="form-check-label shadow-xl rounded-xl" for="check1ab">Can't fall asleep</label>
+                      <i class="fa fa-check-circle color-white font-18"></i>
+                      <i class="fa fa-frown font-17 color-red-dark"></i>
+                </div>
+				<br>
+                <div class="form-check interest-check mb-4">
+                      <input class="form-check-input" type="checkbox" value="" id="check2ab">
+                      <label class="form-check-label shadow-xl rounded-xl" for="check2ab">Nothing Special</label>
+                      <i class="fa fa-check-circle color-white font-18"></i>
+                      <i class="fa fa-meh font-17 color-yellow-dark"></i>
+                </div>
+				<br>
+                <div class="form-check interest-check">
+                      <input class="form-check-input" type="checkbox" value="" id="check3ab">
+                      <label class="form-check-label shadow-xl rounded-xl" for="check3ab">Sleeping like a Baby</label>
+                      <i class="fa fa-check-circle color-white font-18"></i>
+                      <i class="fa fa-smile-beam font-17 color-green-dark"></i>
+                </div>
+
+
+                <div class="divider"></div>
+                <p class="font-10 text-center mt-n3">You can update your preferences anytime you wish.</p>
+                <a href="#" class='btn btn-full btn-m font-13 font-600 rounded-sm gradient-highlight'>Submit Response</a>
+
+            </div>
+        </div>
+
+        <div data-menu-load="menu-footer.html"></div>
+    </div>
+    <!-- Page content ends here-->
+
+    <!-- Main Menu-->
+    <div id="menu-main" class="menu menu-box-left rounded-0" data-menu-load="menu-main.html" data-menu-width="280" data-menu-active="nav-pages"></div>
+
+    <!-- Share Menu-->
+    <div id="menu-share" class="menu menu-box-bottom rounded-m" data-menu-load="menu-share.html" data-menu-height="370"></div>
+
+    <!-- Colors Menu-->
+    <div id="menu-colors" class="menu menu-box-bottom rounded-m" data-menu-load="menu-colors.html" data-menu-height="480"></div>
+
+
+</div>
+
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>

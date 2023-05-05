@@ -1,17 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
+
 *{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 html {
+
   background-color: #333333;
+  max-height: fit-content;
 }
 
 body{
 	font-family: 'Poppins',sans-serif;
-    height: 100vh
-};
+    height: 100px;
+}
 .navbar{
 	display: flex;
 	align-items: center;
@@ -354,4 +357,8 @@ input[type=submit] {
   position: relative;
   left: -20px;
   content: "✖";
+}
+
+.show-pass{
+
 }

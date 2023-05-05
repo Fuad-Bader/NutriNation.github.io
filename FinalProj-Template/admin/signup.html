@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="au theme template">
+    <meta name="author" content="Hau Nguyen">
+    <meta name="keywords" content="au theme template">
+
+    <!-- Title Page-->
+    <title>Signup</title>
+
+    <!-- Fontfaces CSS-->
+    <link href="css/font-face.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+
+    <!-- Bootstrap CSS-->
+    <link href="vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
+
+    <!-- Vendor CSS-->
+    <link href="vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
+    <link href="vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" media="all">
+    <link href="vendor/wow/animate.css" rel="stylesheet" media="all">
+    <link href="vendor/css-hamburgers/hamburgers.min.css" rel="stylesheet" media="all">
+    <link href="vendor/slick/slick.css" rel="stylesheet" media="all">
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+    <!-- Main CSS-->
+    <link href="css/theme.css" rel="stylesheet" media="all">
+    <!--validation javaScript-->
+    <script type="text/javascript" src="js/signup.js"></script>
+
+</head>
+
+<body class="animsition">
+   
+    <div class="page-wrapper">
+        
+        <div class="page-content--bge5">
+            <div class="container">
+                <div class="login-wrap">
+                    <div class="login-content">
+                        <div class="">
+
+                            <img src="images/loading.gif"
+                                style="max-width: 100px; text-align: center; margin-left: 120px;"><i
+                                style="font-size: 24px;">NutriNation</i>
+
+                        </div>
+                        <br><br>
+                        <div class="login-form">
+                            <form>
+                                <div class="form-group">
+                                    <input class="au-input au-input--full" type="text" name="Fname"
+                                        placeholder="First Name" required>
+                                </div>
+                                <div class="form-group">
+                                    <input class="au-input au-input--full" type="text" name="Lname"
+                                        placeholder="Last Name" required>
+                                </div>
+                                <div class="form-group">
+                                    <input class="au-input au-input--full" type="email" name="email" placeholder="Email"
+                                        required>
+                                </div>
+                                <div class="form-group">
+                                    <input class="au-input au-input--full" type="password" name="password"
+                                        placeholder="Password" id="psw" name="psw" required><i class="far fa-eye"
+                                        id="togglePassword" style="margin-left: -30px; cursor: pointer;"
+                                        onclick="myFunction()"></i>
+                                </div>
+                                <div class="form-group">
+                                    <input class="au-input au-input--full" type="password" name="confirm_pass"
+                                        placeholder="Re-type password" id="confirm_pass" onkeyup="validate_password()"
+                                        required><i class="far fa-eye" id="togglePassword"
+                                        style="margin-left: -30px; cursor: pointer;" onclick="myFunction2()"></i>
+                                </div>
+                                <div id="message">
+                                    <h3>Password must contain:</h3>
+                                    <p id="length" class="invalid">Minimum 8 characters</p>
+                                    <p id="number" class="invalid">Number [0-9]</p>
+                                    <p id="letter" class="invalid">special characters(`!@#$%^&*)</p>
+                                    <p id="capital" class="invalid">capital (uppercase) letter</p>
+                                </div>
+
+                                <span id="wrong_pass_alert" style="text-align: center;"></span>
+
+                                <button class="au-btn au-btn--block au-btn--green m-b-20" type="submit">sign up</button>
+                                <div class="social-login-content">
+                                    <div class="social-button">
+                                        <div style="text-align: center;">OR</div><br>
+                                        <button class="au-btn au-btn--block au-btn--blue m-b-20">sign up with
+                                            facebook</button>
+                                        <button class="au-btn au-btn--block au-btn--blue2">sign up with twitter</button>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="register-link">
+                                <p>
+                                    Already have account?
+                                    <a href="login.html">Sign in here</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Jquery JS-->
+    <script src="vendor/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap JS-->
+    <script src="vendor/bootstrap-4.1/popper.min.js"></script>
+    <script src="vendor/bootstrap-4.1/bootstrap.min.js"></script>
+    <!-- Vendor JS       -->
+    <script src="vendor/slick/slick.min.js">
+    </script>
+    <script src="vendor/wow/wow.min.js"></script>
+    <script src="vendor/animsition/animsition.min.js"></script>
+    <script src="vendor/bootstrap-progressbar/bootstrap-progressbar.min.js">
+    </script>
+    <script src="vendor/counter-up/jquery.waypoints.min.js"></script>
+    <script src="vendor/counter-up/jquery.counterup.min.js">
+    </script>
+    <script src="vendor/circle-progress/circle-progress.min.js"></script>
+    <script src="vendor/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="vendor/chartjs/Chart.bundle.min.js"></script>
+    <script src="vendor/select2/select2.min.js">
+    </script>
+
+    <!-- Main JS-->
+    <script src="js/main.js"></script>
+
+    <script src="js/showpassowrd.js"></script>
+</body>
+
+</html>
+<!-- end document-->

@@ -19,6 +19,7 @@ if(isset($_POST["log_out"]))
         if($mysqli->query($sql)){
             //session_destroy();
             session_unset();
+            unset($_COOKIE['login']);
             unset($_COOKIE['PHPSESSID']);
         }
     }
