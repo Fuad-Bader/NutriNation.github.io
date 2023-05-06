@@ -281,9 +281,10 @@ section {
 
 @media (max-width: 991px) {
     .page-wrapper {
-    overflow: auto;
-    background: #e5e5e5;
+    overflow: 1;
+    background: #bbb;
     padding-bottom: 12vh;
+    margin-bottom: 15px;
 }
 }
 .page-container {
@@ -333,7 +334,7 @@ section {
 
 .page-content--bge5 {
     background-color:cadetblue;
-    height: 100vh;
+    height: 119vh;
 }
 
 .login-wrap {
