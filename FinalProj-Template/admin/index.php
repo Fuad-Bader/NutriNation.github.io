@@ -325,7 +325,9 @@ include('includes/header.php');
                                                     <h5 class="task">
                                                         <a href="#">Create new task for Dashboard</a>
                                                     </h5>
+                                                    
                                                     <span class="time">03:30 PM</span>
+                                                    
                                                 </div>
                                             </div>
                                             <div class="au-task__item au-task__item--danger js-load-item">
