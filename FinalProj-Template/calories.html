@@ -127,14 +127,14 @@
                                                         <div class="col-5" style="text-align: right;;">
                                                             <label class="form-check-label ">
                                                                 <input type="radio" name="gender" value="male"
-                                                                    class="form-check-input">male
+                                                                    class="form-check-input"><b>male</b>
                                                             </label>
                                                         </div>
                                                         <div class="col-2"></div>
                                                         <div class="col-5" style="text-align: left;">
                                                             <label class="form-check-label ">
                                                                 <input type="radio" name="gender" value="female"
-                                                                    class="form-check-input">female
+                                                                    class="form-check-input"><b>female</b>
                                                             </label>
                                                         </div>
                                                     </div>
@@ -143,12 +143,12 @@
                                             </div>
 
                                             <div class="form-group">
-                                                <label for="AgeValue" class="control-label mb-1">Age</label>
+                                                <label for="AgeValue" class="control-label mb-1"><b>Age</b></label>
                                                 <input id="AgeValue" name="Age" type="number" class="form-control"
                                                     aria-required="true" aria-invalid="false" value="" required>
                                             </div>
                                             <div class="form-group has-success">
-                                                <label for="TallValue" class="control-label mb-1">Height</label>
+                                                <label for="TallValue" class="control-label mb-1"><b>Height</b></label>
                                                 <input id="TallValue" name="Height" type="number"
                                                     class="form-control cc-name valid" data-val="true"
                                                     data-val-required="Please enter your Height" autocomplete="cc-name"
@@ -158,7 +158,7 @@
                                                     data-valmsg-for="cc-name" data-valmsg-replace="true"></span>
                                             </div>
                                             <div class="form-group">
-                                                <label for="WeightValue" class="control-label mb-1">Weight</label>
+                                                <label for="WeightValue" class="control-label mb-1"><b>Weight</b></label>
                                                 <input id="WeightValue" name="cc-number" type="tel"
                                                     class="form-control cc-number identified visa" value=""
                                                     data-val="true" data-val-required="Please enter your Weight"
@@ -182,6 +182,19 @@
                                                     </select>
                                                 </div>
                                             </div>
+                                            
+                                            <div class="row form-group">
+                                                <div class="col-12 col-md-9">
+                                                    <label class="control-label mb-1"><b>Choose Your Target</b></label></br>
+                                                    <select id="Target" class="form-control">
+                                                        <option value="">Please select</option>
+                                                        <option value="Lose weight">Lose weight</option>
+                                                        <option value="Gain weight">Gain weight</option>
+                                                        <option value="Stay at the same weight">Stay at the same weight</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
                                             <div>
                                                 <input type="button" onclick="BMR_RMI()"
                                                     class="btn btn-lg btn-info btn-block" value="calculate">
@@ -200,7 +213,8 @@
                                         <h3 class="text-center title-2">Your Information</h3>
                                     </div>
                                     <hr>
-                                    <div class="card-body card-block">
+                                    <form action="" method="post" novalidate="novalidate"></form>
+                                     <div class="card-body card-block">
                                         <B>The Daily Calories You Need </B>
                                         <p id="dailyCalories" type="tel" class="form-control cc-number identified visa"
                                             value="" disabled>0</p>
@@ -211,11 +225,19 @@
                                             value="" disabled>0</p>
                                         </br>
 
+                                        <B>The daily calories you need to achieve your target  </B>
+                                        <p id="Target2" type="tel" class="form-control cc-number identified visa"
+                                        value="" disabled>0</p>
+
                                         <B>Your Body State </B>
                                         </br></br>
                                         <img id="myImage" src="img/images/body/b&wpng" height="50%" width="100%">
-                                        </br></br></br></br></br></br>
+                                        </br></br>
+
+                                        <p style="font-size:18px;color:black"> To help you achieve your target <a class="hover-post-title" style=" font-size:18px;color:black" href="admin/login.html"> Login</a> </p>
+                                        </br>
                                     </div>
+                                </form>
                                 </div>
                             </div>
                         </div>
@@ -298,7 +320,23 @@
                     break;
                 default:
                     dailyCalories = ("Invalid activity level entered.");
+                
             }
+
+             let Target = document.getElementById("Target").value;     
+             switch (Target) {
+                case "Lose weight":
+                 document.getElementById("Target2").innerHTML= (dailyCalories-350).toFixed(2)+(' calories.');
+                    break;
+                case "Gain weight":
+                 document.getElementById("Target2").innerHTML= (dailyCalories+350).toFixed(2)+(' calories.');
+                    break;
+                case "Stay at the same weight":
+                 document.getElementById("Target2").innerHTML= dailyCalories.toFixed(2)+(' calories.');
+                    break;
+                 default:
+                 document.getElementById("Target2").innerHTML= ("Invalid Target entered.");
+                }
 
 
 
@@ -306,26 +344,10 @@
             //  alert(`Your bmi ${bmi.toFixed(2)} `);
 
             document.getElementById("bodymass").innerHTML = bmi.toFixed(2);
-            document.getElementById("dailyCalories").innerHTML = dailyCalories.toFixed(2);
-
-
-
-
+            document.getElementById("dailyCalories").innerHTML = dailyCalories.toFixed(2)+(' calories.');
         }
-
-
-    </script>
-
-
-
-
-
-
-
-
-
-
-    <!-- Jquery JS-->
+        </script>
+<!-- Jquery JS-->
     <script src="vendor/jquery-3.2.1.min.js"></script>
     <!-- Bootstrap JS-->
     <script src="vendor/bootstrap-4.1/popper.min.js"></script>
