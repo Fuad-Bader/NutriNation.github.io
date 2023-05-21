@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f1f1f1;
+            padding: 20px;
+            font-family: Arial;
+        }
+
+        /* Center website */
+        .main {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h1 {
+            font-size: 50px;
+            word-break: break-all;
+        }
+
+        .row {
+            margin: 10px -16px;
+        }
+
+        /* Add padding BETWEEN each column */
+        .row,
+        .row>.column {
+            padding: 8px;
+        }
+
+        /* Create three equal columns that floats next to each other */
+        .column {
+            float: left;
+            width: 33.33%;
+            display: none;
+            /* Hide all elements by default */
+        }
+
+        /* Clear floats after rows */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Content */
+        .content {
+            background-color: rgba(127, 95, 95, 0.078);
+            padding: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            color: rgb(26, 101, 158);
+        }
+
+
+
+        /* The "show" class is added to the filtered elements */
+        .show {
+            display: block;
+        }
+
+        /* Style the buttons */
+        .btn {
+            border: none;
+            outline: none;
+            padding: 12px 16px;
+            background-color: white;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #ddd;
+        }
+
+        .btn.active {
+            background-color: #666;
+            color: white;
+        }
+
+
+        /*css Dropdown Menu inside a Navigation Bar*/
+
+
+        li {
+            float: left;
+            padding: 10px;
+
+
+        }
+
+        li a,
+        .dropbtn {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+
+
+        li.dropdown {
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /*end css Dropdown Menu inside a Navigation Bar*/
+    </style>
+    <!-- Favicon  -->
+    <link rel="icon" href="../img/bg-img/NutriNation-N-transparent.png">
+
+    <!-- Core Style CSS -->
+    <link rel="stylesheet" href="../css/core-style.css">
+</head>
+
+<body>
+    <!-- ##### Header Area Start ##### -->
+    <header class="header_area">
+        <div class="classy-nav-container breakpoint-off d-flex align-items-center justify-content-between">
+            <!-- Classy Menu -->
+            <nav class="classy-navbar" id="essenceNav">
+                <!-- Logo -->
+                <a class="nav-brand " href="index.html">NutriNation</a>
+                <!-- Navbar Toggler -->
+                <div class="classy-navbar-toggler">
+                    <span class="navbarToggler"><span></span><span></span><span></span></span>
+                </div>
+                <!-- Menu -->
+                <div class="classy-menu">
+                    <!-- close btn -->
+                    <div class="classycloseIcon">
+                        <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                    </div>
+                    <!-- Nav Start -->
+                    <div class="classynav">
+                        <ul>
+
+                            <ul>
+
+                                <li class="dropdown">
+                                    <a href="javascript:void(0)" class="dropbtn">Pages</a>
+                                    <div class="dropdown-content">
+                                        <a href="../index.html">Home</a>
+                                        <a href="../admin/calories.html">Calories counter</a>
+
+                                        <a
+                                            href="/FinalProj-Template/vitamins and minerals/HomeVitamins.html">Vitamins</a>
+                                        <a href="../shop.html">Shop</a>
+                                        <a href="../chat-ai.html">AI Nutritionist</a>
+                                        <a href="../blog.html">About us</a>
+                                        <a href="../App-main/index.html">NutriNation-app</a>
+
+
+                                    </div>
+
+                                </li>
+                            </ul>
+                        </ul>
+                        <a href="../blog.html">About us</a>
+                        <a href="../App-main/index.html"><img src="../img/bg-img/NutriNation-N-transparent.png"
+                                style="height: 50px;"></a>
+                    </div>
+                    <!-- Nav End -->
+                </div>
+            </nav>
+
+            <!-- Header Meta Data -->
+            <div class="header-meta d-flex clearfix justify-content-end">
+
+                <!-- Favourite Area -->
+
+                <!-- User Login Info -->
+                <div class="user-login-info">
+                    <a href="../admin/login.html"><img src="../img/core-img/user.svg" alt=""></a>
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+    <!-- ##### Header Area End ##### -->
+
+    <!-- MAIN (Center website) -->
+    <div class="main">
+
+        <h1>Vitamins and Minerals</h1>
+        <hr>
+
+
+
+        <!-- Portfolio Gallery Grid -->
+        <div class="row">
+
+            <div class="column nature">
+
+                <div class="content">
+                    <a href="">
+                        <img src="https://modo3.com/thumbs/fit192x110/24326/1429524119/%D9%83%D9%8A%D9%81%D9%8A%D8%A9_%D8%A7%D8%B3%D8%AA%D8%AE%D8%AF%D8%A7%D9%85_%D8%A3%D9%88%D9%85%D9%8A%D8%BA%D8%A7_3.jpg"
+                            alt="Mountains" style="width:100%">
+
+                        <h4>How to use Omega 3 </h4>
+
+                        <p>
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <div class="column nature">
+                <div class="content">
+                    <img src="https://modo3.com/thumbs/fit192x110/204285/1557234125/%D9%83%D9%85_%D9%86%D8%B3%D8%A8%D8%A9_%D8%A7%D9%84%D8%AD%D8%AF%D9%8A%D8%AF_%D8%A7%D9%84%D8%B7%D8%A8%D9%8A%D8%B9%D9%8A%D8%A9_%D9%81%D9%8A_%D8%A7%D9%84%D8%AC%D8%B3%D9%85.jpg"
+                        alt="Lights" style="width:100%">
+                    <h4>How much iron is normal in the body</h4>
+                    <p></p>
+                </div>
+            </div>
+            <div class="column nature">
+                <div class="content">
+                    <img src="https://modo3.com/thumbs/fit192x110/703/1680549307/%D8%A3%D8%B9%D8%B1%D8%A7%D8%B6_%D9%86%D9%82%D8%B5_%D9%81%D9%8A%D8%AA%D8%A7%D9%85%D9%8A%D9%86_%D8%AF.jpg"
+                        alt="Nature" style="width:100%">
+                    <h4>Symptoms of vitamin D deficiency</h4>
+                    <p></p>
+                </div>
+            </div>
+
+            <div class="column cars">
+                <div class="content">
+                    <img src="https://modo3.com/thumbs/fit192x110/119945/1583249127/%D8%AC%D8%B1%D8%B9%D8%A9_%D9%81%D9%8A%D8%AA%D8%A7%D9%85%D9%8A%D9%86_%D8%AF_%D9%84%D9%84%D9%83%D8%A8%D8%A7%D8%B1.jpg"
+                        alt="Car" style="width:100%">
+                    <h4>Vitamin D dosage for adults</h4>
+                    <p></p>
+                </div>
+            </div>
+            <div class="column cars">
+                <div class="content">
+                    <img src="https://modo3.com/thumbs/fit192x110/39530/1582208379/%D8%A3%D9%8A%D9%86_%D9%8A%D9%88%D8%AC%D8%AF_%D9%81%D9%8A%D8%AA%D8%A7%D9%85%D9%8A%D9%86_%D8%AC.jpg"
+                        alt="Car" style="width:100%">
+                    <h4>Where is Vitamin C found?</h4>
+                    <p></p>
+                </div>
+            </div>
+            <div class="column cars">
+                <div class="content">
+                    <img src="https://modo3.com/thumbs/fit630x300/190603/1515403463/%D9%85%D8%A7_%D9%87%D9%88_%D9%81%D9%8A%D8%AA%D8%A7%D9%85%D9%8A%D9%86_D3.jpg"
+                        alt="Car" style="width:100%">
+                    <h4>What is Vitamin D3</h4>
+                    <p></p>
+                </div>
+            </div>
+
+            <div class="column people">
+                <div class="content">
+                    <img src="https://modo3.com/thumbs/fit630x300/15452/1577981927/%D9%85%D8%A7_%D9%87%D9%88_%D9%81%D9%8A%D8%AA%D8%A7%D9%85%D9%8A%D9%86_K.jpg"
+                        alt="Car" style="width:100%">
+                    <h4>What is Vitamin K?</h4>
+                    <p></p>
+                </div>
+            </div>
+            <div class="column people">
+                <div class="content">
+                    <img src="https://modo3.com/thumbs/fit630x300/106508/1461757212/%D9%81%D9%8A%D8%AA%D8%A7%D9%85%D9%8A%D9%86_%D8%A89.jpg"
+                        alt="Car" style="width:100%">
+                    <h4>Vitamin B9</h4>
+                    <p></p>
+                </div>
+            </div>
+            <div class="column people">
+                <div class="content">
+                    <img src="https://modo3.com/thumbs/fit630x300/86243/1454582671/%D9%81%D9%8A%D8%AA%D8%A7%D9%85%D9%8A%D9%86_%D8%A812.jpg"
+                        alt="Car" style="width:100%">
+                    <h4>Vitamin B12</h4>
+                    <p></p>
+                </div>
+            </div>
+
+
+            <!-- END GRID -->
+        </div>
+
+        <!-- END MAIN -->
+    </div>
+
+    <script>
+        filterSelection("all")
+        function filterSelection(c) {
+            var x, i;
+            x = document.getElementsByClassName("column");
+            if (c == "all") c = "";
+            for (i = 0; i < x.length; i++) {
+                w3RemoveClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+            }
+        }
+
+        function w3AddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) { element.className += " " + arr2[i]; }
+            }
+        }
+
+        function w3RemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+            }
+            element.className = arr1.join(" ");
+        }
+
+
+        // Add active class to the current button (highlight it)
+        var btnContainer = document.getElementById("myBtnContainer");
+        var btns = btnContainer.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+    </script>
+
+</body>
+
+</html>
