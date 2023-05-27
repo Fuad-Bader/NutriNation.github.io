@@ -60,52 +60,7 @@
                         echo"<td>{$diet['Calories']}</td>";                         
                      echo"</tr>"; 
                      echo"<tr class='spacer'></tr>";}
-                     ?>
-                     
-                     <tr class="tr-shadow">
-                         <td>
-                             <label class="au-checkbox">
-                                 <input type="checkbox">
-                                 <span class="au-checkmark"></span>
-                             </label>
-                         </td>
-                         <td>Lori Lynch</td>
-                         <td class="desc">iPhone X 64Gb Grey</td>
-                         
-                         <td>$999.00</td>
-                     </tr>
-                     <tr class="spacer"></tr>
-                     <tr class="tr-shadow">
-                         <td>
-                             <label class="au-checkbox">
-                                 <input type="checkbox">
-                                 <span class="au-checkmark"></span>
-                             </label>
-                         </td>
-                         <td>Lori Lynch</td>
-                         <td>
-                             <span class="block-email">lyn@example.com</span>
-                         </td>
-                         
-                         <td>$1199.00</td>
-                         
-                     </tr>
-                     <tr class="spacer"></tr>
-                     <tr class="tr-shadow">
-                         <td>
-                             <label class="au-checkbox">
-                                 <input type="checkbox">
-                                 <span class="au-checkmark"></span>
-                             </label>
-                         </td>
-                         <td>Lori Lynch</td>
-                         <td>
-                             <span class="block-email">doe@example.com</span>
-                         </td>
-                         
-                         <td>$699.00</td>
-                         
-                     </tr>
+                     ?>                     
                  </tbody>
              </table>
          </div>
