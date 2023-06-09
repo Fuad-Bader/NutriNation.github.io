@@ -2097,7 +2097,8 @@ img {
 
 @media only screen and (max-width: 767px) {
   .blog-wrapper .single-blog-area .hover-content p {
-    display: none;
+    font-size: 10px;
+    margin-bottom: 10px;
     
   }
 }
@@ -2105,8 +2106,8 @@ img {
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   .blog-wrapper .single-blog-area .hover-content p {
     display: block;
-    font-size: 14px;
-    line-height: 1.7;
+    font-size: 10px;
+    line-height: 1.2;
     
   }
 }
