@@ -1,0 +1,9 @@
+
+# HTID:17860101: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
+php_value display_errors 1
+php_value display_startup_errors 1
+php_value max_execution_time 300
+php_value max_input_vars 1000
+php_value post_max_size 20M
+php_flag session.auto_start on
+# DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:17860101:

@@ -4,7 +4,7 @@
 $url = 'https://api.openai.com/v1/engines/davinci/jobs';
 
 // API key
-$api_key = 'your-api-key-here';
+$api_key = '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';
 
 // User information
 $user_id = 123;
