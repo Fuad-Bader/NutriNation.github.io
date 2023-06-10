@@ -113,33 +113,19 @@ if(isset($_POST['SendMessage'])){
                 <p class="pb-0">Victoria 3000 Australia</p>
 
                 <div class="list-group list-custom-small">
-                    <a href="tel:+1 234 567 890" class="external-link">
+                    <a href="tel:+962 32179000" class="external-link">
                         <i class="fa font-14 fa-phone color-phone"></i>
-                        <span>+1 234 567 8900</span>
-                        <span class="badge bg-highlight">TAO TO CALL</span>
+                        <span>+962 32179000</span>
+                        <span class="badge bg-highlight">TAP TO CALL</span>
                         <i class="fa fa-angle-right"></i>
                     </a>
-                    <a href="mailto:mail@domain.com" class="external-link">
+                    <a href="mailto:fuad.bader@outlook.com" class="external-link">
                         <i class="fa font-14 fa-envelope color-mail"></i>
-                        <span>mail@domain.com</span>
-                        <span class="badge bg-highlight">TAO TO MAIL</span>
+                        <span>fuad.bader@outlook.com</span>
+                        <span class="badge bg-highlight">TAP TO MAIL</span>
                         <i class="fa fa-angle-right"></i>
                     </a>
-                    <a href="https://www.facebook.com/enabled.labs/" class="external-link">
-                        <i class="fab font-14 fa-facebook color-facebook"></i>
-                        <span>enabled.labs</span>
-                        <i class="fa fa-link"></i>
-                    </a>
-                    <a href="https://twitter.com/iEnabled" class="external-link">
-                        <i class="fab font-14 fa-twitter-square color-twitter"></i>
-                        <span>@iEnabled</span>
-                        <i class="fa fa-link"></i>
-                    </a>
-                    <a href="#" class="border-0">
-                        <i class="fab font-14 fa-linkedin color-linkedin"></i>
-                        <span>@Enabled</span>
-                        <i class="fa fa-link"></i>
-                    </a>
+                    
 
                 </div>
 
